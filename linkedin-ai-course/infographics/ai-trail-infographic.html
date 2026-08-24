@@ -1,0 +1,452 @@
+<title>The AI Trail</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,380;0,9..144,480;0,9..144,600;1,9..144,480&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #eef1ec;
+    --paper-raised: #e4e9e2;
+    --ink: #1b1f1c;
+    --ink-soft: #4c534d;
+    --line: #c9d0c5;
+    --basecamp: #2f5d50;
+    --basecamp-soft: #e3ede9;
+    --forge: #b2551f;
+    --forge-soft: #f4e6da;
+    --summit: #414f83;
+    --summit-soft: #e4e6f0;
+    --brass: #a3803f;
+    --brass-bright: #b9924f;
+    --card-bg: #ffffff;
+    --shadow: 0 1px 2px rgba(27,31,28,0.06), 0 8px 24px -12px rgba(27,31,28,0.18);
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #14161a;
+      --paper-raised: #1b1e22;
+      --ink: #ecefe9;
+      --ink-soft: #a7ada4;
+      --line: #33372f;
+      --basecamp: #7fbfa9;
+      --basecamp-soft: #1c2a25;
+      --forge: #e08a4d;
+      --forge-soft: #2c2119;
+      --summit: #93a1d9;
+      --summit-soft: #20223a;
+      --brass: #cdaa66;
+      --brass-bright: #dcbd7f;
+      --card-bg: #1c1f23;
+      --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -14px rgba(0,0,0,0.6);
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #14161a;
+    --paper-raised: #1b1e22;
+    --ink: #ecefe9;
+    --ink-soft: #a7ada4;
+    --line: #33372f;
+    --basecamp: #7fbfa9;
+    --basecamp-soft: #1c2a25;
+    --forge: #e08a4d;
+    --forge-soft: #2c2119;
+    --summit: #93a1d9;
+    --summit-soft: #20223a;
+    --brass: #cdaa66;
+    --brass-bright: #dcbd7f;
+    --card-bg: #1c1f23;
+    --shadow: 0 1px 2px rgba(0,0,0,0.4), 0 12px 28px -14px rgba(0,0,0,0.6);
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; text-wrap: balance; margin: 0; }
+
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+
+  a { color: inherit; }
+
+  /* progress header */
+  .progress-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+  }
+  .progress-track {
+    height: 3px;
+    background: var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .progress-fill {
+    position: absolute; inset: 0 auto 0 0;
+    width: 0%;
+    background: linear-gradient(90deg, var(--basecamp), var(--forge) 50%, var(--summit));
+    transition: width 0.25s ease-out;
+  }
+  .progress-label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.55rem 1.25rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  #progressDay { color: var(--ink); font-weight: 500; }
+
+  /* hero */
+  .hero {
+    max-width: 46rem;
+    margin: 0 auto;
+    padding: 5.5rem 1.5rem 4rem;
+    text-align: center;
+  }
+  .eyebrow {
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--brass);
+    margin: 0 0 1rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.6rem, 6vw, 4.2rem);
+    font-weight: 480;
+    letter-spacing: -0.01em;
+  }
+  .hero .dek {
+    max-width: 34rem;
+    margin: 1.4rem auto 0;
+    font-size: 1.1rem;
+    color: var(--ink-soft);
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+    margin: 2.4rem 0 0;
+  }
+  .legend-item {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    background: var(--card-bg);
+    border: 1px solid var(--line);
+    font-size: 0.82rem;
+  }
+  .legend-item .dot { width: 0.5rem; height: 0.5rem; border-radius: 50%; align-self: center; }
+  .legend-item.basecamp .dot { background: var(--basecamp); }
+  .legend-item.forge .dot { background: var(--forge); }
+  .legend-item.summit .dot { background: var(--summit); }
+  .legend-item .range { font-family: "IBM Plex Mono", monospace; color: var(--ink-soft); font-size: 0.72rem; }
+
+  .scroll-cue {
+    margin-top: 3rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.75rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    animation: bob 2.4s ease-in-out infinite;
+  }
+  @keyframes bob { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  @media (prefers-reduced-motion: reduce) { .scroll-cue { animation: none; } }
+
+  /* trail */
+  .trail {
+    position: relative;
+    max-width: 64rem;
+    margin: 0 auto;
+    padding: 1rem 1.5rem 6rem;
+  }
+  .trail::before {
+    content: "";
+    position: absolute;
+    left: 1.9rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(
+      to bottom,
+      var(--basecamp) 0%, var(--basecamp) 32%,
+      var(--forge) 34%, var(--forge) 65%,
+      var(--summit) 67%, var(--summit) 100%
+    );
+    opacity: 0.55;
+  }
+
+  .phase-marker {
+    position: relative;
+    margin: 3.5rem 0 2rem;
+    padding-left: 3.7rem;
+  }
+  @media (min-width: 860px) {
+    .phase-marker { padding-left: 0; text-align: center; }
+  }
+  .phase-marker .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 999px;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    border: 1px solid var(--line);
+    background: var(--card-bg);
+  }
+  .phase-marker.basecamp .tag { color: var(--basecamp); }
+  .phase-marker.forge .tag { color: var(--forge); }
+  .phase-marker.summit .tag { color: var(--summit); }
+  .phase-marker h2 { font-size: 1.5rem; margin-top: 0.6rem; font-weight: 480; }
+  .phase-marker p { color: var(--ink-soft); margin: 0.35rem 0 0; max-width: 30rem; }
+  @media (min-width: 860px) { .phase-marker p { margin-inline: auto; } }
+
+  .day-card {
+    position: relative;
+    padding-left: 3.7rem;
+    margin: 1.6rem 0;
+    opacity: 0;
+    transform: translateY(22px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+  .day-card.visible { opacity: 1; transform: translateY(0); }
+  @media (prefers-reduced-motion: reduce) {
+    .day-card { opacity: 1; transform: none; transition: none; }
+  }
+
+  .day-card .node {
+    position: absolute;
+    left: 1.1rem;
+    top: 1.7rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    background: var(--card-bg);
+    border: 2px solid var(--line);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.62rem;
+    color: var(--ink-soft);
+    transition: border-color 0.4s ease, color 0.4s ease, transform 0.4s ease;
+  }
+  .day-card.visible .node { transform: scale(1.08); }
+  .day-card.basecamp .node.active { border-color: var(--basecamp); color: var(--basecamp); }
+  .day-card.forge .node.active { border-color: var(--forge); color: var(--forge); }
+  .day-card.summit .node.active { border-color: var(--summit); color: var(--summit); }
+
+  .day-card .card {
+    background: var(--card-bg);
+    border: 1px solid var(--line);
+    border-radius: 0.9rem;
+    padding: 1.5rem 1.6rem 1.7rem;
+    box-shadow: var(--shadow);
+  }
+  @media (min-width: 860px) {
+    .trail { max-width: 42rem; padding-left: 0.5rem; }
+    .day-card { padding-left: 4.4rem; }
+    .day-card .node { left: 1.35rem; }
+    .phase-marker { padding-left: 4.4rem; text-align: left; }
+    .phase-marker p { margin-inline: 0; }
+  }
+
+  .card .kicker {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.72rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  .day-card.basecamp .kicker { color: var(--basecamp); }
+  .day-card.forge .kicker { color: var(--forge); }
+  .day-card.summit .kicker { color: var(--summit); }
+
+  .card h3 { font-size: 1.28rem; font-weight: 550; line-height: 1.25; }
+  .card .hook { margin: 0.7rem 0 0; color: var(--ink-soft); font-size: 0.96rem; }
+
+  .card ul {
+    list-style: none;
+    margin: 1rem 0 0;
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+  }
+  .card li {
+    position: relative;
+    padding-left: 1.1rem;
+    font-size: 0.92rem;
+  }
+  .card li::before {
+    content: "";
+    position: absolute;
+    left: 0; top: 0.5em;
+    width: 0.42rem; height: 0.42rem;
+    border-radius: 1px;
+    transform: rotate(45deg);
+    background: var(--brass);
+  }
+
+  .card .cta {
+    margin: 1.1rem 0 0;
+    padding-top: 0.9rem;
+    border-top: 1px dashed var(--line);
+    font-style: italic;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+  }
+
+  /* summit note */
+  .summit-note {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 2rem 1.5rem 6rem;
+    text-align: center;
+  }
+  .summit-note h2 { font-size: 1.9rem; font-weight: 480; }
+  .summit-note p { color: var(--ink-soft); margin-top: 0.8rem; }
+  .summit-note .badge {
+    display: inline-block;
+    margin-top: 1.6rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    background: var(--brass);
+    color: #1b1f1c;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+  }
+  :root:not([data-theme="light"]) .summit-note .badge { color: #14161a; }
+  :root[data-theme="dark"] .summit-note .badge { color: #14161a; }
+</style>
+
+<div class="progress-header">
+  <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+  <div class="progress-label">
+    <span id="progressDay">Day 0 / 30</span>
+    <span id="progressPhase">Scroll to begin the trail</span>
+  </div>
+</div>
+
+<section class="hero">
+  <p class="eyebrow">A 30-Day Field Journal</p>
+  <h1>The AI Trail</h1>
+  <p class="dek">Thirty waypoints from &ldquo;what even is AI?&rdquo; to shipping it &mdash; one idea a day, in plain English.</p>
+  <div class="legend">
+    <div class="legend-item basecamp"><span class="dot"></span>Basecamp<span class="range">Days 1&ndash;10</span></div>
+    <div class="legend-item forge"><span class="dot"></span>The Forge<span class="range">Days 11&ndash;20</span></div>
+    <div class="legend-item summit"><span class="dot"></span>Summit Ridge<span class="range">Days 21&ndash;30</span></div>
+  </div>
+  <p class="scroll-cue">Scroll to start the climb &darr;</p>
+</section>
+
+<main class="trail" id="trail"></main>
+
+<section class="summit-note">
+  <h2>You've reached the summit.</h2>
+  <p>Thirty ideas, thirty days &mdash; from pattern-matching machines to production ML systems. Pick the one thread that pulled at you the most and go build something small with it this week.</p>
+  <span class="badge">TRAIL COMPLETE &middot; 30/30</span>
+</section>
+
+<script>
+  const DATA = [{"day": 1, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "What is AI, really?", "hook": "Everyone says \"AI\" like it's one thing. It isn't.", "bullets": ["Software that finds patterns in data instead of following hand-written rules", "A spam filter and a chatbot are both \"AI\" — just different points on a spectrum", "Ask what pattern it learned, and from what data, not \"is this magic\""], "cta": "If you could finally understand one thing about AI, what would it be? Drop it in the comments — I'll make sure it's covered somewhere in this series.", "hashtags": "#AI #MachineLearning #LearnInPublic #ArtificialIntelligence"}, {"day": 2, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "AI, ML, Deep Learning, GenAI: the family tree", "hook": "I used to use these four terms interchangeably. That was a mistake — they're nested inside each other, like Russian dolls.", "bullets": ["Artificial Intelligence (AI) is the broadest term: any system that mimics intelligent behavior.", "Machine Learning (ML) is a subset of AI: systems that improve at a task by learning from data, rather than being explicitly programmed.", "Deep Learning is a subset of ML: it uses layered neural networks (more on those in a few days) to learn especially complex patterns — the technique behind image recognition and speech-to-text.", "Generative AI is a subset of deep learning: models trained to produce new content — text, images, audio — rather than just classify or predict a number."], "cta": "Which of these four terms do you think gets misused the most in your industry?", "hashtags": "#AI #MachineLearning #DeepLearning #GenerativeAI"}, {"day": 3, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "How machines \"learn\": training data explained simply", "hook": "The word \"learn\" makes it sound like the computer is thinking. It's really just adjusting numbers until it stops being wrong as often.", "bullets": ["The model guesses, gets corrected, adjusts its internal numbers — repeat billions of times", "No understanding required, just automated trial and error at massive scale", "Data quality sets the ceiling: garbage in, garbage out"], "cta": "Next time you evaluate an AI product, ask what data it was trained on before you ask what algorithm it uses. The data question matters more.", "hashtags": "#MachineLearning #DataScience #AI #TrainingData"}, {"day": 4, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "Supervised vs unsupervised vs reinforcement learning", "hook": "There are three main ways to teach a machine, and they map surprisingly well onto how humans learn too.", "bullets": ["Supervised learning: learning from labeled examples with a known right answer. Like flashcards — \"here's the input, here's the correct output, learn the pattern.\" Used for spam detection, price prediction, medical image diagnosis.", "Unsupervised learning: finding structure in data with no right answers given. Like being handed a messy pile of photos and asked to sort them into groups without being told what the groups are. Used for customer segmentation, anomaly detection.", "Reinforcement learning: learning through trial, error, and reward — no labeled data at all, just a signal for \"good\" or \"bad\" outcomes. Like training a dog with treats. Used for game-playing AI, robotics, and — this part surprises people — a key step in training chatbots to be helpful (RLHF: reinforcement learning from human feedback)."], "cta": "Which of these three feels most intuitive to you, and which still feels like a black box?", "hashtags": "#MachineLearning #ReinforcementLearning #AI #DataScience"}, {"day": 5, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "Neural networks in plain English", "hook": "Neural networks sound intimidating because of the name. The actual idea is simpler than most spreadsheets I've built.", "bullets": ["Layers of tiny weighted decision points passing signals forward", "Early layers learn simple patterns, later layers learn abstract ones", "\"Neural\" is a loose metaphor, not a brain simulation — it's weighted math"], "cta": "Does knowing it's \"just\" weighted math make AI feel less magical, or more impressive?", "hashtags": "#NeuralNetworks #DeepLearning #AI #MachineLearning"}, {"day": 6, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "What is a Large Language Model (LLM)?", "hook": "An LLM — the tech behind ChatGPT, Claude, Gemini — is, at its core, a very sophisticated next-word predictor.", "bullets": ["At its core: a very sophisticated next-word predictor", "\"Large\" means huge training data plus billions of parameters", "No fact database — it generates plausible text, usually (not always) true"], "cta": "Understanding \"next-token prediction\" is the single most useful mental model for using these tools well: you're not talking to a database, you're steering a very good pattern-completion engine.", "hashtags": "#LLM #GenerativeAI #ChatGPT #AI"}, {"day": 7, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "Training vs inference: why ChatGPT doesn't \"learn\" from your chats", "hook": "A question I get a lot: \"If I correct the AI in a conversation, does it remember that for next time?\" Short answer: no. And understanding why clears up a lot of confusion about how these systems actually work.", "bullets": ["Training: the expensive, offline process (Day 3) where the model's weights get adjusted across a massive dataset. This happens once, over weeks, on huge clusters of specialized hardware, before you ever see the model.", "Inference: what happens every time you send a message. The model's weights are now frozen. It's just running the \"arithmetic\" from Day 5 forward — reading your input and generating output. No weights change during inference, ever."], "cta": "Did you assume AI chatbots were continuously learning from your conversations? You're not alone — most people do.", "hashtags": "#AI #LLM #MachineLearning #GenerativeAI"}, {"day": 8, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "Tokens & embeddings: how AI understands language", "hook": "AI models don't read words. They read numbers. Here's how text becomes math.", "bullets": ["Tokenization chops text into word and sub-word chunks the model can process", "Embeddings turn tokens into numbers that capture meaning as geometry", "Similar meanings end up mathematically close together"], "cta": "Once you see language as coordinates in space, a lot of \"how does AI even understand me\" stops feeling mysterious and starts feeling like math.", "hashtags": "#AI #NLP #MachineLearning #Embeddings"}, {"day": 9, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "Hallucinations: why AI confidently makes things up", "hook": "The single most important thing to understand before you trust AI output for anything important: it was never optimized to tell the truth. It was optimized to sound plausible.", "bullets": ["Asking for specific citations, statistics, or quotes", "Questions about very recent events (past the training cutoff)", "Obscure or niche topics with little training data", "Leading questions that assume a false premise"], "cta": "What's the most confidently wrong answer AI has ever given you?", "hashtags": "#AI #Hallucination #LLM #ResponsibleAI"}, {"day": 10, "phase": "fundamentals", "phaseLabel": "Basecamp — Fundamentals", "title": "AI ethics & bias: the human side of the machine", "hook": "Ten days into this series, one theme keeps resurfacing: AI systems inherit everything from their data — including our flaws.", "bullets": ["Consent — was the data the model was trained on used with permission?", "Transparency — do users know they're interacting with AI, and how decisions get made?", "Accountability — when an AI system causes harm, who is responsible: the developer, the deployer, or the user?"], "cta": "Which AI ethics issue concerns you most: bias, privacy, or accountability?", "hashtags": "#AIEthics #ResponsibleAI #MachineLearning #AI"}, {"day": 11, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Your first great prompt: anatomy of a good instruction", "hook": "\"Write me a marketing email\" and \"Write a 150-word marketing email for busy IT managers, announcing our new uptime SLA, in a confident but not salesy tone, with a single clear call to action\" will get you two completely different quality levels of output. Same model. Same person. Wildly different results.", "bullets": ["Task — what exactly do you want done? Be specific about the verb: summarize, compare, rewrite, critique.", "Context — what does the model need to know that it can't guess? Your audience, your constraints, relevant background.", "Format — how should the output look? Length, structure, tone, bullet points vs prose.", "Examples (when it matters) — showing one sample of what \"good\" looks like often outperforms paragraphs of description. More on this tomorrow."], "cta": "What's the vaguest prompt that surprised you by working well anyway?", "hashtags": "#PromptEngineering #AI #GenerativeAI #Productivity"}, {"day": 12, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Zero-shot vs few-shot prompting", "hook": "One of the highest-leverage prompt engineering tricks costs you two extra sentences: showing an example.", "bullets": ["Zero-shot prompting: you ask for a task with no examples, relying purely on the model's general training. \"Classify this review as positive or negative.\" Works fine for simple, common tasks.", "Few-shot prompting: you include a couple of example input/output pairs before your real request. Suddenly the model has a concrete pattern to match, not just an abstract instruction — and quality jumps, especially for tasks with a specific format, tone, or edge cases that are hard to describe in words."], "cta": "Have you tried few-shot prompting, or have you mostly been doing zero-shot without realizing it had a name?", "hashtags": "#PromptEngineering #AI #LLM #GenerativeAI"}, {"day": 13, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Chain-of-thought: getting AI to \"show its work\"", "hook": "Remember your math teacher insisting you show your work, not just the final answer? It turns out that trick makes AI models smarter too.", "bullets": ["Asking AI to \"think step by step\" gives it more reasoning room", "Writing out intermediate steps improves accuracy on logic and math", "Costs a few extra seconds of generation, often catches its own mistakes"], "cta": "Try it today: take a prompt you'd normally send straight for an answer, and add \"think step by step\" before it. Notice the difference.", "hashtags": "#PromptEngineering #AI #ChainOfThought #LLM"}, {"day": 14, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Role prompting: turning AI into an expert on demand", "hook": "\"You are a senior tax attorney specializing in small business deductions.\" One sentence, and the model's entire response shifts — vocabulary, structure, the questions it anticipates, even what it flags as a risk.", "bullets": ["Getting appropriately technical (or appropriately simple) language", "Surfacing the right caveats a domain expert would think to mention", "Adjusting tone — a \"skeptical senior engineer\" role catches different issues in a code review than a generic \"review this code\" prompt"], "cta": "What's the most useful persona you've assigned an AI model?", "hashtags": "#PromptEngineering #AI #GenerativeAI #ProductivityTips"}, {"day": 15, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Prompt iteration: treating prompts like code", "hook": "The biggest mindset shift that improved my AI output quality: stop expecting the first prompt to be the final prompt.", "bullets": ["Write a first-draft prompt with your best guess at task, context, format (Day 11).", "Read the output critically — what's missing, what's wrong, what tone is off?", "Refine the prompt to address exactly that gap — don't start over, patch the specific issue.", "Repeat until the output is genuinely good, then save that prompt as a reusable template for next time."], "cta": "Do you save and reuse your best prompts, or rewrite from scratch each time?", "hashtags": "#PromptEngineering #AI #GenerativeAI #Productivity"}, {"day": 16, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Retrieval-Augmented Generation (RAG) explained", "hook": "Remember Day 9: models hallucinate and their knowledge is frozen at a training cutoff. RAG is the most common fix, and it's more straightforward than the acronym suggests.", "bullets": ["Your question gets converted into an embedding (Day 8).", "The system searches a knowledge base — your company docs, a product manual, today's news — for chunks of text with the closest matching embeddings.", "Those retrieved chunks get inserted into the prompt as context.", "The model generates its answer grounded in that retrieved text, instead of purely from memory."], "cta": "Any tool you use daily is almost certainly RAG under the hood — customer support bots, internal doc search, \"ask your codebase\" tools.", "hashtags": "#RAG #AI #LLM #GenerativeAI"}, {"day": 17, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "AI agents: giving models tools and autonomy", "hook": "A plain LLM can only do one thing: generate text. An \"AI agent\" is what you get when you wire that text-generation ability up to actions in the real world.", "bullets": ["A plain LLM only generates text; an agent can also take actions", "The loop: reason, pick a tool, get a result, decide the next step", "More autonomy means more power — and more surface area for mistakes"], "cta": "Have you used an AI agent that surprised you with how much it could do on its own?", "hashtags": "#AIAgents #AI #Automation #GenerativeAI"}, {"day": 18, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Multimodal AI: text, image, audio, and video together", "hook": "For years, AI models were specialists: one model for text, a different one for images, another for speech. Multimodal AI collapses that into a single model that can take in — and often generate — more than one type of data at once.", "bullets": ["Images and audio get chopped into patches and segments, then embedded like text", "One model can now reason across text, images, and audio together", "The frontier: real-time voice and video understanding"], "cta": "What's the most useful non-text input you've fed an AI model — an image, a PDF, audio?", "hashtags": "#MultimodalAI #GenerativeAI #AI #ComputerVision"}, {"day": 19, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Evaluating AI output: how do you know it's good?", "hook": "\"That looks right\" is not an evaluation strategy — especially once you're using AI for anything repeated or high-stakes. Here's how to actually check your work.", "bullets": ["Factual claims — verify anything checkable (Day 9 territory) against a real source.", "Completeness — did it address every part of your prompt, or quietly drop a requirement?", "Fit for purpose — is the tone, length, and format actually usable as-is, or does it need editing?"], "cta": "How do you personally sanity-check AI output before you trust it?", "hashtags": "#AI #Evaluation #GenerativeAI #ResponsibleAI"}, {"day": 20, "phase": "forge", "phaseLabel": "The Forge — Practical GenAI", "title": "Building your personal AI workflow toolkit", "hook": "Twenty days in, we've covered the \"how it works\" and the \"how to prompt it.\" Today's post is about turning that into a system you actually use every day, instead of ad hoc chats you forget about.", "bullets": ["A prompt library — save your best prompts (Day 15) somewhere searchable, organized by task type: writing, analysis, coding, brainstorming.", "A default \"context pack\" — for recurring tasks, keep a short doc with the background the model always needs (your audience, your voice, your constraints) and paste it in rather than re-explaining every time.", "Task-fit awareness — know which tasks AI genuinely accelerates (first drafts, summarizing, brainstorming, boilerplate code) versus which ones it just feels fast on but need heavy verification (facts, final copy, anything with real consequences).", "A verification habit — pair every AI-assisted deliverable with the specific check from Day 19 that matches its stakes."], "cta": "What's one AI habit you've built that saves you real time every week?", "hashtags": "#AI #Productivity #Workflow #GenerativeAI"}, {"day": 21, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "From notebook to product: what \"ML engineering\" means", "hook": "There's a huge gap between \"I trained a model that works in my notebook\" and \"I shipped a model that works in production\" — and that gap is basically the entire job of ML engineering.", "bullets": ["Handle messy, unexpected real-world input it never saw in training", "Respond fast enough that users don't notice or leave", "Serve thousands of requests at once instead of one", "Keep working when upstream data sources change or go down", "Be monitored so someone finds out when it starts failing, before customers do"], "cta": "If you've ever built a model that worked great in testing and then struggled in the real world, what broke?", "hashtags": "#MachineLearning #MLEngineering #AI #DataScience"}, {"day": 22, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Data pipelines: the unglamorous backbone of AI", "hook": "Nobody posts excitedly about data pipelines. And yet most ML teams will tell you they spend more time on data plumbing than on modeling itself.", "bullets": ["Extract, clean, transform, load — automated, and on a schedule", "No validation means bad data silently degrades your model over time", "Pipeline quality sets your entire AI system's quality ceiling"], "cta": "The unglamorous truth: the quality ceiling of any AI system is set by its data pipeline, not its model architecture.", "hashtags": "#DataEngineering #MachineLearning #AI #MLOps"}, {"day": 23, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Feature engineering: making raw data model-ready", "hook": "Raw data almost never comes in a form a model learns well from. Feature engineering is the craft of reshaping it so the patterns are easier for the model to find.", "bullets": ["Encoding categories as numbers — a model can't take \"red/green/blue\" directly; it needs a numeric representation.", "Scaling — putting features like \"age\" (0–100) and \"income\" (0–500,000) on comparable scales so one doesn't dominate purely due to magnitude.", "Creating derived features — \"days since last purchase\" is often far more predictive than raw purchase timestamps on their own; the model doesn't have to discover that transformation itself.", "Handling missing data thoughtfully — deleting, filling, or explicitly flagging gaps, depending on why the data is missing."], "cta": "Deep learning and LLMs shift some of this burden onto the model itself — but for structured business data, this skill is still core to the job.", "hashtags": "#MachineLearning #DataScience #FeatureEngineering #AI"}, {"day": 24, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Model evaluation metrics that actually matter", "hook": "\"Our model is 95% accurate\" sounds impressive until you learn the model is predicting fraud, and only 1% of transactions are actually fraudulent. A model that just guesses \"not fraud\" every single time also hits 95% accuracy — and catches zero fraud. This is why \"accuracy\" alone is one of the most misleading numbers in ML.", "bullets": ["Precision — of everything the model flagged as positive, how much was actually right? High precision means few false alarms.", "Recall — of everything that was actually positive, how much did the model catch? High recall means few missed cases.", "These trade off against each other — a model can catch every fraud case by flagging everything (perfect recall, terrible precision), so the right balance depends entirely on the cost of each type of error in your specific use case. Missing a fraud case and annoying a legitimate customer are not equally costly."], "cta": "What's a time a headline metric hid a real problem in your work?", "hashtags": "#MachineLearning #DataScience #AI #ModelEvaluation"}, {"day": 25, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Overfitting vs underfitting: the balancing act", "hook": "The central tension in every model you'll ever train: performing well on data it's already seen versus performing well on data it hasn't.", "bullets": ["Overfitting: the model memorizes the training data — including its noise and quirks — instead of learning the underlying pattern. It scores great on training data and disappoints on anything new. Like a student who memorizes last year's exam answers instead of understanding the subject — perfect on that exact test, lost on a new one.", "Underfitting: the model is too simple to capture the real pattern at all, and performs poorly even on the training data. Like trying to fit a straight line to a curve — it misses the shape no matter how much data you give it."], "cta": "If a model's training score and real-world score tell wildly different stories, that gap itself is a diagnosis: it's telling you the model learned the wrong thing.", "hashtags": "#MachineLearning #DataScience #AI #ModelTraining"}, {"day": 26, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Fine-tuning vs prompting: when to customize a model", "hook": "You want a model to behave a specific way for your use case. Do you write a better prompt, or retrain the model itself? This is one of the most common strategic decisions teams building on AI face — and prompting wins far more often than people assume.", "bullets": ["Prompting (including RAG from Day 16): you shape behavior entirely through the input, without touching the model's weights. Fast to iterate, cheap, easy to update, and surprisingly powerful for most tasks — including teaching a model new \"knowledge\" via retrieval.", "Fine-tuning: you continue training an existing model on your own examples, actually adjusting its weights (Day 3) so the new behavior becomes baked in. This is slower, more expensive, and requires real ML expertise — but it's the right call when you need a very specific output format at scale, a distinct tone/style baked in reliably, or behavior that's hard to reliably coax out through prompting alone."], "cta": "Skipping straight to fine-tuning when a better prompt would've solved it is one of the most common wastes of time and budget I see on AI projects.", "hashtags": "#MachineLearning #AI #FineTuning #GenerativeAI"}, {"day": 27, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Deploying models: APIs, latency, and scaling", "hook": "A trained model, sitting on your laptop, helps nobody. Deployment is the process of turning it into something other systems and users can actually call — and it introduces a whole new set of engineering constraints that have nothing to do with model accuracy.", "bullets": ["Serving via an API — the model gets wrapped behind an endpoint that accepts input and returns predictions, so any application can call it like any other web service.", "Latency — how fast is fast enough? A fraud check blocking a payment needs an answer in milliseconds. A report generated overnight can take minutes. The acceptable latency shapes which model size and hardware you can even consider.", "Scaling — one request is easy. Ten thousand simultaneous requests requires load balancing, request queuing, and often multiple model replicas running in parallel — plus a plan for what happens when demand spikes past capacity.", "Cost — every inference call (Day 7) consumes real compute. At scale, inference cost, not training cost, usually dominates the long-run budget of an AI product."], "cta": "The mindset shift from \"building a model\" to \"deploying a model\": accuracy gets you in the door, but latency, reliability, and cost determine whether the product actually survives contact with real users.", "hashtags": "#MLOps #MachineLearning #AI #SoftwareEngineering"}, {"day": 28, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "MLOps: monitoring models after they ship", "hook": "Shipping a model isn't the finish line — it's the starting gun for a new problem: the real world keeps changing, and your model doesn't, unless you make it.", "bullets": ["Data drift — the incoming data starts looking statistically different from the training data (new customer behavior, a market shift, a seasonal change). The model is now making predictions on inputs it was never really trained for.", "Concept drift — the actual relationship between inputs and the right answer changes over time (what counted as \"normal spending\" before a recession isn't what counts as normal after one)."], "cta": "Does your organization actively monitor deployed models for drift, or find out about problems from users first?", "hashtags": "#MLOps #MachineLearning #AI #DataScience"}, {"day": 29, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Cost & compute: the economics of running AI", "hook": "The most surprising thing to newcomers building their first AI product isn't a technical concept — it's the bill. Understanding where AI costs actually come from changes how you design a product from day one.", "bullets": ["Training cost — a one-time (or periodic) expense, often enormous for large models, but amortized across every future use.", "Inference cost — what you pay every single time the model runs (Day 7). For a product with real usage, this dwarfs training cost over time — it's the ongoing \"cost of goods sold\" for an AI feature, not a one-off R&D expense.", "The levers that actually move the number: model size (bigger models cost more per call), output length (you're often billed per token generated), prompt length (more context in = more cost), and call frequency (does every user action trigger a model call, or only the ones that need one?)."], "cta": "The teams that treat inference cost as a design constraint from the start build meaningfully more sustainable AI products than the ones who bolt on efficiency after launch.", "hashtags": "#AI #MLOps #Cost #GenerativeAI"}, {"day": 30, "phase": "summit", "phaseLabel": "Summit Ridge — ML Engineering", "title": "Putting it all together: your AI learning roadmap", "hook": "Thirty days ago, \"AI\" was a vague, slightly intimidating buzzword. If you've followed along, you now have a real mental model of how it works end to end:", "bullets": ["Phase 1 — the fundamentals: what AI/ML/deep learning/GenAI actually mean, how machines learn from data, how neural networks and LLMs work, why hallucinations happen, and the ethical stakes underneath it all.", "Phase 2 — using it well: how to write prompts that actually get good results, chain-of-thought, role prompting, RAG, agents, multimodal models, and how to evaluate whether AI output is genuinely good.", "Phase 3 — how it gets built and shipped: data pipelines, feature engineering, evaluation metrics, overfitting, fine-tuning vs prompting, deployment, monitoring, and the real economics of running AI in production."], "cta": "Thank you for following this series. Which day's concept are you going to actually put into practice first?", "hashtags": "#AI #MachineLearning #GenerativeAI #LearnInPublic"}];
+
+  const PHASE_META = {
+    fundamentals: { key: "basecamp", label: "Basecamp", name: "Basecamp — Fundamentals", intro: "Ten days on flat, solid ground: what AI actually is, how it learns, and where it breaks." },
+    forge:        { key: "forge",    label: "The Forge",  name: "The Forge — Practical GenAI", intro: "Ten days at the workbench: prompting, retrieval, agents, and getting real work out of these models." },
+    summit:       { key: "summit",   label: "Summit Ridge", name: "Summit Ridge — ML Engineering", intro: "Ten days of thinner air: pipelines, evaluation, deployment, and keeping a model alive in the wild." }
+  };
+
+  const trail = document.getElementById("trail");
+  let lastPhase = null;
+
+  DATA.forEach((d) => {
+    const meta = PHASE_META[d.phase];
+
+    if (d.phase !== lastPhase) {
+      const marker = document.createElement("div");
+      marker.className = "phase-marker " + meta.key;
+      marker.innerHTML = `
+        <span class="tag">${meta.label} &middot; Day ${d.day}&ndash;${d.phase === "summit" ? 30 : d.day + 9}</span>
+        <h2>${meta.name.split(" — ")[1] || meta.name}</h2>
+        <p>${meta.intro}</p>
+      `;
+      trail.appendChild(marker);
+      lastPhase = d.phase;
+    }
+
+    const card = document.createElement("article");
+    card.className = "day-card " + meta.key;
+    card.dataset.day = d.day;
+    card.dataset.phaseName = meta.name;
+
+    const bullets = d.bullets.map(b => `<li>${b}</li>`).join("");
+
+    card.innerHTML = `
+      <div class="node mono">${String(d.day).padStart(2, "0")}</div>
+      <div class="card">
+        <div class="kicker">Day ${d.day} / 30</div>
+        <h3>${d.title}</h3>
+        <p class="hook">${d.hook}</p>
+        <ul>${bullets}</ul>
+        <p class="cta">${d.cta}</p>
+      </div>
+    `;
+    trail.appendChild(card);
+  });
+
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const cards = Array.from(document.querySelectorAll(".day-card"));
+  const progressFill = document.getElementById("progressFill");
+  const progressDay = document.getElementById("progressDay");
+  const progressPhase = document.getElementById("progressPhase");
+
+  if (reduceMotion) {
+    cards.forEach(c => c.classList.add("visible"));
+  } else {
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("visible"); });
+    }, { threshold: 0.12, rootMargin: "0px 0px -8% 0px" });
+    cards.forEach(c => revealObserver.observe(c));
+  }
+
+  const trackObserver = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      const node = e.target.querySelector(".node");
+      if (e.isIntersecting) {
+        node.classList.add("active");
+        progressFill.style.width = (e.target.dataset.day / DATA.length * 100) + "%";
+        progressDay.textContent = "Day " + e.target.dataset.day + " / " + DATA.length;
+        progressPhase.textContent = e.target.dataset.phaseName;
+      } else {
+        node.classList.remove("active");
+      }
+    });
+  }, { threshold: 0, rootMargin: "-45% 0px -45% 0px" });
+  cards.forEach(c => trackObserver.observe(c));
+</script>
