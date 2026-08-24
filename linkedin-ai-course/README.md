@@ -55,6 +55,22 @@ details and how to change the time or pause it.
 29. Cost & compute: the economics of running AI
 30. Putting it all together: your AI learning roadmap
 
+## Infographics
+
+`infographics/ai-trail-infographic.html` is a self-contained, animated
+scrollytelling page covering all 30 days as waypoints along a trail split
+into three phases (Basecamp, The Forge, Summit Ridge), with scroll-triggered
+reveal animation and a live day/phase progress readout. Open it in any
+browser — it isn't postable to LinkedIn directly (LinkedIn doesn't embed
+HTML), but it's shareable as a link and a good source to screen-record for
+a video post.
+
+`infographics/carousels/day-XX-carousel.pdf` are the LinkedIn-native
+equivalent: a 3-slide swipe deck per day (cover → key points → closing
+question), 1080×1350px, in the same visual system as the animated page.
+Upload the matching PDF as a "document" post alongside that day's text —
+LinkedIn renders it as a swipeable carousel natively.
+
 ## Scheduling
 
 A daily Routine is set up to message this session every day with that day's
