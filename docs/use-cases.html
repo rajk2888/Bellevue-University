@@ -1,0 +1,358 @@
+<title>Manufacturing Analytics Use Cases</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    color-scheme: light;
+    --page:        #f5f6f4;
+    --surface:     #fcfcfb;
+    --surface-2:   #f0f1ee;
+    --ink:         #0b0b0b;
+    --ink-2:       #52514e;
+    --ink-muted:   #898781;
+    --grid:        #e1e0d9;
+    --baseline:    #c3c2b7;
+    --border:      rgba(11,11,11,0.10);
+
+    --blue:        #2a78d6;
+    --aqua:        #1baf7a;
+    --violet:      #4a3aa7;
+    --yellow:      #eda100;
+    --red:         #e34948;
+
+    --good:        #0ca30c;
+    --good-bg:     color-mix(in srgb, #0ca30c 14%, transparent);
+    --warning-ink: #8a6200;
+    --warning-bg:  color-mix(in srgb, #fab219 22%, transparent);
+    --muted-bg:    color-mix(in srgb, #898781 16%, transparent);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      color-scheme: dark;
+      --page:        #0d0d0d;
+      --surface:     #1a1a19;
+      --surface-2:   #202120;
+      --ink:         #ffffff;
+      --ink-2:       #c3c2b7;
+      --ink-muted:   #898781;
+      --grid:        #2c2c2a;
+      --baseline:    #383835;
+      --border:      rgba(255,255,255,0.10);
+      --blue:        #3987e5;
+      --aqua:        #199e70;
+      --violet:      #9085e9;
+      --yellow:      #c98500;
+      --red:         #e66767;
+      --good:        #0ca30c;
+      --good-bg:     color-mix(in srgb, #0ca30c 20%, transparent);
+      --warning-ink: #ffd479;
+      --warning-bg:  color-mix(in srgb, #fab219 20%, transparent);
+      --muted-bg:    color-mix(in srgb, #898781 20%, transparent);
+    }
+  }
+  :root[data-theme="dark"] {
+    color-scheme: dark;
+    --page:        #0d0d0d;
+    --surface:     #1a1a19;
+    --surface-2:   #202120;
+    --ink:         #ffffff;
+    --ink-2:       #c3c2b7;
+    --ink-muted:   #898781;
+    --grid:        #2c2c2a;
+    --baseline:    #383835;
+    --border:      rgba(255,255,255,0.10);
+    --blue:        #3987e5;
+    --aqua:        #199e70;
+    --violet:      #9085e9;
+    --yellow:      #c98500;
+    --red:         #e66767;
+    --good:        #0ca30c;
+    --good-bg:     color-mix(in srgb, #0ca30c 20%, transparent);
+    --warning-ink: #ffd479;
+    --warning-bg:  color-mix(in srgb, #fab219 20%, transparent);
+    --muted-bg:    color-mix(in srgb, #898781 20%, transparent);
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    background: var(--page); color: var(--ink);
+    font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 32px 24px 72px; }
+
+  a { color: var(--blue); }
+
+  .crumb { font-size: 12.5px; color: var(--ink-muted); margin-bottom: 14px; }
+  .crumb a { color: var(--ink-muted); text-decoration: none; border-bottom: 1px solid var(--baseline); }
+  .crumb a:hover { color: var(--blue); border-color: var(--blue); }
+
+  header.masthead { padding-bottom: 24px; margin-bottom: 28px; border-bottom: 1px solid var(--border); }
+  .eyebrow { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-muted); margin: 0 0 8px; }
+  h1 { font-size: 30px; font-weight: 700; margin: 0 0 8px; letter-spacing: -0.01em; text-wrap: balance; }
+  .lede { font-size: 15px; color: var(--ink-2); max-width: 62ch; line-height: 1.55; margin: 0; }
+
+  .benefit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 28px 0 36px; }
+  .benefit { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 16px 16px 18px; }
+  .benefit .icon { width: 28px; height: 28px; margin-bottom: 10px; }
+  .benefit h3 { font-size: 13.5px; font-weight: 600; margin: 0 0 6px; }
+  .benefit p { font-size: 12.5px; color: var(--ink-2); line-height: 1.5; margin: 0; }
+
+  .coverage-bar {
+    display: flex; align-items: center; gap: 16px; flex-wrap: wrap;
+    background: var(--surface); border: 1px solid var(--border); border-radius: 10px;
+    padding: 16px 20px; margin-bottom: 36px;
+  }
+  .coverage-bar .cb-figure { font-size: 26px; font-weight: 700; font-family: "IBM Plex Mono", monospace; white-space: nowrap; }
+  .coverage-bar .cb-text { font-size: 13px; color: var(--ink-2); line-height: 1.5; flex: 1; min-width: 220px; }
+  .coverage-bar .cb-text a { font-weight: 600; }
+  .cb-legend { display: flex; gap: 14px; font-size: 11.5px; color: var(--ink-muted); flex-wrap: wrap; }
+  .cb-legend span { display: inline-flex; align-items: center; gap: 5px; }
+  .cb-legend .dot { width: 7px; height: 7px; border-radius: 50%; }
+
+  h2.section-title {
+    font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--ink-muted); margin: 0 0 16px; padding-top: 6px;
+  }
+
+  .usecase-list { display: flex; flex-direction: column; gap: 14px; }
+  .usecase {
+    background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
+    padding: 20px 22px; display: grid; grid-template-columns: 44px 1fr; gap: 16px;
+  }
+  .usecase .num {
+    font-family: "IBM Plex Mono", monospace; font-size: 14px; font-weight: 700;
+    color: var(--ink-muted); padding-top: 2px;
+  }
+  .usecase .head-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-bottom: 6px; }
+  .usecase h3 { font-size: 16px; font-weight: 600; margin: 0; }
+  .usecase p { font-size: 13.5px; color: var(--ink-2); line-height: 1.6; margin: 0 0 8px; }
+  .usecase p:last-child { margin-bottom: 0; }
+  .usecase .stat { font-family: "IBM Plex Mono", monospace; color: var(--ink); font-weight: 600; }
+
+  .badge {
+    display: inline-flex; align-items: center; gap: 5px; font-size: 10.5px; font-weight: 600;
+    padding: 3px 9px; border-radius: 999px; white-space: nowrap; text-transform: uppercase; letter-spacing: 0.03em;
+  }
+  .badge .dot { width: 6px; height: 6px; border-radius: 50%; }
+  .badge.covered { background: var(--good-bg); color: var(--good); }
+  .badge.partial { background: var(--warning-bg); color: var(--warning-ink); }
+  .badge.roadmap { background: var(--muted-bg); color: var(--ink-muted); }
+
+  .in-dash {
+    margin-top: 10px; padding-top: 10px; border-top: 1px dashed var(--grid);
+    font-size: 12.5px; color: var(--ink-2); display: flex; align-items: center; gap: 8px;
+  }
+  .in-dash a { font-weight: 600; text-decoration: none; }
+  .in-dash a:hover { text-decoration: underline; }
+  .in-dash svg { flex: 0 0 auto; }
+
+  footer { margin-top: 44px; padding-top: 18px; border-top: 1px solid var(--border); font-size: 12px; color: var(--ink-muted); line-height: 1.6; }
+  footer code { font-family: "IBM Plex Mono", monospace; background: var(--surface-2); padding: 1px 5px; border-radius: 4px; }
+
+  @media (max-width: 800px) {
+    .benefit-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 560px) {
+    .benefit-grid { grid-template-columns: 1fr; }
+    .usecase { grid-template-columns: 1fr; }
+    .usecase .num { display: none; }
+  }
+</style>
+
+<div class="wrap">
+  <div class="crumb"><a href="dashboard.html">&larr; Fab Ops Command Center</a></div>
+
+  <header class="masthead">
+    <p class="eyebrow">Semiconductor Manufacturing &middot; Operations Analytics</p>
+    <h1>Manufacturing Analytics Use Cases</h1>
+    <p class="lede">Twelve places manufacturing analytics pays for itself, and where the Fab Ops Command Center prototype
+      already stands versus what's still on the roadmap.</p>
+  </header>
+
+  <section>
+    <div class="benefit-grid" id="benefitGrid"></div>
+  </section>
+
+  <div class="coverage-bar">
+    <div class="cb-figure">3 / 12</div>
+    <div class="cb-text">
+      use cases are represented today in the <a href="dashboard.html">Fab Ops Command Center</a> prototype
+      (Demand Forecasting, Throughput Optimization, Inventory Management), with 2 more partially in view.
+      The rest are the natural next build.
+    </div>
+    <div class="cb-legend">
+      <span><span class="dot" style="background:var(--good)"></span>Covered</span>
+      <span><span class="dot" style="background:var(--warning-ink)"></span>Partial</span>
+      <span><span class="dot" style="background:var(--ink-muted)"></span>Roadmap</span>
+    </div>
+  </div>
+
+  <h2 class="section-title">The 12 use cases</h2>
+  <div class="usecase-list" id="usecaseList"></div>
+
+  <footer>
+    Adapted for the semiconductor fab context from general manufacturing-analytics industry guidance.
+    Coverage badges reflect what <code>docs/dashboard.html</code> currently computes from
+    <code>data/semiconductor_ops_data.csv</code> — not a claim about any production system.
+  </footer>
+</div>
+
+<script>
+(function () {
+  "use strict";
+
+  const icon = (path) => `<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">${path}</svg>`;
+
+  const benefits = [
+    {
+      title: "Optimized costs",
+      color: "var(--blue)",
+      icon: icon('<path d="M12 2v20M17 5.5c0-1.9-2.2-3.5-5-3.5s-5 1.6-5 3.5S9.2 9 12 9s5 1.6 5 3.5-2.2 3.5-5 3.5-5-1.6-5-3.5"/>'),
+      text: "Cut spend on repairs, excess inventory, returns processing, and line staffing — and price products using customer, market, and competitive data.",
+    },
+    {
+      title: "Increased productivity",
+      color: "var(--aqua)",
+      icon: icon('<path d="M4 19V5M10 19V9M16 19v-7M22 19V4"/>'),
+      text: "Eliminate the bottlenecks — reactive repairs, slow material lookup, late-caught flaws, under-staffed shifts — that cause slowdowns and shutdowns.",
+    },
+    {
+      title: "Enhanced workplace safety",
+      color: "var(--violet)",
+      icon: icon('<path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5z"/>'),
+      text: "Right-size staffing and qualifications per shift, pull failing equipment offline early, and close skills/certification gaps with targeted training.",
+    },
+    {
+      title: "Stronger competitive edge",
+      color: "var(--yellow)",
+      icon: icon('<path d="m12 2 3 7h7l-5.5 4.5L18.5 21 12 16.5 5.5 21l2-7.5L2 9h7z"/>'),
+      text: "Personalize service from order history and preferences, and read market conditions early enough to beat competitors to trending products.",
+    },
+  ];
+
+  const grid = document.getElementById("benefitGrid");
+  benefits.forEach((b) => {
+    const card = document.createElement("div");
+    card.className = "benefit";
+    const iconWrap = document.createElement("div");
+    iconWrap.className = "icon";
+    iconWrap.style.color = b.color;
+    iconWrap.innerHTML = b.icon;
+    card.appendChild(iconWrap);
+    const h3 = document.createElement("h3");
+    h3.textContent = b.title;
+    const p = document.createElement("p");
+    p.textContent = b.text;
+    card.appendChild(h3);
+    card.appendChild(p);
+    grid.appendChild(card);
+  });
+
+  const STATUS = {
+    covered: { label: "Covered", cls: "covered" },
+    partial: { label: "Partial", cls: "partial" },
+    roadmap: { label: "Roadmap", cls: "roadmap" },
+  };
+
+  const useCases = [
+    {
+      title: "Demand Forecasting", status: "covered",
+      body: "Predicting what customers will want, and at what price, so inventory, labor, production, and shipping can flex ahead of the swing instead of reacting to it. Feeds on consumer/competitor trend data and marketing activity to anticipate volume shifts from promotions.",
+      dash: "The trend chart plots Demand against a monthly Forecast line, and the KPI strip tracks forecast accuracy directly (4.8% MAPE) — the model earns trust before anyone acts on its output.",
+    },
+    {
+      title: "Predictive Maintenance and Monitoring", status: "roadmap",
+      body: "Replacing calendar-based preventive maintenance — which swaps parts before they need it and takes machines offline unnecessarily — with sensor data (vibration, temperature, pressure) that predicts failure from actual equipment condition.",
+    },
+    {
+      title: "Warehouse Management", status: "roadmap",
+      body: "Coordinating people, space, scheduling, and supplier/carrier communication inside the warehouse — distinct from ordering and inventory count. KPIs like order lead time, picking accuracy, and inventory turnover decide whether batch or zone picking saves time without hurting accuracy.",
+    },
+    {
+      title: "Production Planning", status: "partial",
+      body: "Forecasting demand, optimizing workflows, allocating resources, scheduling production, and tracking progress against plan — while absorbing shocks like delayed shipments, breakdowns, demand shifts, or return spikes.",
+      dash: "Capacity vs. supply is tracked per fab, and the model already surfaces one concrete planning gap: Fab 3's capacity ramp trailing its allocated demand. Full production scheduling isn't modeled yet.",
+    },
+    {
+      title: "Supply Chain Management", status: "partial",
+      body: "Coordinating the physical flow of materials and finished goods with the information flow of purchase orders and production plans — barcode/RFID tracking, supplier scoring on fulfillment/defect/pricing, order prioritization, and shipment tracking.",
+      dash: "The heatmap and fab cards show exactly where the chain is thin — 100% of shortage units trace to Fab 3 (Singapore) for two SKUs — but supplier-level and logistics data aren't part of this dataset.",
+    },
+    {
+      title: "Error Detection", status: "roadmap",
+      body: "Manual sampling inspections are slow and inconsistent. Cameras, sensors, and AI models catch defects in real time, pull bad units immediately, and support root-cause analysis against equipment performance and tolerance data.",
+    },
+    {
+      title: "Throughput Optimization", status: "covered",
+      body: "Finding and clearing the bottlenecks — misallocated labor, malfunctioning equipment, inventory shortages — that keep a plant off its production plan and delivery timelines.",
+      dash: "This is the dashboard's central finding: aggregate capacity utilization reads ~100%, but the bottleneck is fully isolated to one fab and two SKUs — a targeted fix, not a capacity expansion, per the forward-risk panel.",
+    },
+    {
+      title: "Inventory Management", status: "covered",
+      body: "Setting the type, timing, and frequency of stock orders against the production plan. Poor accuracy means paying to store surplus stock or rushing next-day shipments on a stockout — this segment alone is forecast to grow >9% CAGR.",
+      dash: "Weeks-of-supply and the finished-goods inventory trend are headline KPIs — and the dashboard flags a real signal: inventory has built for two years straight even while one fab runs short, pointing at allocation, not output.",
+    },
+    {
+      title: "Warranty Analysis", status: "roadmap",
+      body: "Moving past one-size-fits-all warranties by analyzing field failure data per product/component to rewrite coverage that balances cost against service — a segment growing >15% CAGR as companies manage warranty cost proactively.",
+    },
+    {
+      title: "Workforce Management", status: "roadmap",
+      body: "Balancing forecasting, staffing, and scheduling for operators, pickers, technicians, drivers, and supervisors against demand and production plans — cutting overtime and delay while improving schedule predictability for staff.",
+    },
+    {
+      title: "Product Development", status: "roadmap",
+      body: "Cutting the cost and time of iterative design with digital twins for real-world testing without physical prototypes, and generative AI to produce design alternatives against a spec — informed by demand and warranty data on where to focus R&D.",
+    },
+    {
+      title: "Customer Analysis", status: "roadmap",
+      body: "Reading order history, usage patterns, and post-sale interactions to forecast needs, personalize offers, and segment customers by value — plus mining reviews and return rates in real time to flag a bad production batch before it spreads.",
+    },
+  ];
+
+  const list = document.getElementById("usecaseList");
+  useCases.forEach((uc, i) => {
+    const st = STATUS[uc.status];
+    const item = document.createElement("div");
+    item.className = "usecase";
+
+    const num = document.createElement("div");
+    num.className = "num";
+    num.textContent = String(i + 1).padStart(2, "0");
+    item.appendChild(num);
+
+    const body = document.createElement("div");
+    const headRow = document.createElement("div");
+    headRow.className = "head-row";
+    const h3 = document.createElement("h3");
+    h3.textContent = uc.title;
+    const badge = document.createElement("span");
+    badge.className = "badge " + st.cls;
+    badge.innerHTML = `<span class="dot"></span>`;
+    badge.appendChild(document.createTextNode(st.label));
+    headRow.appendChild(h3);
+    headRow.appendChild(badge);
+    body.appendChild(headRow);
+
+    const p = document.createElement("p");
+    p.textContent = uc.body;
+    body.appendChild(p);
+
+    if (uc.dash) {
+      const dashRow = document.createElement("div");
+      dashRow.className = "in-dash";
+      dashRow.innerHTML = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h18M13 6l6 6-6 6"/></svg>`;
+      const span = document.createElement("span");
+      span.textContent = uc.dash;
+      dashRow.appendChild(span);
+      body.appendChild(dashRow);
+    }
+
+    item.appendChild(body);
+    list.appendChild(item);
+  });
+})();
+</script>
