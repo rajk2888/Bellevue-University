@@ -1,5 +1,5 @@
 {
-  "next_day": 13,
+  "next_day": 14,
   "total_days": 30,
   "notes": "next_day is the day number to send next. The daily trigger prompt increments this after each post is delivered."
 }
