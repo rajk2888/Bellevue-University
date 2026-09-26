@@ -298,42 +298,139 @@
     }, def);
   }
 
+  // Grade 1–2 engines use concrete numbers and kid words: no letters like a + b.
+  const hopList = (from, n, dir) => Array.from({ length: n }, (_, i) => from + dir * (i + 1)).join(", ");
+
   const addition = simpleEngine({
     id: "addition",
     text: (p) => `${p.a} + ${p.b}`,
-    generate(level) { const big = level === "easy" ? 9 : level === "medium" ? 20 : 99; return { engine: "addition", a: rnd(2, big), b: rnd(2, big) }; },
+    /** opts.maxSum keeps Grade 1 problems within 20; opts.twoDigit makes Grade 2 problems. */
+    generate(level, opts = {}) {
+      if (opts.twoDigit) {
+        for (;;) {
+          const a = rnd(11, level === "easy" ? 45 : 68), b = rnd(11, level === "easy" ? 44 : 29);
+          const regroup = (a % 10) + (b % 10) >= 10;
+          if (level === "easy" ? !regroup : level === "medium" ? regroup : true) if (a + b <= 99) return { engine: "addition", a, b };
+        }
+      }
+      const cap = opts.maxSum || 20;
+      const maxSum = level === "easy" ? Math.min(10, cap) : level === "medium" ? Math.min(15, cap) : cap;
+      for (;;) {
+        const a = rnd(1, 9), b = rnd(1, 9);
+        if (a + b <= maxSum && (level === "easy" || a + b > 5)) return { engine: "addition", a, b };
+      }
+    },
     parse(text) { const m = text.replace(/\s/g, "").match(/^(\d+)\+(\d+)(=\??)?$/); return m ? { engine: "addition", a: +m[1], b: +m[2] } : null; },
     solve(p) {
       const s = p.a + p.b;
       const steps = [];
       if (p.a < 10 && p.b < 10) {
         const big = Math.max(p.a, p.b), small = Math.min(p.a, p.b);
-        steps.push({ title: "Start with the bigger number", what: `Start at ${big}.`, why: "Counting on from the bigger number means fewer counts.", rule: "Addition can be done in any order: a + b = b + a.", mistake: "Starting to count from 1 every time. It works but is slow and easy to lose track.", again: `Put ${big} in your head, then count up ${small} more.`, expr: `${big} + ${small}`, visual: { kind: "counters", a: big, b: small } });
-        steps.push({ title: `Count on ${small}`, what: `${Array.from({ length: small }, (_, i) => big + i + 1).join(", ")}`, why: `Each count adds one. After ${small} counts we reach the total.`, rule: "Counting on", mistake: "Counting the starting number again.", again: `Use your fingers: hold up ${small} and say the next number for each one.`, expr: `${s}`, visual: { kind: "numberLine", from: 0, to: Math.max(20, s + 2), start: big, jumps: [small] }, ask: { prompt: `${big} + ${small} = ?`, answer: R(s), kind: "number" } });
+        steps.push({
+          title: "Start with the bigger number",
+          what: p.a === p.b ? `Both numbers are ${big}. Start at ${big}.` : `${big} is bigger than ${small}, so we start at ${big}.`,
+          why: "Starting with the bigger number means you have less to count.",
+          rule: `You can add in any order. ${p.a} + ${p.b} and ${p.b} + ${p.a} give the same answer.`,
+          mistake: "Counting from 1 every time. It takes a long time and it is easy to get mixed up.",
+          again: `Say ${big} in your head. Now you only need to count ${small} more.`,
+          expr: `${big} + ${small}`, visual: { kind: "counters", a: big, b: small },
+        });
+        steps.push({
+          title: `Count on ${small} more`,
+          what: `Start at ${big} and count up ${small}: ${hopList(big, small, 1)}.`,
+          why: `Each number you say is 1 more. Say ${small} number${small === 1 ? "" : "s"} after ${big}.`,
+          rule: `Hold up ${small} finger${small === 1 ? "" : "s"}. Put one down each time you say a number.`,
+          mistake: `Saying ${big} again. The first number you say is ${big + 1}.`,
+          again: `Hop ${small} time${small === 1 ? "" : "s"} forward on the number line, starting at ${big}.`,
+          expr: `${big} + ${small} = ?`, visual: { kind: "numberLine", from: 0, to: 20, start: big, jumps: [small] },
+          ask: { prompt: `Start at ${big} and count up ${small}. Where do you land?`, answer: R(s), kind: "number" },
+        });
+        steps.push({
+          title: "Check with the counters",
+          what: `Count all the dots: there are ${s}. So ${p.a} + ${p.b} = ${s}.`,
+          why: "Counting everything again is a good way to be sure.",
+          rule: "Two groups put together make one bigger group.",
+          mistake: "Skipping a dot or counting one twice. Touch each dot as you count.",
+          again: `${big} dots and ${small} more dots make ${s} dots.`,
+          expr: `${p.a} + ${p.b} = ${s}`, visual: { kind: "counters", a: big, b: small },
+        });
       } else {
-        const o = (p.a % 10) + (p.b % 10), t = Math.floor(p.a / 10) + Math.floor(p.b / 10);
-        steps.push({ title: "Add the ones", what: `${p.a % 10} + ${p.b % 10} = ${o}`, why: "We line up by place value and start with the ones column.", rule: "Add digits in the same place value.", mistake: "Adding a tens digit to a ones digit.", again: `The ones digits are ${p.a % 10} and ${p.b % 10}.`, expr: `${o}`, visual: { kind: "baseTen", numbers: [p.a, p.b] }, ask: { prompt: `${p.a % 10} + ${p.b % 10} = ?`, answer: R(o), kind: "number" } });
-        if (o >= 10) steps.push({ title: "Regroup ten ones", what: `${o} ones = 1 ten and ${o - 10} ones`, why: "Ten ones make one ten, so we carry 1 to the tens column.", rule: "10 ones = 1 ten", mistake: `Writing ${o} in the ones place.`, again: `Bundle 10 of the ${o} ones into a rod. ${o - 10} ones stay loose.`, expr: `carry 1`, visual: null });
-        steps.push({ title: "Add the tens", what: `${Math.floor(p.a / 10)} + ${Math.floor(p.b / 10)}${o >= 10 ? " + 1 (carried)" : ""} = ${t + (o >= 10 ? 1 : 0)} tens`, why: "Now add the tens column, including any ten we carried.", rule: "Add digits in the same place value.", mistake: "Forgetting the carried 1.", again: "Count the rods.", expr: `${s}`, visual: null, ask: { prompt: `${p.a} + ${p.b} = ?`, answer: R(s), kind: "number" } });
+        const oa = p.a % 10, ob = p.b % 10, o = oa + ob;
+        const ta = Math.floor(p.a / 10), tb = Math.floor(p.b / 10), t = ta + tb + (o >= 10 ? 1 : 0);
+        steps.push({
+          title: "Add the ones",
+          what: `Ones: ${oa} + ${ob} = ${o}.`,
+          why: "Line up the numbers and add the small cubes (ones) first.",
+          rule: "Add ones with ones, and tens with tens.",
+          mistake: "Adding a tens number to a ones number.",
+          again: `${p.a} has ${oa} ones. ${p.b} has ${ob} ones. Put them together.`,
+          expr: `${oa} + ${ob} = ${o}`, visual: { kind: "baseTen", numbers: [p.a, p.b] },
+          ask: { prompt: `How many ones? ${oa} + ${ob} = ?`, answer: R(o), kind: "number" },
+        });
+        if (o >= 10) steps.push({
+          title: "Make a new ten",
+          what: `${o} ones = 1 ten and ${o - 10} ones.`,
+          why: "When you have 10 or more ones, snap 10 of them together into one ten-stick.",
+          rule: "10 ones make 1 ten.",
+          mistake: `Writing ${o} in the ones place. Only one digit fits there.`,
+          again: `Take 10 of the ${o} small cubes and make a stick. ${o - 10} cubes are left.`,
+          expr: `${o} = 10 + ${o - 10}`, visual: null,
+        });
+        steps.push({
+          title: "Add the tens",
+          what: `Tens: ${ta} + ${tb}${o >= 10 ? " + 1 new ten" : ""} = ${t} tens. So ${p.a} + ${p.b} = ${s}.`,
+          why: "Now count the ten-sticks.",
+          rule: o >= 10 ? "Don't forget the new ten you made!" : "Add tens with tens.",
+          mistake: o >= 10 ? "Forgetting the new ten." : "Mixing up tens and ones.",
+          again: `Count the sticks by tens: ${Array.from({ length: t }, (_, i) => (i + 1) * 10).join(", ")}.`,
+          expr: `${p.a} + ${p.b} = ${s}`, visual: null,
+          ask: { prompt: `${p.a} + ${p.b} = ?`, answer: R(s), kind: "number" },
+        });
       }
       return { steps, answer: R(s), answerText: String(s) };
     },
-    hints: (p) => ["Start with the bigger number.", p.a + p.b > 10 ? "Try making a ten first." : "Count on one at a time.", `${Math.max(p.a, p.b)} + ${Math.min(p.a, p.b)}: count up ${Math.min(p.a, p.b)} from ${Math.max(p.a, p.b)}.`],
+    hints: (p) => p.a < 10 && p.b < 10
+      ? ["Which number is bigger? Start there.", `Start at ${Math.max(p.a, p.b)}.`, `Count up ${Math.min(p.a, p.b)} more: ${hopList(Math.max(p.a, p.b), Math.min(p.a, p.b), 1).split(", ")[0]}, …`]
+      : ["Add the ones first.", `Ones: ${p.a % 10} + ${p.b % 10}.`, `Then add the tens: ${Math.floor(p.a / 10)} + ${Math.floor(p.b / 10)}${(p.a % 10) + (p.b % 10) >= 10 ? " + 1 new ten" : ""}.`],
   });
 
   const subtraction = simpleEngine({
     id: "subtraction",
     text: (p) => `${p.a} − ${p.b}`,
-    generate(level) { const a = rnd(level === "easy" ? 5 : 11, level === "easy" ? 10 : 20); return { engine: "subtraction", a, b: rnd(1, a - 1) }; },
+    generate(level) {
+      const a = rnd(level === "easy" ? 4 : 11, level === "easy" ? 10 : level === "medium" ? 15 : 20);
+      return { engine: "subtraction", a, b: rnd(1, Math.min(9, a - 1)) };
+    },
     parse(text) { const m = text.replace(/\s/g, "").replace(/[−–]/g, "-").match(/^(\d+)-(\d+)(=\??)?$/); return m && +m[1] >= +m[2] ? { engine: "subtraction", a: +m[1], b: +m[2] } : null; },
     solve(p) {
       const d = p.a - p.b;
       return { answer: R(d), answerText: String(d), steps: [
-        { title: "Start at the bigger number", what: `Start at ${p.a} on the number line.`, why: "Subtracting means moving back, or taking away.", rule: "a − b: start at a, move b steps left.", mistake: "Subtracting in the wrong order. 15 − 6 is not 6 − 15.", again: `Put your finger on ${p.a}.`, expr: `${p.a} − ${p.b}`, visual: { kind: "numberLine", from: 0, to: Math.max(20, p.a + 1), start: p.a, jumps: [-p.b] } },
-        { title: `Count back ${p.b}`, what: `${p.a} − ${p.b} = ${d}`, why: `Each step back takes away one. After ${p.b} steps we land on ${d}.`, rule: "Counting back", mistake: "Counting the starting number as a step.", again: `Or count up from ${p.b} to ${p.a}: that is ${d} steps.`, expr: `${d}`, visual: { kind: "counters", a: p.a, b: 0, crossed: p.b }, ask: { prompt: `${p.a} − ${p.b} = ?`, answer: R(d), kind: "number" } },
+        { title: "Start with how many you have",
+          what: `We have ${p.a}. Put your finger on ${p.a}.`,
+          why: "Take away means we start with everything, then remove some.",
+          rule: `Start at ${p.a}, then hop back ${p.b}.`,
+          mistake: `Starting at ${p.b}. We start with how many we have: ${p.a}.`,
+          again: `Imagine ${p.a} cookies on a plate.`,
+          expr: `${p.a} − ${p.b}`, visual: { kind: "numberLine", from: 0, to: 20, start: p.a, jumps: [] } },
+        { title: `Hop back ${p.b}`,
+          what: `From ${p.a}, hop back ${p.b}: ${hopList(p.a, p.b, -1)}. We land on ${d}.`,
+          why: "Each hop back takes away 1.",
+          rule: `Hold up ${p.b} finger${p.b === 1 ? "" : "s"}. Put one down for each hop.`,
+          mistake: `Counting ${p.a} as a hop. The first hop lands on ${p.a - 1}.`,
+          again: `Or count up from ${p.b} to ${p.a}. That is ${d} hops.`,
+          expr: `${p.a} − ${p.b} = ?`, visual: { kind: "numberLine", from: 0, to: 20, start: p.a, jumps: [-p.b] },
+          ask: { prompt: `Start at ${p.a} and hop back ${p.b}. Where do you land?`, answer: R(d), kind: "number" } },
+        { title: "Check with the counters",
+          what: `Cross out ${p.b} of the ${p.a} dots. ${d} are left. So ${p.a} − ${p.b} = ${d}.`,
+          why: "The dots that are left are the answer.",
+          rule: "Take away leaves a smaller group.",
+          mistake: "Counting the crossed-out dots. Only count the dots that are left.",
+          again: `${p.a} cookies, ${p.b} eaten, ${d} left.`,
+          expr: `${p.a} − ${p.b} = ${d}`, visual: { kind: "counters", a: p.a, b: 0, crossed: p.b } },
       ] };
     },
-    hints: (p) => ["Which number do you start from?", `Start at ${p.a} and move back.`, `Count back ${p.b} steps from ${p.a}.`],
+    diagnose: (p, v) => (v.n === p.a + p.b && v.d === 1 ? "That is adding. Take away means we hop back, so the answer is smaller." : null),
+    hints: (p) => ["Which number do you start from?", `Start at ${p.a} and hop back.`, `Hop back ${p.b}: ${hopList(p.a, p.b, -1).split(", ")[0]}, …`],
   });
 
   const multiplication = simpleEngine({

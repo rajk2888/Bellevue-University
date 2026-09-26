@@ -71,4 +71,22 @@ t("every engine named by the curriculum exists; every grade 1-12 has topics", ()
   for (let g = 1; g <= 12; g++) assert.ok(C.topicsForGrade(g).length > 0, "grade " + g);
 });
 
+t("Grade 1-2 explanations use real numbers, not letters", () => {
+  const add = E.get("addition"), sub = E.get("subtraction");
+  for (let i = 0; i < 200; i++) {
+    const lvl = ["easy", "medium", "hard", "challenge"][i % 4];
+    const p = add.generate(lvl, { maxSum: 20 });
+    assert.ok(p.a + p.b <= 20 && p.a < 10 && p.b < 10, "grade 1 sums stay within 20");
+    const q = add.generate(lvl, { twoDigit: true });
+    assert.ok(q.a >= 10 && q.b >= 10 && q.a + q.b <= 99, "grade 2 two-digit sums stay under 100");
+    const r = sub.generate(lvl);
+    assert.ok(r.a - r.b >= 1 && r.a <= 20);
+    for (const sol of [add.solve(p), add.solve(q), sub.solve(r)]) for (const st of sol.steps)
+      for (const k of ["what", "why", "rule", "mistake", "again"]) assert.ok(!/\b[ab] [+−-] [ab]\b|\ba\b.*\bb\b steps/.test(st[k]), `${st.title}.${k}: ${st[k]}`);
+  }
+  const s = add.solve({ a: 8, b: 5 });
+  assert.match(s.steps[1].what, /9, 10, 11, 12, 13/);
+  assert.match(s.steps[0].rule, /8 \+ 5 and 5 \+ 8/);
+});
+
 console.log(`\n${n} tests passed`);

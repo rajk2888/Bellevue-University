@@ -62,6 +62,9 @@
     window.scrollTo({ top: 0 });
   }
 
+  // Grades 1–2 get simple mode: kid labels, pictures always shown, digits-only keypad.
+  const isSimple = (topic) => !!topic && topic.grade <= 2;
+
   // =====================================================================
   // Step-by-step explanation component
   // =====================================================================
@@ -69,7 +72,7 @@
    * Renders a solution one step at a time. When a step has `ask`, the student
    * is invited to try it before it is revealed.
    */
-  function Stepper(root, solution, { problemText, tryFirst = true, onDone } = {}) {
+  function Stepper(root, solution, { problemText, tryFirst = true, onDone, simple = false } = {}) {
     let i = 0;
     const revealed = new Set();
     const shownVisual = new Set();
@@ -92,6 +95,7 @@
             ${needsTry ? `
               <div class="try-first">
                 <p><strong>Your turn first:</strong> ${esc(st.ask.prompt)}</p>
+                ${simple && st.visual ? `<div class="visual-box">${V.render(st.visual)}</div>` : ""}
                 <form class="inline-answer" data-form="try">
                   <label class="sr-only" for="try-${root.id}-${i}">Your answer for step ${i + 1}</label>
                   <input id="try-${root.id}-${i}" class="answer-input" inputmode="text" autocomplete="off" placeholder="${st.ask.kind === "fraction" ? "e.g. 5/4 or 1 1/4" : "your answer"}">
@@ -101,17 +105,18 @@
                 <p class="feedback" role="status"></p>
               </div>` : `
               <div class="expr" aria-label="Current calculation">${esc(st.expr)}</div>
-              <dl class="step-parts">
-                <div><dt>What we are doing</dt><dd>${esc(st.what)}</dd></div>
+              ${simple && st.visual ? `<div class="visual-box">${V.render(st.visual)}</div>` : ""}
+              <dl class="step-parts ${simple ? "simple" : ""}">
+                <div><dt>${simple ? "What we do" : "What we are doing"}</dt><dd>${esc(st.what)}</dd></div>
                 <div><dt>Why</dt><dd>${esc(st.why)}</dd></div>
-                <div><dt>The rule</dt><dd class="rule">${esc(st.rule)}</dd></div>
-                <div class="mistake"><dt>Common mistake</dt><dd>${esc(st.mistake)}</dd></div>
+                <div class="tip"><dt>${simple ? "Tip" : "The rule"}</dt><dd class="${simple ? "" : "rule"}">${esc(st.rule)}</dd></div>
+                <div class="mistake"><dt>${simple ? "Watch out" : "Common mistake"}</dt><dd>${esc(st.mistake)}</dd></div>
               </dl>
               ${shownAgain.has(i) ? `<div class="again"><strong>Another way to think about it:</strong> ${esc(st.again)}</div>` : ""}
-              ${shownVisual.has(i) && st.visual ? `<div class="visual-box">${V.render(st.visual)}</div>` : ""}
+              ${!simple && shownVisual.has(i) && st.visual ? `<div class="visual-box">${V.render(st.visual)}</div>` : ""}
               <div class="step-tools">
                 <button class="btn soft" data-act="again" aria-pressed="${shownAgain.has(i)}">Explain This Step Again</button>
-                ${st.visual ? `<button class="btn soft" data-act="visual" aria-pressed="${shownVisual.has(i)}">${shownVisual.has(i) ? "Hide Picture" : "Show Me Visually"}</button>` : ""}
+                ${st.visual && !simple ? `<button class="btn soft" data-act="visual" aria-pressed="${shownVisual.has(i)}">${shownVisual.has(i) ? "Hide Picture" : "Show Me Visually"}</button>` : ""}
               </div>`}
           </div>
           ${i === n - 1 && !needsTry ? `<div class="answer-banner"><span>Answer</span><strong>${esc(solution.answerText)}</strong></div>` : ""}
@@ -162,6 +167,9 @@
   // =====================================================================
   function Workspace(root, { topic, engineId, problem, onResult, compact = false, title = "Try It Yourself" }) {
     const eng = E.get(engineId);
+    // Grades 1–2: whole-number answers only, so show a digits-only keypad and no scratch pad.
+    const simple = isSimple(topic);
+    const keys = simple ? ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "⌫", "clear"] : ["7", "8", "9", "/", "4", "5", "6", "−", "1", "2", "3", "space", "0", ".", "⌫", "clear"];
     const sol = eng.solve(problem);
     let hintN = 0, stepN = 0, usedHint = false, solved = false;
     const text = eng.text(problem);
@@ -169,7 +177,7 @@
 
     function render() {
       root.innerHTML = `
-        <div class="workspace ${compact ? "compact" : ""}">
+        <div class="workspace ${compact ? "compact" : ""} ${simple ? "simple" : ""}">
           <div class="ws-head">
             <h4>${esc(title)}</h4>
             <div class="ws-problem" aria-label="Problem">${esc(text)}${/=|\?$/.test(text) ? "" : " = ?"}</div>
@@ -178,12 +186,12 @@
             <form class="ws-answer" data-form="check">
               <label for="${uid}-ans">Your answer</label>
               <div class="ans-row">
-                <input id="${uid}-ans" class="answer-input big" autocomplete="off" inputmode="text" placeholder="${eng.answerKind === "fraction" ? "e.g. 1 1/4" : "type your answer"}" aria-describedby="${uid}-fb">
+                <input id="${uid}-ans" class="answer-input big" autocomplete="off" inputmode="text" placeholder="${simple ? "type a number" : eng.answerKind === "fraction" ? "e.g. 1 1/4" : "type your answer"}" aria-describedby="${uid}-fb">
               </div>
-              <div class="keypad" aria-label="Math keypad">
-                ${["7", "8", "9", "/", "4", "5", "6", "−", "1", "2", "3", "space", "0", ".", "⌫", "clear"].map((k) => `<button type="button" class="key" data-key="${k}" aria-label="${k === "⌫" ? "Delete" : k === "space" ? "Space (for mixed numbers)" : k === "/" ? "Fraction bar" : k}">${k === "space" ? "␣" : k === "clear" ? "C" : k}</button>`).join("")}
+              <div class="keypad ${simple ? "simple" : ""}" aria-label="Number keypad">
+                ${keys.map((k) => `<button type="button" class="key" data-key="${k}" aria-label="${k === "⌫" ? "Delete" : k === "space" ? "Space (for mixed numbers)" : k === "/" ? "Fraction bar" : k}">${k === "space" ? "␣" : k === "clear" ? "C" : k}</button>`).join("")}
               </div>
-              ${compact ? "" : `<label for="${uid}-work" class="work-label">Show your work (optional)</label><textarea id="${uid}-work" class="scratch" rows="3" placeholder="Write your steps here, e.g. 1/2 = 2/4"></textarea>`}
+              ${compact || simple ? "" : `<label for="${uid}-work" class="work-label">Show your work (optional)</label><textarea id="${uid}-work" class="scratch" rows="3" placeholder="Write your steps here, e.g. 1/2 = 2/4"></textarea>`}
             </form>
             <div class="ws-actions">
               <button class="btn primary" data-act="check">Check My Answer</button>
@@ -416,7 +424,7 @@
       : [["learn", "What You Will Learn"], ["concept", "The Idea"], ["story", "Real-World Story"], ["next", "Keep Going"]];
     const done = new Set();
     const isFractionAdd = topic.engine === "fractionAdd" || topic.engine === "fractionSub";
-    const example = eng ? (topic.id === "add-fractions" ? { engine: "fractionAdd", a: E.R(3, 4), b: E.R(1, 2), op: "+" } : eng.generate(topic.level || "medium")) : null;
+    const example = eng ? (topic.id === "add-fractions" ? { engine: "fractionAdd", a: E.R(3, 4), b: E.R(1, 2), op: "+" } : eng.generate(topic.level || "medium", topic.opts)) : null;
     const exSol = eng ? eng.solve(example) : null;
     const exText = eng ? eng.text(example) : "";
 
@@ -527,7 +535,7 @@
     if (isFractionAdd) wireFractionExplorer();
     if (topic.id === "add-fractions") wirePizzaStory();
 
-    const stepper = Stepper($("#lesson-stepper"), exSol, { problemText: exText });
+    const stepper = Stepper($("#lesson-stepper"), exSol, { problemText: exText, simple: isSimple(topic) });
     tutorCtx.onAction = (it) => {
       if (it.action === "visual") stepper.showVisual();
       if (it.action === "step") stepper.goTo(it.n === -1 ? exSol.steps.length - 1 : it.n - 1);
@@ -543,7 +551,7 @@
     cleanup.push(() => { tutorCtx.onAction = null; });
 
     // Try it yourself: a fresh problem at the student's level.
-    const tryProblem = topic.id === "add-fractions" ? { engine: "fractionAdd", a: E.R(2, 3), b: E.R(1, 6), op: "+" } : eng.generate(P.level(topic.id));
+    const tryProblem = topic.id === "add-fractions" ? { engine: "fractionAdd", a: E.R(2, 3), b: E.R(1, 6), op: "+" } : eng.generate(P.level(topic.id), topic.opts);
     Workspace($("#try-ws"), { topic, engineId: topic.engine, problem: tryProblem, onResult: (ok, o) => { const r = P.record(topic.id, ok, { usedHint: o.usedHint, title: topic.title }); r.newBadges.forEach(badgeToast); } });
 
     const practice = Practice($("#practice"), topic);
@@ -565,6 +573,8 @@
   }
 
   function learnGoals(t) {
+    if (t.goals) return t.goals;
+    if (t.grade <= 2) return [`What “${t.title.toLowerCase()}” means`, "How to do it one small step at a time", "How to check your answer with a picture"];
     if (t.id === "add-fractions") return ["Why fractions need the same denominator before you add", "How to find a least common denominator", "How to rename fractions without changing their value", "How to add and simplify, including mixed numbers"];
     return [`What “${t.title.toLowerCase()}” means and when you use it`, "The rule behind each step, not only the steps", "How to spot and fix the most common mistake", "How it shows up in real life"];
   }
@@ -663,7 +673,7 @@
     function next(level) {
       level = level || P.level(topic.id, topic.level || "medium");
       if (!P.get().topics[topic.id]?.level) P.setLevel(topic.id, level);
-      current = eng.generate(level);
+      current = eng.generate(level, topic.opts);
       note.textContent = `Level: ${LEVEL_LABEL[level]}${auto ? " (adjusts as you go)" : ""}`;
       syncSeg();
       Workspace(root.querySelector("#practice-ws"), {
@@ -708,7 +718,7 @@
     const eng = E.get(topic.engine);
     const levels = ["easy", "medium", "medium", "hard", "hard"];
     const qs = levels.map((lvl, k) => {
-      const p = topic.id === "add-fractions" && k === 0 ? { engine: "fractionAdd", a: E.R(1, 5), b: E.R(2, 5), op: "+" } : eng.generate(lvl);
+      const p = topic.id === "add-fractions" && k === 0 ? { engine: "fractionAdd", a: E.R(1, 5), b: E.R(2, 5), op: "+" } : eng.generate(lvl, topic.opts);
       const sol = eng.solve(p);
       const mc = k % 2 === 1;
       let options = null;
@@ -800,7 +810,11 @@
         out.innerHTML = `<div class="notice">I couldn't recognize that yet. Try the format of one of the examples above, like <code>3/4 + 1/2</code> or <code>2x + 5 = 17</code>. You can also search for the topic from the home page.</div>`;
         return;
       }
-      const eng = E.get(rec.engine), sol = eng.solve(rec.problem), topic = C.topic(rec.topicId);
+      const eng = E.get(rec.engine), sol = eng.solve(rec.problem);
+      // Small additions belong to Grade 1, so they get the Grade 1 look and language.
+      const topicId = rec.engine === "addition" && rec.problem.a < 10 && rec.problem.b < 10 ? "add-within-20" : rec.topicId;
+      const topic = C.topic(topicId);
+      if (topic) setBand(topic.grade);
       out.innerHTML = `
         <div class="solve-result">
           <p class="eyebrow">Recognized topic</p>
@@ -808,7 +822,7 @@
           <div class="demo-eq">${esc(eng.text(rec.problem))}</div>
           <div id="solve-stepper"></div>
         </div>`;
-      const st = Stepper($("#solve-stepper"), sol, { problemText: eng.text(rec.problem) });
+      const st = Stepper($("#solve-stepper"), sol, { problemText: eng.text(rec.problem), simple: isSimple(topic) });
       tutorCtx.onAction = (it) => {
         if (it.action === "visual") st.showVisual();
         if (it.action === "step") st.goTo(it.n === -1 ? sol.steps.length - 1 : it.n - 1);

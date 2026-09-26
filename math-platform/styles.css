@@ -264,6 +264,16 @@ main > section { margin-block: 48px; }
 .step-parts dd { margin: 0; }
 .step-parts .rule { font-family: var(--font-math); font-size: 0.95rem; }
 .step-parts .mistake dd { color: var(--bad); }
+/* Grades 1–2: stacked, larger, friendlier step layout */
+.step-parts.simple div { grid-template-columns: 1fr; gap: 2px; padding: 10px 14px; border-radius: 12px; background: var(--surface-2); }
+.step-parts.simple dt { text-transform: none; letter-spacing: 0; font-size: 0.95rem; color: var(--ink); font-family: var(--font-display); }
+.step-parts.simple dd { font-size: 1.12rem; }
+.step-parts.simple .tip { background: var(--primary-soft); }
+.step-parts.simple .mistake { background: var(--bad-soft); }
+.step-parts.simple .mistake dd { color: var(--ink); }
+.keypad.simple { grid-template-columns: repeat(3, 60px); }
+.keypad.simple .key { height: 54px; font-size: 1.3rem; }
+.workspace.compact .keypad.simple { grid-template-columns: repeat(6, 1fr); max-width: 380px; }
 .again { margin-top: 12px; background: var(--info-soft); padding: 10px 14px; border-radius: 10px; }
 .step-tools { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
 .step-nav { display: flex; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
