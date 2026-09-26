@@ -427,6 +427,7 @@ main > section { margin-block: 48px; }
 .toast.badge { border-left: 6px solid var(--star); }
 .toast.out { opacity: 0; }
 
+footer.site .credit { margin: 8px 0 0; color: var(--ink); }
 footer.site { max-width: 1180px; margin: 0 auto; padding-inline: 16px; padding-block: 24px 90px; color: var(--ink-2); font-size: 0.85rem; border-top: 1px solid var(--line); }
 
 /* ---------- visual models (SVG) ---------- */

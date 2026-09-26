@@ -1,4 +1,5 @@
 /* StepWise Math — curriculum registry.
+ * Developed by Rajkumar Kuppuswami.
  *
  * The curriculum is data, not code. Each grade band lists domains; each domain
  * lists topics. A topic may name an `engine` (see engine.js) that can generate

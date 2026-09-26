@@ -1,4 +1,5 @@
 /* StepWise Math — AI Math Tutor.
+ * Developed by Rajkumar Kuppuswami.
  *
  * Two providers behind one interface:
  *   1. Claude, when the page runs inside a Claude artifact viewer that grants

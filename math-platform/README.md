@@ -1,5 +1,7 @@
 # StepWise Math
 
+Developed by **Rajkumar Kuppuswami**.
+
 An interactive mathematics learning platform for Grades 1–12. It teaches
 **how and why** each step works instead of generating answers:
 

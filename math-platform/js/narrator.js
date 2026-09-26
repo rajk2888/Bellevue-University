@@ -1,4 +1,5 @@
 /* StepWise Math — narrated "Watch Explanation" lesson player.
+ * Developed by Rajkumar Kuppuswami.
  *
  * No video file is needed: scenes animate the equation and diagrams on a
  * digital whiteboard while captions (and text-to-speech where the browser

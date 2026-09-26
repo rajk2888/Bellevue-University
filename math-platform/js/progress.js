@@ -1,4 +1,5 @@
 /* StepWise Math — learner progress and adaptive difficulty.
+ * Developed by Rajkumar Kuppuswami.
  *
  * Version 1 keeps progress in this browser (localStorage). The store is
  * accessed only through this module, so a future version can swap in student,

@@ -1,4 +1,5 @@
 /* StepWise Math — step-by-step explanation engine.
+ * Developed by Rajkumar Kuppuswami.
  *
  * Each engine turns a problem into teaching steps. The contract:
  *   generate(difficulty)   -> problem          (difficulty: easy|medium|hard|challenge)

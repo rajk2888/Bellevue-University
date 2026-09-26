@@ -1,4 +1,5 @@
 /* StepWise Math — visual models.
+ * Developed by Rajkumar Kuppuswami.
  *
  * render(descriptor) returns an SVG/HTML string for a step's `visual`.
  * All colors come from CSS classes (see styles.css, "Visual models"), so the

@@ -1,4 +1,5 @@
 /* StepWise Math — application shell and views.
+ * Developed by Rajkumar Kuppuswami.
  *
  * Views: home, learn (grade → domain → topic), lesson, solve, progress, grownups.
  * Navigation uses plain hash tokens (#learn, #lesson.add-fractions) so the back
