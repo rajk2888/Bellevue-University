@@ -84,7 +84,7 @@ window.setup = (cfg) => {
     if (s.type === 'outro') el.innerHTML = `<div class="kicker">${esc(s.kicker || 'Daily AI news')}</div><div class="name">${esc(s.name)}</div><div class="underline"></div><div class="pill glow-c${s.cta.length > 20 ? " long" : ""}">${esc(s.cta)}</div>`;
     stage.appendChild(el);
     const chunks = [];
-    if (s.say) { const w = s.say.split(/\s+/); let cur = []; w.forEach(x => { cur.push(x); if (cur.length >= 6 || /[.!?,:]$/.test(x) && cur.length >= 3) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' ')); }
+    if (s.say) { const w = s.say.split(/\s+/); let cur = []; w.forEach(x => { cur.push(x); if (cur.length >= 6 || /[.!?,:]$/.test(x) && cur.length >= 3) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) { if (cur.length < 3 && chunks.length) chunks[chunks.length - 1] += ' ' + cur.join(' '); else chunks.push(cur.join(' ')); } }
     scenes.push({ el, s, start: t0, dur: s.dur || 2, chunks }); t0 += s.dur || 2;
   });
   total = t0; return total;
