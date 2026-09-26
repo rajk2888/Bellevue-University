@@ -12,6 +12,7 @@
   #bg { position:absolute; inset:0; }
   .scene { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0 90px; text-align:center; opacity:0; }
   .kicker { font-family:'Poppins','DejaVu Sans',sans-serif; font-weight:600; font-size:34px; letter-spacing:8px; text-transform:uppercase; color:var(--cyan); margin-bottom:36px; }
+  .big, .mid { text-wrap:balance; }
   .big { font-weight:900; font-size:112px; line-height:1.02; text-transform:uppercase; letter-spacing:-2px; }
   .mid { font-weight:800; font-size:84px; line-height:1.08; }
   .sub { font-family:'Poppins','DejaVu Sans',sans-serif; font-size:40px; line-height:1.35; color:#C9D3F2; margin-top:40px; }
@@ -29,8 +30,12 @@
   .qmark { font-weight:900; font-size:300px; line-height:1; }
   .name { font-weight:900; font-size:78px; }
   .underline { height:10px; border-radius:6px; background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink)); margin:30px auto 40px; }
-  .pill { display:inline-block; padding:26px 54px; border-radius:999px; border:3px solid var(--cyan); font-weight:800; font-size:52px; }
+  .pill { display:inline-block; padding:26px 54px; border-radius:999px; border:3px solid var(--cyan); font-weight:800; font-size:52px; white-space:nowrap; }
+  .pill.long { font-size:42px; padding:24px 44px; }
   .caret { display:inline-block; width:8px; height:.9em; background:var(--cyan); vertical-align:-0.1em; margin-left:6px; }
+  .promptbox { width:100%; text-align:left; background:rgba(255,255,255,.06); border:2px solid var(--cyan); border-radius:28px; padding:40px 44px; box-shadow:0 0 50px rgba(0,0,0,.35); }
+  .promptbox .lbl { font-family:'Poppins','DejaVu Sans',sans-serif; font-weight:600; font-size:26px; letter-spacing:4px; text-transform:uppercase; color:var(--purple); margin-bottom:18px; }
+  .promptbox .txt { font-family:'DejaVu Sans Mono',monospace; font-size:40px; line-height:1.4; min-height:4.2em; white-space:pre-wrap; }
   #progress { position:absolute; left:0; bottom:0; height:10px; background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink)); }
 </style>
 </head>
@@ -49,9 +54,19 @@ const clamp = (x, a=0, b=1) => Math.max(a, Math.min(b, x));
 const prog = (t, start, dur) => clamp((t - start) / dur);
 let CFG, scenes = [], total = 0;
 const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
-const COLORS = ['#00E5FF', '#A855F7', '#FF2E88', '#22C55E'];
+let COLORS = ['#00E5FF', '#A855F7', '#FF2E88', '#22C55E'];
+let BG = ['#1A1F4A', '#0B1020'];
 
 window.setup = (cfg) => {
+  if (cfg.theme) {
+    const th = cfg.theme, r = document.documentElement.style;
+    ['bg', 'cyan', 'purple', 'pink'].forEach(k => th[k] && r.setProperty('--' + k, th[k]));
+    if (th.bg) document.body.style.background = th.bg;
+    COLORS = [th.cyan || COLORS[0], th.purple || COLORS[1], th.pink || COLORS[2], COLORS[3]];
+    BG = [th.glow || BG[0], th.bg || BG[1]];
+    const glow = (cls, col) => { document.head.insertAdjacentHTML('beforeend', `<style>.${cls}{color:${col};text-shadow:0 0 18px ${col}cc,0 0 48px ${col}73}</style>`); };
+    glow('glow-c', COLORS[0]); glow('glow-p', COLORS[1]); glow('glow-k', COLORS[2]);
+  }
   CFG = cfg; const stage = document.getElementById('stage'); let t0 = 0;
   cfg.scenes.forEach((s, i) => {
     const el = document.createElement('div'); el.className = 'scene';
@@ -60,8 +75,9 @@ window.setup = (cfg) => {
     if (s.type === 'typewriter') el.innerHTML = `${kick}<div class="mid"><span class="tw"></span><span class="caret"></span></div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
     if (s.type === 'cards') el.innerHTML = `${kick}<div class="cards">${s.items.map((it, j) => `<div class="card"><div class="ico" style="background:${COLORS[j % 4]}">${esc(it.icon || it.title[0])}</div><div><div class="t">${esc(it.title)}</div><div class="d">${esc(it.desc || '')}</div></div></div>`).join('')}</div>`;
     if (s.type === 'tiles') el.innerHTML = `${kick}<div class="tiles">${s.items.map(it => `<div class="tile" style="background:${it.color}">${esc(it.letter)}<span>${esc(it.label)}</span></div>`).join('')}</div><div class="mid" style="font-size:64px;margin-top:50px">${esc(s.text)}</div>`;
+    if (s.type === 'prompt') el.innerHTML = `${kick}<div class="promptbox"><div class="lbl">${esc(s.label || 'Try this prompt')}</div><div class="txt"><span class="tw"></span><span class="caret"></span></div></div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
     if (s.type === 'question') el.innerHTML = `<div class="qmark glow-p">?</div><div class="mid" style="margin-top:30px">${esc(s.text)}</div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
-    if (s.type === 'outro') el.innerHTML = `<div class="kicker">${esc(s.kicker || 'Daily AI news')}</div><div class="name">${esc(s.name)}</div><div class="underline"></div><div class="pill glow-c">${esc(s.cta)}</div>`;
+    if (s.type === 'outro') el.innerHTML = `<div class="kicker">${esc(s.kicker || 'Daily AI news')}</div><div class="name">${esc(s.name)}</div><div class="underline"></div><div class="pill glow-c${s.cta.length > 20 ? " long" : ""}">${esc(s.cta)}</div>`;
     stage.appendChild(el);
     scenes.push({ el, s, start: t0, dur: s.dur || 2 }); t0 += s.dur || 2;
   });
@@ -72,8 +88,8 @@ window.setup = (cfg) => {
 function drawBg(t) {
   const c = document.getElementById('bg').getContext('2d'); const W = 1080, H = 1350;
   const g = c.createRadialGradient(W/2, H*0.35, 50, W/2, H*0.45, 950);
-  g.addColorStop(0, '#1A1F4A'); g.addColorStop(1, '#0B1020'); c.fillStyle = g; c.fillRect(0, 0, W, H);
-  c.save(); c.strokeStyle = 'rgba(0,229,255,0.16)'; c.lineWidth = 2; const hy = H*0.72;
+  g.addColorStop(0, BG[0]); g.addColorStop(1, BG[1]); c.fillStyle = g; c.fillRect(0, 0, W, H);
+  c.save(); c.strokeStyle = COLORS[0] + '29'; c.lineWidth = 2; const hy = H*0.72;
   for (let i = -12; i <= 12; i++) { c.beginPath(); c.moveTo(W/2 + i*20, hy); c.lineTo(W/2 + i*260, H); c.stroke(); }
   for (let k = 0; k < 14; k++) { const f = ((k + (t*0.6) % 1) / 14); const y = hy + Math.pow(f, 2.2) * (H - hy); c.globalAlpha = f; c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke(); }
   c.restore();
@@ -84,9 +100,9 @@ function drawBg(t) {
   }
   c.globalAlpha = 1;
   for (let i = 0; i < 4; i++) {
-    const y = 120 + i*50, p = ((t*0.35 + i*0.27) % 1); c.strokeStyle = 'rgba(168,85,247,0.25)'; c.lineWidth = 2;
+    const y = 120 + i*50, p = ((t*0.35 + i*0.27) % 1); c.strokeStyle = COLORS[1] + '40'; c.lineWidth = 2;
     c.beginPath(); c.moveTo(0, y); c.lineTo(W*0.3, y); c.lineTo(W*0.3 + 40, y + 40); c.lineTo(W, y + 40); c.stroke();
-    const x = p*W; c.fillStyle = '#FF2E88'; c.shadowColor = '#FF2E88'; c.shadowBlur = 20; c.beginPath(); c.arc(x, x < W*0.3 ? y : (x < W*0.3+40 ? y + (x - W*0.3) : y + 40), 5, 0, 7); c.fill(); c.shadowBlur = 0;
+    const x = p*W; c.fillStyle = COLORS[2]; c.shadowColor = COLORS[2]; c.shadowBlur = 20; c.beginPath(); c.arc(x, x < W*0.3 ? y : (x < W*0.3+40 ? y + (x - W*0.3) : y + 40), 5, 0, 7); c.fill(); c.shadowBlur = 0;
   }
 }
 
@@ -99,6 +115,7 @@ window.render = (t) => {
     el.style.opacity = Math.min(fin, fout); el.style.transform = '';
     if (s.type === 'stomp') { const p = ease.back(prog(lt, 0, 0.5)); el.querySelector('.big').style.transform = `scale(${2.2 - 1.2*p})`; const sub = el.querySelector('.sub'); if (sub) sub.style.opacity = prog(lt, 0.6, 0.4); }
     if (s.type === 'typewriter') { const n = Math.floor(s.text.length * prog(lt, 0.15, dur*0.55)); el.querySelector('.tw').textContent = s.text.slice(0, n); el.querySelector('.caret').style.opacity = (Math.floor(lt*3) % 2) ? 0 : 1; const sub = el.querySelector('.sub'); if (sub) sub.style.opacity = prog(lt, dur*0.7, 0.3); }
+    if (s.type === 'prompt') { const n = Math.floor(s.text.length * prog(lt, 0.3, dur*0.6)); el.querySelector('.tw').textContent = s.text.slice(0, n); el.querySelector('.caret').style.opacity = (Math.floor(lt*3) % 2) ? 0 : 1; const pb = el.querySelector('.promptbox'); const p = ease.out(prog(lt, 0, 0.4)); pb.style.transform = `translateY(${(1-p)*80}px)`; const sub = el.querySelector('.sub'); if (sub) sub.style.opacity = prog(lt, dur*0.8, 0.2); }
     if (s.type === 'cards') el.querySelectorAll('.card').forEach((cd, j) => { const p = ease.out(prog(lt, 0.2 + j*0.35, 0.5)); cd.style.opacity = p; cd.style.transform = `translateY(${(1-p)*120}px)`; });
     if (s.type === 'tiles') el.querySelectorAll('.tile').forEach((tl, j) => { const p = ease.back(prog(lt, 0.1 + j*0.25, 0.55)); const dx = (j - 1) * 400 * (1 - p); tl.style.transform = `translateX(${dx}px) rotate(${(1-p)*(j-1)*25}deg) scale(${0.4 + 0.6*p})`; tl.style.opacity = clamp(p*1.5); });
     if (s.type === 'question') { const q = el.querySelector('.qmark'); q.style.transform = `scale(${1 + 0.08*Math.sin(lt*6)}) rotate(${(1-ease.back(prog(lt,0,0.6)))*-40}deg)`; }

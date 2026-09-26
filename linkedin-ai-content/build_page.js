@@ -9,7 +9,7 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const firstComment = 'Sources 📚\n' + cfg.sources.map(s => `${s.name}: ${s.url}`).join('\n');
 const words = cfg.post.split(/\s+/).filter(Boolean).length;
 
-const html = `<title>Daily AI Post</title>
+const html = `<title>${esc(cfg.page_title || 'Daily AI Post')}</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=IBM+Plex+Sans:wght@400;600&family=IBM+Plex+Mono:wght@500&display=swap">
 <style>
   :root { color-scheme: dark; --bg:#0B1020; --panel:#121935; --line:#26305C; --ink:#EEF2FF; --muted:#9AA6CF;
@@ -45,8 +45,8 @@ const html = `<title>Daily AI Post</title>
 </style>
 <div class="wrap">
   <header>
-    <div><div class="eyebrow">Today's LinkedIn post</div><h1>${esc(cfg.topic)}</h1></div>
-    <div class="when">${esc(cfg.date)} · publish 8:00 AM CT</div>
+    <div><div class="eyebrow">${esc(cfg.eyebrow || "Today's LinkedIn post")}</div><h1>${esc(cfg.topic)}</h1></div>
+    <div class="when">${esc(cfg.date)} · publish ${esc(cfg.publish_time || '8:00 AM CT')}</div>
   </header>
   <div class="grid">
     <div class="media">
@@ -74,7 +74,7 @@ const html = `<title>Daily AI Post</title>
         <pre id="comment">${esc(firstComment)}</pre>
       </section>
       <section>
-        <h2>At 8:00 AM</h2>
+        <h2>At ${esc(cfg.publish_time || '8:00 AM CT')}</h2>
         <div class="steps">
           <div class="step"><b>1 · Post</b>Paste the text, attach the video, publish.</div>
           <div class="step"><b>2 · Comment</b>Add the first comment with the sources.</div>
@@ -85,6 +85,7 @@ const html = `<title>Daily AI Post</title>
   </div>
 </div>
 <script>
+  const cfg_slug = ${JSON.stringify(cfg.file_slug || 'linkedin-ai-post')};
   const note = document.getElementById('dl-note');
   document.querySelectorAll('[data-copy]').forEach(b => b.addEventListener('click', async () => {
     const el = document.getElementById(b.dataset.copy); const label = b.textContent;
@@ -92,7 +93,7 @@ const html = `<title>Daily AI Post</title>
     catch { const r = document.createRange(); r.selectNodeContents(el); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected, press Ctrl+C'; }
     setTimeout(() => (b.textContent = label), 1800);
   }));
-  const saveButtons = [['dl-video', 'post.mp4', 'linkedin-ai-post.mp4'], ['dl-cover', 'cover.png', 'linkedin-ai-cover.png']];
+  const saveButtons = [['dl-video', 'post.mp4', (cfg_slug + '.mp4')], ['dl-cover', 'cover.png', (cfg_slug + '-cover.png')]];
   (async () => {
     const downloads = await window.claude?.use?.('downloads');
     if (!downloads) { saveButtons.forEach(([id]) => (document.getElementById(id).hidden = true)); note.textContent = 'To save the video, open this page in the Claude app or on claude.ai.'; return; }

@@ -1,0 +1,38 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Today's Claude productivity tip",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Sep 26, 2026",
+  "topic": "Turn Claude into your Ops assistant with Projects",
+  "music_seed": 1,
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Stop re-explaining your job to AI every single morning. ⚙️\nOne Claude feature fixes that for operations teams: Projects.\n\nA Project is a workspace where every chat automatically inherits:\n\n📁 Your files: SOPs, process docs, templates, policies\n🧭 Your instructions: tone, format, role, rules\n💬 Its own chat history, kept separate from everything else\n\nHow I'd set up an \"Ops Assistant\" Project in 10 minutes:\n\n1️⃣ Create a Project called \"Ops Assistant\"\n2️⃣ Upload your top 5 SOPs and your report templates\n3️⃣ Add instructions like:\n\"You are my operations analyst. Follow our SOPs exactly. Answer in bullets. Flag risks and missing data. End with next actions and owners.\"\n4️⃣ Start every ops task inside that Project\n\nWhat it's great for:\n• Drafting SOP updates from rough notes\n• Turning meeting notes into action items with owners\n• Writing incident summaries in your standard format\n• Checking a new process against your existing policies\n\nWhy it matters:\nThe biggest time sink with AI isn't the answer. It's rebuilding context every time. Projects make the context permanent.\n\nWhat's the first SOP you'd upload? 👇\n\nFollow me for a daily Claude tip that saves you real time.\n\n#Claude #AI #Operations #Productivity #OperationalExcellence",
+  "hooks": [
+    "You're wasting 10 minutes a day re-explaining your job to AI. Here's the fix. ⚙️",
+    "The most underrated Claude feature for operations teams isn't a model. It's Projects.",
+    "Give Claude your SOPs once. Never paste them again. Here's how."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: What are projects?", "url": "https://support.claude.com/en/articles/9517075-what-are-projects" },
+    { "name": "Claude Academy: Introduction to projects", "url": "https://academy.claude.com/courses/claude-101/introduction-to-projects" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude tip for Ops", "text": "Stop repeating yourself to AI", "sub": "Use Claude Projects", "dur": 2.4 },
+    { "type": "cards", "kicker": "Every chat inherits", "dur": 3.0, "items": [
+      { "icon": "F", "title": "Your files", "desc": "SOPs, templates, policies" },
+      { "icon": "I", "title": "Your instructions", "desc": "Tone, format, rules" },
+      { "icon": "H", "title": "Its own history", "desc": "Kept separate and focused" }
+    ] },
+    { "type": "prompt", "kicker": "Project instructions", "label": "Paste this", "text": "You are my operations analyst.\nFollow our SOPs exactly.\nFlag risks. End with next actions.", "dur": 3.6 },
+    { "type": "tiles", "kicker": "Use it for", "text": "SOPs · Action items · Incident reports", "dur": 2.4, "items": [
+      { "letter": "S", "label": "SOPs", "color": "#0F766E" },
+      { "letter": "A", "label": "Actions", "color": "#B45309" },
+      { "letter": "R", "label": "Reports", "color": "#BE123C" }
+    ] },
+    { "type": "question", "text": "Which SOP would you upload first?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily Claude tips", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily Claude tips", "dur": 2.2 }
+  ]
+}
