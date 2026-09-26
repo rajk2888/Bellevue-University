@@ -32,10 +32,15 @@ async function main() {
   await browser.close();
 
   const ffmpeg = execFileSync('python3', ['-c', 'import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpeg_exe())']).toString().trim();
+  // Original synthwave backing track; music_seed varies the chords/arpeggio from day to day.
+  const wav = path.join(outDir, 'music.wav');
+  execFileSync('python3', [path.join(__dirname, 'music.py'), String(total), wav, String(cfg.music_seed ?? 0)]);
   const mp4 = path.join(outDir, 'post.mp4');
-  execFileSync(ffmpeg, ['-y', '-loglevel', 'error', '-framerate', String(FPS), '-i', path.join(framesDir, 'f%05d.png'),
-    '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', '-preset', 'medium', '-movflags', '+faststart', mp4]);
+  execFileSync(ffmpeg, ['-y', '-loglevel', 'error', '-framerate', String(FPS), '-i', path.join(framesDir, 'f%05d.png'), '-i', wav,
+    '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', '-preset', 'medium',
+    '-af', 'loudnorm=I=-16:TP=-2:LRA=11', '-ar', '44100', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', mp4]);
   fs.rmSync(framesDir, { recursive: true, force: true });
+  fs.rmSync(wav, { force: true });
   console.log(`wrote ${mp4} (${total}s) and ${path.join(outDir, 'cover.png')}`);
 }
 

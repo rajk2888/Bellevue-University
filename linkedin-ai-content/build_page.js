@@ -55,7 +55,7 @@ const html = `<title>Daily AI Post</title>
         <button id="dl-video" type="button">Save video (MP4)</button>
         <button id="dl-cover" type="button" class="ghost">Save cover image (PNG)</button>
       </div>
-      <div class="note" id="dl-note">1080×1350 · upload it with the post on LinkedIn. Add music there if you like.</div>
+      <div class="note" id="dl-note">1080×1350 · 15 s with original background music (tap the speaker icon to unmute). Upload it with the post on LinkedIn.</div>
     </div>
     <div class="col">
       <section>
