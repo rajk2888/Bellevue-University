@@ -55,7 +55,7 @@ const html = `<title>${esc(cfg.page_title || 'Daily AI Post')}</title>
         <button id="dl-video" type="button">Save video (MP4)</button>
         <button id="dl-cover" type="button" class="ghost">Save cover image (PNG)</button>
       </div>
-      <div class="note" id="dl-note">1080×1350 · 15 s with original background music (tap the speaker icon to unmute). Upload it with the post on LinkedIn.</div>
+      <div class="note" id="dl-note">1080×1350 · ${cfg.voice ? 'Narrated with captions and background music' : 'With original background music'} (tap the speaker icon to unmute). Upload it with the post on LinkedIn.</div>
     </div>
     <div class="col">
       <section>
@@ -73,7 +73,12 @@ const html = `<title>${esc(cfg.page_title || 'Daily AI Post')}</title>
         <div class="meta">Post this right after publishing. Links go here, not in the post.</div>
         <pre id="comment">${esc(firstComment)}</pre>
       </section>
-      <section>
+${cfg.voice ? `      <section>
+        <h2>Voiceover script</h2>
+        <div class="meta">What the narrator says, scene by scene. Captions are burned into the video for people watching on mute.</div>
+        <ol>${cfg.scenes.filter(s => s.say).map(s => `<li>${esc(s.say)}</li>`).join('')}</ol>
+      </section>
+` : ''}      <section>
         <h2>At ${esc(cfg.publish_time || '8:00 AM CT')}</h2>
         <div class="steps">
           <div class="step"><b>1 · Post</b>Paste the text, attach the video, publish.</div>
@@ -83,7 +88,7 @@ const html = `<title>${esc(cfg.page_title || 'Daily AI Post')}</title>
       </section>
     </div>
   </div>
-</div>
+${cfg.voice ? '  <p class="meta">Voiceover: Piper text-to-speech, LibriTTS voice (CC BY 4.0). Music: original, generated for this video.</p>\n' : ''}</div>
 <script>
   const cfg_slug = ${JSON.stringify(cfg.file_slug || 'linkedin-ai-post')};
   const note = document.getElementById('dl-note');

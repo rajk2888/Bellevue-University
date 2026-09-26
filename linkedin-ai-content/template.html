@@ -36,12 +36,16 @@
   .promptbox { width:100%; text-align:left; background:rgba(255,255,255,.06); border:2px solid var(--cyan); border-radius:28px; padding:40px 44px; box-shadow:0 0 50px rgba(0,0,0,.35); }
   .promptbox .lbl { font-family:'Poppins','DejaVu Sans',sans-serif; font-weight:600; font-size:26px; letter-spacing:4px; text-transform:uppercase; color:var(--purple); margin-bottom:18px; }
   .promptbox .txt { font-family:'DejaVu Sans Mono',monospace; font-size:40px; line-height:1.4; min-height:4.2em; white-space:pre-wrap; }
+  #cap { position:absolute; left:60px; right:60px; bottom:70px; display:flex; justify-content:center; pointer-events:none; }
+  #cap span { font-family:'Poppins','DejaVu Sans',sans-serif; font-weight:600; font-size:40px; line-height:1.3; color:#fff; background:rgba(0,0,0,.62); padding:14px 26px; border-radius:18px; text-align:center; box-decoration-break:clone; -webkit-box-decoration-break:clone; }
+  #cap span:empty { display:none; }
   #progress { position:absolute; left:0; bottom:0; height:10px; background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink)); }
 </style>
 </head>
 <body>
 <canvas id="bg" width="1080" height="1350"></canvas>
 <div id="stage"></div>
+<div id="cap"><span></span></div>
 <div id="progress"></div>
 <script>
 // Deterministic renderer: window.setup(config) builds scenes, window.render(t) draws frame at t seconds.
@@ -79,7 +83,9 @@ window.setup = (cfg) => {
     if (s.type === 'question') el.innerHTML = `<div class="qmark glow-p">?</div><div class="mid" style="margin-top:30px">${esc(s.text)}</div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
     if (s.type === 'outro') el.innerHTML = `<div class="kicker">${esc(s.kicker || 'Daily AI news')}</div><div class="name">${esc(s.name)}</div><div class="underline"></div><div class="pill glow-c${s.cta.length > 20 ? " long" : ""}">${esc(s.cta)}</div>`;
     stage.appendChild(el);
-    scenes.push({ el, s, start: t0, dur: s.dur || 2 }); t0 += s.dur || 2;
+    const chunks = [];
+    if (s.say) { const w = s.say.split(/\s+/); let cur = []; w.forEach(x => { cur.push(x); if (cur.length >= 6 || /[.!?,:]$/.test(x) && cur.length >= 3) { chunks.push(cur.join(' ')); cur = []; } }); if (cur.length) chunks.push(cur.join(' ')); }
+    scenes.push({ el, s, start: t0, dur: s.dur || 2, chunks }); t0 += s.dur || 2;
   });
   total = t0; return total;
 };
@@ -121,6 +127,16 @@ window.render = (t) => {
     if (s.type === 'question') { const q = el.querySelector('.qmark'); q.style.transform = `scale(${1 + 0.08*Math.sin(lt*6)}) rotate(${(1-ease.back(prog(lt,0,0.6)))*-40}deg)`; }
     if (s.type === 'outro') { el.querySelector('.underline').style.width = `${ease.out(prog(lt, 0.3, 0.6))*520}px`; el.querySelector('.pill').style.transform = `scale(${0.7 + 0.3*ease.back(prog(lt, 0.6, 0.5))})`; el.style.opacity = fin; }
   });
+  let cap = '';
+  scenes.forEach(({ s, start, dur, chunks }) => {
+    if (!chunks.length || t < start || t >= start + dur) return;
+    const vt = t - start - (s.voice_lead || 0); const len = s.voice_len || dur;
+    if (vt < 0 || vt > len + 0.3) return;
+    const total = chunks.reduce((a, c) => a + c.length, 0); let acc = 0;
+    for (const c of chunks) { acc += c.length; if (vt <= len * acc / total) { cap = c; break; } }
+    if (!cap) cap = chunks[chunks.length - 1];
+  });
+  document.querySelector('#cap span').textContent = cap;
   document.getElementById('progress').style.width = `${(t / total) * 100}%`;
 };
 </script>

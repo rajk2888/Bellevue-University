@@ -11,6 +11,16 @@ async function main() {
   const [cfgPath, outDir] = process.argv.slice(2);
   if (!cfgPath || !outDir) throw new Error('usage: node render.js <config.json> <out-dir>');
   const cfg = JSON.parse(fs.readFileSync(cfgPath, 'utf8'));
+  fs.mkdirSync(outDir, { recursive: true });
+  // Voiceover: scenes with a "say" line get narrated; the scene stretches to fit the line.
+  const VOICE_LEAD = 0.35;
+  const narrated = cfg.scenes.some(s => s.say);
+  const voiceLens = narrated
+    ? JSON.parse(execFileSync('python3', [path.join(__dirname, 'narrate.py'), cfgPath, outDir]).toString())
+    : {};
+  cfg.scenes.forEach((s, i) => {
+    if (voiceLens[i] != null) { s.voice_len = voiceLens[i]; s.voice_lead = VOICE_LEAD; s.dur = Math.max(s.dur || 2, voiceLens[i] + VOICE_LEAD + 0.45); }
+  });
   const framesDir = path.join(outDir, 'frames');
   fs.rmSync(framesDir, { recursive: true, force: true });
   fs.mkdirSync(framesDir, { recursive: true });
@@ -35,12 +45,19 @@ async function main() {
   // Original synthwave backing track; music_seed varies the chords/arpeggio from day to day.
   const wav = path.join(outDir, 'music.wav');
   execFileSync('python3', [path.join(__dirname, 'music.py'), String(total), wav, String(cfg.music_seed ?? 0)]);
+  const voiceFiles = [];
+  if (narrated) {
+    let t0 = 0; const specs = [];
+    cfg.scenes.forEach((s, i) => { if (voiceLens[i] != null) { const f = path.join(outDir, `voice_${i}.wav`); specs.push(`${f}@${t0 + VOICE_LEAD}`); voiceFiles.push(f); } t0 += s.dur; });
+    execFileSync('python3', [path.join(__dirname, 'mixdown.py'), wav, wav, ...specs]);
+  }
   const mp4 = path.join(outDir, 'post.mp4');
   execFileSync(ffmpeg, ['-y', '-loglevel', 'error', '-framerate', String(FPS), '-i', path.join(framesDir, 'f%05d.png'), '-i', wav,
     '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-crf', '20', '-preset', 'medium',
-    '-af', 'loudnorm=I=-16:TP=-2:LRA=11', '-ar', '44100', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', mp4]);
+    '-af', narrated ? 'loudnorm=I=-15:TP=-1.5:LRA=9' : 'loudnorm=I=-16:TP=-2:LRA=11', '-ar', '44100', '-c:a', 'aac', '-b:a', '192k', '-shortest', '-movflags', '+faststart', mp4]);
   fs.rmSync(framesDir, { recursive: true, force: true });
   fs.rmSync(wav, { force: true });
+  voiceFiles.forEach(f => fs.rmSync(f, { force: true }));
   console.log(`wrote ${mp4} (${total}s) and ${path.join(outDir, 'cover.png')}`);
 }
 

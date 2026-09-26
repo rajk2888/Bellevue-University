@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 1",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Sep 26, 2026",
+  "topic": "Chat, Cowork, or Claude Code: which one do I use?",
+  "music_seed": 11,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "New to Claude? Start here. 👋\nChat, Cowork, or Claude Code: which one should you actually use?\n\nHere's the simplest way I can explain it:\n\n💬 Chat = ask and get answers\nQuestions, drafts, brainstorming, explaining things.\n\n🗂️ Cowork = hand off a whole task\nYou describe the result. Claude plans the steps and does the work with your files and apps.\nThink: organizing a folder, turning notes into a report, cleaning up a spreadsheet.\n\n💻 Claude Code = build and fix software\nMade for coding work, and you still ask for things in plain English.\n\nA great first Cowork task:\n\"Turn my meeting notes into a one-page summary with action items and owners.\"\n\nOne habit that matters:\nCowork shows you its plan before it acts. Read it, approve it, and check the result, especially with important files.\n\nGood to know: Cowork is on paid Claude plans (Pro, Max, Team, Enterprise).\n\nWhy it matters:\nMost people only use AI as a chatbot. The real time savings start when you hand off the task, not just the question.\n\nWhat's one task you'd hand to Cowork this week? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #ClaudeCowork #Productivity #AIForBeginners",
+  "hooks": [
+    "Most people use Claude like a search box. Here's what they're missing. 👀",
+    "Chat, Cowork, Claude Code. Three ways to use Claude, explained in 60 seconds.",
+    "If AI feels confusing, start with this one simple difference."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" },
+    { "name": "Claude Code docs: Overview", "url": "https://code.claude.com/docs/en/overview" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Chat, Cowork, or Claude Code?", "sub": "Which one should you use?", "dur": 2.4,
+      "say": "Hi! If you're new to Claude, you've probably wondered: should I use chat, Cowork, or Claude Code? Let me make this really simple." },
+    { "type": "cards", "kicker": "Three ways to use Claude", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Chat", "desc": "Ask and get answers" },
+      { "icon": "2", "title": "Cowork", "desc": "Hand off a whole task" },
+      { "icon": "3", "title": "Claude Code", "desc": "Build and fix software" }
+    ], "say": "Think of it like this. Chat is for asking questions and getting answers. Cowork is for handing off a whole task. And Claude Code is for building software." },
+    { "type": "typewriter", "kicker": "Start with Cowork", "text": "Describe the result. Claude does the steps.", "dur": 2.6,
+      "say": "If you want to save real time, try Cowork. You describe the result you want, and Claude plans the steps and does the work for you." },
+    { "type": "prompt", "kicker": "Your first Cowork task", "label": "Try typing this", "text": "Turn my meeting notes into\na one-page summary with\naction items and owners.", "dur": 3.4,
+      "say": "Here's a great first task. Just type: turn my meeting notes into a one-page summary, with action items and owners." },
+    { "type": "tiles", "kicker": "Stay in control", "text": "Read the plan before Claude starts", "dur": 2.6, "items": [
+      { "letter": "1", "label": "Read plan", "color": "#0F766E" },
+      { "letter": "2", "label": "Approve", "color": "#B45309" },
+      { "letter": "3", "label": "Check result", "color": "#BE123C" }
+    ], "say": "One habit that really matters. Claude shows you its plan first. Read it, approve it, and always check the result." },
+    { "type": "typewriter", "kicker": "And Claude Code?", "text": "Made for software. Asked in plain English.", "dur": 2.6,
+      "say": "And Claude Code? It's made for software work. The nice part is, you still ask for things in plain English." },
+    { "type": "question", "text": "What task would you hand to Cowork?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So, what's one task you'd hand to Cowork this week? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
