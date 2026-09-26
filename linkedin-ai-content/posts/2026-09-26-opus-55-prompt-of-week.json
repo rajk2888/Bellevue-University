@@ -1,0 +1,32 @@
+{
+  "date": "Saturday, Sep 26, 2026",
+  "topic": "Prompt of the week: turn a long report into a one-page brief (Claude Opus 5.5)",
+  "music_seed": 269,
+  "post": "AI models can now read a stack of documents at once. 📚\nHere's the prompt I'd use to actually put that to work.\n\nThis week Anthropic released Claude Opus 5.5:\n\n⚡ Over 30% faster output than Opus 5\n💰 About 40% cheaper to run on typical workloads\n📏 A 1-million-token context window (roughly several long books' worth of text)\n\nBigger memory only helps if you ask the right question.\nSo here's my prompt of the week 👇\n\n\"You are my chief of staff. Read the attached report.\nGive me:\n1. The 5 points that matter most, in plain English\n2. Any numbers or claims I should double-check\n3. Risks or open questions\n4. 3 decisions I need to make, with a recommendation for each\nKeep it to one page.\"\n\nWhy it matters:\nMost of us don't need AI to write more. We need it to help us read less and decide faster.\n\nPractical takeaway:\nTry it on the longest document in your inbox this week. Then compare its summary with what you'd have written. Always verify the numbers.\n\nWhat's the longest document you'd hand to AI first? 👇\n\nFollow for daily AI news.\n\n#AI #ArtificialIntelligence #Claude #PromptEngineering #Productivity",
+  "hooks": [
+    "Stop reading 80-page reports. Use this prompt instead. 👇",
+    "AI just got faster and cheaper. Here's one prompt to get real value from it this weekend.",
+    "The best AI prompt I know for busy people fits in 5 lines."
+  ],
+  "sources": [
+    { "name": "9to5Mac", "url": "https://9to5mac.com/2026/09/22/anthropic-upgrades-claude-with-new-opus-5-5-model-details-here/" },
+    { "name": "Yahoo Finance", "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-claude-5-5-release-185148663.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Prompt of the week", "text": "Read less. Decide faster.", "sub": "One prompt for long reports", "dur": 2.4 },
+    { "type": "cards", "kicker": "New: Claude Opus 5.5", "dur": 3.0, "items": [
+      { "icon": "F", "title": "30%+ faster", "desc": "Output speed vs Opus 5" },
+      { "icon": "$", "title": "~40% cheaper", "desc": "On typical workloads" },
+      { "icon": "M", "title": "1M-token context", "desc": "Long documents at once" }
+    ] },
+    { "type": "typewriter", "kicker": "The prompt", "text": "You are my chief of staff.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Ask it for", "text": "Key points · Risks · Decisions", "dur": 2.6, "items": [
+      { "letter": "5", "label": "Key points", "color": "#2563EB" },
+      { "letter": "!", "label": "Risks", "color": "#DB2777" },
+      { "letter": "3", "label": "Decisions", "color": "#16A34A" }
+    ] },
+    { "type": "question", "text": "What report would you hand to AI?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
