@@ -1,0 +1,152 @@
+---
+name: literature-check
+description: >-
+  Verify an external mathematical, statistical, or machine-learning theorem, empirical finding, citation, notation translation, source-dependent implication, or bounded novelty claim, and produce APA 7 reference records, reusing authorized project-local source copies when available. Use when a proof relies on a named paper/result, when exact hypotheses or versions matter, when the user asks whether a claim is known, or when an authenticated mathematical source should be cached for later checks. Prefer primary sources and record the search scope. Do not treat snippets or failed searches as proof or global novelty.
+---
+
+# Mathematical literature check
+
+Verify the exact implication, not merely the presence of related terminology.
+
+## Define the source question
+
+State:
+
+- the project claim or arrow requiring support;
+- likely source/result and acceptable source class;
+- required coefficients, grading, variance, finiteness, equivariance,
+  normalization, version, and range;
+- whether the task is theorem verification, attribution, notation translation,
+  overlap classification, or bounded novelty search.
+- for overlap or novelty, the terminology variants, older vocabulary, adjacent
+  fields, date horizon and citation graph likely to contain the same result.
+
+Read an existing literature-ledger entry and the dependent proof before
+searching when they exist.
+
+## Acquire and authenticate
+
+1. When the project permits local source retention, query its literature cache
+   by exact DOI, arXiv version, ISBN, or other stable identifier before fetching.
+   A different or unversioned arXiv copy is only a discovery candidate.
+2. Prefer the published paper, official preprint, author manuscript, formal
+   documentation, or another primary source.
+3. Record title, authors, publication/preprint identifier, exact version or
+   revision date, stable locator, and date checked.
+4. Use abstracts, reviews, search snippets, lecture notes, and citation chains
+   only as discovery aids unless they are themselves the result being cited.
+5. For a changing preprint, verify that theorem numbering and hypotheses belong
+   to the version actually used by the project.
+6. Respect confidentiality and copyright; do not upload or reproduce licensed
+   or private material without authorization.
+7. For machine-learning and statistics sources, distinguish the arXiv version,
+   the OpenReview camera-ready, and the published proceedings or journal
+   version (e.g., NeurIPS, ICML, ICLR, AISTATS, JMLR, JASA, Annals of
+   Statistics). Theorem numbers, hypotheses, and reported results can differ
+   between them; record which one the project uses.
+8. Subscription sources reached through the Bellevue University Library
+   databases use the user's own authenticated access. Never request, store, or
+   handle library credentials; ask the user to supply the PDF or excerpt when
+   access is needed.
+
+For an empirical result, extract the dataset, sample, design, metric, effect
+size, and uncertainty the source reports, not only its headline conclusion.
+Note whether code and data are available and whether the result has been
+replicated.
+
+After acquiring an authorized source, add it to the cache at a natural
+checkpoint so later agents can reuse both the PDF and any extracted text. Read
+[source-cache.md](references/source-cache.md) before initializing or modifying
+the cache. Cache hits save acquisition work; they do not authenticate the
+source or verify its mathematical content.
+
+## Extract and translate
+
+Record the exact theorem, definition, or formula used, including all hypotheses,
+exceptions, coefficient restrictions, source/target categories, variance,
+actions, grading, and completion assumptions. Note whether the source proves,
+sketches, states, conjectures, or only motivates it.
+
+Write an explicit notation dictionary to the project conventions. Verify the
+project implication one arrow at a time. A citation supplies no unstated
+functor, equivalence, coherence datum, normalization, or limiting argument.
+
+Separate **source authentication**, **theorem extraction**, and **application
+to this project**. Record which of these was actually checked. A correctly
+identified paper can still be inapplicable. Treat objectwise, natural,
+equivariant, filtered, integral and completed statements as different contracts
+until a comparison argument supplies the missing structure.
+
+Use [source-record.md](references/source-record.md) for durable entries.
+
+## Novelty and overlap
+
+Run discovery and verification as separate passes. In discovery, search the
+exact statement together with synonyms, older terminology, equivalent
+formulations and the names of the objects/invariants rather than only the
+project's current title. Follow backward references from the closest source and
+forward citations when available; inspect relevant authors' earlier work and
+bibliographies in neighboring fields. Use more than one suitable index when
+feasible and record which coverage was unavailable.
+
+In verification, read the strongest candidates in their primary versions and
+compare exact hypotheses and conclusion level. A title/abstract that appears
+adjacent can still contain the needed theorem, while matching terminology can
+hide an inapplicable result. For a material “apparently new” claim, use a second
+search strategy or fresh reviewer when available; disclose when the same searcher
+performed both passes.
+
+Classify only as:
+
+- known verbatim;
+- known after translation of notation;
+- formal corollary not stated;
+- new proof of a known statement;
+- partial or adjacent result only;
+- apparently new within the stated search scope;
+- conjectural or explicitly open in a checked source.
+
+For “apparently new,” report databases, exact and synonym queries, date range,
+languages or fields searched, backward/forward citation chains followed, the
+second-pass method, and important blind spots. A failed search is never a global
+novelty theorem. Later-discovered overlap is a correction to append and propagate,
+not a reason to rewrite the earlier scoped search as though it never occurred.
+
+## Record and report
+
+Update the project's literature ledger only when authorized and when the check
+changes a dependency or attribution. Update status/log only if live research
+state changes.
+
+When a `.mathbox/` ledger is in use, record a source evidence event through the
+available `research-state` skill, pinning the durable extraction/translation
+report. If a source version or interpretation changes, examine dependent claims
+and record a correction; do not overwrite the old check or silently refresh a
+hash. The cache's content hash alone is not a verified-source event.
+If persistence is authorized but this host cannot execute or write, use the
+`research-state` deferred-handoff contract for a new extraction report and
+source evidence proposal; state that local ingest has not recorded them.
+
+Report:
+
+1. exact source and version, plus the cache content hash and extraction
+   status when the source was retained locally;
+2. exact result used;
+3. notation/hypothesis translation;
+4. whether the implication is valid;
+5. overlap/novelty classification and search boundary;
+6. unresolved source ambiguity or missing implication.
+
+Return **unverified** or **conditional** when the exact source is unavailable,
+the translation fails, or the needed implication is neither stated nor formal.
+
+## Citations for coursework and the dissertation
+
+Unless the project names another style, format references in APA 7th edition.
+Build every reference from the authenticated record: authors, year, title,
+venue, volume/issue, pages or article number, and DOI (as
+`https://doi.org/...`) when one exists. Never invent or complete a missing
+author, year, DOI, page, or quotation from memory. When a citation cannot be
+verified, keep it in the draft marked exactly `[SOURCE VERIFICATION REQUIRED]`
+and list it in the report. Check that every in-text citation has a reference
+entry and every reference entry is cited.

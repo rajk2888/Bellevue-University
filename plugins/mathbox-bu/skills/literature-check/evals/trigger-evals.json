@@ -1,0 +1,38 @@
+[
+  {
+    "query": "Verify that Theorem 4.3 of this paper has the hypotheses we need.",
+    "should_trigger": true
+  },
+  {
+    "query": "Search whether this result is known and bound the novelty claim.",
+    "should_trigger": true
+  },
+  {
+    "query": "Cache this authenticated arXiv PDF so later source checks can reuse it.",
+    "should_trigger": true
+  },
+  {
+    "query": "Prove the lemma directly without literature.",
+    "should_trigger": false
+  },
+  {
+    "query": "Format this BibTeX entry.",
+    "should_trigger": false
+  },
+  {
+    "query": "Verify the exact source theorem in a read-only web host and return an authorized deferred source evidence record.",
+    "should_trigger": true
+  },
+  {
+    "query": "Verify that the NeurIPS paper actually proves the convergence rate I cite, and give me the APA 7 reference.",
+    "should_trigger": true
+  },
+  {
+    "query": "Is this double machine learning result already known in the econometrics literature?",
+    "should_trigger": true
+  },
+  {
+    "query": "Reformat my bibliography font.",
+    "should_trigger": false
+  }
+]

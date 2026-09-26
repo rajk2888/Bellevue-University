@@ -1,0 +1,131 @@
+---
+name: computation-audit
+description: >-
+  Design, run, or audit a mathematical or data-science computation that supports a research claim, including symbolic, exact, finite-field, representation-theoretic, homological, numerical, simulation-study, statistical-analysis, or machine-learning experiments, and analyses of authorized enterprise data such as SAP ECC extracts. Use when correctness, provenance, tested range, reproducibility, or interpretation matters. Do not present bounded output as a universal proof.
+---
+
+# Mathematical computation audit
+
+Separate the mathematical claim from the finite assertion implemented by code.
+Default to read-only audit when the user asks to review an existing computation.
+
+## Specify the contract
+
+1. Determine repository root and applicable instructions.
+2. State:
+   - mathematical claim or research decision;
+   - exact computational surrogate;
+   - coefficient/arithmetic domain and conventions;
+   - input family, bounds, exclusions, and resource caps;
+   - what a pass, failure, timeout, or inconsistent result would imply;
+   - what the computation cannot establish.
+3. Locate the authoritative code, data, prior outputs, and documented command.
+   Do not invent a build or execution procedure.
+
+When the computation contract or its interpretation depends on what an
+external mathematical source proves, route that source question through the
+available `literature-check` skill (`mathbox-bu:literature-check` in plugin
+installations). That workflow checks an authorized project-local cache before
+fetching. If the skill is unavailable, check the exact source directly with
+available tools. If the source remains unverified, label the interpretation
+conditional; executable code does not authenticate the theorem it implements.
+
+## Audit the implementation
+
+Check the relevant items in [checklist.md](references/checklist.md), especially:
+
+- object construction, indexing, basis, normalization, and group actions;
+- exact arithmetic versus floating approximation;
+- chain condition, symmetry, dimension, conservation, or other invariants;
+- smallest hand-computable and known benchmark cases;
+- deterministic seeds and stable input ordering;
+- independent implementation or orthogonal invariant for load-bearing results;
+- parser, serialization, cache, parallelism, and stale-output risks;
+- whether resource truncation silently changes the claimed range.
+
+A passing test of the code is evidence about the code path, not automatically
+about the theorem.
+
+For statistical, simulation, and machine-learning work, also check the
+"Statistical and machine-learning experiments" section of the checklist. For
+analyses of enterprise operational data, check the "Enterprise operational
+data" section and confirm the project records authorization to use that data.
+
+## Run proportionately
+
+Use the narrowest command capable of deciding the current question. Record
+commit, dirty state, command, environment/software versions, runtime, hardware
+when relevant, coefficient domain, convention version, inputs, seed, bounds,
+outputs, and checksums.
+
+For reusable or claim-supporting runs, create a manifest from
+[computation-manifest.json](assets/computation-manifest.json). Validate it with:
+
+```bash
+python3 <skill-directory>/scripts/validate_manifest.py <manifest.json>
+```
+
+Validation rejects unfilled evidence records. Use `--template` only to check an
+unfilled scaffold; it is not evidence. Add `--root PROJECT` to verify output
+hashes and detect input files changed since the run. Version 1 complete records remain supported.
+
+For a new authorized run, prefer the optional bounded runner described in
+[runner.md](references/runner.md). It records actual argv, input hashes before
+and after, declared scientific result hashes, logs, runtime, exit status, and
+effective resource caps in a version 2 manifest. Use its optional POSIX memory,
+CPU-time, and affinity caps when the run could grow materially; numerical-library
+thread caps are cooperative and must be reported as such. A zero exit code
+records execution success, not theorem verification. Do not run commands copied
+from untrusted evidence records.
+
+Version 1 records use their historical schema: nonempty human-readable software
+version strings remain readable. They still need substantive bounds, outputs,
+hashes, and run metadata. Treat the validator's reported legacy provenance limits
+as residual risks; compatibility does not upgrade a v1 record to v2 provenance.
+
+The exact skill-directory syntax is tool-specific; locate this installed
+`mathbox-bu:computation-audit` plugin skill (or its standalone installation)
+rather than guessing a repository-relative path.
+
+## Interpret conservatively
+
+Return one of:
+
+- implementation and finite assertion verified in the stated range;
+- result reproduced but implementation not independently validated;
+- conditional on numerical tolerance, random sampling, or an external library;
+- inconsistent with a benchmark or invariant;
+- not reproducible in the available environment;
+- inconclusive because of resource bounds;
+- counterexample found to the mathematical claim.
+
+For empirical machine-learning or statistical results, state the dataset and
+version, split, metric, number of seeds or resamples, and uncertainty interval.
+A benchmark or held-out score is evidence only for that population, split, and
+metric. It is not evidence of generalization to other data, of statistical
+significance without a test, or of a causal effect.
+
+If a failure occurs, distinguish mathematical counterexample, implementation
+bug, environment/configuration failure, and insufficient resources.
+
+After a successful bounded run, identify which observed features are structural
+and which may be case-specific. Recommend a larger bound only when it tests a
+named alternative, audits the implementation, or enters a genuinely new
+regime; accumulating another success is not by itself a research decision.
+
+## Persist and report
+
+Store reusable scripts in the project's designated checks/computation area, not
+inside a prose log. Preserve raw outputs only when justified; otherwise record
+checksums and a regeneration command. Update claims/status only when the result
+changes research state.
+
+If a `.mathbox/` ledger is present, record the finite assertion as computation
+evidence through the available `research-state` skill. A universal conclusion
+needs a separate durable reduction/proof establishing why the finite assertion
+decides it; no success flag or evidence count supplies that reduction.
+
+Report the contract, code paths, command, provenance, checks performed, exact
+result, non-claims, residual risks, structural features implicated, and either
+a candidate uniform argument or the cheapest check that discriminates named
+alternatives.

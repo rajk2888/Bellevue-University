@@ -1,0 +1,108 @@
+---
+name: manuscript-integrate
+description: >-
+  Integrate an already validated mathematical result, correction, citation, or referee response into an authoritative LaTeX manuscript, dissertation chapter, or research paper while preserving hypotheses, evidence status, notation, and dependencies. Use only when the user explicitly requests manuscript integration. Do not use to invent a proof or to perform routine copyediting.
+---
+
+# Manuscript integration
+
+Transfer validated mathematics into the live manuscript. Integration does not
+supply mathematical validation or human review.
+
+## Preconditions
+
+1. Determine repository root, inspect the worktree, and read applicable
+   instructions.
+2. Resolve the authoritative manuscript, proof source, current status/claims,
+   conventions, literature ledger, bibliography, and verification commands.
+3. Identify the exact validated result and its evidence/review status.
+   If `.mathbox/` is present, use the available `research-state` workflow to
+   check the current claim revision, artifact freshness and dependency closure.
+   Read the proof itself; a generated `proved` label does not validate it.
+4. Stop if the source proof conflicts with current status or the target
+   manuscript is ambiguous.
+5. If a required external theorem has not been checked, pause integration and
+   route that source question through the available `literature-check` skill
+   (`mathbox-bu:literature-check` in plugin installations). That workflow checks an
+   authorized project-local cache before fetching. Resume only after the exact
+   source implication is verified. If the skill is unavailable, perform the
+   exact-source check directly. If the source remains unavailable, keep that
+   result conditional rather than supplying validation here. Continue any
+   independent, already validated integration work the user authorized.
+
+## Build the integration map
+
+State:
+
+- source theorem/lemma/correction and durable location;
+- target section and theorem hierarchy;
+- exact hypotheses, coefficient regime, grading, signs, variance, range, and
+  exceptions;
+- notation translation;
+- external dependencies and citations;
+- downstream statements, introduction claims, examples, and cross-references
+  affected;
+- project maps, theorem inventories, source guides, status files and verification
+  benchmarks whose meaning depends on the changed scope;
+- validation plan and human-review obligation.
+
+## Edit
+
+- Change the smallest coherent manuscript region.
+- Keep hypotheses adjacent to the claim and preserve every limitation.
+- Distinguish internal proof, external input, computation, heuristic, and open
+  question.
+- Do not make a publishable theorem depend accidentally on an optional stronger
+  conjecture or unfinished route.
+- Preserve historical source files; correct the live manuscript and record the
+  correction rather than rewriting chronology.
+- Update notation, theorem names/numbers, references, citations, introduction,
+  comparison, and outlook only where the result requires it.
+- For a scope removal or restriction, search every project-declared dependent
+  view before claiming consistency. Update authorized dependents together; if a
+  protected or separately governed file cannot be changed, mark the exact
+  conflict in the live view and do not report the propagation complete.
+- Do not edit generated output or bibliography entries without checking the
+  project's source convention.
+
+Use [integration-checklist.md](references/integration-checklist.md) for
+load-bearing theorem changes.
+
+## Synchronize durable state
+
+When the mathematical state changes, update the durable proof, claims/status,
+one standalone research record, and its compact history-index entry together.
+Use the project-designated paths, or `research/records/` and `RESEARCH_LOG.md`
+by default. Do not put route details in the index, rewrite indexed history, or
+log routine prose or formatting. Keep any specialist or human-review obligation
+open until it has actually occurred.
+
+## Verify
+
+1. Perform a conservative pass with the `mathbox-bu:proofread-math` plugin skill
+   over the changed TeX and needed context.
+2. Run the documented targeted mathematical verifier.
+3. Run the appropriate out-of-tree or canonical manuscript build.
+4. Inspect undefined references/citations, warnings in the changed region,
+   theorem numbering, bibliography changes, and `git diff --check`.
+5. Search for the superseded statement, scope and terminology across declared
+   dependents; classify each remaining occurrence as current, historical or
+   stale.
+6. Review the final diff for unintended semantic or generated-file changes.
+
+## Dissertation and course-paper deliverables
+
+When the target is a Bellevue University dissertation chapter or course paper,
+follow the template, chapter structure, and citation style the project charter
+records from the program, instructor, or committee; do not infer them from a
+generic template. Keep the student's authorship and voice: integrate validated
+results and wording the student has approved, not new argumentative prose. If
+the charter records an AI-use disclosure requirement, list what AI assistance
+contributed to this integration so the student can disclose it.
+
+## Report
+
+Report the integrated result, files changed, source evidence, claim/status
+changes, commands and warnings, unresolved mathematical or manuscript risk,
+remaining human (advisor/committee) review, and any AI-assistance disclosure
+note required by the charter.

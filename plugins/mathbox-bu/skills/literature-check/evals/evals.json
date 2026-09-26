@@ -1,0 +1,90 @@
+{
+  "skill_name": "literature-check",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "A draft cites an abstract as proving an integral theorem, but the available theorem statement may only be rational. Verify the exact implication and report what remains conditional.",
+      "expected_output": "Seeks the primary theorem statement, records coefficient hypotheses and version, and refuses to let an abstract supply the integral implication.",
+      "assertions": [
+        "Distinguishes primary source from abstract",
+        "Checks coefficient regime explicitly",
+        "Does not invent the missing integral statement",
+        "Returns a conditional or incompatible verdict if needed"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Verify Theorem 2.7 of arXiv:2401.00001v3. This repository permits public PDFs to be retained, and its local literature cache already contains v2 of the preprint.",
+      "expected_output": "Queries the project-local cache before fetching, treats the cached v2 as a version candidate rather than an exact hit, obtains or requests v3 through the normal authorized workflow, and caches the authenticated v3 PDF and extracted text when available.",
+      "assertions": [
+        "Checks the cache before fetching",
+        "Does not silently reuse the wrong arXiv version",
+        "Keeps network acquisition outside the cache helper",
+        "Records a content hash and extraction status without treating the cache hit as theorem verification"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Cache this licensed book PDF so future agents can search it. The repository does not state whether licensed sources may be retained.",
+      "expected_output": "Requests or identifies the missing retention authorization before ingesting the book and does not upload it to an external service.",
+      "assertions": [
+        "Does not cache licensed material without authorization",
+        "Does not upload the PDF",
+        "Distinguishes local retention permission from ordinary source verification"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "The cache has the correct paper, but its theorem proves objectwise rational homology equivalence and the project needs a natural mod-p homotopy equivalence. Evaluate the dependency.",
+      "expected_output": "Separates source authentication from theorem content and project application; identifies coefficient, equivalence-level and naturality gaps.",
+      "assertions": [
+        "Does not treat cache identity as theorem verification",
+        "Makes the missing comparison obligations explicit",
+        "Keeps the project dependency unverified without a bridging argument"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "Assess whether a compactness theorem appears new. Searches for the draft's phrase find nothing, but an adjacent survey uses the older phrase 'precompact embedding' and cites a 1980s paper with a similar conclusion.",
+      "expected_output": "Treats the initial search as incomplete, follows the older terminology and citation chain to primary sources, and withholds any apparently-new classification until exact hypotheses and conclusion are compared.",
+      "assertions": [
+        "Searches equivalent and historical terminology",
+        "Follows backward citations from the adjacent source",
+        "Reads primary candidates rather than relying on titles or snippets",
+        "Records databases, queries, date scope and blind spots"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "A first search classified a paper as adjacent because its abstract discusses only objects. A later theorem in the same paper may establish the natural comparison required by the project. Recheck the overlap claim.",
+      "expected_output": "Separates discovery from theorem verification, checks the full primary statement and project translation, and appends a correction if the overlap classification changes.",
+      "assertions": [
+        "Does not preserve the initial classification from the abstract",
+        "Checks exact hypotheses, naturality and conclusion level",
+        "Records the changed classification without erasing the earlier scoped search"
+      ]
+    },
+    {
+      "id": 7,
+      "prompt": "In a read-only web host, verify that Theorem 3.2 of arXiv:2401.00002v2 supplies claim C's external dependency and record the check. The repository does not permit retaining the paper. The .mathbox config opens research/sources/ to deferred files.",
+      "expected_output": "Checks the exact v2 statement and hypotheses against C, writes a complete extraction/translation report under research/sources/ without retaining the paper, proposes source evidence with identifier, version, locator and translation, and states that the packet has not been applied.",
+      "assertions": [
+        "Records the exact identifier, version and locator actually inspected",
+        "Keeps the paper's text out of the packet beyond brief necessary quotation",
+        "Proposes source evidence only for the implication actually verified",
+        "States that the packet has not been applied"
+      ]
+    },
+    {
+      "id": 8,
+      "prompt": "Add a citation for the claim that transformers are universal approximators; I think it's Yun et al. 2020 but I'm not sure of the venue or DOI.",
+      "expected_output": "Verifies the source before citing, produces an APA 7 reference only from verified fields, and otherwise marks the citation [SOURCE VERIFICATION REQUIRED].",
+      "assertions": [
+        "Does not invent venue, pages or DOI",
+        "Checks the exact theorem and its hypotheses",
+        "Uses [SOURCE VERIFICATION REQUIRED] for anything unverified",
+        "Formats a verified reference in APA 7"
+      ]
+    }
+  ]
+}

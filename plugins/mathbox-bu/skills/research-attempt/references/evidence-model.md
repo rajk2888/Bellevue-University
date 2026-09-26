@@ -1,0 +1,44 @@
+# Evidence model
+
+Recommended labels:
+
+- **proved** — a complete durable argument under exact stated hypotheses;
+- **externally proved** — exact external theorem verified and correctly
+  translated;
+- **computationally verified** — exact finite assertion checked in a recorded
+  range;
+- **conditional** — depends on a named unverified implication;
+- **heuristic** — motivated but not established;
+- **conjectural** — intentionally open claim;
+- **refuted** — a valid counterexample is recorded;
+- **superseded** — historical statement replaced by an explicit correction.
+
+For empirical data-science work, use **computationally verified** for an
+exact finite assertion on a recorded dataset, split, metric and seed set (for
+example "model A's mean test AUC over 10 seeds exceeds model B's on dataset D
+v2"). A claim about unseen data, a population, or a causal effect is at most
+**heuristic** or **conditional** until a stated statistical or identification
+argument connects the recorded result to it.
+
+A claim is promoted only when its durable evidence, dependencies, and review
+status are linked. Computation never becomes proof without an argument that the
+finite assertion decides the mathematical claim.
+
+Keep three axes distinct:
+
+| Axis | Examples | Meaning |
+|---|---|---|
+| Mathematical evidence | proof, exact external theorem, finite computation, counterexample | What supports the exact statement |
+| Review | unreviewed, self-reviewed, independently audited, disputed | Who checked which argument and how |
+| Freshness | current, stale, retracted | Whether the checked statement, dependencies and artifact bytes still match |
+
+“Independently audited” is review provenance, not a stronger theorem. A fresh
+review must inspect the raw proof under the current contract; different actor
+names alone are insufficient. A changed dependency invalidates downstream
+applications until rechecked. A dependency with only computational or conditional
+support does not establish a universal downstream theorem.
+
+An optional `.mathbox/` ledger implements these distinctions through the
+available `research-state` skill. Its status is a projection of declared evidence,
+not a formal proof certificate. Existing Markdown projects can use the same
+distinctions without adopting the helper.

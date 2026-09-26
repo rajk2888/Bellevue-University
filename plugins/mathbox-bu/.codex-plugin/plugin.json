@@ -1,0 +1,45 @@
+{
+  "name": "mathbox-bu",
+  "version": "3.2.0-bu.1",
+  "description": "Bellevue University PhD Data Science edition of Mathbox: auditable mathematical, statistical and machine-learning research with claim tracking, source verification and reproducible experiments",
+  "author": {
+    "name": "Rajkumar Kuppuswami (customization); Najib Idrissi-Kaïtouni (upstream Mathbox)"
+  },
+  "homepage": "https://github.com/rajk2888/Bellevue-University",
+  "repository": "https://github.com/rajk2888/Bellevue-University",
+  "license": "MIT",
+  "keywords": [
+    "mathematics",
+    "statistics",
+    "machine-learning",
+    "data-science",
+    "research",
+    "dissertation",
+    "proof-audit",
+    "literature",
+    "apa-7",
+    "bellevue-university"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Mathbox BU",
+    "shortDescription": "Rigorous PhD data-science research",
+    "longDescription": "Mathbox adapted for a Bellevue University PhD in Data Science (Applied AI & ML): pursue research goals across distinct routes, audit proofs and statistical/ML derivations, verify sources with APA 7 records, and record reproducible experiments on public, simulated or authorized enterprise data.",
+    "developerName": "Rajkumar Kuppuswami (customization of Mathbox by Najib Idrissi-Kaïtouni)",
+    "category": "Education & Research",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/rajk2888/Bellevue-University",
+    "brandColor": "#0F172A",
+    "composerIcon": "./assets/mathbox.svg",
+    "logo": "./assets/mathbox.svg",
+    "defaultPrompt": [
+      "Audit this estimator's consistency proof and isolate the first unproved step.",
+      "Check that this ML experiment's evaluation has no train/test leakage and record its scope.",
+      "Verify what the cited paper proves and draft an APA 7 source record."
+    ]
+  }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "query": "Audit the Sage calculation supporting Claim C7.",
+    "should_trigger": true
+  },
+  {
+    "query": "Run the finite-field experiment and state exactly what it proves.",
+    "should_trigger": true
+  },
+  {
+    "query": "Run this exact checker with reproducible input and result hashes plus memory and CPU caps.",
+    "should_trigger": true
+  },
+  {
+    "query": "Check whether the paper states its recurrence over integers.",
+    "should_trigger": false
+  },
+  {
+    "query": "Explain what a Gröbner basis is.",
+    "should_trigger": false
+  },
+  {
+    "query": "Refactor this unrelated CLI.",
+    "should_trigger": false
+  },
+  {
+    "query": "Audit my churn model notebook for train/test leakage and tell me what the reported AUC actually supports.",
+    "should_trigger": true
+  },
+  {
+    "query": "Check whether this OTIF calculation from our SAP LIKP/LIPS extract matches the KPI definition in the charter.",
+    "should_trigger": true
+  },
+  {
+    "query": "Explain what a p-value is.",
+    "should_trigger": false
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "name": "mathbox-bu",
+  "owner": {
+    "name": "Rajkumar Kuppuswami",
+    "url": "https://github.com/rajk2888"
+  },
+  "description": "Mathbox customized for Bellevue University PhD Data Science research",
+  "plugins": [
+    {
+      "name": "mathbox-bu",
+      "source": ".",
+      "description": "Bellevue University PhD Data Science edition of Mathbox: auditable mathematical, statistical and machine-learning research with claim tracking, source verification and reproducible experiments",
+      "version": "3.2.0-bu.1",
+      "author": {
+        "name": "Rajkumar Kuppuswami (customization); Najib Idrissi-Kaïtouni (upstream Mathbox)"
+      },
+      "homepage": "https://github.com/rajk2888/Bellevue-University",
+      "repository": "https://github.com/rajk2888/Bellevue-University",
+      "license": "MIT",
+      "category": "Research",
+      "tags": [
+        "mathematics",
+        "statistics",
+        "machine-learning",
+        "data-science",
+        "research",
+        "verification"
+      ]
+    }
+  ]
+}

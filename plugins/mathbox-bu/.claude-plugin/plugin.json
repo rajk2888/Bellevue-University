@@ -1,0 +1,35 @@
+{
+  "name": "mathbox-bu",
+  "description": "Bellevue University PhD Data Science edition of Mathbox: auditable mathematical, statistical and machine-learning research with claim tracking, source verification and reproducible experiments",
+  "version": "3.2.0-bu.1",
+  "author": {
+    "name": "Rajkumar Kuppuswami (customization); Najib Idrissi-Kaïtouni (upstream Mathbox)"
+  },
+  "homepage": "https://github.com/rajk2888/Bellevue-University",
+  "repository": "https://github.com/rajk2888/Bellevue-University",
+  "license": "MIT",
+  "keywords": [
+    "mathematics",
+    "statistics",
+    "machine-learning",
+    "data-science",
+    "research",
+    "dissertation",
+    "proof-audit",
+    "literature",
+    "apa-7",
+    "bellevue-university"
+  ],
+  "skills": [
+    "./skills/computation-audit",
+    "./skills/literature-check",
+    "./skills/manuscript-integrate",
+    "./skills/proof-audit",
+    "./skills/proofread-math",
+    "./skills/research-attempt",
+    "./skills/research-init",
+    "./skills/research-program",
+    "./skills/research-retrospective",
+    "./skills/research-state"
+  ]
+}
