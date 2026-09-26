@@ -1,0 +1,94 @@
+{
+  "date": "Friday, Sep 25, 2026",
+  "topic": "Microsoft's Copilot \"super app\"",
+  "post": "Microsoft just put Word, Excel, PowerPoint AND AI agents into one app. 🤯\nThis might be the biggest change to how we work since Office itself.\n\nOn Friday, Microsoft unveiled its new Copilot \"super app\" for business users.\n\nHere's what's inside 👇\n\n🏠 Home: chat + Microsoft's Cowork agent in one place\n💻 Code: build your own apps and tools just by describing them\n🤖 Autopilot: set up always-on AI agents that work for you\n📄 Word, Excel & PowerPoint built right in, synced with your regular Office files\n\nWhy it matters:\nMicrosoft is merging a confusing lineup of Copilot products into one hub as OpenAI and Anthropic push hard into the enterprise.\nThe fight is no longer \"which chatbot?\" It's \"where does your work actually happen?\"\n\nPractical takeaway for today:\nWrite down 3 repetitive tasks you do every week (reports, status emails, data cleanup).\nThose are your first candidates for an always-on agent once these features roll out over the coming weeks.\n\nMost features aren't widely available yet, so now is the time to prepare, not panic.\n\nWhich task would YOU hand to an AI agent first? 👇\n\nFollow me for daily AI news you can actually use.\n\n#AI #ArtificialIntelligence #Microsoft #Copilot #AIAgents",
+  "hooks": [
+    "Your next \"Office\" might not be Office at all. Microsoft just launched a Copilot super app. 👀",
+    "Always-on AI agents are coming to your work computer. Here's what Microsoft just announced.",
+    "Word, Excel, PowerPoint, coding and AI agents in ONE app? Microsoft just made its biggest Copilot bet yet."
+  ],
+  "sources": [
+    {
+      "name": "Fortune",
+      "url": "https://fortune.com/2026/09/25/microsoft-unveils-copilot-super-app-targeting-business-users-with-ai-agents/"
+    },
+    {
+      "name": "GeekWire",
+      "url": "https://www.geekwire.com/2026/microsoft-unveils-all-in-one-copilot-app-taking-on-anthropic-and-openai-in-new-push-to-boost-adoption/"
+    }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    {
+      "type": "stomp",
+      "kicker": "AI News",
+      "text": "Microsoft just changed work",
+      "sub": "The new Copilot \"super app\"",
+      "dur": 2.4
+    },
+    {
+      "type": "typewriter",
+      "kicker": "Announced Friday",
+      "text": "One app. Chat, code, agents & Office.",
+      "dur": 2.6
+    },
+    {
+      "type": "cards",
+      "kicker": "What's inside",
+      "dur": 3.2,
+      "items": [
+        {
+          "icon": "H",
+          "title": "Home",
+          "desc": "Chat + the Cowork agent"
+        },
+        {
+          "icon": "C",
+          "title": "Code",
+          "desc": "Build apps by describing them"
+        },
+        {
+          "icon": "A",
+          "title": "Autopilot",
+          "desc": "Always-on AI agents"
+        }
+      ]
+    },
+    {
+      "type": "tiles",
+      "kicker": "Built right in",
+      "text": "Word, Excel & PowerPoint inside Copilot",
+      "dur": 2.6,
+      "items": [
+        {
+          "letter": "W",
+          "label": "Word",
+          "color": "#2563EB"
+        },
+        {
+          "letter": "X",
+          "label": "Excel",
+          "color": "#16A34A"
+        },
+        {
+          "letter": "P",
+          "label": "PowerPoint",
+          "color": "#EA580C"
+        }
+      ]
+    },
+    {
+      "type": "question",
+      "text": "Which task would you automate first?",
+      "sub": "Tell me in the comments",
+      "dur": 2.2
+    },
+    {
+      "type": "outro",
+      "kicker": "Daily AI news",
+      "name": "Rajkumar Kuppuswami",
+      "cta": "Follow for daily AI",
+      "dur": 2.0
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800;900&family=Poppins:wght@400;600&display=block" rel="stylesheet">
+<style>
+  :root { --bg:#0B1020; --cyan:#00E5FF; --purple:#A855F7; --pink:#FF2E88; --white:#FFFFFF; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1080px; height:1350px; overflow:hidden; background:var(--bg); }
+  body { font-family:'Montserrat','DejaVu Sans',sans-serif; color:var(--white); position:relative; }
+  #bg { position:absolute; inset:0; }
+  .scene { position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:0 90px; text-align:center; opacity:0; }
+  .kicker { font-family:'Poppins','DejaVu Sans',sans-serif; font-weight:600; font-size:34px; letter-spacing:8px; text-transform:uppercase; color:var(--cyan); margin-bottom:36px; }
+  .big { font-weight:900; font-size:112px; line-height:1.02; text-transform:uppercase; letter-spacing:-2px; }
+  .mid { font-weight:800; font-size:84px; line-height:1.08; }
+  .sub { font-family:'Poppins','DejaVu Sans',sans-serif; font-size:40px; line-height:1.35; color:#C9D3F2; margin-top:40px; }
+  .glow-c { color:var(--cyan); text-shadow:0 0 18px rgba(0,229,255,.8), 0 0 48px rgba(0,229,255,.45); }
+  .glow-p { color:var(--purple); text-shadow:0 0 18px rgba(168,85,247,.8), 0 0 48px rgba(168,85,247,.45); }
+  .glow-k { color:var(--pink); text-shadow:0 0 18px rgba(255,46,136,.8), 0 0 48px rgba(255,46,136,.45); }
+  .cards { display:flex; flex-direction:column; gap:34px; width:100%; margin-top:10px; }
+  .card { display:flex; align-items:center; gap:34px; padding:34px 40px; border-radius:28px; background:rgba(255,255,255,.05); border:2px solid rgba(0,229,255,.45); box-shadow:0 0 40px rgba(0,229,255,.15) inset; text-align:left; }
+  .card .ico { flex:none; width:96px; height:96px; border-radius:24px; display:flex; align-items:center; justify-content:center; font-weight:900; font-size:52px; color:var(--bg); }
+  .card .t { font-weight:800; font-size:56px; }
+  .card .d { font-family:'Poppins','DejaVu Sans',sans-serif; font-size:32px; color:#C9D3F2; margin-top:4px; }
+  .tiles { display:flex; gap:30px; margin:60px 0 10px; }
+  .tile { width:250px; height:250px; border-radius:40px; display:flex; flex-direction:column; align-items:center; justify-content:center; font-weight:900; font-size:120px; color:#fff; box-shadow:0 20px 60px rgba(0,0,0,.5); }
+  .tile span { font-family:'Poppins','DejaVu Sans',sans-serif; font-weight:600; font-size:28px; margin-top:4px; }
+  .qmark { font-weight:900; font-size:300px; line-height:1; }
+  .name { font-weight:900; font-size:78px; }
+  .underline { height:10px; border-radius:6px; background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink)); margin:30px auto 40px; }
+  .pill { display:inline-block; padding:26px 54px; border-radius:999px; border:3px solid var(--cyan); font-weight:800; font-size:52px; }
+  .caret { display:inline-block; width:8px; height:.9em; background:var(--cyan); vertical-align:-0.1em; margin-left:6px; }
+  #progress { position:absolute; left:0; bottom:0; height:10px; background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink)); }
+</style>
+</head>
+<body>
+<canvas id="bg" width="1080" height="1350"></canvas>
+<div id="stage"></div>
+<div id="progress"></div>
+<script>
+// Deterministic renderer: window.setup(config) builds scenes, window.render(t) draws frame at t seconds.
+const ease = {
+  out: p => 1 - Math.pow(1 - p, 3),
+  back: p => { const c = 1.9; return 1 + (c + 1) * Math.pow(p - 1, 3) + c * Math.pow(p - 1, 2); },
+  inOut: p => p < .5 ? 4*p*p*p : 1 - Math.pow(-2*p + 2, 3) / 2,
+};
+const clamp = (x, a=0, b=1) => Math.max(a, Math.min(b, x));
+const prog = (t, start, dur) => clamp((t - start) / dur);
+let CFG, scenes = [], total = 0;
+const esc = s => String(s).replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+const COLORS = ['#00E5FF', '#A855F7', '#FF2E88', '#22C55E'];
+
+window.setup = (cfg) => {
+  CFG = cfg; const stage = document.getElementById('stage'); let t0 = 0;
+  cfg.scenes.forEach((s, i) => {
+    const el = document.createElement('div'); el.className = 'scene';
+    const kick = s.kicker ? `<div class="kicker">${esc(s.kicker)}</div>` : '';
+    if (s.type === 'stomp') el.innerHTML = `${kick}<div class="big"><span class="glow-c">${esc(s.text)}</span></div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
+    if (s.type === 'typewriter') el.innerHTML = `${kick}<div class="mid"><span class="tw"></span><span class="caret"></span></div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
+    if (s.type === 'cards') el.innerHTML = `${kick}<div class="cards">${s.items.map((it, j) => `<div class="card"><div class="ico" style="background:${COLORS[j % 4]}">${esc(it.icon || it.title[0])}</div><div><div class="t">${esc(it.title)}</div><div class="d">${esc(it.desc || '')}</div></div></div>`).join('')}</div>`;
+    if (s.type === 'tiles') el.innerHTML = `${kick}<div class="tiles">${s.items.map(it => `<div class="tile" style="background:${it.color}">${esc(it.letter)}<span>${esc(it.label)}</span></div>`).join('')}</div><div class="mid" style="font-size:64px;margin-top:50px">${esc(s.text)}</div>`;
+    if (s.type === 'question') el.innerHTML = `<div class="qmark glow-p">?</div><div class="mid" style="margin-top:30px">${esc(s.text)}</div>${s.sub ? `<div class="sub">${esc(s.sub)}</div>` : ''}`;
+    if (s.type === 'outro') el.innerHTML = `<div class="kicker">${esc(s.kicker || 'Daily AI news')}</div><div class="name">${esc(s.name)}</div><div class="underline"></div><div class="pill glow-c">${esc(s.cta)}</div>`;
+    stage.appendChild(el);
+    scenes.push({ el, s, start: t0, dur: s.dur || 2 }); t0 += s.dur || 2;
+  });
+  total = t0; return total;
+};
+
+// Background: neon grid in perspective + drifting particles + circuit pulses.
+function drawBg(t) {
+  const c = document.getElementById('bg').getContext('2d'); const W = 1080, H = 1350;
+  const g = c.createRadialGradient(W/2, H*0.35, 50, W/2, H*0.45, 950);
+  g.addColorStop(0, '#1A1F4A'); g.addColorStop(1, '#0B1020'); c.fillStyle = g; c.fillRect(0, 0, W, H);
+  c.save(); c.strokeStyle = 'rgba(0,229,255,0.16)'; c.lineWidth = 2; const hy = H*0.72;
+  for (let i = -12; i <= 12; i++) { c.beginPath(); c.moveTo(W/2 + i*20, hy); c.lineTo(W/2 + i*260, H); c.stroke(); }
+  for (let k = 0; k < 14; k++) { const f = ((k + (t*0.6) % 1) / 14); const y = hy + Math.pow(f, 2.2) * (H - hy); c.globalAlpha = f; c.beginPath(); c.moveTo(0, y); c.lineTo(W, y); c.stroke(); }
+  c.restore();
+  for (let i = 0; i < 70; i++) {
+    const sx = (Math.sin(i*91.7)*0.5+0.5)*W, sy = (Math.sin(i*37.3)*0.5+0.5)*H;
+    const y = (sy - t*(18 + (i%5)*8)) % H; const yy = y < 0 ? y + H : y; const r = 1.5 + (i%3);
+    c.fillStyle = COLORS[i%3]; c.globalAlpha = 0.25 + 0.35*(0.5+0.5*Math.sin(t*2+i)); c.beginPath(); c.arc(sx, yy, r, 0, 7); c.fill();
+  }
+  c.globalAlpha = 1;
+  for (let i = 0; i < 4; i++) {
+    const y = 120 + i*50, p = ((t*0.35 + i*0.27) % 1); c.strokeStyle = 'rgba(168,85,247,0.25)'; c.lineWidth = 2;
+    c.beginPath(); c.moveTo(0, y); c.lineTo(W*0.3, y); c.lineTo(W*0.3 + 40, y + 40); c.lineTo(W, y + 40); c.stroke();
+    const x = p*W; c.fillStyle = '#FF2E88'; c.shadowColor = '#FF2E88'; c.shadowBlur = 20; c.beginPath(); c.arc(x, x < W*0.3 ? y : (x < W*0.3+40 ? y + (x - W*0.3) : y + 40), 5, 0, 7); c.fill(); c.shadowBlur = 0;
+  }
+}
+
+window.render = (t) => {
+  drawBg(t);
+  scenes.forEach(({ el, s, start, dur }) => {
+    const lt = t - start; const on = lt >= 0 && lt < dur;
+    if (!on) { el.style.opacity = 0; return; }
+    const fin = prog(lt, 0, 0.35), fout = 1 - prog(lt, dur - 0.3, 0.3); // dissolve in/out
+    el.style.opacity = Math.min(fin, fout); el.style.transform = '';
+    if (s.type === 'stomp') { const p = ease.back(prog(lt, 0, 0.5)); el.querySelector('.big').style.transform = `scale(${2.2 - 1.2*p})`; const sub = el.querySelector('.sub'); if (sub) sub.style.opacity = prog(lt, 0.6, 0.4); }
+    if (s.type === 'typewriter') { const n = Math.floor(s.text.length * prog(lt, 0.15, dur*0.55)); el.querySelector('.tw').textContent = s.text.slice(0, n); el.querySelector('.caret').style.opacity = (Math.floor(lt*3) % 2) ? 0 : 1; const sub = el.querySelector('.sub'); if (sub) sub.style.opacity = prog(lt, dur*0.7, 0.3); }
+    if (s.type === 'cards') el.querySelectorAll('.card').forEach((cd, j) => { const p = ease.out(prog(lt, 0.2 + j*0.35, 0.5)); cd.style.opacity = p; cd.style.transform = `translateY(${(1-p)*120}px)`; });
+    if (s.type === 'tiles') el.querySelectorAll('.tile').forEach((tl, j) => { const p = ease.back(prog(lt, 0.1 + j*0.25, 0.55)); const dx = (j - 1) * 400 * (1 - p); tl.style.transform = `translateX(${dx}px) rotate(${(1-p)*(j-1)*25}deg) scale(${0.4 + 0.6*p})`; tl.style.opacity = clamp(p*1.5); });
+    if (s.type === 'question') { const q = el.querySelector('.qmark'); q.style.transform = `scale(${1 + 0.08*Math.sin(lt*6)}) rotate(${(1-ease.back(prog(lt,0,0.6)))*-40}deg)`; }
+    if (s.type === 'outro') { el.querySelector('.underline').style.width = `${ease.out(prog(lt, 0.3, 0.6))*520}px`; el.querySelector('.pill').style.transform = `scale(${0.7 + 0.3*ease.back(prog(lt, 0.6, 0.5))})`; el.style.opacity = fin; }
+  });
+  document.getElementById('progress').style.width = `${(t / total) * 100}%`;
+};
+</script>
+</body>
+</html>
