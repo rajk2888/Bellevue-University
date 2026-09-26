@@ -1,5 +1,6 @@
 import { lazy, Suspense } from 'react';
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, MemoryRouter, Route, Routes } from 'react-router-dom';
+import { IS_EMBEDDED } from './env';
 import { Layout } from './components/Layout';
 import { ProgressProvider } from './progress/store';
 import { GradePage } from './pages/GradePage';
@@ -15,10 +16,13 @@ const DashboardPage = lazy(() => import('./pages/DashboardPage').then((m) => ({ 
 const FamilyPage = lazy(() => import('./pages/FamilyPage').then((m) => ({ default: m.FamilyPage })));
 
 // HashRouter keeps deep links working on any static host (GitHub Pages, S3, etc.).
+// The embedded build keeps navigation in memory so it never touches the host page's URL.
+const Router = IS_EMBEDDED ? MemoryRouter : HashRouter;
+
 export function App() {
   return (
     <ProgressProvider>
-      <HashRouter>
+      <Router>
         <Layout>
           <Suspense fallback={<p className="container page-pad muted">Loading…</p>}>
           <Routes>
@@ -34,7 +38,7 @@ export function App() {
           </Routes>
           </Suspense>
         </Layout>
-      </HashRouter>
+      </Router>
     </ProgressProvider>
   );
 }

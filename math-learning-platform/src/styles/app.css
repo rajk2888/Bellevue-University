@@ -86,6 +86,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
+    color-scheme: dark;
     --bg: #11131c;
     --surface: #1a1d29;
     --surface-2: #252a3a;
@@ -118,6 +119,42 @@
     --chart-1: #7ea2ff;
     --accent-soft: #1f2d52;
   }
+}
+
+/* An explicit dark choice from the viewer wins over the OS setting. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #11131c;
+  --surface: #1a1d29;
+  --surface-2: #252a3a;
+  --surface-3: #323850;
+  --ink: #eef0f8;
+  --ink-muted: #a6abc2;
+  --line: #2c3144;
+  --line-strong: #6c7390;
+  --grid: #262b3c;
+  --accent: #8b87ff;
+  --accent-ink: #11131c;
+  --accent-soft: #2b2a55;
+  --warm: #f5a524;
+  --warm-soft: #3d2e12;
+  --success: #34d399;
+  --success-soft: #133529;
+  --danger: #f87171;
+  --danger-soft: #3d1a1d;
+  --almost: #fbbf24;
+  --almost-soft: #3a2f10;
+  --chart-1: #8b87ff;
+  --shadow: 0 1px 2px rgb(0 0 0 / 40%);
+}
+:root[data-theme='dark'][data-band='early'] {
+  --accent: #b794ff;
+  --chart-1: #b794ff;
+}
+:root[data-theme='dark'][data-band='high'] {
+  --accent: #7ea2ff;
+  --chart-1: #7ea2ff;
+  --accent-soft: #1f2d52;
 }
 
 /* ------------------------------ Base ------------------------------ */
@@ -530,7 +567,7 @@ label.check input {
 
 .site-header {
   position: sticky;
-  top: 0;
+  top: env(safe-area-inset-top, 0px);
   z-index: 40;
   background: color-mix(in srgb, var(--surface) 92%, transparent);
   backdrop-filter: blur(8px);
@@ -601,7 +638,7 @@ label.check input {
   margin-left: auto;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 1300px) {
   .menu-btn {
     display: inline-flex;
   }

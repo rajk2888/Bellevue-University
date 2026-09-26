@@ -17,6 +17,10 @@ npm test           # engine, solver, tutor & curriculum tests
 npm run build      # static site in dist/ (works on any static host)
 ```
 
+`npm run build:artifact` produces one self-contained page
+(`dist-artifact/stepwise-math.html`, CSS and JS inlined, in-memory routing) for
+hosts that serve a single sandboxed HTML file.
+
 The build uses relative paths and hash routing, so `dist/` can be dropped onto
 GitHub Pages, Netlify, S3, or opened from any web server.
 

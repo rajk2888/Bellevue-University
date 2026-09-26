@@ -1,6 +1,7 @@
 import { useId, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { MiniBarChart } from '../components/MiniBarChart';
+import { IS_EMBEDDED } from '../env';
 import { Card } from '../components/ui';
 import { allLessons, getLesson } from '../curriculum';
 import { today, useProgress } from '../progress/store';
@@ -45,9 +46,11 @@ export function FamilyPage() {
               🍎 Teacher
             </button>
           </div>
-          <button type="button" className="btn soft" onClick={() => window.print()}>
-            🖨️ Print report
-          </button>
+          {!IS_EMBEDDED && (
+            <button type="button" className="btn soft" onClick={() => window.print()}>
+              🖨️ Print report
+            </button>
+          )}
         </div>
       </div>
 
@@ -153,10 +156,36 @@ export function FamilyPage() {
           This preview keeps data privately on this device. The architecture is ready for student, parent and teacher accounts, classroom rosters, curriculum-standard reports, printable worksheets and
           certificates.
         </p>
-        <button type="button" className="btn ghost" onClick={() => confirm('Erase all progress on this device?') && progress.reset()}>
-          Reset all progress
-        </button>
+        <ResetButton onReset={progress.reset} />
       </Card>
+    </div>
+  );
+}
+
+function ResetButton({ onReset }: { onReset: () => void }) {
+  const [asking, setAsking] = useState(false);
+  if (!asking)
+    return (
+      <button type="button" className="btn ghost" onClick={() => setAsking(true)}>
+        Reset all progress
+      </button>
+    );
+  return (
+    <div className="row" role="alert">
+      <span>Erase all progress on this device? This cannot be undone.</span>
+      <button
+        type="button"
+        className="btn primary"
+        onClick={() => {
+          onReset();
+          setAsking(false);
+        }}
+      >
+        Yes, erase
+      </button>
+      <button type="button" className="btn ghost" onClick={() => setAsking(false)}>
+        Cancel
+      </button>
     </div>
   );
 }
