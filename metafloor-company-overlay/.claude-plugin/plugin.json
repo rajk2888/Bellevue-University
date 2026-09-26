@@ -1,0 +1,6 @@
+{
+  "name": "metafloor-company-overlay",
+  "version": "0.1.0",
+  "description": "Company-specific overlay for the MetaFloor Supply Chain plugin (b86515f9-bc96-4a84-b72a-fadf7cd5a74f): points its skills, workflows, and policy gate at your own systems, sites, KPIs, and approval limits.",
+  "author": { "name": "rajk2888" }
+}

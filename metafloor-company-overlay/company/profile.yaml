@@ -1,0 +1,79 @@
+# Company profile read by the company-context skill.
+# Replace every value marked TODO. Run /metafloor-company-overlay:company-setup
+# to fill this in through a short interview instead of editing by hand.
+
+company:
+  name: TODO                     # e.g. "Acme Components Inc."
+  industry: TODO                 # e.g. discrete manufacturing, pharma, CPG, distribution
+  regulated: TODO                # true if GxP / FDA / ITAR / etc. applies
+  regulations: []                # e.g. [21 CFR Part 11, ITAR, EU MDR]
+  currency: USD
+  fiscal_calendar: TODO          # e.g. 4-4-5, calendar months
+
+# Sites the plugin may reason about. Codes should match your ERP (e.g. SAP plant / WERKS).
+sites:
+  - code: TODO                   # e.g. "1000"
+    name: TODO
+    type: TODO                   # plant | DC | 3PL | supplier-managed
+    country: TODO
+
+# Systems of record. Each value must be a MetaFloor skill name (without the plugin prefix),
+# or "none". Only these skills are used; the other MetaFloor system skills are ignored.
+systems:
+  erp: sap-mm                    # sap-mm, oracle-erp, dynamics365-fo, netsuite, infor, ...
+  finance: sap-fi
+  planning: none                 # sap-ibp, kinaxis, o9, blueyonder-planning, anaplan
+  warehouse: none                # sap-ewm, manhattan-wms, blueyonder-wms, korber
+  transportation: none           # sap-tm, oracle-otm, manhattan-tms, blueyonder-tms, descartes
+  visibility: none               # project44, fourkites
+  procurement: none              # sap-ariba, coupa, jaggaer, ivalua, gep, oracle-procurement
+  contracts: none                # sap-ariba-clm, icertis, docusign-clm
+  quality: none                  # sap-qm, veeva-vault-qms, mastercontrol, labware
+  mes: none                      # sap-dm, siemens-opcenter, rockwell-factorytalk, aveva-mes
+  maintenance: none              # sap-pm, ibm-maximo, infor-eam
+  trade_compliance: none         # sap-gts, e2open-gts, onesource-gts
+  supplier_risk: none            # resilinc, everstream, interos
+  plm: none                      # ptc-windchill, siemens-teamcenter, oracle-agile-plm
+  crm: none                      # salesforce, dynamics-crm
+  order_management: none         # manhattan-oms, fluent-oms
+
+# MetaFloor end-to-end workflows your company actually runs.
+workflows_enabled:
+  - atp-ctp-check
+  - expedite-or-absorb
+  - confirmation-slip-reschedule
+  - demand-supply-rebalance
+  - inventory-positioning
+  - cycle-count-triage
+  - invoice-3way-match
+  - linedown-warroom
+
+# KPI targets used to judge whether a result is "on target" or "exception".
+kpis:
+  otif_target_pct: TODO          # e.g. 95
+  inventory_turns_target: TODO   # e.g. 8
+  forecast_accuracy_target_pct: TODO  # e.g. 80 (1 - WMAPE)
+  excess_days_of_supply: TODO    # stock above this DOS counts as excess, e.g. 120
+  obsolete_no_movement_days: TODO     # e.g. 365
+
+# Money and quantity limits for the MetaFloor policy gate. Anything above a limit
+# must be proposed for human approval, never executed.
+approval_limits:
+  po_change_max_value: TODO      # e.g. 25000
+  expedite_premium_freight_max: TODO  # e.g. 5000
+  invoice_price_variance_pct: TODO    # tolerance for 3-way match, e.g. 2
+  cycle_count_adjustment_max_value: TODO  # e.g. 1000
+  approvers:
+    - role: TODO                 # e.g. "Supply Chain Manager"
+      above: TODO                # value threshold this role signs off on
+
+# Autonomy the MetaFloor gate may use for this company. Keep "recommend" until
+# the overlay has been reviewed.
+autonomy:
+  default: recommend             # observe | recommend | act-with-approval
+  never_autonomous:              # always need a human, whatever the dial says
+    - recall-execution
+    - nonconformance-disposition
+    - customs-screen-shipment
+
+glossary: {}                     # company terms -> standard meaning, e.g. {"MRP controller": "planner"}
