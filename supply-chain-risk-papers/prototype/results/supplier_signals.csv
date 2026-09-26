@@ -1,0 +1,241 @@
+supplier_id,category,p_disruption_3m,signal,top_drivers,recommended_supplier_action,buyer_internal_action
+S174,C06,0.686,RED,single_source (+0.18); sub_tier_concentration (+0.16); backlog_growth (+0.08),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S152,C08,0.649,RED,sub_tier_concentration (+0.14); geo_risk_index (+0.11); backlog_growth (+0.10),Request tier-2 source mapping and sub-supplier contingency plans. | Request business-continuity plan and alternate production site mapping.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S204,C00,0.647,RED,single_source (+0.18); sub_tier_concentration (+0.15); capacity_utilization (+0.09),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S225,C09,0.514,RED,single_source (+0.18); geo_risk_index (+0.15); sub_tier_concentration (+0.07),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S183,C03,0.438,RED,sub_tier_concentration (+0.17); single_source (+0.17); backlog_growth (+0.06),Request tier-2 source mapping and sub-supplier contingency plans. | Discuss dual-site production or tooling duplication; share a continuity plan for affected parts.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S227,C11,0.435,RED,sub_tier_concentration (+0.11); otif_rate (+0.09); capacity_utilization (+0.08),Request tier-2 source mapping and sub-supplier contingency plans. | Open a delivery-performance corrective action plan with weekly checkpoints.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S164,C08,0.41,RED,backlog_growth (+0.10); financial_health (+0.09); capacity_utilization (+0.07),Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S195,C03,0.408,RED,single_source (+0.16); sub_tier_concentration (+0.11); financial_health (+0.08),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S003,C03,0.405,RED,geo_risk_index (+0.12); sub_tier_concentration (+0.11); response_latency_days (+0.05),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S112,C04,0.398,RED,geo_risk_index (+0.10); sub_tier_concentration (+0.09); capacity_utilization (+0.06),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S079,C07,0.395,RED,sub_tier_concentration (+0.11); capacity_utilization (+0.08); financial_health (+0.07),Request tier-2 source mapping and sub-supplier contingency plans. | Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S219,C03,0.383,RED,otif_rate (+0.10); sub_tier_concentration (+0.06); capacity_utilization (+0.06),Open a delivery-performance corrective action plan with weekly checkpoints. | Request tier-2 source mapping and sub-supplier contingency plans.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S097,C01,0.365,RED,lead_time_days (+0.10); financial_health (+0.08); geo_risk_index (+0.05),Review lead-time commitments; agree on buffer stock at supplier or buyer site. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,"Activate contingency: raise safety stock, expedite alternate source, weekly exec review."
+S085,C01,0.349,AMBER,geo_risk_index (+0.09); sub_tier_concentration (+0.07); backlog_growth (+0.06),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S043,C07,0.341,AMBER,single_source (+0.15); sub_tier_concentration (+0.12); geo_risk_index (+0.04),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S222,C06,0.338,AMBER,sub_tier_concentration (+0.15); geo_risk_index (+0.10); backlog_growth (+0.05),Request tier-2 source mapping and sub-supplier contingency plans. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S203,C11,0.337,AMBER,single_source (+0.14); geo_risk_index (+0.07); financial_health (+0.05),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S233,C05,0.336,AMBER,single_source (+0.14); sub_tier_concentration (+0.12); backlog_growth (+0.05),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S117,C09,0.331,AMBER,sub_tier_concentration (+0.16); otif_rate (+0.06); lead_time_days (+0.05),Request tier-2 source mapping and sub-supplier contingency plans. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S109,C01,0.329,AMBER,single_source (+0.14); geo_risk_index (+0.08); financial_health (+0.05),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S133,C01,0.317,AMBER,geo_risk_index (+0.06); lead_time_days (+0.05); backlog_growth (+0.05),Request business-continuity plan and alternate production site mapping. | Review lead-time commitments; agree on buffer stock at supplier or buyer site.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S177,C09,0.317,AMBER,single_source (+0.14); capacity_utilization (+0.03); lead_time_days (+0.03),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S218,C02,0.305,AMBER,single_source (+0.13); backlog_growth (+0.05); otif_rate (+0.04),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S130,C10,0.302,AMBER,geo_risk_index (+0.13); otif_rate (+0.04); sub_tier_concentration (+0.03),Request business-continuity plan and alternate production site mapping. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S020,C08,0.295,AMBER,single_source (+0.13); sub_tier_concentration (+0.07); capacity_utilization (+0.04),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S175,C07,0.292,AMBER,single_source (+0.13); backlog_growth (+0.05); geo_risk_index (+0.05),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S211,C07,0.289,AMBER,single_source (+0.13); geo_risk_index (+0.07); otif_rate (+0.06),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S146,C02,0.283,AMBER,lead_time_days (+0.05); financial_health (+0.05); lead_time_cv (+0.04),Review lead-time commitments; agree on buffer stock at supplier or buyer site. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S128,C08,0.28,AMBER,geo_risk_index (+0.10); backlog_growth (+0.05); lead_time_days (+0.04),Request business-continuity plan and alternate production site mapping. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S034,C10,0.28,AMBER,geo_risk_index (+0.16); sub_tier_concentration (+0.03); lead_time_cv (+0.03),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S103,C07,0.278,AMBER,single_source (+0.13); lead_time_days (+0.05); financial_health (+0.04),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Review lead-time commitments; agree on buffer stock at supplier or buyer site.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S069,C09,0.27,AMBER,single_source (+0.12); backlog_growth (+0.05); sub_tier_concentration (+0.04),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S058,C10,0.265,AMBER,response_latency_days (+0.05); backlog_growth (+0.05); lead_time_days (+0.04),Escalate to account executive; establish a named communication owner. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S095,C11,0.257,AMBER,single_source (+0.12); geo_risk_index (+0.06); otif_rate (+0.03),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S148,C04,0.256,AMBER,single_source (+0.12); lead_time_cv (+0.04); sub_tier_concentration (+0.03),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Joint root-cause review of delivery variability; stabilise order release cadence.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S151,C07,0.255,AMBER,single_source (+0.12); capacity_utilization (+0.04); geo_risk_index (+0.03),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S132,C00,0.252,AMBER,financial_health (+0.05); lead_time_days (+0.05); sub_tier_concentration (+0.04),Request financial disclosure; evaluate supply-chain finance or early-payment terms. | Review lead-time commitments; agree on buffer stock at supplier or buyer site.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S062,C02,0.251,AMBER,lead_time_cv (+0.05); capacity_utilization (+0.04); response_latency_days (+0.04),Joint root-cause review of delivery variability; stabilise order release cadence. | Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S067,C07,0.249,AMBER,geo_risk_index (+0.12); single_source (+0.11); sub_tier_concentration (+0.10),Request business-continuity plan and alternate production site mapping. | Discuss dual-site production or tooling duplication; share a continuity plan for affected parts.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S121,C01,0.246,AMBER,sub_tier_concentration (+0.05); lead_time_days (+0.04); otif_rate (+0.04),Request tier-2 source mapping and sub-supplier contingency plans. | Review lead-time commitments; agree on buffer stock at supplier or buyer site.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S192,C00,0.244,AMBER,backlog_growth (+0.07); financial_health (+0.04); lead_time_days (+0.04),Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S202,C10,0.243,AMBER,sub_tier_concentration (+0.12); otif_rate (+0.04); lead_time_days (+0.03),Request tier-2 source mapping and sub-supplier contingency plans. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S138,C06,0.242,AMBER,single_source (+0.11); geo_risk_index (+0.04); response_latency_days (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S193,C01,0.239,AMBER,single_source (+0.11); sub_tier_concentration (+0.05); capacity_utilization (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S084,C00,0.238,AMBER,single_source (+0.11); financial_health (+0.04); response_latency_days (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S105,C09,0.238,AMBER,geo_risk_index (+0.06); sub_tier_concentration (+0.04); lead_time_days (+0.03),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S000,C00,0.238,AMBER,sub_tier_concentration (+0.11); capacity_utilization (+0.02); otif_rate (+0.02),Request tier-2 source mapping and sub-supplier contingency plans. | Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S199,C07,0.232,AMBER,otif_rate (+0.05); backlog_growth (+0.04); capacity_utilization (+0.04),Open a delivery-performance corrective action plan with weekly checkpoints. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S024,C00,0.224,AMBER,single_source (+0.11); sub_tier_concentration (+0.03); otif_rate (+0.03),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S083,C11,0.221,AMBER,single_source (+0.10); geo_risk_index (+0.08); backlog_growth (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S163,C07,0.22,AMBER,financial_health (+0.05); otif_rate (+0.05); lead_time_days (+0.03),Request financial disclosure; evaluate supply-chain finance or early-payment terms. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S056,C08,0.214,AMBER,financial_health (+0.05); backlog_growth (+0.04); capacity_utilization (+0.04),Request financial disclosure; evaluate supply-chain finance or early-payment terms. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S221,C05,0.211,AMBER,sub_tier_concentration (+0.06); lead_time_cv (+0.04); otif_rate (+0.04),Request tier-2 source mapping and sub-supplier contingency plans. | Joint root-cause review of delivery variability; stabilise order release cadence.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S220,C04,0.208,AMBER,financial_health (+0.03); sub_tier_concentration (+0.03); capacity_utilization (+0.02),Request financial disclosure; evaluate supply-chain finance or early-payment terms. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S013,C01,0.205,AMBER,single_source (+0.10); otif_rate (+0.03); capacity_utilization (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S209,C05,0.205,AMBER,geo_risk_index (+0.07); financial_health (+0.02); defect_ppm (+0.02),Request business-continuity plan and alternate production site mapping. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S196,C04,0.204,AMBER,geo_risk_index (+0.09); backlog_growth (+0.05); defect_ppm (+0.02),Request business-continuity plan and alternate production site mapping. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S065,C05,0.203,AMBER,sub_tier_concentration (+0.07); financial_health (+0.04); lead_time_days (+0.02),Request tier-2 source mapping and sub-supplier contingency plans. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S016,C04,0.203,AMBER,geo_risk_index (+0.04); capacity_utilization (+0.03); lead_time_cv (+0.03),Request business-continuity plan and alternate production site mapping. | Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S185,C05,0.202,AMBER,single_source (+0.10); sub_tier_concentration (+0.06); lead_time_days (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S197,C05,0.2,AMBER,capacity_utilization (+0.04); lead_time_days (+0.04); financial_health (+0.03),Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract. | Review lead-time commitments; agree on buffer stock at supplier or buyer site.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S106,C10,0.198,AMBER,geo_risk_index (+0.10); single_source (+0.09); sub_tier_concentration (+0.02),Request business-continuity plan and alternate production site mapping. | Discuss dual-site production or tooling duplication; share a continuity plan for affected parts.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S098,C02,0.194,AMBER,single_source (+0.09); lead_time_cv (+0.02); backlog_growth (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Joint root-cause review of delivery variability; stabilise order release cadence.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S188,C08,0.19,AMBER,backlog_growth (+0.03); lead_time_cv (+0.03); otif_rate (+0.03),Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue. | Joint root-cause review of delivery variability; stabilise order release cadence.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S232,C04,0.188,AMBER,geo_risk_index (+0.07); sub_tier_concentration (+0.05); defect_ppm (+0.01),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S045,C09,0.186,AMBER,otif_rate (+0.04); financial_health (+0.02); lead_time_days (+0.02),Open a delivery-performance corrective action plan with weekly checkpoints. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S147,C03,0.185,AMBER,lead_time_cv (+0.04); otif_rate (+0.03); lead_time_days (+0.02),Joint root-cause review of delivery variability; stabilise order release cadence. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S170,C02,0.181,AMBER,geo_risk_index (+0.06); sub_tier_concentration (+0.05); capacity_utilization (+0.02),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S031,C07,0.18,AMBER,sub_tier_concentration (+0.06); financial_health (+0.04); response_latency_days (+0.03),Request tier-2 source mapping and sub-supplier contingency plans. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S215,C11,0.177,AMBER,single_source (+0.09); geo_risk_index (+0.03); sub_tier_concentration (+0.03),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S107,C11,0.176,AMBER,capacity_utilization (+0.03); response_latency_days (+0.03); defect_ppm (+0.02),Share a firm 6-month forecast and discuss reserved capacity or capacity-option contract. | Escalate to account executive; establish a named communication owner.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S007,C07,0.172,AMBER,geo_risk_index (+0.02); defect_ppm (+0.02); financial_health (+0.02),Request business-continuity plan and alternate production site mapping. | Trigger supplier quality audit and 8D corrective action.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S228,C00,0.169,AMBER,geo_risk_index (+0.05); sub_tier_concentration (+0.04); otif_rate (+0.02),Request business-continuity plan and alternate production site mapping. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S100,C04,0.169,AMBER,single_source (+0.08); financial_health (+0.02); otif_rate (+0.01),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S110,C02,0.169,AMBER,backlog_growth (+0.04); financial_health (+0.03); defect_ppm (+0.02),Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S050,C02,0.167,AMBER,single_source (+0.08); sub_tier_concentration (+0.03); lead_time_cv (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request tier-2 source mapping and sub-supplier contingency plans.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S012,C00,0.166,AMBER,financial_health (+0.03); defect_ppm (+0.02); geo_risk_index (+0.02),Request financial disclosure; evaluate supply-chain finance or early-payment terms. | Trigger supplier quality audit and 8D corrective action.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S047,C11,0.164,AMBER,geo_risk_index (+0.06); financial_health (+0.02); lead_time_cv (+0.02),Request business-continuity plan and alternate production site mapping. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S059,C11,0.16,AMBER,sub_tier_concentration (+0.02); backlog_growth (+0.02); lead_time_days (+0.02),Request tier-2 source mapping and sub-supplier contingency plans. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S123,C03,0.159,AMBER,geo_risk_index (+0.04); backlog_growth (+0.03); otif_rate (+0.02),Request business-continuity plan and alternate production site mapping. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S119,C11,0.159,AMBER,single_source (+0.08); geo_risk_index (+0.03); otif_rate (+0.01),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Request business-continuity plan and alternate production site mapping.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S044,C08,0.158,AMBER,geo_risk_index (+0.06); financial_health (+0.01); defect_ppm (+0.01),Request business-continuity plan and alternate production site mapping. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S076,C04,0.157,AMBER,single_source (+0.08); lead_time_days (+0.02); financial_health (+0.02),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Review lead-time commitments; agree on buffer stock at supplier or buyer site.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S231,C03,0.154,AMBER,lead_time_cv (+0.03); otif_rate (+0.02); backlog_growth (+0.02),Joint root-cause review of delivery variability; stabilise order release cadence. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S239,C11,0.153,AMBER,geo_risk_index (+0.07); financial_health (+0.01); response_latency_days (+0.01),Request business-continuity plan and alternate production site mapping. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S026,C02,0.152,AMBER,otif_rate (+0.03); financial_health (+0.02); capacity_utilization (+0.02),Open a delivery-performance corrective action plan with weekly checkpoints. | Request financial disclosure; evaluate supply-chain finance or early-payment terms.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S032,C08,0.15,AMBER,single_source (+0.07); otif_rate (+0.03); lead_time_cv (+0.01),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Open a delivery-performance corrective action plan with weekly checkpoints.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S066,C06,0.15,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S064,C04,0.15,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S037,C01,0.15,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S005,C05,0.15,AMBER,single_source (+0.07); backlog_growth (+0.01),Discuss dual-site production or tooling duplication; share a continuity plan for affected parts. | Confirm order acknowledgements; prioritise critical SKUs in the supplier's queue.,Increase monitoring cadence; pre-qualify alternate; share forecast with supplier.
+S038,C02,0.149,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S194,C02,0.148,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S046,C10,0.146,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S208,C04,0.146,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S160,C04,0.145,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S118,C10,0.144,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S165,C09,0.142,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S137,C05,0.141,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S006,C06,0.14,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S158,C02,0.136,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S190,C10,0.135,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S009,C09,0.135,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S093,C09,0.133,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S040,C04,0.132,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S186,C06,0.132,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S205,C01,0.131,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S070,C10,0.131,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S167,C11,0.13,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S159,C03,0.129,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S171,C03,0.127,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S035,C11,0.126,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S091,C07,0.123,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S104,C08,0.122,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S049,C01,0.122,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S089,C05,0.122,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S173,C05,0.122,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S071,C11,0.12,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S238,C10,0.12,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S141,C09,0.12,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S022,C10,0.118,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S120,C00,0.115,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S002,C02,0.114,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S178,C10,0.113,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S235,C07,0.113,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S063,C03,0.113,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S060,C00,0.112,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S149,C05,0.112,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S115,C07,0.111,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S224,C08,0.109,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S139,C07,0.109,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S021,C09,0.107,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S223,C07,0.107,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S180,C00,0.105,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S023,C11,0.105,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S073,C01,0.105,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S055,C07,0.104,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S099,C03,0.103,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S014,C02,0.102,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S136,C04,0.099,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S068,C08,0.099,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S176,C08,0.098,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S201,C09,0.098,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S094,C10,0.097,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S153,C09,0.096,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S212,C08,0.095,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S086,C02,0.095,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S090,C06,0.095,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S189,C09,0.095,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S135,C03,0.095,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S113,C05,0.094,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S088,C04,0.094,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S096,C00,0.092,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S156,C00,0.092,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S214,C10,0.092,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S057,C09,0.092,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S010,C10,0.091,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S124,C04,0.089,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S140,C08,0.088,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S129,C09,0.086,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S011,C11,0.085,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S061,C01,0.085,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S229,C01,0.085,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S184,C04,0.084,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S213,C09,0.084,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S042,C06,0.083,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S072,C00,0.083,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S001,C01,0.083,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S126,C06,0.08,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S154,C10,0.079,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S142,C10,0.078,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S125,C05,0.078,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S187,C07,0.077,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S028,C04,0.076,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S082,C10,0.076,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S145,C01,0.074,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S092,C08,0.07,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S116,C08,0.067,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S074,C02,0.065,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S080,C08,0.064,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S182,C02,0.062,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S162,C06,0.062,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S015,C03,0.062,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S111,C03,0.062,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S018,C06,0.061,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S036,C00,0.061,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S236,C08,0.059,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S054,C06,0.059,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S019,C07,0.057,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S077,C05,0.056,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S051,C03,0.056,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S191,C11,0.055,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S122,C02,0.055,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S143,C11,0.055,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S033,C09,0.055,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S004,C04,0.055,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S230,C02,0.054,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S081,C09,0.053,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S200,C08,0.053,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S087,C03,0.052,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S114,C06,0.051,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S029,C05,0.049,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S041,C05,0.048,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S237,C09,0.048,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S168,C00,0.047,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S131,C11,0.047,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S030,C06,0.045,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S169,C01,0.043,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S179,C11,0.042,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S134,C02,0.042,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S166,C10,0.041,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S150,C06,0.04,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S216,C00,0.039,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S155,C11,0.038,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S101,C05,0.036,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S017,C05,0.036,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S207,C03,0.035,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S206,C02,0.035,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S102,C06,0.035,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S052,C04,0.034,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S008,C08,0.034,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S027,C03,0.033,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S048,C00,0.031,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S181,C01,0.03,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S210,C06,0.029,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S172,C04,0.027,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S198,C06,0.027,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S127,C07,0.027,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S108,C00,0.026,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S078,C06,0.023,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S144,C00,0.023,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S053,C05,0.02,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S025,C01,0.02,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S226,C10,0.018,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S234,C06,0.017,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S075,C03,0.017,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S157,C01,0.017,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S161,C05,0.012,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S217,C01,0.012,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
+S039,C03,0.01,GREEN,,,Standard monitoring; recognise performance in quarterly business review.
