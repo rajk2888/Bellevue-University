@@ -10,7 +10,7 @@ A customized copy of [Humanizer](https://github.com/blader/humanizer) v3.0.0 by 
 - Never invents statistics; unsupported claims are flagged `[source?]`.
 - Format rules for slide titles (takeaway, not topic), slide bullets, spoken speaker notes, session abstract, speaker bio, and LinkedIn/email promo posts.
 - Keeps governance claims tied to a concrete control (lineage, validation, audit trail, human review).
-- Plans for a **20-minute slot**: about 130 wpm (about 2,300 to 2,500 words of script), 12 to 15 content slides, a default run of show, and a per-slide timing table after every notes edit. The script is cut shorter if Q&A comes out of the 20 minutes.
+- Plans for a **20-minute slot with Q&A inside it**: 15 minutes of speaking plus 5 of Q&A, about 1,800 to 1,950 words of script at 130 wpm, 10 to 12 content slides, a default run of show, Q&A prep, and a per-slide timing table after every notes edit.
 
 **Mode 2: Bellevue University coursework.** APA 7 overrides: title-case APA headings, citations and references never altered, statistics and code left untouched, evidence-based hedging kept, `[citation needed]` flags instead of invented sources, and a reminder to follow each course's AI-use policy.
 

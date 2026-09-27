@@ -11,7 +11,7 @@ description: |
   Based on Wikipedia's "Signs of AI writing."
 license: MIT
 metadata:
-  version: "3.0.0-semicon.2"
+  version: "3.0.0-semicon.3"
   upstream: "https://github.com/blader/humanizer (v3.0.0, MIT)"
 ---
 
@@ -79,23 +79,25 @@ The talk is **"Addressing the risks associated with the global semiconductor sup
 
 **Governance claims.** Keep the difference between what data and AI governance *does* (lineage, access control, model validation, audit trails, human review) and what it *promises* (resilience, trust). If the text slides from the first to the second without saying how, that is §15 or §13 at work; tie the outcome back to a specific control or cut it.
 
-**Time budget: a 20-minute talk.** The slot is 20 minutes. Plan every deck, script, and notes edit against it.
+**Time budget: a 20-minute slot with Q&A inside it.** The slot is 20 minutes total, and Q&A comes out of that time. Plan for 15 minutes of speaking and 5 minutes of Q&A unless the writer gives a different split. Plan every deck, script, and notes edit against that.
 
-- *Speaking rate.* Assume about 130 words per minute for a technical talk to a live room (slower than reading pace, with pauses for slides). The full script should come to roughly 2,300 to 2,500 words. That leaves about 1 to 2 minutes for transitions, a stumble, or a clicker delay. If the organizer puts Q&A inside the 20 minutes, cut the script to fit the speaking time that's left (for 5 minutes of Q&A, about 1,900 to 2,000 words).
-- *Slide count.* Aim for about 12 to 15 content slides, averaging 1 to 1.5 minutes each. Title, agenda, and closing slides get about 15 to 30 seconds each. A slide with more than about 250 words of notes (about 2 minutes) should be split or trimmed.
+- *Speaking rate.* Assume about 130 words per minute for a technical talk to a live room (slower than reading pace, with pauses for slides). The full script should come to roughly 1,800 to 1,950 words, which leaves about 30 to 60 seconds of buffer before Q&A. If the writer changes the Q&A time, recompute: (speaking minutes minus 1) times 130.
+- *Slide count.* Aim for about 10 to 12 content slides, averaging 1 to 1.25 minutes each. Title, agenda, and closing slides get about 15 to 30 seconds each. A slide with more than about 200 words of notes (about 1.5 minutes) should be split or trimmed. Skip a separate agenda slide unless the writer wants one; 15 minutes is too short to spend time on it.
 - *Default run of show.* Use this structure unless the writer's outline differs. The writer's own order always wins.
 
   | Segment | Time | Purpose |
   |---|---|---|
-  | Open and hook | 0:00 to 1:30 | One concrete disruption or exposure the audience recognizes (from the writer's material only) and why it matters now |
-  | Risk map | 1:30 to 6:00 | Where the global chain is fragile: concentration, single-source inputs, geopolitics and export controls, logistics, demand swings |
-  | Why data is the gap | 6:00 to 9:30 | Visibility past tier 1, data quality and lineage, siloed ERP/planning data, trust between partners |
-  | Data and AI governance as the lever | 9:30 to 15:00 | Specific controls (lineage, access, model validation, monitoring, human review) mapped to specific risks, plus a framework reference such as NIST AI RMF or ISO/IEC 42001 if the writer uses one |
-  | Proof or example | 15:00 to 17:30 | One case, pilot, or illustrative scenario the writer supplies. Label a hypothetical as hypothetical |
-  | Takeaways and close | 17:30 to 19:00 | Three or fewer actions the audience can take next quarter, then a closing line that restates the title's promise |
-  | Buffer | 19:00 to 20:00 | Slack for overruns; becomes Q&A if time allows |
+  | Open and hook | 0:00 to 1:00 | One concrete disruption or exposure the audience recognizes (from the writer's material only) and why it matters now |
+  | Risk map | 1:00 to 4:30 | Where the global chain is fragile: concentration, single-source inputs, geopolitics and export controls, logistics, demand swings |
+  | Why data is the gap | 4:30 to 7:00 | Visibility past tier 1, data quality and lineage, siloed ERP/planning data, trust between partners |
+  | Data and AI governance as the lever | 7:00 to 11:30 | Specific controls (lineage, access, model validation, monitoring, human review) mapped to specific risks, plus a framework reference such as NIST AI RMF or ISO/IEC 42001 if the writer uses one |
+  | Proof or example | 11:30 to 13:30 | One case, pilot, or illustrative scenario the writer supplies. Label a hypothetical as hypothetical |
+  | Takeaways and close | 13:30 to 14:30 | Three or fewer actions the audience can take next quarter, then a closing line that restates the title's promise and invites questions |
+  | Buffer | 14:30 to 15:00 | Slack for overruns |
+  | Q&A | 15:00 to 20:00 | Audience questions |
 
-- *Report timing.* Whenever you edit speaker notes or a script, finish with a timing table: each slide's word count, its estimated minutes at 130 wpm, the running total, and a flag on any slide over 2 minutes or any total over 19 minutes. When the script runs long, cut restated points, stacked examples (§6), and closers (§2) before cutting any claim, number, or example that carries the argument.
+- *Q&A prep.* When asked to prepare for Q&A, draft likely questions from the talk's own claims (the weakest-sourced number, the governance control that sounds hardest to implement, cost and ownership across partners) with short answers of 30 to 60 seconds, about 65 to 130 words each. Answers follow the same no-invented-facts rule.
+- *Report timing.* Whenever you edit speaker notes or a script, finish with a timing table: each slide's word count, its estimated minutes at 130 wpm, the running total, and a flag on any slide over 1.5 minutes or any speaking total over 14.5 minutes. When the script runs long, cut restated points, stacked examples (§6), and closers (§2) before cutting any claim, number, or example that carries the argument.
 - *Trimming for time is not rewriting facts.* Shortening may drop a secondary example, but it must not change a figure, a source, or the talk's stated title.
 
 ### Mode 2: Bellevue University coursework
