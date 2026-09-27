@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-marketplace-manifest.json",
+  "name": "bellevue-university",
+  "owner": {
+    "name": "rajk2888",
+    "url": "https://github.com/rajk2888"
+  },
+  "description": "Personal plugins for SEMICON West speaking and Bellevue University coursework.",
+  "plugins": [
+    {
+      "name": "humanizer-semicon",
+      "source": "./plugins/humanizer-semicon",
+      "description": "Humanizer customized for a SEMICON West supply chain risk / data and AI governance talk and for Bellevue University APA 7 writing.",
+      "license": "MIT",
+      "keywords": ["writing", "editing", "humanize", "semiconductor", "supply-chain", "ai-governance"]
+    }
+  ]
+}

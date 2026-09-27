@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "humanizer-semicon",
+  "description": "Humanizer customized for a SEMICON West talk on semiconductor supply chain risk and data/AI governance, plus Bellevue University coursework (APA 7). Rewrites AI-sounding text so it reads naturally without changing what it says.",
+  "version": "3.0.0-semicon.1",
+  "author": {
+    "name": "rajk2888",
+    "url": "https://github.com/rajk2888"
+  },
+  "homepage": "https://github.com/rajk2888/Bellevue-University",
+  "repository": "https://github.com/rajk2888/Bellevue-University",
+  "license": "MIT",
+  "keywords": ["writing", "editing", "humanize", "semiconductor", "supply-chain", "ai-governance", "semicon-west", "apa"]
+}
