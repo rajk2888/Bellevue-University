@@ -11,7 +11,7 @@ description: |
   Based on Wikipedia's "Signs of AI writing."
 license: MIT
 metadata:
-  version: "3.0.0-semicon.1"
+  version: "3.0.0-semicon.2"
   upstream: "https://github.com/blader/humanizer (v3.0.0, MIT)"
 ---
 
@@ -78,6 +78,25 @@ The talk is **"Addressing the risks associated with the global semiconductor sup
 - *Promo posts (LinkedIn, email).* One clear hook, the session title, and the when/where the writer provides. No emoji bullets (§20), no "Excited to announce," no hashtag walls beyond the event's own tags.
 
 **Governance claims.** Keep the difference between what data and AI governance *does* (lineage, access control, model validation, audit trails, human review) and what it *promises* (resilience, trust). If the text slides from the first to the second without saying how, that is §15 or §13 at work; tie the outcome back to a specific control or cut it.
+
+**Time budget: a 20-minute talk.** The slot is 20 minutes. Plan every deck, script, and notes edit against it.
+
+- *Speaking rate.* Assume about 130 words per minute for a technical talk to a live room (slower than reading pace, with pauses for slides). The full script should come to roughly 2,300 to 2,500 words. That leaves about 1 to 2 minutes for transitions, a stumble, or a clicker delay. If the organizer puts Q&A inside the 20 minutes, cut the script to fit the speaking time that's left (for 5 minutes of Q&A, about 1,900 to 2,000 words).
+- *Slide count.* Aim for about 12 to 15 content slides, averaging 1 to 1.5 minutes each. Title, agenda, and closing slides get about 15 to 30 seconds each. A slide with more than about 250 words of notes (about 2 minutes) should be split or trimmed.
+- *Default run of show.* Use this structure unless the writer's outline differs. The writer's own order always wins.
+
+  | Segment | Time | Purpose |
+  |---|---|---|
+  | Open and hook | 0:00 to 1:30 | One concrete disruption or exposure the audience recognizes (from the writer's material only) and why it matters now |
+  | Risk map | 1:30 to 6:00 | Where the global chain is fragile: concentration, single-source inputs, geopolitics and export controls, logistics, demand swings |
+  | Why data is the gap | 6:00 to 9:30 | Visibility past tier 1, data quality and lineage, siloed ERP/planning data, trust between partners |
+  | Data and AI governance as the lever | 9:30 to 15:00 | Specific controls (lineage, access, model validation, monitoring, human review) mapped to specific risks, plus a framework reference such as NIST AI RMF or ISO/IEC 42001 if the writer uses one |
+  | Proof or example | 15:00 to 17:30 | One case, pilot, or illustrative scenario the writer supplies. Label a hypothetical as hypothetical |
+  | Takeaways and close | 17:30 to 19:00 | Three or fewer actions the audience can take next quarter, then a closing line that restates the title's promise |
+  | Buffer | 19:00 to 20:00 | Slack for overruns; becomes Q&A if time allows |
+
+- *Report timing.* Whenever you edit speaker notes or a script, finish with a timing table: each slide's word count, its estimated minutes at 130 wpm, the running total, and a flag on any slide over 2 minutes or any total over 19 minutes. When the script runs long, cut restated points, stacked examples (§6), and closers (§2) before cutting any claim, number, or example that carries the argument.
+- *Trimming for time is not rewriting facts.* Shortening may drop a secondary example, but it must not change a figure, a source, or the talk's stated title.
 
 ### Mode 2: Bellevue University coursework
 
