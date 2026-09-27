@@ -79,9 +79,9 @@ Data won't predict policy. What it can do is tell you, within hours of a change,
 
 Bad governance does slow you down. Good governance should make a crisis faster, because the arguments about whose number is right and who's allowed to see what are settled ahead of time. The test I'd use is whether a planner can get a trusted answer faster with it than without it. If a control doesn't pass that test, simplify it. Governance that only produces paperwork deserves the pushback.
 
-**Q15. You mentioned [your strongest number or claim]. Where does that come from?**
+**Q15. You said more than 90% of advanced chips come from Taiwan. Where does that number come from?**
 
-[Before the talk, pick the one figure in your deck you'd least like to defend and prepare this answer. Name the source, the year, and what it does and doesn't cover. If it's your own estimate, say so and give the method in one sentence.] If you can't source it clearly, cut it from the slides now. It's better to lose a number than lose the room's trust on the last question.
+[Replace the blog source on slide 4 with a primary source you've checked before the talk, and name it here.] The figure usually refers to leading-edge logic manufacturing capacity, below 10 nanometers, not to all semiconductors. Mature nodes, memory, and assembly and test are spread much more widely. That distinction is my point, though. The most advanced capacity is the least diversified, and it's what AI and high-end products depend on. New fabs in the U.S., Japan, and Europe will change the share over time, but not quickly, because a new leading-edge fab takes years to build and qualify.
 
 **Q16. If you had to pick one thing for us to do next quarter, what would it be?**
 
