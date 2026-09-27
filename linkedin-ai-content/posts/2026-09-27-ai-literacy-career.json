@@ -1,0 +1,33 @@
+{
+  "date": "Sunday, Sep 27, 2026",
+  "topic": "AI literacy is now one of the hardest skills to hire for",
+  "music_seed": 270,
+  "post": "The hardest skill to hire for right now isn't coding. 👀\nIt's knowing how to actually use AI at work.\n\nManpowerGroup surveyed 39,000 employers across 41 countries.\nFor the first time, AI skills topped the list of hardest-to-find skills:\n\n🧠 AI model & app development: 20%\n📚 AI literacy: 19%\n\nThat second one is the opportunity.\nAI literacy doesn't need a computer science degree. It means you can:\n\n✅ Write clear prompts and give AI the right context\n✅ Check AI output instead of trusting it blindly\n✅ Spot which parts of your job AI can speed up\n✅ Use it safely with company data\n\nWhy it matters:\nThis week's reporting on the \"AI career premium\" points the same way: people who can apply AI to real work are moving ahead faster.\n\nPractical takeaway:\nPick one weekly task this week, like a report, a summary or a status email.\nDo it with AI, check every fact, and write down what worked.\nThat's a real, provable skill you can talk about in your next review or interview.\n\nWhat's one task you've already handed to AI? 👇\n\nFollow for daily AI news.\n\n#AI #CareerGrowth #AILiteracy #FutureOfWork #Upskilling",
+  "hooks": [
+    "Employers can't find this skill. And you don't need to code to learn it. 👇",
+    "39,000 employers were asked which skills are hardest to find. AI just took #1.",
+    "Want to future-proof your career? Start with the skill that's #2 on every hiring manager's wish list."
+  ],
+  "sources": [
+    { "name": "ManpowerGroup: 2026 Global Talent Shortage", "url": "https://www.manpowergroup.com/en/news-releases/news/global-talent-shortage-reaches-turning-point-as-ai-skills-claim-top-spot" },
+    { "name": "HRD: AI skills top list of hardest-to-find capabilities", "url": "https://www.hcamag.com/ca/specialization/transformation/ai-skills-top-list-of-hardest-to-find-capabilities-for-employers-worldwide-report/566899" },
+    { "name": "KESQ (Stacker): The AI career premium", "url": "https://kesq.com/stacker-careers-education/2026/09/25/the-ai-career-premium-how-ai-skills-are-accelerating-career-paths/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI & your career", "text": "The skill employers can't find", "sub": "Hint: it's not coding", "dur": 2.4 },
+    { "type": "cards", "kicker": "Hardest skills to hire for", "dur": 3.0, "items": [
+      { "icon": "1", "title": "AI development", "desc": "20% of employers" },
+      { "icon": "2", "title": "AI literacy", "desc": "19% of employers" },
+      { "icon": "S", "title": "39,000 employers", "desc": "41 countries surveyed" }
+    ] },
+    { "type": "typewriter", "kicker": "AI literacy means", "text": "Use AI well. Check its work.", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Build it this week", "text": "Pick a task. Use AI. Verify.", "dur": 2.6, "items": [
+      { "letter": "1", "label": "Pick a task", "color": "#2563EB" },
+      { "letter": "2", "label": "Use AI", "color": "#7C3AED" },
+      { "letter": "3", "label": "Verify", "color": "#16A34A" }
+    ] },
+    { "type": "question", "text": "What task have you handed to AI?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
