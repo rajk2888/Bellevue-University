@@ -19,6 +19,7 @@ const C = {
   white: "FFFFFF",
   ink: "1B2229",
   teal: "2F7F7A",
+  blue: "2B7FB8",
   tealLight: "DDEFEC",
   red: "A63D32",
   redLight: "F6E1DE",
@@ -241,13 +242,11 @@ function shadow() {
       s.addText(d, { x: x + 0.3, y: 5.15, w: 5.3, h: 1.05, fontFace: BODY, fontSize: 15, color: C.slate, valign: "top", margin: 0, isTextBox: true });
     });
     footer(s);
-    notes(s, 
+    notes(s,
       "Here's the chain at a very high level: design, materials and gases, equipment, the fab, assembly and test, and then our customers. " +
-      "Over decades we've optimized each of these steps for cost and performance, and that specialization is why the industry works. " +
-      "It's also why it's fragile. For a lot of inputs there are only a few qualified sources, and qualifying a new one can take months or longer. " +
-      "And each hand-off can cross a border, so a single product may carry exposure to several countries' policies, ports, and local events. " +
-      "Efficiency and fragility came from the same choices. " +
-      "And right now, three pressures are pushing on the weakest points."
+      "We've optimized each step for cost and performance, and that specialization is why the industry works. It's also why it's fragile. " +
+      "Many inputs have only a few qualified sources, and each hand-off can cross a border. " +
+      "And right now, three pressures are pushing on the weakest points. "
     );
   }
 
@@ -258,8 +257,8 @@ function shadow() {
     kicker(s, "The risk map");
     title(s, "Three pressures are tightening the chain right now");
     const cols = [
-      ["90%+", "Advanced logic in one place", "Most leading-edge (sub-10 nm) logic capacity sits in Taiwan. A regional conflict or blockade would hit nearly every advanced product at once.", "Source: Synergy (2025)"],
-      ["Ga · Ge", "Materials as trade leverage", "China is the dominant supplier of gallium, germanium, and many rare earths, and has restricted their export in response to trade measures.", "Sources: Exiger; Wiley Online Library"],
+      ["100%", "Advanced logic in two places", "In 2022, all sub-10 nm logic capacity was in Taiwan (69%) and South Korea (31%). A regional conflict or blockade would hit nearly every advanced product.", "Source: SIA & BCG (2024)"],
+      ["99%", "Gallium from one country", "China produced 99% of the world's primary gallium in 2024, and has put export licensing and bans on gallium and germanium since 2023.", "Source: USGS Mineral Commodity Summaries 2025"],
       ["HBM", "AI demand absorbs capacity", "Demand for high-bandwidth memory and AI hardware has stretched lead times and strained sub-10 nm fab capacity.", "Source: Altium"],
     ];
     const cw = 3.85, gx = 0.3, y = 1.8, ch = 4.2;
@@ -277,12 +276,52 @@ function shadow() {
     footer(s);
     notes(s,
       "Three pressures make this urgent now. " +
-      "First, concentration. By the most widely cited estimates, more than 90 percent of the most advanced logic capacity, below 10 nanometers, is in Taiwan. " +
-      "So a regional conflict or blockade wouldn't hit one product line. It would hit nearly all of them at once. " +
-      "Second, materials. China is the dominant supplier of gallium, germanium, and many rare earths, and it has restricted exports of them in response to trade measures. " +
-      "These are small-volume inputs that most of us have never had to trace. " +
-      "Third, AI demand. The rush for high-bandwidth memory and AI hardware is stretching lead times and leading-edge capacity, which leaves less slack for everyone else. " +
-      "Each of these lands on a node most companies can't see well today."
+      "First, concentration. In 2022, all of the world's sub-10 nanometer logic capacity was in two places. I'll show you the numbers on the next slide. " +
+      "Second, materials. According to the USGS, China produced 99 percent of the world's primary gallium in 2024. It put export licensing on gallium and germanium in 2023, banned exports to the U.S. in December 2024, and suspended that ban about a year later. " +
+      "When one government can switch a material on and off, that's a planning risk, whatever the politics. " +
+      "Third, AI demand. The rush for high-bandwidth memory and AI hardware is stretching lead times and leading-edge capacity, which leaves less slack for everyone else. "
+    );
+  }
+
+  // ---------- 3c. Concentration chart ----------
+  {
+    const s = nextSlide();
+    s.background = { color: C.white };
+    kicker(s, "The risk map");
+    title(s, "Advanced logic stays concentrated as new fabs arrive");
+    s.addChart(pres.charts.BAR, [
+      { name: "2022", labels: ["Taiwan", "United States", "South Korea", "Europe", "Japan"], values: [69, 0, 31, 0, 0] },
+      { name: "2032 (projected)", labels: ["Taiwan", "United States", "South Korea", "Europe", "Japan"], values: [47, 28, 9, 6, 5] },
+    ], {
+      x: MX, y: 1.65, w: 8.1, h: 4.85, barDir: "col", barGrouping: "clustered", barGapWidthPct: 60,
+      chartColors: [C.blue, C.copper],
+      showValue: true, dataLabelPosition: "outEnd", dataLabelFormatCode: '0"%"', dataLabelFontSize: 12, dataLabelColor: C.ink, dataLabelFontFace: BODY,
+      catAxisLabelColor: C.ink, catAxisLabelFontSize: 13, catAxisLabelFontFace: BODY, catAxisLineShow: true, catAxisLineColor: C.line,
+      valAxisHidden: true, valAxisMaxVal: 80, valAxisMinVal: 0, valGridLine: { style: "none" }, catGridLine: { style: "none" },
+      showLegend: true, legendPos: "t", legendFontSize: 13, legendFontFace: BODY, legendColor: C.ink,
+      showTitle: true, title: "Share of global sub-10 nm logic wafer capacity", titleFontSize: 14, titleFontFace: HEAD, titleColor: C.slate,
+    });
+    const px = 9.1, pw = W - MX - px;
+    const callouts = [
+      ["2 places", "held all sub-10 nm logic capacity in 2022"],
+      ["47%", "Taiwan's projected share in 2032, still the largest"],
+      ["28%", "projected U.S. share by 2032, up from 0%"],
+    ];
+    callouts.forEach(([big, lbl], i) => {
+      const y = 1.75 + i * 1.55;
+      s.addShape(pres.shapes.RECTANGLE, { x: px, y, w: pw, h: 1.35, fill: { color: i === 0 ? C.copperLight : C.tint }, line: { color: i === 0 ? C.copperLight : C.tint } });
+      s.addText(big, { x: px + 0.25, y: y + 0.12, w: pw - 0.5, h: 0.62, fontFace: HEAD, fontSize: 30, bold: true, color: C.ink, margin: 0, isTextBox: true });
+      s.addText(lbl, { x: px + 0.25, y: y + 0.74, w: pw - 0.5, h: 0.5, fontFace: BODY, fontSize: 13, color: C.slate, valign: "top", margin: 0, isTextBox: true });
+    });
+    s.addText("Source: SIA & BCG, Emerging Resilience in the Semiconductor Supply Chain (May 2024). 2032 values are projections; the remaining ~5% in 2032 includes China and other regions.", {
+      x: MX, y: 6.6, w: W - 2 * MX, h: 0.35, fontFace: BODY, fontSize: 10, italic: true, color: C.muted, margin: 0, isTextBox: true,
+    });
+    footer(s);
+    notes(s,
+      "Here's how concentrated it is. In 2022, all of the world's sub-10 nanometer logic capacity was in two places: Taiwan with 69 percent and South Korea with 31. " +
+      "SIA and BCG project that by 2032 the U.S. reaches 28 percent, with Europe and Japan adding a few points each. " +
+      "That's real progress, but Taiwan still holds almost half, and much of the new capacity arrives late in the decade. " +
+      "So concentration risk isn't going away within the planning horizon most of us work in."
     );
   }
 
@@ -313,17 +352,12 @@ function shadow() {
       x: MX, y: 6.55, w: W - 2 * MX, h: 0.4, fontFace: HEAD, fontSize: 16, italic: true, color: C.copper, margin: 0, isTextBox: true,
     });
     footer(s);
-    notes(s, 
+    notes(s,
       "When I map risk, I group it into six types. " +
       "Concentration comes first, because it multiplies everything else: sole-source inputs, or one site that feeds many of your products. " +
-      "Then geopolitics and trade, which covers export controls, entity lists, and tariffs. " +
-      "Natural hazards and utilities, meaning earthquakes, storms, drought, and power or water at key sites. " +
-      "Logistics delays for time-critical materials. " +
-      "Demand swings, where forecast whiplash turns into over-ordering and then shortages. " +
-      "And cyber and IP risk, both attacks on suppliers and leaks of the very data we'd need to share to manage the rest. " +
-      "None of these is new. What matters is that they tend to pile up on the same few nodes. " +
-      "A sole-source supplier in a region with trade exposure and seismic risk is a very different problem from any one of those alone. " +
-      "So the practical question is how we find those nodes before they find us.  Usually each of these has a different owner, so nobody sees the overlap."
+      "Then geopolitics and trade, natural hazards and utilities, logistics, demand swings, and cyber and IP risk. " +
+      "None of these is new. What matters is that they pile up on the same few nodes, and each one usually has a different owner, so nobody sees the overlap. " +
+      "A sole-source supplier in a region with trade exposure and seismic risk is a very different problem from any one of those alone. "
     );
   }
 
@@ -408,44 +442,82 @@ function shadow() {
     );
   }
 
-  // ---------- 7. AI on ungoverned data ----------
+  // ---------- 7. AI adoption vs governance ----------
   {
     const s = nextSlide();
     s.background = { color: C.white };
     kicker(s, "Why data is the gap");
-    title(s, "AI on ungoverned data scales the error, not the insight");
-    const cols = [
-      ["Without governance", C.red, C.redLight, I.xmark, [
-        "Risk scores built on mismatched part and supplier IDs",
-        "A clean dashboard hides stale lead times",
-        "No one can explain why a supplier was flagged",
-        "Planners stop trusting it and go back to spreadsheets",
-      ]],
-      ["With governance", C.teal, C.tealLight, I.check, [
-        "Scores trace back to named, quality-checked sources",
-        "Input confidence is shown next to every output",
-        "Models are validated against past disruptions",
-        "A named person owns each decision the model informs",
-      ]],
-    ];
-    cols.forEach(([h, col, bg, img, items], i) => {
-      const x = MX + i * 6.2, w = 5.9;
-      s.addShape(pres.shapes.RECTANGLE, { x, y: 1.85, w, h: 4.25, fill: { color: bg }, line: { color: bg } });
-      s.addText(h, { x: x + 0.35, y: 2.05, w: w - 0.7, h: 0.55, fontFace: HEAD, fontSize: 22, bold: true, color: col, margin: 0, isTextBox: true });
-      items.forEach((t, j) => {
-        const y = 2.85 + j * 0.88;
-        s.addImage({ data: img, x: x + 0.35, y: y + 0.06, w: 0.34, h: 0.34 });
-        s.addText(t, { x: x + 0.9, y, w: w - 1.2, h: 0.75, fontFace: BODY, fontSize: 15, color: C.ink, valign: "top", margin: 0, isTextBox: true });
-      });
+    title(s, "AI adoption is running ahead of AI governance");
+    s.addChart(pres.charts.BAR, [
+      { name: "Share of supply chain organizations", labels: ["Deploying generative AI", "Have a formal supply chain AI strategy"], values: [72, 23] },
+    ], {
+      x: MX, y: 1.7, w: 6.6, h: 3.7, barDir: "bar", barGapWidthPct: 45,
+      chartColors: [C.blue, C.copper], varyColors: true,
+      showValue: true, dataLabelPosition: "outEnd", dataLabelFormatCode: '0"%"', dataLabelFontSize: 22, dataLabelColor: C.ink, dataLabelFontFace: HEAD, dataLabelFontBold: true,
+      catAxisLabelColor: C.ink, catAxisLabelFontSize: 14, catAxisLabelFontFace: BODY, catAxisOrientation: "maxMin", catAxisLineShow: false,
+      valAxisHidden: true, valAxisMaxVal: 100, valAxisMinVal: 0, valGridLine: { style: "none" }, catGridLine: { style: "none" },
+      showLegend: false, showTitle: true, title: "Share of supply chain organizations (Gartner surveys, 2025)", titleFontSize: 14, titleFontFace: HEAD, titleColor: C.slate,
+    });
+    s.addText("Sources: Gartner press releases, Feb 5, 2025 (GenAI deployment) and Jun 11, 2025 (AI strategy; 120 leaders surveyed). Separate surveys.", {
+      x: MX, y: 5.5, w: 6.6, h: 0.5, fontFace: BODY, fontSize: 10, italic: true, color: C.muted, valign: "top", margin: 0, isTextBox: true,
+    });
+    const px = 7.6, pw = W - MX - px;
+    s.addShape(pres.shapes.RECTANGLE, { x: px, y: 1.7, w: pw, h: 4.3, fill: { color: C.dark }, line: { color: C.dark } });
+    s.addText("When it's done well", { x: px + 0.35, y: 1.9, w: pw - 0.7, h: 0.4, fontFace: HEAD, fontSize: 16, bold: true, color: "E8B48F", margin: 0, isTextBox: true });
+    const stats = [["15%", "better logistics costs"], ["35%", "better inventory levels"], ["65%", "better service levels"]];
+    stats.forEach(([big, lbl], k) => {
+      const y = 2.45 + k * 0.95;
+      s.addText(big, { x: px + 0.35, y, w: 1.6, h: 0.8, fontFace: HEAD, fontSize: 36, bold: true, color: C.copper, valign: "middle", margin: 0, isTextBox: true });
+      s.addText(lbl, { x: px + 2.0, y, w: pw - 2.3, h: 0.8, fontFace: BODY, fontSize: 15, color: C.white, valign: "middle", margin: 0, isTextBox: true });
+    });
+    s.addText("Early adopters of AI-enabled supply chain management vs. slower competitors. Source: McKinsey, \"Succeeding in the AI supply-chain revolution\" (2021).", {
+      x: px + 0.35, y: 5.3, w: pw - 0.7, h: 0.6, fontFace: BODY, fontSize: 10, italic: true, color: C.muted, valign: "top", margin: 0, isTextBox: true,
+    });
+    s.addText("The gap between those two bars is where ungoverned AI risk lives.", {
+      x: MX, y: 6.35, w: W - 2 * MX, h: 0.45, fontFace: HEAD, fontSize: 16, italic: true, color: C.copper, margin: 0, isTextBox: true,
     });
     footer(s);
-    notes(s, 
-      "This is why I worry about adding AI too early. " +
-      "If you train a risk model on mismatched IDs and stale lead times, you don't get insight. You get the same errors, faster, on a nicer dashboard. " +
-      "And when nobody can explain why a supplier was flagged, planners quietly go back to their spreadsheets. " +
-      "With governance, every score traces back to named sources, you can see how confident the inputs are, the model has been tested against disruptions you've already lived through, and a named person owns the decision. " +
-      "That's the difference between a tool people use and one they work around. " +
-      "So the order matters. Fix the data and the decision rights first, then scale the AI."
+    notes(s,
+      "The industry is adopting AI fast. In separate 2025 surveys, Gartner found 72 percent of supply chain organizations deploying generative AI, but only 23 percent with a formal supply chain AI strategy. " +
+      "That gap is where the risk sits. " +
+      "The payoff is real when it's done well. McKinsey found early adopters of AI-enabled supply chain management improved logistics costs by 15 percent, inventory levels by 35 percent, and service levels by 65 percent compared with slower competitors. " +
+      "Those were the companies that got the data and the decision rights right. Without that, AI scales the errors in data we already don't trust."
+    );
+  }
+
+  // ---------- 7b. AI models ----------
+  {
+    const s = nextSlide();
+    s.background = { color: C.white };
+    kicker(s, "Governance as the lever");
+    title(s, "Each type of AI model needs its own governance control");
+    const models = [
+      [I.chart, "Time-series forecasting", "Gradient boosting, LSTM, transformers", "Predicts demand, lead times, and allocation risk", "Backtest on past disruptions; monitor drift"],
+      [I.layer, "Graph models", "Knowledge graphs, graph neural networks", "Maps multi-tier BOMs to find single points of failure", "Lineage and a confidence level on every link"],
+      [I.search, "NLP & large language models", "Classifiers, LLMs, retrieval", "Reads news, supplier notices, and regulations for early signals", "Ground in approved sources; log prompts and outputs"],
+      [I.warn, "Anomaly detection", "Isolation forest, autoencoders", "Flags unusual shipments, quality drift, or supplier behavior", "Owners tune thresholds; review false alarms"],
+      [I.gears, "Optimization & digital twins", "Solvers, simulation", "Tests allocation and alternate-source scenarios", "Validate assumptions; a person approves the plan"],
+      [I.robot, "Agentic AI", "LLM agents with tools", "Chains steps, such as drafting supplier queries or POs", "Least-privilege tools; sign-off before external actions"],
+    ];
+    const cw = 3.85, ch = 2.35, gx = 0.3, gy = 0.25, y0 = 1.65;
+    models.forEach(([img, h, ex, what, ctl], i) => {
+      const r = Math.floor(i / 3), c = i % 3;
+      const x = MX + c * (cw + gx), y = y0 + r * (ch + gy);
+      s.addShape(pres.shapes.RECTANGLE, { x, y, w: cw, h: ch, fill: { color: C.tint }, line: { color: C.tint } });
+      die(s, img, x + 0.25, y + 0.25, 0.55, C.dark);
+      s.addText(h, { x: x + 0.95, y: y + 0.2, w: cw - 1.15, h: 0.4, fontFace: HEAD, fontSize: 16, bold: true, color: C.ink, margin: 0, isTextBox: true });
+      s.addText(ex, { x: x + 0.95, y: y + 0.58, w: cw - 1.15, h: 0.3, fontFace: BODY, fontSize: 11, italic: true, color: C.muted, margin: 0, isTextBox: true });
+      s.addText(what, { x: x + 0.25, y: y + 0.98, w: cw - 0.5, h: 0.62, fontFace: BODY, fontSize: 13, color: C.slate, valign: "top", margin: 0, isTextBox: true });
+      s.addText([{ text: "Control: ", options: { bold: true } }, { text: ctl }], { x: x + 0.25, y: y + 1.6, w: cw - 0.5, h: 0.62, fontFace: BODY, fontSize: 13, color: C.copper, valign: "top", margin: 0, isTextBox: true });
+    });
+    footer(s);
+    notes(s,
+      "Here are the AI models most often used for supply chain risk, and each one needs a different control. " +
+      "Forecasting models predict demand, lead times, and allocation, so you backtest them against past disruptions and watch for drift. " +
+      "Graph models map multi-tier bills of materials to find single points of failure, so every link needs lineage and a confidence level. " +
+      "Language models read news, supplier notices, and regulations; ground them in approved sources and log what they produce. " +
+      "Anomaly detection needs owners who tune the thresholds. Optimization and digital twins test scenarios, but a person approves the plan. " +
+      "And agentic AI, which can act on its own, needs the tightest permissions of all."
     );
   }
 
@@ -474,14 +546,13 @@ function shadow() {
       x: MX, y: 6.6, w: W - 2 * MX, h: 0.4, fontFace: HEAD, fontSize: 16, italic: true, color: C.copper, margin: 0, isTextBox: true,
     });
     footer(s);
-    notes(s, 
+    notes(s,
       "So what do I mean by data and AI governance? I think of it as four layers, and you build from the bottom. " +
       "The data foundation is common IDs for parts and suppliers, lineage so you know where a number came from, quality checks on the fields that drive risk decisions, and an owner for each critical record. " +
       "On top of that, access and sharing: least-privilege access, data-use agreements with suppliers, and audit trails, because a map of your sole sources is sensitive data in its own right. " +
-      "Then AI model risk: validate models against events you've already lived through, monitor for drift, make outputs explainable, and log prompts and outputs for generative tools. " +
-      "And at the top, human oversight. Who decides, who gets escalated to, and who owns each action. " +
-      "If you skip a layer, the ones above it don't hold. " +
-      "Most teams want to start at the AI layer because that's where the excitement is. The work that pays off first is usually at the bottom, in the master data."
+      "Then AI model risk, which covers the controls I just described for each model type. " +
+      "And at the top, human oversight: who decides, who gets escalated to, and who owns each action. " +
+      "If you skip a layer, the ones above it don't hold. The work that pays off first is usually at the bottom, in the master data. "
     );
   }
 
@@ -560,14 +631,12 @@ function shadow() {
       x: MX, y: 5.85, w: W - 2 * MX, h: 0.7, fontFace: HEAD, fontSize: 16, italic: true, color: C.copper, margin: 0, isTextBox: true,
     });
     footer(s);
-    notes(s, 
-      "You don't need to invent a governance model. Two are worth knowing. " +
-      "The NIST AI Risk Management Framework is voluntary and practical. It has four functions: Govern, Map, Measure, and Manage. " +
-      "Govern sets policies and accountability. Map is understanding where a model is used and what it could affect. Measure is testing and tracking those risks, and Manage is acting on them and continuing to monitor. " +
-      "ISO/IEC 42001 is a certifiable management system standard for AI, which matters when customers or regulators want proof rather than a policy document. " +
-      "A pattern I see often is to design the practice with NIST and certify it with ISO. " +
-      "Either way, the worst outcome is a framework on a shelf. Apply it to one real use case first. [Mention the framework your organization uses, if any.] " +
-      "A supplier risk score is a good candidate, because it touches every layer we just talked about and the people using it will tell you quickly whether it helps."
+    notes(s,
+      "You don't need to invent a governance model. " +
+      "The NIST AI Risk Management Framework is voluntary and practical, with four functions: Govern, Map, Measure, and Manage. " +
+      "ISO/IEC 42001 is a certifiable management system standard, which matters when customers or regulators want proof rather than a policy. " +
+      "A common pattern is to design the practice with NIST and certify it with ISO. [Mention the framework your organization uses, if any.] " +
+      "Either way, apply it to one real use case first. A supplier risk score is a good candidate. "
     );
   }
 
@@ -596,15 +665,13 @@ function shadow() {
       x: MX, y: 5.6, w: W - 2 * MX, h: 0.45, fontFace: HEAD, fontSize: 16, italic: true, color: C.copper, margin: 0, isTextBox: true,
     });
     footer(s);
-    notes(s, 
+    notes(s,
       "[Replace this with your own case if you can share one. If you keep it, say that it's illustrative.] " +
-      "Let me walk through what this looks like when it works. This is an illustrative example. " +
-      "An outside signal flags an outage at a specialty gas supplier. The model ranks it high, and it can say why: that site is a sole source for material we use. " +
-      "Because the sub-tier map is governed, with common IDs, lineage, and an owner, we can see within hours which parts, products, and customers depend on that site, and how confident we are in each link. " +
-      "Then a person decides. The part owner looks at the evidence, confirms exposure with the tier 1 supplier, and approves an allocation plan. " +
-      "From there buyers start qualifying an alternate source, and account teams tell affected customers early instead of at the missed ship date. " +
-      "Notice what didn't change. A human still makes the call. Governance made that call faster and easier to defend. " +
-      "Compare that with the scenario I opened with, where the first signal was the missed ship date."
+      "Here's what this looks like when it works. This is an illustrative example. " +
+      "An outside signal flags an outage at a specialty gas supplier. The model ranks it high and can say why: that site is a sole source for material we use. " +
+      "Because the sub-tier map is governed, we can see within hours which parts, products, and customers depend on that site, and how confident we are in each link. " +
+      "Then a person decides. The part owner checks the evidence with the tier 1 supplier and approves an allocation plan. Buyers start qualifying an alternate source, and account teams warn customers early. " +
+      "A human still makes the call. Governance made it faster and easier to defend, and the first signal wasn't a missed ship date. "
     );
   }
 
@@ -664,6 +731,40 @@ function shadow() {
   }
 
 
+  // ---------- 7. AI on ungoverned data ----------
+  {
+    const s = nextSlide();
+    s.background = { color: C.white };
+    kicker(s, "Backup");
+    title(s, "AI on ungoverned data scales the error, not the insight");
+    const cols = [
+      ["Without governance", C.red, C.redLight, I.xmark, [
+        "Risk scores built on mismatched part and supplier IDs",
+        "A clean dashboard hides stale lead times",
+        "No one can explain why a supplier was flagged",
+        "Planners stop trusting it and go back to spreadsheets",
+      ]],
+      ["With governance", C.teal, C.tealLight, I.check, [
+        "Scores trace back to named, quality-checked sources",
+        "Input confidence is shown next to every output",
+        "Models are validated against past disruptions",
+        "A named person owns each decision the model informs",
+      ]],
+    ];
+    cols.forEach(([h, col, bg, img, items], i) => {
+      const x = MX + i * 6.2, w = 5.9;
+      s.addShape(pres.shapes.RECTANGLE, { x, y: 1.85, w, h: 4.25, fill: { color: bg }, line: { color: bg } });
+      s.addText(h, { x: x + 0.35, y: 2.05, w: w - 0.7, h: 0.55, fontFace: HEAD, fontSize: 22, bold: true, color: col, margin: 0, isTextBox: true });
+      items.forEach((t, j) => {
+        const y = 2.85 + j * 0.88;
+        s.addImage({ data: img, x: x + 0.35, y: y + 0.06, w: 0.34, h: 0.34 });
+        s.addText(t, { x: x + 0.9, y, w: w - 1.2, h: 0.75, fontFace: BODY, fontSize: 15, color: C.ink, valign: "top", margin: 0, isTextBox: true });
+      });
+    });
+    footer(s);
+    notes(s, "Backup slide. Use if asked what changes when governance is in place.", false);
+  }
+
   // ---------- Appendix: sources ----------
   {
     const s = nextSlide();
@@ -671,8 +772,12 @@ function shadow() {
     kicker(s, "Appendix");
     title(s, "Sources");
     const src = [
-      ["Synergy (2025). Strengthening the global semiconductor supply chain: challenges and opportunities in 2025.", "https://synergy-inc.com/blogs/strengthening-the-global-semiconductor-supply-chain-challenges-and-opportunities-in-2025-2"],
-      ["Video on semiconductor concentration (YouTube).", "https://www.youtube.com/watch?v=L89vznHYGdQ"],
+      ["SIA & BCG (May 2024). Emerging Resilience in the Semiconductor Supply Chain.", "https://www.semiconductors.org/emerging-resilience-in-the-semiconductor-supply-chain/"],
+      ["USGS (2025). Mineral Commodity Summaries 2025: Gallium; Germanium.", "https://pubs.usgs.gov/publication/mcs2025"],
+      ["Gartner (Feb 5, 2025). Supply chain GenAI productivity gains survey.", "https://www.gartner.com/en/newsroom/press-releases/2025-02-05-gartner-survey-supply-chain-genai-productivity-gains-at-individual-level-while-creating-new-complications-for-organizations"],
+      ["Gartner (Jun 11, 2025). Just 23% of supply chain organizations have a formal AI strategy.", "https://www.gartner.com/en/newsroom/2025-06-11-gartner-survey-shows-just-23-percent-of-supply-chain-organizations-have-a-formal-ai-strategy"],
+      ["McKinsey (2021). Succeeding in the AI supply-chain revolution.", "https://www.mckinsey.com/industries/metals-and-mining/our-insights/succeeding-in-the-ai-supply-chain-revolution"],
+      ["Synergy (2025). Strengthening the global semiconductor supply chain in 2025.", "https://synergy-inc.com/blogs/strengthening-the-global-semiconductor-supply-chain-challenges-and-opportunities-in-2025-2"],
       ["Exiger. Chip challenges: semiconductors and supply chain risks.", "https://www.exiger.com/perspectives/chip-challenges-semiconductors-and-supply-chain-risks/"],
       ["Wiley Online Library, article app5.70046.", "https://onlinelibrary.wiley.com/doi/full/10.1002/app5.70046"],
       ["Altium. Supply chain resilience, AI demand, and the semiconductor shortage.", "https://resources.altium.com/p/supply-chain-resilience-ai-demand-semiconductor-shortage"],
@@ -685,7 +790,7 @@ function shadow() {
       runs.push({ text: t + " ", options: { color: C.ink } });
       runs.push({ text: url, options: { color: C.teal, hyperlink: { url }, breakLine: i < src.length - 1 } });
     });
-    s.addText(runs, { x: MX, y: 1.7, w: W - 2 * MX, h: 5.0, fontFace: BODY, fontSize: 12, valign: "top", paraSpaceAfter: 8, margin: 0, isTextBox: true });
+    s.addText(runs, { x: MX, y: 1.7, w: W - 2 * MX, h: 5.0, fontFace: BODY, fontSize: 11, valign: "top", paraSpaceAfter: 5, margin: 0, isTextBox: true });
     footer(s);
     notes(s, "Appendix. Not presented; keep it for reference and when sharing the deck.", false);
   }

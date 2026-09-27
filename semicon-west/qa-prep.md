@@ -79,9 +79,9 @@ Data won't predict policy. What it can do is tell you, within hours of a change,
 
 Bad governance does slow you down. Good governance should make a crisis faster, because the arguments about whose number is right and who's allowed to see what are settled ahead of time. The test I'd use is whether a planner can get a trusted answer faster with it than without it. If a control doesn't pass that test, simplify it. Governance that only produces paperwork deserves the pushback.
 
-**Q15. You said more than 90% of advanced chips come from Taiwan. Where does that number come from?**
+**Q15. You said all advanced logic capacity was in two places. Isn't that changing with the new fabs in the U.S.?**
 
-[Replace the blog source on slide 4 with a primary source you've checked before the talk, and name it here.] The figure usually refers to leading-edge logic manufacturing capacity, below 10 nanometers, not to all semiconductors. Mature nodes, memory, and assembly and test are spread much more widely. That distinction is my point, though. The most advanced capacity is the least diversified, and it's what AI and high-end products depend on. New fabs in the U.S., Japan, and Europe will change the share over time, but not quickly, because a new leading-edge fab takes years to build and qualify.
+It is changing, and the same SIA and BCG report shows it. They project the U.S. going from zero to about 28 percent of sub-10 nanometer logic capacity by 2032, with Europe and Japan adding a few points each. But Taiwan is still projected at 47 percent, and much of that new capacity arrives late in the decade. Those shares cover leading-edge logic only. Mature nodes, memory, and assembly and test are spread more widely. So concentration risk shrinks over time, but it doesn't go away within the next few planning cycles.
 
 **Q16. If you had to pick one thing for us to do next quarter, what would it be?**
 
