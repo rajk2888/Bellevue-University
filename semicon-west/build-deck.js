@@ -493,8 +493,8 @@ function shadow() {
     title(s, "Each type of AI model needs its own governance control");
     const models = [
       [I.chart, "Time-series forecasting", "Gradient boosting, LSTM, transformers", "Predicts demand, lead times, and allocation risk", "Backtest on past disruptions; monitor drift"],
-      [I.layer, "Graph models", "Knowledge graphs, graph neural networks", "Maps multi-tier BOMs to find single points of failure", "Lineage and a confidence level on every link"],
-      [I.search, "NLP & large language models", "Classifiers, LLMs, retrieval", "Reads news, supplier notices, and regulations for early signals", "Ground in approved sources; log prompts and outputs"],
+      [I.layer, "Graph models", "Knowledge graphs, GNNs", "Maps multi-tier BOMs to find single points of failure", "Lineage and a confidence level on every link"],
+      [I.search, "NLP & LLMs", "Classifiers, language models, retrieval", "Reads news, supplier notices, and regulations for early signals", "Ground in approved sources; log prompts and outputs"],
       [I.warn, "Anomaly detection", "Isolation forest, autoencoders", "Flags unusual shipments, quality drift, or supplier behavior", "Owners tune thresholds; review false alarms"],
       [I.gears, "Optimization & digital twins", "Solvers, simulation", "Tests allocation and alternate-source scenarios", "Validate assumptions; a person approves the plan"],
       [I.robot, "Agentic AI", "LLM agents with tools", "Chains steps, such as drafting supplier queries or POs", "Least-privilege tools; sign-off before external actions"],
