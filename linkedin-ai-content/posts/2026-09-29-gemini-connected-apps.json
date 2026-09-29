@@ -1,0 +1,33 @@
+{
+  "date": "Tuesday, Sep 29, 2026",
+  "topic": "AI tool tutorial: use Gemini's new Connected Apps in 3 steps",
+  "music_seed": 272,
+  "post": "Stop copy-pasting between your AI chat and your work apps. 🔌\nGoogle just connected 14 more apps to Gemini. Here's how to use them in 3 steps.\n\nWhat's new (rolling out since Sep 23):\n\n💼 Productivity: Airtable, Linear, monday.com, PandaDoc, Wispr AI, Zoho\n🎨 Creativity: Adobe, Picsart, Squarespace, Webflow\n🏃 Lifestyle: apartments.com, Experian, Peloton, SeatGeek\n\nHow to try it:\n\n1️⃣ Open the Gemini app and connect an app in Settings (or just ask Gemini to)\n2️⃣ Type @ and the app name in your prompt\n3️⃣ Ask for the outcome, e.g.:\n\"@monday.com create a task board for next week's product launch with owners and due dates\"\n\n⚠️ Heads-up: 10 of the 14 are US-only for now. Outside the US, Adobe, monday.com and Wispr AI are available, in English.\n\nWhy it matters:\nAI is moving from \"answer my question\" to \"do the work where my work lives.\" Fewer tabs, fewer copy-pastes.\n\nPractical takeaway:\nBefore you connect any app, check what access you're granting. Start with one low-risk workspace, not your most sensitive one.\n\nWhich app would you connect to your AI assistant first? 👇\n\nFollow for daily AI news.\n\n#AI #GoogleGemini #Productivity #AITools",
+  "hooks": [
+    "Your AI assistant can now work inside Adobe, monday.com and 12 more apps. Here's how. 👇",
+    "Copy. Paste. Switch tabs. Repeat. Gemini just made that a lot less necessary.",
+    "3 steps to get Gemini working inside the apps you already use."
+  ],
+  "sources": [
+    { "name": "Google blog: A new wave of Connected Apps", "url": "https://blog.google/innovation-and-ai/products/gemini-app/new-connected-apps-gemini/" },
+    { "name": "Android Authority", "url": "https://www.androidauthority.com/new-gemini-connected-apps-3714714/" },
+    { "name": "Notebookcheck", "url": "https://www.notebookcheck.net/Google-Gemini-adds-14-connected-apps-and-10-of-them-are-US-only.1408205.0.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI tool tutorial", "text": "Stop copy-pasting", "sub": "Gemini now works inside 14 more apps", "dur": 2.4 },
+    { "type": "cards", "kicker": "New Connected Apps", "dur": 3.0, "items": [
+      { "icon": "P", "title": "Productivity", "desc": "Airtable, Linear, monday.com…" },
+      { "icon": "C", "title": "Creativity", "desc": "Adobe, Picsart, Webflow…" },
+      { "icon": "L", "title": "Lifestyle", "desc": "Peloton, SeatGeek, Experian…" }
+    ] },
+    { "type": "tiles", "kicker": "How to use it", "text": "Connect · @mention · Ask", "dur": 2.8, "items": [
+      { "letter": "1", "label": "Connect", "color": "#2563EB" },
+      { "letter": "@", "label": "Mention", "color": "#7C3AED" },
+      { "letter": "3", "label": "Ask", "color": "#16A34A" }
+    ] },
+    { "type": "typewriter", "kicker": "Heads-up", "text": "10 of 14 are US-only.", "dur": 2.2 },
+    { "type": "question", "text": "Which app would you connect first?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
