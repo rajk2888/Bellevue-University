@@ -1,0 +1,32 @@
+{
+  "date": "Wednesday, Sep 30, 2026",
+  "topic": "5 things to know about AMD buying World Labs for $8.2B",
+  "music_seed": 273,
+  "post": "A chipmaker just paid $8.2 billion for an AI lab that builds 3D worlds. 🌍\nHere are 5 things you need to know.\n\n1️⃣ The deal\nAMD is acquiring World Labs, the AI startup founded by Fei-Fei Li, in an all-stock deal worth about $8.2 billion.\n\n2️⃣ What World Labs does\nIt builds \"spatial intelligence\" models: AI that can generate and simulate interactive 3D environments from text, images and video.\n\n3️⃣ Why robots care\nIts tech is also used for robot learning and simulation, so machines can practice in virtual worlds before the real one.\n\n4️⃣ Who's joining\nFei-Fei Li, one of the best-known names in AI, will join AMD as executive vice president and chief scientist.\n\n5️⃣ How big it is\nIt's AMD's second-largest acquisition ever, behind Xilinx. Closing is expected by year-end, pending regulators.\n\nWhy it matters:\nThe AI race is moving beyond text and chat. Chipmakers now want the models that understand the physical world, not just the hardware that runs them.\n\nPractical takeaway:\nIf you work in design, real estate, manufacturing or training, watch \"3D world\" AI closely. It's where simulation and robotics are heading.\n\nWhere would AI-generated 3D worlds help your industry? 👇\n\nFollow for daily AI news.\n\n#AI #SpatialIntelligence #AMD #Robotics #TechNews",
+  "hooks": [
+    "$8.2 billion for an AI that builds 3D worlds. Here's why AMD just did it. 👇",
+    "The AI race just left the chat window. 5 things to know about AMD's biggest bet in years.",
+    "A chip company just hired one of AI's most famous scientists. The real story is bigger."
+  ],
+  "sources": [
+    { "name": "CNBC", "url": "https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html" },
+    { "name": "TechCrunch", "url": "https://techcrunch.com/2026/09/28/amd-will-acquire-fei-fei-lis-world-labs-for-8-2-billion/" },
+    { "name": "Fortune", "url": "https://fortune.com/2026/09/28/amd-acquires-world-labs-startup-fei-fei-li-8-2-billion/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "5 things to know", "text": "$8.2B for 3D-world AI", "sub": "AMD is buying World Labs", "dur": 2.4 },
+    { "type": "cards", "kicker": "The basics", "dur": 3.2, "items": [
+      { "icon": "1", "title": "All-stock deal", "desc": "About $8.2 billion" },
+      { "icon": "2", "title": "Spatial intelligence", "desc": "AI that builds 3D worlds" },
+      { "icon": "3", "title": "Robot training", "desc": "Practice in simulation" }
+    ] },
+    { "type": "cards", "kicker": "And also", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Fei-Fei Li joins AMD", "desc": "As chief scientist" },
+      { "icon": "5", "title": "AMD's #2 deal ever", "desc": "Closing by year-end" }
+    ] },
+    { "type": "typewriter", "kicker": "The big shift", "text": "AI is leaving the chat window.", "dur": 2.4 },
+    { "type": "question", "text": "Where would 3D-world AI help you?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
