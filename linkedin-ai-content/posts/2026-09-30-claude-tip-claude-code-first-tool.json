@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 3",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Wednesday, Sep 30, 2026",
+  "topic": "Claude Code for non-coders: build your first tiny tool",
+  "music_seed": 281,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "You don't need to know how to code to build something with Claude Code. 🛠️\nHere's a first project you can finish over lunch.\n\nClaude Code is Claude's tool for building software.\nThe best part for beginners: you describe what you want in plain English, and it writes the code for you.\n\nYour first mini project, a personal habit tracker:\n\n1️⃣ Open the Claude desktop app and choose Claude Code\n2️⃣ Point it at a new, empty folder (so nothing else gets touched)\n3️⃣ Type something like:\n\"Build a one-page habit tracker I can open in my browser. Let me add habits, tick them off each day, and see my streaks. Keep it simple and explain what you made.\"\n4️⃣ Review what it plans to change, approve it, then open the page\n\nThen keep going in plain English:\n\"Make the buttons bigger.\" \"Add a dark mode.\" \"Show a weekly summary.\"\n\nGood to know: Claude Code comes with Pro, Max, Team and Enterprise plans.\n\nWhy it matters:\nThe gap between \"I have an idea\" and \"I built it\" just got much smaller. You don't need to become a developer. You need to describe clearly what you want.\n\nWhat tiny tool would make your workday easier? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "I built a working app without writing a single line of code. Here's how you can too. 👇",
+    "Claude Code isn't just for developers. Here's a beginner project you can finish over lunch.",
+    "If you can describe it, you can build it. Your first Claude Code project in 4 steps."
+  ],
+  "sources": [
+    { "name": "Claude Code docs: Overview", "url": "https://code.claude.com/docs/en/overview" },
+    { "name": "Claude Help Center: Use Claude Code with your Pro or Max plan", "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Build it. No coding.", "sub": "Your first Claude Code project", "dur": 2.4,
+      "say": "Here's something that surprises a lot of people. You don't need to know how to code to build something with Claude Code." },
+    { "type": "typewriter", "kicker": "What is Claude Code?", "text": "You describe it. Claude builds it.", "dur": 2.6,
+      "say": "Claude Code is Claude's tool for building software. You describe what you want in plain English, and it writes the code for you." },
+    { "type": "cards", "kicker": "Your first project", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Open Claude Code", "desc": "In the Claude desktop app" },
+      { "icon": "2", "title": "Use a new folder", "desc": "So nothing else is touched" },
+      { "icon": "3", "title": "Describe your tool", "desc": "In plain English" }
+    ], "say": "Let's build a simple habit tracker. Open Claude Code in the desktop app, point it at a new, empty folder, and describe what you want." },
+    { "type": "prompt", "kicker": "Type this", "label": "Your first request", "text": "Build a one-page habit tracker.\nLet me tick habits off daily\nand show my streaks.", "dur": 3.4,
+      "say": "Try something like this: build a one-page habit tracker, let me tick off habits each day, and show my streaks." },
+    { "type": "tiles", "kicker": "Stay in control", "text": "Review · Approve · Open", "dur": 2.4, "items": [
+      { "letter": "R", "label": "Review", "color": "#0F766E" },
+      { "letter": "A", "label": "Approve", "color": "#B45309" },
+      { "letter": "O", "label": "Open it", "color": "#BE123C" }
+    ], "say": "Look at what it plans to change, approve it, and then open your new page in the browser." },
+    { "type": "typewriter", "kicker": "Keep improving", "text": "\"Make the buttons bigger.\"", "dur": 2.4,
+      "say": "Then just keep talking to it. Make the buttons bigger. Add a dark mode. It's that simple." },
+    { "type": "question", "text": "What tiny tool would help you?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what tiny tool would make your workday easier? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
