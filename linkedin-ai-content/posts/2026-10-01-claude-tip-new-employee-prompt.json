@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 4",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Oct 1, 2026",
+  "topic": "The \"new employee\" prompt: turn messy notes into action items",
+  "music_seed": 282,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Most bad AI answers come from one mistake: we talk to it like a search box. 🔍\nTry talking to it like a brilliant new hire instead.\n\nThat idea comes straight from Anthropic's own prompting guide:\nthink of Claude as a brilliant but new employee who doesn't know your context yet.\n\nSo give it what you'd give a new teammate:\n\n🎯 The goal: what you need and why\n📋 The context: who it's for, what matters\n🧱 The format: exactly what the result should look like\n\nHere's a copy-paste prompt for messy meeting notes:\n\n\"You're helping me follow up after a team meeting.\nBelow are my rough notes.\nPlease give me:\n1. A 3-line summary for my manager\n2. Action items as a table: task, owner, due date\n3. Open questions nobody answered\nIf an owner or date isn't in the notes, write 'TBD' instead of guessing.\"\n\nThen paste your notes underneath.\n\nWhy it matters:\nThe quality of the answer depends on the quality of the brief. One clear prompt beats five rounds of \"no, not like that.\"\n\nA quick test from the same guide: if a colleague would be confused by your prompt, Claude will be too.\n\nWhat task would you brief Claude on first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Stop talking to AI like a search box. Brief it like a new hire. (Copy-paste prompt inside) 👇",
+    "The one mindset shift that makes AI answers far more useful.",
+    "Anthropic's own guide says to treat Claude like a brilliant new employee. Here's what that looks like."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Brief it like a new hire", "sub": "One prompt habit that changes everything", "dur": 2.4,
+      "say": "Here's the biggest mistake beginners make with AI. We talk to it like a search box." },
+    { "type": "typewriter", "kicker": "From Anthropic's guide", "text": "A brilliant, but new, employee.", "dur": 2.6,
+      "say": "Anthropic's own guide suggests a better way. Think of Claude as a brilliant, but new, employee who doesn't know your context yet." },
+    { "type": "cards", "kicker": "So give it", "dur": 3.0, "items": [
+      { "icon": "G", "title": "The goal", "desc": "What you need, and why" },
+      { "icon": "C", "title": "The context", "desc": "Who it's for, what matters" },
+      { "icon": "F", "title": "The format", "desc": "What the result looks like" }
+    ], "say": "So give it what you'd give a new teammate. The goal. The context. And the exact format you want back." },
+    { "type": "prompt", "kicker": "Copy this", "label": "For messy meeting notes", "text": "Summarize for my manager.\nList tasks, owners, due dates.\nWrite TBD instead of guessing.", "dur": 3.4,
+      "say": "Here's one for messy meeting notes. Ask for a short summary for your manager, a list of tasks with owners and due dates, and tell it to write TBD instead of guessing." },
+    { "type": "tiles", "kicker": "What you get", "text": "Summary · Tasks · Open questions", "dur": 2.4, "items": [
+      { "letter": "S", "label": "Summary", "color": "#0F766E" },
+      { "letter": "T", "label": "Tasks", "color": "#B45309" },
+      { "letter": "?", "label": "Questions", "color": "#BE123C" }
+    ], "say": "Paste your notes underneath, and you get a clean summary, a task list, and the questions nobody answered." },
+    { "type": "typewriter", "kicker": "Quick test", "text": "Would a colleague get it?", "dur": 2.4,
+      "say": "And here's a quick test from the same guide. If a colleague would be confused by your prompt, Claude will be too." },
+    { "type": "question", "text": "What would you brief Claude on?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's the first task you'd brief Claude on? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
