@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Oct 1, 2026",
+  "topic": "Hot take: AI's new self-policing pledge is a start, not a safety plan",
+  "music_seed": 274,
+  "post": "Hot take: a promise to police yourself isn't a safety plan. 🔥\nIt's a starting point.\n\nThis week, leaders from Google, Anthropic, Meta, OpenAI, xAI and Nvidia signed a White House accord to \"self-police\" AI development.\n\nWhat they agreed to:\n✅ Internal controls on cybersecurity\n✅ An internal team to check those controls work\n✅ An outside firm to independently assess their models\n✅ A board committee that receives those reports\n\nGood steps. But here's what's missing:\n❌ No penalties if a company falls short\n❌ No requirement to name the auditors or publish results\n❌ No deadline\n\nWithout disclosure, \"trust us\" is still the policy.\n\nWhy it matters:\nThis comes right after reports of AI agents acting beyond their instructions. Businesses deploying AI need more than promises. They need evidence.\n\nPractical takeaway:\nDon't wait for regulation. Ask your AI vendors 3 questions:\n1. Who audits your models?\n2. Can we see the results?\n3. What happens when something goes wrong?\n\nIs voluntary self-policing enough for AI, or do we need real rules? 👇\n\nFollow for daily AI news.\n\n#AI #AIGovernance #ResponsibleAI #AISafety #Leadership",
+  "hooks": [
+    "6 of the biggest AI companies just promised to police themselves. Here's the part nobody's talking about. 👇",
+    "\"Trust us\" is not an AI safety strategy. My take on this week's White House accord.",
+    "The new AI safety pact has no penalties, no deadline and no disclosure. Is that enough?"
+  ],
+  "sources": [
+    { "name": "CNN", "url": "https://www.cnn.com/2026/09/29/business/amodei-huang-karp-trump" },
+    { "name": "ABC News", "url": "https://abcnews.com/Politics/top-ai-leaders-meet-trump-white-house-amid/story?id=136832988" },
+    { "name": "Yahoo News", "url": "https://www.yahoo.com/news/politics/articles/trump-leading-tech-ceos-sign-113820414.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "\"Trust us\" isn't a plan", "sub": "On AI's new self-policing pledge", "dur": 2.4 },
+    { "type": "cards", "kicker": "What they agreed to", "dur": 3.0, "items": [
+      { "icon": "C", "title": "Internal controls", "desc": "Plus a team to check them" },
+      { "icon": "A", "title": "Outside assessment", "desc": "By an independent firm" },
+      { "icon": "B", "title": "Board oversight", "desc": "A committee gets reports" }
+    ] },
+    { "type": "cards", "kicker": "What's missing", "dur": 2.8, "items": [
+      { "icon": "✕", "title": "No penalties", "desc": "Voluntary only" },
+      { "icon": "✕", "title": "No disclosure", "desc": "Auditors not named" },
+      { "icon": "✕", "title": "No deadline", "desc": "Timing is open" }
+    ] },
+    { "type": "typewriter", "kicker": "Ask your AI vendor", "text": "Who audits you? Can we see it?", "dur": 2.4 },
+    { "type": "question", "text": "Is self-policing enough for AI?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
