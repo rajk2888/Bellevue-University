@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 5",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Oct 2, 2026",
+  "topic": "Put a recurring task on autopilot with Cowork's /schedule",
+  "music_seed": 283,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "What if your Friday report wrote itself before you got to your desk? ⏰\nWith Claude Cowork, you can set that up in a minute.\n\nIt's called a scheduled task.\nYou describe a job once, pick when it should run, and Claude does it automatically on that schedule.\n\nHow to set one up:\n\n1️⃣ Open Cowork and start a task\n2️⃣ Type /schedule\n3️⃣ Describe the job and pick a cadence: hourly, daily, weekdays, weekly, or on demand\n\nA great first one to try:\n\"Every Friday at 8 AM, summarize this week's project updates from my shared folder into a one-page status report: wins, risks, and next week's priorities.\"\n\nYou can see and manage everything under \"Scheduled\" in the left sidebar.\n\nOther easy ideas:\n☀️ A daily morning brief\n📊 A weekly spreadsheet update\n🗂️ Keeping a downloads folder tidy\n\nGood to know: scheduled tasks are on paid Claude plans (Pro, Max, Team, Enterprise).\n\nWhy it matters:\nThe real time savings with AI come from the jobs you stop doing by hand, not just faster answers. Still give the first few runs a quick review.\n\nWhat's one weekly task you'd put on autopilot? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "Your weekly report can write itself. Here's the 1-minute setup. 👇",
+    "Type /schedule. That's the Claude trick that hands off your recurring work.",
+    "Stop doing the same task every Friday. Let Claude Cowork do it on a schedule."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Schedule recurring tasks in Claude Cowork", "url": "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork" },
+    { "name": "Claude Academy: Introduction to Claude Cowork, scheduled tasks", "url": "https://academy.claude.com/courses/introduction-to-claude-cowork/scheduled-tasks" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Put it on autopilot", "sub": "Scheduled tasks in Cowork", "dur": 2.4,
+      "say": "What if your Friday report wrote itself, before you even got to your desk?" },
+    { "type": "typewriter", "kicker": "Scheduled tasks", "text": "Describe it once. Claude repeats it.", "dur": 2.6,
+      "say": "With Claude Cowork, you can set that up. You describe a job once, pick when it should run, and Claude does it on that schedule." },
+    { "type": "cards", "kicker": "How to set it up", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Start a Cowork task", "desc": "In the Claude app" },
+      { "icon": "2", "title": "Type /schedule", "desc": "That's the magic word" },
+      { "icon": "3", "title": "Pick a cadence", "desc": "Daily, weekly, and more" }
+    ], "say": "Here's how. Start a task in Cowork, type slash schedule, then describe the job and pick how often it should run." },
+    { "type": "prompt", "kicker": "Try this one", "label": "Your first scheduled task", "text": "Every Friday at 8 AM,\nsummarize this week's updates\ninto a one-page status report.", "dur": 3.4,
+      "say": "A great first one: every Friday at eight, summarize this week's project updates into a one-page status report." },
+    { "type": "tiles", "kicker": "More ideas", "text": "Briefs · Reports · Tidy folders", "dur": 2.4, "items": [
+      { "letter": "B", "label": "Morning brief", "color": "#0F766E" },
+      { "letter": "R", "label": "Weekly report", "color": "#B45309" },
+      { "letter": "F", "label": "Tidy folders", "color": "#BE123C" }
+    ], "say": "You could also try a daily morning brief, a weekly spreadsheet update, or keeping a messy folder tidy." },
+    { "type": "typewriter", "kicker": "Good habit", "text": "Review the first few runs.", "dur": 2.2,
+      "say": "Just give the first few runs a quick review, so you know it's doing exactly what you want." },
+    { "type": "question", "text": "What would you put on autopilot?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's one weekly task you'd put on autopilot? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
