@@ -1,0 +1,32 @@
+{
+  "date": "Saturday, Oct 3, 2026",
+  "topic": "Prompt of the week: write a job description for your AI agent",
+  "music_seed": 276,
+  "post": "AI agents now work while you sleep. 🌙\nSo they need what every new hire needs: a clear job description.\n\nThis week OpenAI launched \"dots,\" always-on agents you can assign ongoing work to. They run in the background, connect to apps like Slack and Teams, and keep going without you watching.\n\nThat's powerful. It also means vague instructions get expensive.\n\nSo here's my prompt of the week, the Agent Job Description.\nUse it with any AI agent, from any company 👇\n\n\"Your role: [what you're responsible for]\nYour goal: [what 'done' looks like]\nYou may: [actions you're allowed to take]\nAsk me first before: sending, deleting, spending, or sharing anything\nReport back: a short summary every [day/week], including anything you weren't sure about.\"\n\nWhy it matters:\nThe difference between a helpful agent and a risky one is often the instructions. Clear limits plus regular check-ins keep you in control.\n\nPractical takeaway:\nBefore you turn on any always-on agent, fill in those 5 lines. If you can't, the task isn't ready to hand off yet.\n\nWhat's the first job you'd give an always-on AI agent? 👇\n\nFollow for daily AI news.\n\n#AI #AIAgents #PromptEngineering #Productivity #FutureOfWork",
+  "hooks": [
+    "Your AI agent needs a job description. Here's the 5-line template I'd use. 👇",
+    "AI agents now work 24/7. Most people will give them terrible instructions.",
+    "Before you turn on an always-on AI agent, copy this prompt."
+  ],
+  "sources": [
+    { "name": "9to5Google", "url": "https://9to5google.com/2026/09/29/openai-dots-agent/" },
+    { "name": "MarkTechPost", "url": "https://www.marktechpost.com/2026/09/29/openai-launches-dots-always-on-gpt-6-astra-agents-that-work-from-their-own-cloud-computers/amp/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Prompt of the week", "text": "Give your agent a job description", "sub": "AI agents now work 24/7", "dur": 2.6 },
+    { "type": "typewriter", "kicker": "New this week", "text": "Always-on agents that never stop.", "dur": 2.4 },
+    { "type": "cards", "kicker": "The 5-line prompt", "dur": 3.2, "items": [
+      { "icon": "R", "title": "Role + Goal", "desc": "What 'done' looks like" },
+      { "icon": "Y", "title": "You may…", "desc": "Allowed actions only" },
+      { "icon": "A", "title": "Ask me first", "desc": "Before send, delete, spend" }
+    ] },
+    { "type": "tiles", "kicker": "And always", "text": "Report back regularly", "dur": 2.4, "items": [
+      { "letter": "D", "label": "Daily", "color": "#2563EB" },
+      { "letter": "?", "label": "Unsure?", "color": "#DB2777" },
+      { "letter": "✓", "label": "Summary", "color": "#16A34A" }
+    ] },
+    { "type": "question", "text": "What job would you give an agent?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
