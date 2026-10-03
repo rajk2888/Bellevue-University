@@ -1,0 +1,45 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 6",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Oct 3, 2026",
+  "topic": "5 beginner mistakes with Claude Cowork (and the safe habit for each)",
+  "music_seed": 284,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Claude Cowork can work with your files and apps. 🗂️\nThat's exactly why these 5 beginner mistakes matter.\n\nStraight from Claude's own safety guide, here's what to avoid, and what to do instead:\n\n1️⃣ Giving access to everything\n✅ Make a dedicated working folder and share only that.\n\n2️⃣ Sharing sensitive files\n✅ Keep financial documents, passwords and personal records out unless you truly need them.\n\n3️⃣ Scheduling risky actions\n✅ Don't schedule tasks that send messages, make purchases, or do anything hard to undo.\n\n4️⃣ Letting it browse any website\n✅ Only allow sites you trust. Web pages can hide instructions meant to trick AI. That's called \"prompt injection.\"\n\n5️⃣ Not watching what it does\n✅ Look out for anything unexpected, like files or sites you never mentioned. For sensitive work, approve each step yourself.\n\nWhy it matters:\nAI that can take actions saves real time. A few simple habits keep you in control while it does.\n\nWhich of these habits are you adding first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "5 mistakes beginners make with AI agents. #4 is the one nobody warns you about. 👇",
+    "Before you let AI touch your files, read these 5 safety habits.",
+    "Claude Cowork is powerful. Here's how to use it without regrets."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "5 mistakes to avoid", "sub": "Safe habits for Claude Cowork", "dur": 2.4,
+      "say": "Claude Cowork can work with your files and apps. That's exactly why these five beginner mistakes matter." },
+    { "type": "cards", "kicker": "Mistakes 1 and 2", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Use one work folder", "desc": "Not your whole drive" },
+      { "icon": "2", "title": "Keep secrets out", "desc": "Finances, passwords, records" }
+    ], "say": "First, don't give it access to everything. Make one working folder and share only that. Second, keep sensitive files like finances and passwords out of it." },
+    { "type": "typewriter", "kicker": "Mistake 3", "text": "Don't schedule hard-to-undo tasks.", "dur": 2.6,
+      "say": "Third, don't schedule tasks that send messages, make purchases, or do anything that's hard to undo." },
+    { "type": "typewriter", "kicker": "Mistake 4", "text": "Only allow sites you trust.", "dur": 2.6,
+      "say": "Fourth, only let it browse sites you trust. Some web pages hide instructions meant to trick AI. That's called prompt injection." },
+    { "type": "tiles", "kicker": "Mistake 5", "text": "Watch · Approve · Stay in control", "dur": 2.6, "items": [
+      { "letter": "W", "label": "Watch", "color": "#0F766E" },
+      { "letter": "A", "label": "Approve", "color": "#B45309" },
+      { "letter": "C", "label": "Control", "color": "#BE123C" }
+    ], "say": "And fifth, keep an eye on what it does. If it touches files or sites you never mentioned, stop and check. For sensitive work, approve each step yourself." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Simple habits keep you in control.", "dur": 2.2,
+      "say": "AI that takes actions saves real time. These simple habits keep you in control." },
+    { "type": "question", "text": "Which habit will you add first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So which habit are you adding first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
