@@ -1,0 +1,52 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 7",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Oct 4, 2026",
+  "topic": "Week 1 recap: 6 Claude lessons for beginners in 60 seconds",
+  "music_seed": 285,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "One week of learning Claude, no tech background needed. 🎓\nHere's everything we covered, in 60 seconds.\n\n1️⃣ Chat, Cowork or Claude Code?\nChat answers questions. Cowork handles whole tasks. Claude Code builds software.\n\n2️⃣ Hallucinations\nAI can sound sure and still be wrong. Let it say \"I don't know,\" ask for quotes, and check numbers.\n\n3️⃣ Your first Claude Code project\nDescribe a tiny tool in plain English, use a new folder, review before approving.\n\n4️⃣ The \"new employee\" prompt\nGive Claude the goal, the context and the format, like briefing a new teammate.\n\n5️⃣ Put tasks on autopilot\nType /schedule in Cowork to run a task daily or weekly.\n\n6️⃣ Stay safe\nOne working folder. Keep secrets out. Trusted sites only. Watch what it does.\n\nWhy it matters:\nNone of this needs coding. It needs clear instructions and good habits. That's a skill anyone can build.\n\nYour challenge for next week: pick ONE lesson and actually try it on real work.\n\nWhich lesson are you trying first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "I taught Claude to beginners for a week. Here's everything, in 60 seconds. 👇",
+    "Missed my Claude for Beginners series? Here's the whole first week on one page.",
+    "6 Claude lessons, zero coding required. Save this one."
+  ],
+  "sources": [
+    { "name": "Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Docs: Reduce hallucinations", "url": "https://docs.claude.com/en/docs/test-and-evaluate/strengthen-guardrails/reduce-hallucinations" },
+    { "name": "Claude Code docs: Overview", "url": "https://code.claude.com/docs/en/overview" },
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Schedule recurring tasks in Claude Cowork", "url": "https://support.claude.com/en/articles/13854387-schedule-recurring-tasks-in-claude-cowork" },
+    { "name": "Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 1 in 60 seconds", "sub": "Six lessons, zero coding", "dur": 2.4,
+      "say": "One week of learning Claude, with no tech background needed. Here's everything we covered, in about a minute." },
+    { "type": "cards", "kicker": "Days 1 to 3", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Chat, Cowork, Code", "desc": "Pick the right tool" },
+      { "icon": "2", "title": "Hallucinations", "desc": "Sounds sure, can be wrong" },
+      { "icon": "3", "title": "First Claude Code tool", "desc": "Built in plain English" }
+    ], "say": "First, chat answers questions, Cowork handles whole tasks, and Claude Code builds software. Then, AI can sound sure and still be wrong, so check it. And you built your first tiny tool, in plain English." },
+    { "type": "cards", "kicker": "Days 4 to 6", "dur": 3.2, "items": [
+      { "icon": "4", "title": "New employee prompt", "desc": "Goal, context, format" },
+      { "icon": "5", "title": "Type /schedule", "desc": "Tasks on autopilot" },
+      { "icon": "6", "title": "Stay safe", "desc": "Simple habits, full control" }
+    ], "say": "Next, you briefed Claude like a new employee: the goal, the context and the format. You put a task on autopilot with slash schedule. And you learned five habits to stay safe." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Clear instructions. Good habits.", "dur": 2.4,
+      "say": "None of this needs coding. It needs clear instructions and good habits. That's a skill anyone can build." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Pick one · Try it · Share it", "dur": 2.4, "items": [
+      { "letter": "1", "label": "Pick one", "color": "#0F766E" },
+      { "letter": "2", "label": "Try it", "color": "#B45309" },
+      { "letter": "3", "label": "Share it", "color": "#BE123C" }
+    ], "say": "So here's your challenge for next week. Pick one lesson, try it on real work, and tell me how it went." },
+    { "type": "question", "text": "Which lesson will you try first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson are you trying first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
