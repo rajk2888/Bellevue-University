@@ -1,0 +1,32 @@
+{
+  "date": "Monday, Oct 5, 2026",
+  "topic": "A court just threw out a sentence over an AI-generated video. Here's why it matters",
+  "music_seed": 278,
+  "post": "A court just ruled that an AI video can't speak for a real person. ⚖️\nThis case will shape how AI is used in serious decisions.\n\nWhat happened, in plain English:\n\n🎥 At a 2025 manslaughter sentencing in Arizona, the victim's family played an AI-generated video of him, built from his image, an old recording and a script written by his sister. In it, he appeared to forgive the defendant.\n\n🧑‍⚖️ The judge praised the video before handing down a 10.5-year sentence.\n\n↩️ On Sept 30, Arizona's Court of Appeals vacated the sentence (the conviction stands) and ordered resentencing.\n\nThe court's reasoning: the video blurred the line between a family's interpretation of what the victim might say and statements he actually made. It lacked the reliability needed for a sentencing decision.\n\nWhy it matters:\nAI can create something that looks and sounds like a real person. That doesn't make it their words. Courts, companies and teams all need clear rules for that difference.\n\nPractical takeaway:\nIf AI-generated content of a real person is used in any decision at work, label it clearly and never present it as their actual words.\n\nWhere should the line be for AI recreations of real people? 👇\n\nFollow for daily AI news.\n\n#AI #AIEthics #Deepfakes #Law #ResponsibleAI",
+  "hooks": [
+    "An AI video of a victim helped decide a prison sentence. Now a court has thrown it out. 👇",
+    "\"I loved that AI,\" a judge said. An appeals court disagreed. Here's what happened.",
+    "Can an AI recreation speak for a real person? A court just answered: no."
+  ],
+  "sources": [
+    { "name": "FOX 10 Phoenix", "url": "https://www.fox10phoenix.com/news/arizona-manslaughter-sentencing-vacated-due-use-ai-victim-impact-statement" },
+    { "name": "azfamily (KTVK/KPHO)", "url": "https://www.azfamily.com/video/2026/10/01/arizona-court-vacates-sentence-after-ai-victim-video-heres-why/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI News", "text": "AI can't speak for you", "sub": "A court just drew the line", "dur": 2.4 },
+    { "type": "cards", "kicker": "What happened", "dur": 3.2, "items": [
+      { "icon": "1", "title": "AI video in court", "desc": "Victim appeared to forgive" },
+      { "icon": "2", "title": "Judge praised it", "desc": "Then gave 10.5 years" },
+      { "icon": "3", "title": "Sentence vacated", "desc": "Resentencing ordered" }
+    ] },
+    { "type": "typewriter", "kicker": "The court's reasoning", "text": "Looks real isn't the same as said.", "dur": 2.6 },
+    { "type": "tiles", "kicker": "At work", "text": "Label it · Never fake words", "dur": 2.4, "items": [
+      { "letter": "L", "label": "Label it", "color": "#2563EB" },
+      { "letter": "!", "label": "Not real", "color": "#DB2777" },
+      { "letter": "✓", "label": "Get consent", "color": "#16A34A" }
+    ] },
+    { "type": "question", "text": "Where should the line be?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
