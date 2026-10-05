@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 8",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Oct 5, 2026",
+  "topic": "AI basics: what an \"AI agent\" actually is, in plain English",
+  "music_seed": 286,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Everyone's talking about \"AI agents.\" 🤖\nHere's what that actually means, in plain English.\n\nA chatbot answers you.\nAn agent gets things done for you.\n\nAnthropic describes agents simply: an AI that uses tools in a loop, based on what it sees.\n\nIn everyday terms, an agent:\n\n🗺️ Plans: breaks your goal into steps\n🛠️ Acts: uses tools like files, apps or a browser\n🔁 Checks: looks at the result and adjusts\n🙋 Asks: pauses for your OK when it needs a decision\n\nA real example: Claude Cowork.\nYou describe an outcome, like:\n\"Turn the receipts in this folder into an expense spreadsheet.\"\nClaude makes a plan, works through the steps, and hands you the finished file. (Cowork is on paid plans: Pro, Max, Team, Enterprise.)\n\nChat = you do the steps, AI helps.\nAgent = AI does the steps, you stay in charge.\n\nWhy it matters:\nWith an agent, your job shifts from doing every step to describing the result clearly and reviewing the work. That's a skill anyone can learn.\n\nWhat's one task you'd hand to an agent? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "\"AI agent\" is the buzzword of the year. Here's what it means in 60 seconds, no jargon. 👇",
+    "A chatbot answers you. An agent gets it done. Here's the difference.",
+    "If you've nodded along when someone said \"AI agents,\" this one's for you."
+  ],
+  "sources": [
+    { "name": "Anthropic: Building effective agents", "url": "https://www.anthropic.com/engineering/building-effective-agents" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "What's an AI agent?", "sub": "Explained in plain English", "dur": 2.4,
+      "say": "Everyone's talking about AI agents. So let's make it simple. What actually is one?" },
+    { "type": "typewriter", "kicker": "The difference", "text": "Chat answers. Agents get it done.", "dur": 2.6,
+      "say": "A chatbot answers your question. An agent actually gets the task done for you." },
+    { "type": "cards", "kicker": "What an agent does", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Plans", "desc": "Breaks your goal into steps" },
+      { "icon": "2", "title": "Acts", "desc": "Uses files, apps, a browser" },
+      { "icon": "3", "title": "Checks", "desc": "Looks at results, adjusts" }
+    ], "say": "Here's how it works. It makes a plan. It uses tools, like your files or a browser. Then it checks the result, and adjusts." },
+    { "type": "typewriter", "kicker": "You stay in charge", "text": "It asks before big decisions.", "dur": 2.4,
+      "say": "And when it needs a decision from you, it stops and asks. You're still the boss." },
+    { "type": "prompt", "kicker": "Real example", "label": "Try it in Claude Cowork", "text": "Turn the receipts in this folder\ninto an expense spreadsheet.", "dur": 3.2,
+      "say": "Claude Cowork is a real example. Ask it to turn a folder of receipts into an expense spreadsheet, and it handles the steps for you." },
+    { "type": "tiles", "kicker": "Your new job", "text": "Describe · Review · Approve", "dur": 2.4, "items": [
+      { "letter": "D", "label": "Describe", "color": "#0F766E" },
+      { "letter": "R", "label": "Review", "color": "#B45309" },
+      { "letter": "A", "label": "Approve", "color": "#BE123C" }
+    ], "say": "So your job changes. You describe the result clearly, review the work, and approve it." },
+    { "type": "question", "text": "What would you hand to an agent?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's one task you'd hand to an agent? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
