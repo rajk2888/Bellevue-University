@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 9",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Oct 6, 2026",
+  "topic": "Hand off a real task: turn rough notes into a slide deck with Cowork",
+  "music_seed": 287,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Got a presentation due and only messy notes? 📝\nHere's how I'd hand that whole job to Claude Cowork.\n\nQuick reminder: Cowork is the part of Claude that does whole tasks for you, not just answers. Making slide decks from rough notes or meeting transcripts is one of the examples in Claude's own help guide.\n\nStep by step 👇\n\n1️⃣ Open Claude (web, desktop or mobile app)\n2️⃣ In the message box, select \"Cowork\"\n3️⃣ Add your notes and describe the result you want\n4️⃣ Review Claude's approach, then let it run\n\nHere's a prompt you can copy:\n\"Turn my attached meeting notes into a 6-slide deck for my team. One idea per slide, short bullets, a clear title on each. End with a slide of next steps and owners. If something in the notes is unclear, list it on a final 'Open questions' slide instead of guessing.\"\n\nThen open the deck and edit anything that isn't quite right. 🎯\n\nGood to know: Cowork is on paid plans (Pro, Max, Team, Enterprise). Working with files on your computer needs the Claude desktop app.\n\nWhy it matters:\nThe blank-slide stage is often the slowest part. Hand off the first draft, and spend your time on the story. ✨\n\nWhat's a deck you'd hand off first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #Productivity",
+  "hooks": [
+    "Messy notes in, a first-draft slide deck out. Here's the 4-step Claude Cowork handoff. 👇",
+    "Stop staring at a blank slide. Let Claude Cowork build the first draft.",
+    "Your next presentation can start from your rough notes. Here's exactly how."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Notes in. Slides out.", "sub": "Your first Cowork handoff", "dur": 2.4,
+      "say": "Got a presentation due, and all you have is messy notes? Let's hand that job to Claude Cowork." },
+    { "type": "typewriter", "kicker": "Quick reminder", "text": "Cowork does whole tasks for you.", "dur": 2.4,
+      "say": "Cowork is the part of Claude that does whole tasks for you, not just answers." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Select Cowork", "desc": "In the message box" },
+      { "icon": "2", "title": "Add your notes", "desc": "And describe the result" },
+      { "icon": "3", "title": "Review the plan", "desc": "Then let it run" }
+    ], "say": "Here's how. Open Claude and select Cowork in the message box. Add your notes and describe what you want. Then review its plan, and let it run." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Your handoff prompt", "text": "Turn my notes into a 6-slide deck.\nOne idea per slide, short bullets.\nList unclear points, don't guess.", "dur": 3.4,
+      "say": "Try something like this. Turn my notes into a six-slide deck, one idea per slide, and list anything unclear instead of guessing." },
+    { "type": "tiles", "kicker": "What you do", "text": "Describe · Review · Polish", "dur": 2.4, "items": [
+      { "letter": "D", "label": "Describe", "color": "#0F766E" },
+      { "letter": "R", "label": "Review", "color": "#B45309" },
+      { "letter": "P", "label": "Polish", "color": "#BE123C" }
+    ], "say": "Your job is simple. Describe it clearly, review the draft, and polish the story." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Paid plans. Desktop app for local files.", "dur": 2.4,
+      "say": "Cowork is on paid Claude plans, and for files on your computer, you'll use the desktop app." },
+    { "type": "question", "text": "What deck would you hand off?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's the first deck you'd hand off? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
