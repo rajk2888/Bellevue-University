@@ -1,0 +1,33 @@
+{
+  "date": "Tuesday, Oct 6, 2026",
+  "topic": "ChatGPT Finances is now free in the US: how to try it safely",
+  "music_seed": 279,
+  "post": "ChatGPT can now read your bank accounts. For free. 💳\nHere's how to try it, and the 3 settings to know first.\n\nOpenAI just rolled out Finances in ChatGPT to Free and Go users in the US, on web, iOS and Android.\n\nWhat it does:\nYou connect your accounts, and ChatGPT answers money questions using your real data, not generic advice.\n\nHow to try it 👇\n\n1️⃣ Connect your bank and card accounts through Plaid\n2️⃣ Optional: connect your Experian credit report\n3️⃣ Ask questions like:\n\"What did I spend on food delivery last month?\"\n\"Which subscriptions renew this week?\"\n\nWhat it can't do:\n🚫 It can't move money or pay bills. Access is read-only.\n\nSafety habits before you connect:\n🔌 Disconnect anytime in Settings > Apps > Finances\n🗑️ Disconnecting deletes synced data within 30 days, but NOT your old chats. Delete those separately.\n\nWhy it matters:\nAI assistants are moving from general answers to answers about YOUR life. That's powerful, and it means privacy settings are now part of using AI well.\n\nPractical takeaway:\nStart with one account, ask one real question, and decide if it's worth it.\n\nWould you connect your bank to an AI assistant? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ChatGPT #PersonalFinance #OpenAI #Privacy",
+  "hooks": [
+    "Would you let ChatGPT see your bank account? It's now free in the US. Here's how it works. 👇",
+    "ChatGPT Finances just reached free users. A 60-second tutorial, plus the privacy fine print.",
+    "\"What did I spend on takeout last month?\" ChatGPT can now answer that with your real data."
+  ],
+  "sources": [
+    { "name": "OpenAI Help Center: Finances in ChatGPT", "url": "https://help.openai.com/en/articles/20001222-finances-in-chatgpt" },
+    { "name": "Tech Journal: ChatGPT Finances reaches free users in the US", "url": "https://techjournal.org/chatgpt-finances-free-go" },
+    { "name": "Data Studios: Finances in ChatGPT expands to Free and Go users", "url": "https://www.datastudios.org/post/openai-finances-chatgpt-free-go-connected-accounts-spending-savings-investments" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI tool tutorial", "text": "ChatGPT reads your bank", "sub": "Finances is now free in the US", "dur": 2.4 },
+    { "type": "cards", "kicker": "How to try it", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Connect accounts", "desc": "Banks and cards via Plaid" },
+      { "icon": "2", "title": "Add credit (optional)", "desc": "Experian credit report" },
+      { "icon": "3", "title": "Ask real questions", "desc": "Based on your own data" }
+    ] },
+    { "type": "typewriter", "kicker": "Try asking", "text": "\"What did I spend on delivery?\"", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Know first", "text": "You stay in control", "dur": 2.6, "items": [
+      { "letter": "R", "label": "Read-only", "color": "#2563EB" },
+      { "letter": "D", "label": "Disconnect", "color": "#16A34A" },
+      { "letter": "C", "label": "Delete chats", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Would you connect your bank?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
