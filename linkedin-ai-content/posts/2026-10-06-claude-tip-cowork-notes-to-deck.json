@@ -29,7 +29,7 @@
       { "icon": "2", "title": "Add your notes", "desc": "And describe the result" },
       { "icon": "3", "title": "Review the plan", "desc": "Then let it run" }
     ], "say": "Here's how. Open Claude and select Cowork in the message box. Add your notes and describe what you want. Then review its plan, and let it run." },
-    { "type": "prompt", "kicker": "Copy this", "label": "Your handoff prompt", "text": "Turn my notes into a 6-slide deck.\nOne idea per slide, short bullets.\nList unclear points, don't guess.", "dur": 3.4,
+    { "type": "prompt", "kicker": "Copy this", "label": "Your handoff prompt", "text": "Make a 6-slide deck.\nOne idea per slide.\nList what's unclear.", "dur": 3.4,
       "say": "Try something like this. Turn my notes into a six-slide deck, one idea per slide, and list anything unclear instead of guessing." },
     { "type": "tiles", "kicker": "What you do", "text": "Describe · Review · Polish", "dur": 2.4, "items": [
       { "letter": "D", "label": "Describe", "color": "#0F766E" },
