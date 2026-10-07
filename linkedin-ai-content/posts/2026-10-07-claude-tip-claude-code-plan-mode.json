@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 10",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Wednesday, Oct 7, 2026",
+  "topic": "Claude Code for non-coders: use Plan mode to see the plan before anything changes",
+  "music_seed": 288,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Nervous about letting AI change your files? 😬\nThere's a setting made for you. It's called Plan mode.\n\nIn Plan mode, Claude Code looks around and writes a plan, but it doesn't edit your files until you approve it.\n\nThink of it like a contractor showing you the blueprint before picking up a hammer. 🏗️\n\nHow to turn it on:\n\n🖥️ Claude desktop app: in the Code tab, pick \"Plan\" from the mode selector next to the send button\n⌨️ Or type /plan at the start of your request\n\nTry it on the habit tracker from Day 3:\n\"/plan Add a monthly calendar view to my habit tracker. Explain the plan in plain English, no jargon.\"\n\nThen you choose:\n✅ Approve it, and Claude starts building\n✏️ Or say \"No, keep planning\" and tell it what to change\n\nGood to know: Claude Code comes with Pro, Max, Team and Enterprise plans.\n\nWhy it matters:\nYou don't need to read code to stay in control. You just need to read a plan, and that's a skill you already have. 💡\n\nWhat would you want to see a plan for first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "The Claude Code setting every beginner should know: see the plan BEFORE anything changes. 👇",
+    "Scared AI will mess up your files? Use Plan mode. Here's how.",
+    "You don't need to read code to stay in control of Claude Code. You just need to read a plan."
+  ],
+  "sources": [
+    { "name": "Claude Code docs: Choose a permission mode (Plan mode)", "url": "https://code.claude.com/docs/en/permission-modes" },
+    { "name": "Claude Code docs: Common workflows, plan before editing", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Help Center: Use Claude Code with your Pro or Max plan", "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "See the plan first", "sub": "Plan mode in Claude Code", "dur": 2.4,
+      "say": "Nervous about letting AI change your files? There's a setting made just for you." },
+    { "type": "typewriter", "kicker": "What is Plan mode?", "text": "It plans. Nothing changes yet.", "dur": 2.4,
+      "say": "It's called Plan mode. Claude Code looks around and writes a plan, but it won't change your files until you say yes." },
+    { "type": "typewriter", "kicker": "Think of it like", "text": "A blueprint before the hammer.", "dur": 2.4,
+      "say": "Think of a contractor showing you the blueprint before they pick up a hammer." },
+    { "type": "cards", "kicker": "How to turn it on", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Open the Code tab", "desc": "In the Claude desktop app" },
+      { "icon": "2", "title": "Choose \"Plan\"", "desc": "Mode selector, by Send" },
+      { "icon": "3", "title": "Or type /plan", "desc": "Before your request" }
+    ], "say": "In the desktop app, open the Code tab and pick Plan next to the send button. Or just type slash plan before your request." },
+    { "type": "prompt", "kicker": "Try this", "label": "Plan, don't build yet", "text": "/plan Add a monthly view\nto my habit tracker.\nExplain it in plain English.", "dur": 3.4,
+      "say": "Try it on your habit tracker. Ask it to plan a monthly view, and explain the plan in plain English." },
+    { "type": "tiles", "kicker": "Then you decide", "text": "Read · Approve · Or adjust", "dur": 2.4, "items": [
+      { "letter": "R", "label": "Read", "color": "#0F766E" },
+      { "letter": "A", "label": "Approve", "color": "#B45309" },
+      { "letter": "E", "label": "Adjust", "color": "#BE123C" }
+    ], "say": "Read the plan. If it looks right, approve it. If not, tell it what to change. You stay in control." },
+    { "type": "question", "text": "What would you plan first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what would you want to see a plan for first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
