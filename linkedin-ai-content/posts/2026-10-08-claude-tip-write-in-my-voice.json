@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 11",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Oct 8, 2026",
+  "topic": "The \"write it in my voice\" prompt: show Claude an example of your writing",
+  "music_seed": 289,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Does AI-written email sound… nothing like you? 🤖\nHere's the fix: show Claude how YOU write.\n\nAnthropic's own prompting guide says examples are one of the most reliable ways to steer Claude's tone, format and structure.\n\nSo instead of describing your style, just show it. 👇\n\nCopy-paste prompt:\n\n\"Here are 2 emails I've written before. Notice my tone, length and how I open and close:\n[paste email 1]\n[paste email 2]\n\nNow write a reply to the message below in the same style. Keep it under 120 words. If you're missing a detail, ask me instead of making it up.\n[paste the message you're replying to]\"\n\nTips that help ✍️\n📌 Pick examples you're proud of\n📌 Remove anything private before pasting\n📌 Read it before you send it. You're still the author.\n\nWhy it matters:\nGeneric prompts get generic writing. One real example of your style teaches Claude more than a paragraph of instructions. ✨\n\nWorks for emails, Slack replies, LinkedIn posts, even meeting follow-ups.\n\nWhat would you want Claude to write in your voice first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "AI emails don't have to sound like AI. Show Claude how you write. (Copy-paste prompt inside) 👇",
+    "Stop describing your writing style to AI. Show it instead.",
+    "The easiest way to make Claude sound like you: give it 2 examples."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices (Use examples effectively)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Make it sound like you", "sub": "The \"my voice\" prompt", "dur": 2.4,
+      "say": "Does AI-written email sound nothing like you? Here's an easy fix." },
+    { "type": "typewriter", "kicker": "The trick", "text": "Don't describe it. Show it.", "dur": 2.4,
+      "say": "Don't describe your style. Show it. Give Claude a couple of examples of how you actually write." },
+    { "type": "typewriter", "kicker": "From Anthropic's guide", "text": "Examples steer tone and format.", "dur": 2.4,
+      "say": "Anthropic's own guide says examples are one of the most reliable ways to steer tone and format." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Write in my voice", "text": "Here are 2 emails I wrote.\nReply to this in my style.\nAsk me if a detail is missing.", "dur": 3.4,
+      "say": "Paste two emails you wrote, then the message you're replying to. Ask it to match your style, and to ask you if anything's missing." },
+    { "type": "cards", "kicker": "Tips that help", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Pick your best", "desc": "Emails you're proud of" },
+      { "icon": "2", "title": "Remove private info", "desc": "Before you paste" },
+      { "icon": "3", "title": "Read before sending", "desc": "You're still the author" }
+    ], "say": "A few tips. Pick emails you're proud of. Take out anything private. And always read it before you send it." },
+    { "type": "tiles", "kicker": "Works for", "text": "Emails · Chats · Posts", "dur": 2.4, "items": [
+      { "letter": "E", "label": "Emails", "color": "#0F766E" },
+      { "letter": "C", "label": "Chat replies", "color": "#B45309" },
+      { "letter": "P", "label": "Posts", "color": "#BE123C" }
+    ], "say": "It works for emails, chat replies, even your LinkedIn posts." },
+    { "type": "question", "text": "What should it write for you?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what would you want Claude to write in your voice first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
