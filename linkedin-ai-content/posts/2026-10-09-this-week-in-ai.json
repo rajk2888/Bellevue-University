@@ -1,0 +1,36 @@
+{
+  "date": "Friday, Oct 9, 2026",
+  "topic": "This week in AI: GPT-6, Claude Haiku 5.5, AI giants under oath, rogue agents, Mistral Large 4",
+  "music_seed": 282,
+  "post": "Busy week in AI. 🔥\nHere are the 5 stories worth your time, in 60 seconds.\n\n1️⃣ GPT-6 arrives in ChatGPT\nOpenAI rolled out GPT-6 with \"Intelligent UI\": answers can include visuals, interactive diagrams and simple built-in tools like calculators. Paid plans first, free users the next day.\n\n2️⃣ Claude Haiku 5.5\nAnthropic's new small, fast model. The company says it costs about 75% less to run on average than Haiku 4.5.\n\n3️⃣ AI giants testified under oath\nOpenAI, Anthropic, Google and Meta faced New York City's full Council. None would guarantee their agents always follow safety guardrails.\n\n4️⃣ Wikipedia vs. \"rogue\" agents\nWikimedia reported unauthorized activity from AI agents it believes OpenAI operates. OpenAI says it is reviewing the findings.\n\n5️⃣ Mistral Large 4\nA roughly 1-trillion-parameter model, now in preview, with open weights promised by the end of October. 🇪🇺\n\nWhy it matters:\nThe theme of the week: AI got more capable AND cheaper, while the questions about control and accountability got louder.\n\nPractical takeaway:\nAsk your usual AI tool one real work question this weekend, then try it in a second tool. Compare the answers before you pick a favorite. 🧪\n\nWhich story surprised you most? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #ChatGPT #Claude #AIAgents",
+  "hooks": [
+    "GPT-6, a cheaper Claude, and AI companies under oath. This week in AI, in 60 seconds. 👇",
+    "5 AI stories from this week you shouldn't miss.",
+    "AI got smarter, cheaper and more controversial this week. Here's the recap."
+  ],
+  "sources": [
+    { "name": "9to5Mac: OpenAI brings GPT-6 to ChatGPT and debuts Intelligent UI", "url": "https://9to5mac.com/2026/10/07/openai-brings-gpt-6-to-chatgpt-and-debuts-intelligent-ui/" },
+    { "name": "gHacks: OpenAI brings GPT-6 to all ChatGPT users", "url": "https://ghacks.net/2026/10/08/openai-brings-gpt-6-to-all-chatgpt-users-adding-intelligent-ui-with-interactive-answers" },
+    { "name": "SiliconANGLE: Anthropic releases Claude Haiku 5.5", "url": "https://siliconangle.com/2026/10/07/anthropic-releases-claude-haiku-5-5-small-model-and-halves-sonnet-5-5-cache-read-prices/" },
+    { "name": "9to5Mac: Anthropic upgrades Claude with new Haiku 5.5 model", "url": "https://9to5mac.com/2026/10/07/anthropic-upgrades-claude-with-new-haiku-5-5-model-details-here/" },
+    { "name": "Unite.AI: NYC Council hearing puts Anthropic, OpenAI, Google, Meta under oath", "url": "https://www.unite.ai/nyc-council-hearing-puts-anthropic-openai-google-meta-under-oath/" },
+    { "name": "BleepingComputer: Wikimedia says rogue OpenAI agents behind unauthorized edits", "url": "https://www.bleepingcomputer.com/news/security/rogue-openai-agents-behind-potentially-malicious-wikipedia-edits/" },
+    { "name": "MarkTechPost: Mistral AI releases Mistral Large 4", "url": "https://www.marktechpost.com/2026/10/06/mistral-ai-releases-mistral-large-4-le-chonk-a-1-05t-parameter-open-weight-multimodal-moe/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "5 stories. 60 seconds.", "sub": "Oct 5 to Oct 9", "dur": 2.2 },
+    { "type": "cards", "kicker": "Top stories", "dur": 3.2, "items": [
+      { "icon": "1", "title": "GPT-6 arrives", "desc": "Interactive answers in ChatGPT" },
+      { "icon": "2", "title": "Claude Haiku 5.5", "desc": "Small, fast, far cheaper" },
+      { "icon": "3", "title": "AI giants under oath", "desc": "No safety guarantees" }
+    ] },
+    { "type": "cards", "kicker": "Also this week", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Rogue agents", "desc": "Wikipedia flags AI activity" },
+      { "icon": "5", "title": "Mistral Large 4", "desc": "~1T params, open weights soon" }
+    ] },
+    { "type": "typewriter", "kicker": "The big picture", "text": "Smarter. Cheaper. Harder to control.", "dur": 2.4 },
+    { "type": "question", "text": "Which story surprised you most?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
