@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 12",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Oct 9, 2026",
+  "topic": "Connectors: let Claude read your calendar and email to prep your meetings",
+  "music_seed": 290,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Tired of copy-pasting emails into AI? 📋\nYou don't have to. Claude can connect to the apps you already use.\n\nThey're called connectors.\nA connector is a secure link between Claude and an app like Gmail, Google Calendar or Google Drive, so Claude can look things up for you.\n\nHow to turn one on:\n\n1️⃣ In a chat, click the \"+\" button and choose \"Connectors\" → \"Manage connectors\"\n2️⃣ Pick an app and click \"Connect\"\n3️⃣ Sign in, then switch it on for your conversation\n\nTry this on a Friday afternoon:\n\"Look at my calendar for Monday. For each meeting, find related emails from this week and give me a 3-line prep note: what it's about, what's open, and what I should bring.\"\n\nGood to know 🔐\n✅ Claude only sees what YOU already have access to\n✅ For actions like sending email, it asks for your approval by default\n✅ Connectors work in regular chats and in Cowork, even on the free plan\n(On Team and Enterprise plans, an admin turns them on first.)\n\nWhy it matters:\nThe biggest time sink with AI is moving information into it. Connectors bring the information to Claude, so you can skip straight to the thinking. 💡\n\nWhich app would you connect first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #Productivity",
+  "hooks": [
+    "Stop copy-pasting emails into AI. Connect Claude to your calendar instead. Here's how. 👇",
+    "Monday's meetings, prepped on Friday, in one prompt. The Claude feature that makes it possible.",
+    "Claude can read your calendar and inbox (with your permission). Here's the 3-step setup."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Use connectors to extend Claude's capabilities", "url": "https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities" },
+    { "name": "Claude Help Center: Use Google Workspace connectors", "url": "https://support.claude.com/en/articles/10166901-use-google-workspace-connectors" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Connect your apps", "sub": "Meet Claude's connectors", "dur": 2.4,
+      "say": "Tired of copy-pasting emails into AI? You don't have to anymore." },
+    { "type": "typewriter", "kicker": "What's a connector?", "text": "A secure link to your apps.", "dur": 2.4,
+      "say": "Claude has connectors. A connector is a secure link to apps like Gmail, Google Calendar or Drive, so Claude can look things up for you." },
+    { "type": "cards", "kicker": "How to turn one on", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Click the + button", "desc": "Then \"Connectors\"" },
+      { "icon": "2", "title": "Pick an app", "desc": "And click \"Connect\"" },
+      { "icon": "3", "title": "Sign in", "desc": "Then switch it on" }
+    ], "say": "In a chat, click the plus button and choose connectors. Pick an app, click connect, sign in, and switch it on." },
+    { "type": "prompt", "kicker": "Try this Friday", "label": "Prep next week", "text": "Check Monday's meetings.\nFind related emails.\nGive me a 3-line prep note.", "dur": 3.4,
+      "say": "Try this on a Friday. Ask Claude to check Monday's meetings, find related emails, and write you a short prep note for each one." },
+    { "type": "tiles", "kicker": "Good to know", "text": "Your access · Your approval", "dur": 2.6, "items": [
+      { "letter": "A", "label": "Your access", "color": "#0F766E" },
+      { "letter": "Y", "label": "You approve", "color": "#B45309" },
+      { "letter": "F", "label": "Free plan too", "color": "#BE123C" }
+    ], "say": "Claude only sees what you already have access to, and it asks before actions like sending email. And yes, it works on the free plan too." },
+    { "type": "typewriter", "kicker": "Why it matters", "text": "Skip the copy-paste. Start thinking.", "dur": 2.4,
+      "say": "Connectors bring the information to Claude, so you can skip straight to the thinking." },
+    { "type": "question", "text": "Which app would you connect first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So which app would you connect first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
