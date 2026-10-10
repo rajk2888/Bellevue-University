@@ -29,7 +29,7 @@
       { "icon": "1", "title": "Mixed-up details", "desc": "Old topics muddy new answers" },
       { "icon": "2", "title": "More usage", "desc": "Long chats use more" }
     ], "say": "When one chat mixes everything, old details can muddy new answers. And Claude's help center says longer chats use more of your usage limit." },
-    { "type": "tiles", "kicker": "3 habits that fix it", "text": "New · Batch · Summarize", "dur": 2.6, "items": [
+    { "type": "tiles", "kicker": "3 habits that fix it", "text": "Keep chats focused", "dur": 2.6, "items": [
       { "letter": "N", "label": "New topic", "color": "#0F766E" },
       { "letter": "B", "label": "Batch it", "color": "#B45309" },
       { "letter": "S", "label": "Summarize", "color": "#BE123C" }
