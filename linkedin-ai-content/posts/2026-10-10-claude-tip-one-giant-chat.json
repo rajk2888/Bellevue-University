@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 13",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Oct 10, 2026",
+  "topic": "Beginner mistake: using one giant chat for everything (and 3 habits that fix it)",
+  "music_seed": 291,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Do you keep ONE Claude chat open for everything? 🧵\nIt's one of the most common beginner mistakes.\n\nHere's why.\nEvery chat has a context window: the amount of information Claude can work with in a single conversation.\n\nWhen one chat mixes your budget, your emails and your vacation plans, two things happen:\n😵 Old, unrelated details can muddy new answers\n⏳ According to Claude's help center, longer conversations use more of your usage limit\n\n3 simple habits that fix it 👇\n\n1️⃣ New topic, new chat\nSwitching from a report to a recipe? Start fresh.\n\n2️⃣ Batch related questions\nClaude's own guide suggests combining related questions into one message instead of lots of back-and-forth.\n\n3️⃣ Carry over a summary, not the whole history\nBefore you switch, ask:\n\"Summarize what we decided in 5 bullet points so I can start a new chat.\"\nThen paste those bullets into the new chat.\n\nWhy it matters:\nShort, focused chats keep Claude's answers sharp and your usage in check. It's like clearing your desk before starting a new project. 🧹\n\nHow many chats do you have open right now? Be honest. 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "The beginner Claude mistake I see everywhere: one giant chat for everything. Here's the fix. 👇",
+    "Your AI answers getting worse over time? Your chat might just be too long.",
+    "New topic, new chat. The simplest Claude habit that keeps answers sharp."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: How do usage and length limits work?", "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work" },
+    { "name": "Claude Help Center: Usage limit best practices", "url": "https://support.claude.com/en/articles/9797557-usage-limit-best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "One giant chat?", "sub": "A common beginner mistake", "dur": 2.4,
+      "say": "Do you keep one Claude chat open for everything? It's one of the most common beginner mistakes." },
+    { "type": "typewriter", "kicker": "Quick lesson", "text": "Every chat has a context window.", "dur": 2.4,
+      "say": "Here's why. Every chat has a context window. That's the amount of information Claude can work with in one conversation." },
+    { "type": "cards", "kicker": "When chats get too long", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Mixed-up details", "desc": "Old topics muddy new answers" },
+      { "icon": "2", "title": "More usage", "desc": "Long chats use more" }
+    ], "say": "When one chat mixes everything, old details can muddy new answers. And Claude's help center says longer chats use more of your usage limit." },
+    { "type": "tiles", "kicker": "3 habits that fix it", "text": "New · Batch · Summarize", "dur": 2.6, "items": [
+      { "letter": "N", "label": "New topic", "color": "#0F766E" },
+      { "letter": "B", "label": "Batch it", "color": "#B45309" },
+      { "letter": "S", "label": "Summarize", "color": "#BE123C" }
+    ], "say": "Three habits fix it. New topic, new chat. Batch related questions into one message. And carry over a summary, not the whole history." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Before you switch", "text": "Summarize what we decided\nin 5 bullet points\nso I can start a new chat.", "dur": 3.2,
+      "say": "Before you switch, ask Claude to summarize what you decided in five bullet points. Then paste them into your new chat." },
+    { "type": "typewriter", "kicker": "Think of it like", "text": "Clearing your desk first.", "dur": 2.2,
+      "say": "It's like clearing your desk before you start a new project." },
+    { "type": "question", "text": "How many chats do you have open?", "sub": "Be honest in the comments", "dur": 2.0,
+      "say": "So, how many chats do you have open right now? Be honest, and tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
