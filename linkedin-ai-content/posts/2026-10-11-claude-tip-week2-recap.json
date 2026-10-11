@@ -1,0 +1,52 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 14",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Oct 11, 2026",
+  "topic": "Week 2 recap: 6 more Claude lessons for beginners in 60 seconds",
+  "music_seed": 292,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Two weeks of learning Claude, still no tech background needed. 🎓\nHere's everything from week 2, in 60 seconds.\n\n1️⃣ What's an AI agent?\nA chatbot answers. An agent plans, acts, checks its work, and asks you before big decisions.\n\n2️⃣ Notes in, slides out\nHand Claude Cowork your messy notes and ask for a first-draft deck.\n\n3️⃣ Plan mode in Claude Code\nSee the plan before anything changes. Nothing is edited until you approve.\n\n4️⃣ The \"write in my voice\" prompt\nShow Claude 2 examples of your writing instead of describing your style.\n\n5️⃣ Connectors\nLink Claude to apps like your calendar and email, so you stop copy-pasting.\n\n6️⃣ One giant chat\nNew topic, new chat. Carry over a short summary, not the whole history.\n\nWhy it matters:\nWeek 1 was about clear instructions. Week 2 was about letting Claude DO more, while you stay in control. 🧭\n\nYour challenge for next week: try one lesson you skipped.\n\nWhich lesson was most useful for you? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "Week 2 of learning Claude, in 60 seconds. Agents, Plan mode, connectors and more. 👇",
+    "Missed a day of Claude for Beginners? Here's the whole second week on one page.",
+    "6 more Claude lessons, zero coding required. Save this one."
+  ],
+  "sources": [
+    { "name": "Anthropic: Building effective agents", "url": "https://www.anthropic.com/engineering/building-effective-agents" },
+    { "name": "Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Code docs: Choose a permission mode (Plan mode)", "url": "https://code.claude.com/docs/en/permission-modes" },
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Use connectors to extend Claude's capabilities", "url": "https://support.claude.com/en/articles/11176164-use-connectors-to-extend-claude-s-capabilities" },
+    { "name": "How do usage and length limits work?", "url": "https://support.claude.com/en/articles/11647753-how-do-usage-and-length-limits-work" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 2 in 60 seconds", "sub": "Six more lessons, zero coding", "dur": 2.4,
+      "say": "Two weeks of learning Claude, and still no tech background needed. Here's everything from week two, in about a minute." },
+    { "type": "cards", "kicker": "Days 8 to 10", "dur": 3.2, "items": [
+      { "icon": "8", "title": "What's an agent?", "desc": "Plans, acts, checks, asks" },
+      { "icon": "9", "title": "Notes to slides", "desc": "A Cowork handoff" },
+      { "icon": "10", "title": "Plan mode", "desc": "See the plan first" }
+    ], "say": "First, an agent doesn't just answer. It plans, acts, checks, and asks you first. Then you turned messy notes into slides with Cowork. And you used Plan mode, so nothing changes until you approve." },
+    { "type": "cards", "kicker": "Days 11 to 13", "dur": 3.2, "items": [
+      { "icon": "11", "title": "Write in my voice", "desc": "Show, don't describe" },
+      { "icon": "12", "title": "Connectors", "desc": "Link your apps" },
+      { "icon": "13", "title": "New topic, new chat", "desc": "Keep chats focused" }
+    ], "say": "Next, you showed Claude examples of your writing so it sounds like you. You connected your apps, so no more copy-paste. And you learned: new topic, new chat." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Claude does more. You stay in control.", "dur": 2.4,
+      "say": "Week one was about clear instructions. Week two was about letting Claude do more, while you stay in control." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Try one you skipped", "dur": 2.4, "items": [
+      { "letter": "1", "label": "Pick one", "color": "#0F766E" },
+      { "letter": "2", "label": "Try it", "color": "#B45309" },
+      { "letter": "3", "label": "Share it", "color": "#BE123C" }
+    ], "say": "So here's your challenge. Pick one lesson you skipped, try it on real work, and tell me how it went." },
+    { "type": "question", "text": "Which lesson helped you most?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson was most useful for you? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
