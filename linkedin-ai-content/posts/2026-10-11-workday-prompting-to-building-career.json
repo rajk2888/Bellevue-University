@@ -1,0 +1,33 @@
+{
+  "date": "Sunday, Oct 11, 2026",
+  "topic": "Career angle: employers want AI builders, not just prompters (Workday report)",
+  "music_seed": 284,
+  "post": "\"Good at prompting\" is no longer enough for your resume. 📉\nEmployers now want people who can BUILD with AI.\n\nThat's the signal from Workday's new Global Workforce Report, based on job postings from 550+ employers plus a survey of 6,001 workers and leaders.\n\nWhat it found:\n\n📉 Demand for basic AI skills like simple prompting peaked in January, then fell 25%\n📈 Demand for building AI tools, automating workflows and AI engineering rose 51% (Sept 2025 to July 2026)\n🤝 40% of leaders expect AI to get more out of current staff. Only 28% expect it to cut headcount.\n\nMy read 👇\nPrompting is becoming like typing: everyone is expected to know it, so it no longer stands out.\nThe edge is moving to people who turn AI into a working process for their team.\n\nWhy it matters:\nAI is rewriting jobs more than replacing them. The people who redesign their own work will write the new job descriptions.\n\nPractical takeaway:\nThis week, pick ONE repetitive task you do every week and automate part of it with an AI tool. Then write down the before-and-after. That's a resume line. 📝\n\nWhat's one task you'd automate first? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Careers #Upskilling #AIAgents",
+  "hooks": [
+    "Demand for basic prompting skills fell 25%. Demand for AI builders rose 51%. Here's what that means for your career. 👇",
+    "\"Good at ChatGPT\" won't stand out on your resume much longer. New data on what employers want instead.",
+    "AI isn't mostly cutting jobs. It's rewriting them. Here's how to be the one doing the rewriting."
+  ],
+  "sources": [
+    { "name": "Workday (via PR Newswire): Global Workforce Report, AI is rewriting jobs more than it's cutting them", "url": "https://www.prnewswire.com/news-releases/workday-global-workforce-report-ai-is-rewriting-jobs-more-than-its-cutting-them-302898076.html" },
+    { "name": "People Matters: AI is rewriting jobs more than cutting them, Workday report", "url": "https://sea.peoplemattersglobal.com/news/ai-and-emerging-tech/ai-is-rewriting-jobs-more-than-cutting-them-workday-report-52539" },
+    { "name": "HR Tech Edge: Workday report finds AI is changing jobs, not cutting them", "url": "https://hrtechedge.com/hr/workday-report-finds-ai-is-changing-jobs-not-cutting-them/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Career angle", "text": "Prompting isn't enough", "sub": "Employers want AI builders", "dur": 2.4 },
+    { "type": "cards", "kicker": "Workday job-postings data", "dur": 3.2, "items": [
+      { "icon": "-", "title": "Basic prompting", "desc": "Down 25% since January" },
+      { "icon": "+", "title": "Building with AI", "desc": "Up 51% in under a year" },
+      { "icon": "=", "title": "Jobs rewritten", "desc": "More than jobs cut" }
+    ] },
+    { "type": "typewriter", "kicker": "My read", "text": "Prompting is the new typing.", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Your move this week", "text": "Automate one task", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pick a task", "color": "#2563EB" },
+      { "letter": "A", "label": "Automate it", "color": "#16A34A" },
+      { "letter": "R", "label": "Resume line", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "What would you automate first?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
