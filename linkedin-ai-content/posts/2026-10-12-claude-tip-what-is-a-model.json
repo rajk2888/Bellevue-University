@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 15",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Oct 12, 2026",
+  "topic": "AI basics: what a \"model\" is, and why Claude has Haiku, Sonnet, Opus and Fable",
+  "music_seed": 293,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Haiku, Sonnet, Opus, Fable… why does Claude have so many names? 🤔\nHere's what a \"model\" is, in plain English.\n\nA model is the AI \"brain\" behind the chat window. It's what actually reads your message and writes the answer.\n\nClaude isn't one model. It's a family, like a team of specialists.\n\nHere's how Anthropic describes today's lineup:\n\n⚡ Haiku: the fastest, built for high-volume, simple tasks\n⚖️ Sonnet: \"the best combination of speed and intelligence\"\n🧠 Opus: for long-running coding and knowledge work\n🏔️ Fable: for the most demanding reasoning and long, multi-step work\n\nThe trade-off is simple: more powerful models are usually slower, faster ones are lighter.\n\nHow to switch:\nIn the Claude app, click the model name next to the send button and pick another one. (Which models you see depends on your plan.)\n\nA simple rule to start:\nQuick rewrite or summary? Try a faster model.\nBig, tricky task with lots of steps? Try a more powerful one.\n\nWhy it matters:\nPicking the right model is like picking the right tool. You don't need a sledgehammer to hang a picture. 🔨\n\nWhich model do you use most? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Haiku, Sonnet, Opus, Fable. What's the difference? Claude's model names explained in 60 seconds. 👇",
+    "Ever wondered what that model name next to the send button means? Here's the plain-English answer.",
+    "You don't need the most powerful AI for every task. Here's how to pick the right Claude model."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Models overview", "url": "https://platform.claude.com/docs/en/about-claude/models/overview" },
+    { "name": "Claude Help Center: Change the model, effort, and thinking settings", "url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "What's an AI model?", "sub": "Claude's names, explained", "dur": 2.4,
+      "say": "Haiku, Sonnet, Opus, Fable. Why does Claude have so many names? Let's make it simple." },
+    { "type": "typewriter", "kicker": "In plain English", "text": "The brain behind the chat.", "dur": 2.4,
+      "say": "A model is the AI brain behind the chat window. It's what actually reads your message and writes the answer." },
+    { "type": "tiles", "kicker": "Claude is a family", "text": "Pick the right one", "dur": 2.8, "items": [
+      { "letter": "H", "label": "Haiku", "color": "#0F766E" },
+      { "letter": "S", "label": "Sonnet", "color": "#B45309" },
+      { "letter": "O", "label": "Opus", "color": "#BE123C" }
+    ], "say": "Claude is a family, like a team of specialists. Haiku is the fastest. Sonnet is the balance of speed and smarts. Opus handles long, complex work. And Fable takes on the hardest problems." },
+    { "type": "typewriter", "kicker": "The trade-off", "text": "More power, usually more time.", "dur": 2.4,
+      "say": "The trade-off is simple. More powerful models are usually slower. Faster ones are lighter." },
+    { "type": "cards", "kicker": "How to switch", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Click the model name", "desc": "Next to the send button" },
+      { "icon": "2", "title": "Pick another one", "desc": "Options depend on your plan" }
+    ], "say": "To switch, click the model name next to the send button and pick another one. Which models you see depends on your plan." },
+    { "type": "typewriter", "kicker": "A simple rule", "text": "Match the tool to the job.", "dur": 2.4,
+      "say": "Quick rewrite? Try a faster model. Big, tricky task? Try a more powerful one. It's like picking the right tool for the job." },
+    { "type": "question", "text": "Which model do you use most?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So, which model do you use most? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
