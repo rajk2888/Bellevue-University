@@ -1,0 +1,32 @@
+{
+  "date": "Monday, Oct 12, 2026",
+  "topic": "Google's new AI \"coworker\" agents get their own work email, calendar and Drive",
+  "music_seed": 285,
+  "post": "Your next coworker might have an email address… and no pulse. 📧🤖\nGoogle just gave AI agents their own work accounts.\n\nGoogle Cloud announced Gemini Agent, with \"coworker\" agents that can get their own Workspace identity.\n\nHere's the breakdown 👇\n\n📬 Each coworker agent can get its own @agents.company.com email, a calendar, Drive storage, and a spot in the company directory\n💬 Colleagues can @mention it in Chat or tag it in a Doc comment\n✏️ Its edits show up under its own name in version history\n🔐 Its actions go to an audit trail tied to the agent, not a person, and it only sees files explicitly shared with it\n\nThe catch: it's in private preview. Google hasn't shared pricing, plans or a general release date.\n\nWhy it matters:\nLast week we talked about agents acting with no clear ID. This is the opposite approach: give agents a name tag, a paper trail and limited access, like any new hire.\nThe question shifts from \"can AI do the work?\" to \"how do we manage AI teammates?\"\n\nPractical takeaway:\nIf your company adopts agents, ask 3 questions first: Who owns this agent? What can it access? Where's the log of what it did?\n\nWould you be comfortable working alongside an AI teammate with its own inbox? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #AIAgents #FutureOfWork #Google #Productivity",
+  "hooks": [
+    "Google just gave AI agents their own work email, calendar and Drive. Your next coworker might not be human. 👇",
+    "AI agents are getting name tags. Here's what Google's new \"coworker\" agents can do.",
+    "@agents.company.com — the newest email domain in your company directory might belong to an AI."
+  ],
+  "sources": [
+    { "name": "VentureBeat: Google Cloud unveils persistent Gemini Agents with their own Gmail, Calendar and Drive", "url": "https://venturebeat.com/orchestration/google-cloud-unveils-persistent-gemini-agents-for-long-running-tasks-and-they-get-their-own-gmail-calendar-and-drive-storage" },
+    { "name": "The Next Web: Google launches workplace AI agent that gets its own email address", "url": "https://thenextweb.com/news/gemini-agent-workspace-identity-europe" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI news", "text": "Your AI coworker has email", "sub": "Google's new Gemini agents", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Each agent can get", "text": "Its own work accounts", "dur": 2.6, "items": [
+      { "letter": "E", "label": "Email", "color": "#2563EB" },
+      { "letter": "C", "label": "Calendar", "color": "#16A34A" },
+      { "letter": "D", "label": "Drive", "color": "#EA580C" }
+    ] },
+    { "type": "cards", "kicker": "Treated like a new hire", "dur": 3.2, "items": [
+      { "icon": "1", "title": "@mention it", "desc": "In Chat or Doc comments" },
+      { "icon": "2", "title": "Its own audit trail", "desc": "Tied to the agent" },
+      { "icon": "3", "title": "Limited access", "desc": "Only files shared with it" }
+    ] },
+    { "type": "typewriter", "kicker": "Before you adopt", "text": "Owner? Access? Activity log?", "dur": 2.4 },
+    { "type": "question", "text": "Would you work with an AI teammate?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
