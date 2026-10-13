@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 16",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Oct 13, 2026",
+  "topic": "Hand off a real task: let Claude Cowork tidy your messy Downloads folder",
+  "music_seed": 294,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "How many files are in your Downloads folder right now? 😅\nHere's a 5-minute Claude Cowork handoff that cleans it up.\n\nOrganizing a messy Downloads folder by type and date is one of the example tasks in Claude's own Cowork guide.\n\nStep by step 👇\n\n1️⃣ Open the Claude desktop app and select \"Cowork\" in the message box\n2️⃣ Share ONLY your Downloads folder (not your whole drive)\n3️⃣ Describe the result you want\n4️⃣ Review Claude's plan, then let it run\n\nCopy this prompt:\n\"Organize my Downloads folder. Create folders by type (Documents, Images, Spreadsheets, Installers, Other) and sort files into them by year. Don't delete anything. Show me your plan first, and list any files you're unsure about.\"\n\nThe two safety lines that matter 🔐\n✅ \"Don't delete anything\"\n✅ \"Show me your plan first\"\n\nGood to know: Cowork is on paid plans (Pro, Max, Team, Enterprise), and working with files on your computer needs the Claude desktop app.\n\nWhy it matters:\nAn AI that can take actions is most useful on boring, repeatable chores. Start small, keep the rules clear, and you stay in control. ✨\n\nWhat's the messiest folder on your computer? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #Productivity",
+  "hooks": [
+    "Your Downloads folder is a mess. Here's the 5-minute Claude Cowork fix. 👇",
+    "The easiest first task to hand an AI agent: cleaning up your Downloads folder.",
+    "Let AI do your digital chores. Copy this Cowork prompt (with 2 safety lines built in)."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Tidy your Downloads", "sub": "A 5-minute Cowork handoff", "dur": 2.4,
+      "say": "How many files are in your Downloads folder right now? Let's hand that mess to Claude Cowork." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Select Cowork", "desc": "In the desktop app" },
+      { "icon": "2", "title": "Share one folder", "desc": "Just your Downloads" },
+      { "icon": "3", "title": "Review the plan", "desc": "Then let it run" }
+    ], "say": "Open the Claude desktop app and select Cowork. Share only your Downloads folder, describe what you want, and review the plan before it runs." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Your handoff prompt", "text": "Sort files by type and year.\nDon't delete anything.\nShow me your plan first.", "dur": 3.4,
+      "say": "Try this. Sort my Downloads by type and year. Don't delete anything. And show me your plan first." },
+    { "type": "tiles", "kicker": "Two safety lines", "text": "No deleting. Plan first.", "dur": 2.4, "items": [
+      { "letter": "K", "label": "Keep files", "color": "#0F766E" },
+      { "letter": "P", "label": "Plan first", "color": "#B45309" },
+      { "letter": "R", "label": "You review", "color": "#BE123C" }
+    ], "say": "Those two lines matter most. Nothing gets deleted, and you see the plan before anything moves." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Paid plans. Desktop app for local files.", "dur": 2.4,
+      "say": "Cowork is on paid Claude plans, and for files on your computer, you'll use the desktop app." },
+    { "type": "typewriter", "kicker": "Why it matters", "text": "Start small. Stay in control.", "dur": 2.2,
+      "say": "Boring chores are the perfect first job for AI. Start small, keep the rules clear, and you stay in control." },
+    { "type": "question", "text": "What's your messiest folder?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's the messiest folder on your computer? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
