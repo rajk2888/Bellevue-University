@@ -1,0 +1,33 @@
+{
+  "date": "Tuesday, Oct 13, 2026",
+  "topic": "Tutorial: get ChatGPT's new Intelligent UI to build you a live calculator",
+  "music_seed": 286,
+  "post": "ChatGPT can now build you a working calculator inside the chat. No code. 🧮\nHere's how to try it in 2 minutes.\n\nWith GPT-6, OpenAI added \"Intelligent UI\": answers can include charts, forms and small interactive tools, not just text. It's in the regular Chat tab on every plan, including Free.\n\nThe trick: you don't ask for an \"app.\" You describe the tool and the numbers. 👇\n\n1️⃣ Open a new chat in the Chat tab\n2️⃣ Describe the inputs, the math and the result you want\n3️⃣ Change the numbers right inside the answer\n\nTry this one:\n\"Make me an event budget calculator. Inputs: number of guests, food cost per person, venue fee, and total budget. Show the total cost and how much budget is left, update as I change inputs, and show the formulas.\"\n\nThat last part matters ✅\nAsking it to show the formulas lets you check the math. Reviewers have flagged that interactive answers can still get things wrong, so verify any number you'll act on.\n\nWhy it matters:\nAI answers are turning into mini tools. The skill isn't coding. It's describing exactly what you need.\n\nPractical takeaway:\nPick one spreadsheet you rebuild every month and try it as a ChatGPT calculator this week.\n\nWhat calculator would save you the most time? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ChatGPT #Productivity #AITools",
+  "hooks": [
+    "ChatGPT can now build a working calculator inside your chat. Here's the 2-minute tutorial. 👇",
+    "Stop rebuilding the same spreadsheet. Ask ChatGPT for a live calculator instead.",
+    "GPT-6's best new trick isn't smarter text. It's interactive answers. Here's how to use them."
+  ],
+  "sources": [
+    { "name": "Tom's Guide: ChatGPT gets interactive answers, free users get it starting today", "url": "https://www.tomsguide.com/ai/chatgpt/chatgpt-can-now-give-you-interactive-answers-and-free-users-get-it-starting-today" },
+    { "name": "TechRadar: ChatGPT's Intelligent UI, 5 things you can try now", "url": "https://www.techradar.com/ai-platforms-assistants/chatgpt/chatgpt-just-changed-how-it-works-with-intelligent-ui-here-are-5-things-you-can-do-now-that-you-couldnt-before" },
+    { "name": "Dataconomy: OpenAI adds interactive visuals to ChatGPT alongside GPT-6", "url": "https://dataconomy.com/2026/10/08/openai-chatgpt-gpt-6-interactive-visuals/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI tool tutorial", "text": "ChatGPT builds calculators", "sub": "Try GPT-6's Intelligent UI", "dur": 2.4 },
+    { "type": "cards", "kicker": "How to try it", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Open the Chat tab", "desc": "Any plan, even Free" },
+      { "icon": "2", "title": "Describe the tool", "desc": "Inputs, math, result" },
+      { "icon": "3", "title": "Change the numbers", "desc": "Right inside the answer" }
+    ] },
+    { "type": "typewriter", "kicker": "Try asking", "text": "\"Make me an event budget calculator.\"", "dur": 2.6 },
+    { "type": "tiles", "kicker": "Pro tip", "text": "Ask it to show the math", "dur": 2.4, "items": [
+      { "letter": "I", "label": "Inputs", "color": "#2563EB" },
+      { "letter": "F", "label": "Formulas", "color": "#16A34A" },
+      { "letter": "V", "label": "Verify", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "What calculator would you build?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
