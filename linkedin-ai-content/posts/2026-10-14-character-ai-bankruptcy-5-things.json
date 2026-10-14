@@ -1,0 +1,33 @@
+{
+  "date": "Wednesday, Oct 14, 2026",
+  "topic": "5 things to know about Character.AI's bankruptcy (and Disney's $20M bid)",
+  "music_seed": 287,
+  "post": "One of the hottest AI startups of the ChatGPT era just filed for bankruptcy. 📉\nAnd Disney may walk away with part of it for $20 million.\n\nCharacter.AI, the chatbot app where people talk to AI characters, filed for Chapter 11.\n\n5 things you need to know 👇\n\n1️⃣ It filed on October 12\nThe operating company, Character Technologies, filed in Delaware bankruptcy court.\n\n2️⃣ Disney is the opening bidder at $20M\nIt's a \"stalking horse\" bid: a floor price other buyers can top. It covers a license to some of the company's intellectual property, not the whole company.\n\n3️⃣ The numbers are small for a former AI darling\nThe filing lists assets and liabilities each between $50M and $100M.\n\n4️⃣ The app is still running, for now\nA sale is expected around late November or early December. Without a buyer, the platform could shut down.\n\n5️⃣ The backstory matters\nIn 2024, its founders and many staff joined Google in a $2.7B deal. Disney also sent it a cease-and-desist over its characters in 2025.\n\nWhy it matters 💡\nThe AI boom has winners and losers. Great products can still fail when the team, the tech and the business model drift apart.\n\nPractical takeaway:\nIf your work depends on a small AI tool, know how to export your data and have a backup option.\n\nWhich AI tool would hurt most if it disappeared tomorrow? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Startups #CharacterAI #Disney #TechNews",
+  "hooks": [
+    "Character.AI just filed for bankruptcy, and Disney bid $20M for part of it. 5 things to know. 👇",
+    "From AI darling to Chapter 11 in five years. What happened to Character.AI?",
+    "Disney is the opening bidder for part of a bankrupt AI startup. Here's the full story in 60 seconds."
+  ],
+  "sources": [
+    { "name": "Reuters (via KSL): Character.AI files for bankruptcy, to sell some assets to Disney for $20 million", "url": "https://www.ksl.com/article/51635619/characterai-files-for-bankruptcy-agrees-to-sell-some-assets-to-disney-for-20-million" },
+    { "name": "TechCrunch: Just 5 years in, Character.AI files for bankruptcy", "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/" },
+    { "name": "Gizmodo: Character.AI files for bankruptcy weeks after Disney hired its former CEO", "url": "https://gizmodo.com/character-ai-files-for-bankruptcy-weeks-after-disney-hired-its-former-ceo-2000825281" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "5 things to know", "text": "Character.AI goes bankrupt", "sub": "And Disney bids $20M", "dur": 2.4 },
+    { "type": "cards", "kicker": "The basics", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Chapter 11 filing", "desc": "October 12, in Delaware" },
+      { "icon": "2", "title": "Disney bids $20M", "desc": "For an IP license" },
+      { "icon": "3", "title": "App still running", "desc": "Sale expected by December" }
+    ] },
+    { "type": "typewriter", "kicker": "The backstory", "text": "Founders left for Google in 2024.", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Your takeaway", "text": "Have a backup plan", "dur": 2.4, "items": [
+      { "letter": "E", "label": "Export data", "color": "#2563EB" },
+      { "letter": "B", "label": "Backup tool", "color": "#16A34A" },
+      { "letter": "W", "label": "Watch news", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Which AI tool can't you lose?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
