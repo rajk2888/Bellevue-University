@@ -1,0 +1,43 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 18",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Oct 15, 2026",
+  "topic": "The \"interview me first\" prompt: let Claude ask you questions before it starts",
+  "music_seed": 296,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Not sure how to write the \"perfect prompt\"? 🤔\nDon't. Let Claude interview you instead.\n\nAnthropic's own prompting guide says that giving Claude context, like why you need something, helps it give more targeted answers.\n\nBut most of us forget half the context. So flip it around: ask Claude to ask YOU the questions first.\n\nCopy-paste prompt 👇\n\n\"I need help with [your task]. Before you start, ask me up to 5 questions you need answered to do this really well. Ask them one at a time. When you have enough, tell me your plan, then do it.\"\n\nTry it on:\n📧 A tricky email to a client\n📊 A project update for your boss\n🎤 A short speech or toast\n🗓️ Planning a team offsite\n\nWhy one question at a time? ✅\nIt feels like a real conversation, and your answers stay short and easy.\n\nWhy it matters:\nThe hardest part of using AI isn't the tool. It's knowing what to say. This prompt turns a blank box into a friendly interview, and the answer gets better because Claude finally has your context. 💡\n\nWhat task would you let Claude interview you about? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Stop trying to write the perfect prompt. Let Claude interview you first. (Copy-paste prompt inside) 👇",
+    "The easiest prompt for beginners: \"Ask me 5 questions before you start.\"",
+    "Blank chat box? Flip it around and let the AI ask the questions."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices (Add context to improve performance)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Let Claude interview you", "sub": "The easiest prompt there is", "dur": 2.4,
+      "say": "Not sure how to write the perfect prompt? Don't. Let Claude interview you instead." },
+    { "type": "typewriter", "kicker": "From Anthropic's guide", "text": "Context makes answers better.", "dur": 2.4,
+      "say": "Anthropic's own guide says giving Claude context helps it give you more targeted answers." },
+    { "type": "typewriter", "kicker": "The problem", "text": "We forget half the context.", "dur": 2.2,
+      "say": "The problem is, most of us forget half of it. So let's flip it around." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Interview me first", "text": "Before you start, ask me\nup to 5 questions,\none at a time.", "dur": 3.4,
+      "say": "Tell Claude your task, then say: before you start, ask me up to five questions, one at a time." },
+    { "type": "tiles", "kicker": "Try it on", "text": "Works for everyday tasks", "dur": 2.6, "items": [
+      { "letter": "E", "label": "Emails", "color": "#0F766E" },
+      { "letter": "U", "label": "Updates", "color": "#B45309" },
+      { "letter": "P", "label": "Plans", "color": "#BE123C" }
+    ], "say": "Try it on a tricky email, a project update for your boss, or planning a team event." },
+    { "type": "typewriter", "kicker": "Why it works", "text": "A blank box becomes a chat.", "dur": 2.4,
+      "say": "The hardest part of AI is knowing what to say. This turns a blank box into a friendly conversation." },
+    { "type": "question", "text": "What should Claude ask you about?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what task would you let Claude interview you about? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
