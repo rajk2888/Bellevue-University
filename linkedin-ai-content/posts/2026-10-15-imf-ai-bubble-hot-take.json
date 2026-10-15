@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Oct 15, 2026",
+  "topic": "Hot take: the IMF warns of an AI market correction, and your AI skills still matter",
+  "music_seed": 288,
+  "post": "The IMF just warned that an AI market correction could shake the global financial system. 📉\nMy hot take: your AI skills are not in a bubble.\n\nIn its new Global Financial Stability Report, the IMF named an AI-driven correction as one of three near-term risks, alongside rising bond yields and cyber threats.\n\nWhat it said 👇\n⚠️ A correction could come if AI investment or profits disappoint\n💸 It also notes growing evidence that AI capabilities can be delivered with less investment\n🌍 In its scenario, unwinding AI investment cuts global GDP by up to 0.4% by 2028\n\nHere's my take:\nThe IMF is talking about stock prices and spending. That's a different question from \"is AI useful at work?\"\n\nThe dot-com crash wiped out companies. It didn't wipe out the internet, or the people who learned to use it.\n\nWhy it matters:\nIf AI is getting cheaper to deliver, that's bad news for some investors and good news for everyone who uses it.\n\nPractical takeaway:\nDon't tie your learning to the headlines. Pick one AI tool, use it on real work every week, and keep a list of what it saves you. 📝\n\nDo you think we're in an AI bubble? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #IMF #FutureOfWork #Investing #AIBubble",
+  "hooks": [
+    "The IMF just flagged an AI market correction as a top risk. Here's why I'm not worried about AI skills. 👇",
+    "AI bubble? Maybe for stock prices. Not for the people learning to use it.",
+    "The dot-com crash didn't kill the internet. An AI correction won't kill AI skills."
+  ],
+  "sources": [
+    { "name": "The Register: AI bubble could burst and take global economy with it, IMF warns", "url": "https://www.theregister.com/ai-and-ml/2026/10/13/ai-bubble-could-burst-and-take-global-economy-with-it-imf-warns/5302781" },
+    { "name": "Unite.AI: IMF warns AI market correction could trigger global financial turmoil", "url": "https://www.unite.ai/imf-warns-ai-market-correction-could-trigger-global-financial-turmoil/" },
+    { "name": "Malay Mail: IMF warns AI market correction, cyber threats could shake global financial system", "url": "https://www.malaymail.com/news/money/2026/10/13/imf-warns-ai-market-correction-cyber-threats-could-shake-global-financial-system/238946" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "AI bubble? Not your skills.", "sub": "The IMF's new warning", "dur": 2.4 },
+    { "type": "cards", "kicker": "What the IMF said", "dur": 3.2, "items": [
+      { "icon": "1", "title": "A top risk", "desc": "An AI-driven market correction" },
+      { "icon": "2", "title": "The trigger", "desc": "Profits that disappoint" },
+      { "icon": "3", "title": "Up to -0.4% GDP", "desc": "Global, by 2028, in its scenario" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "Stock prices aren't skills.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Your move", "text": "Keep building your skills", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pick a tool", "color": "#2563EB" },
+      { "letter": "U", "label": "Use weekly", "color": "#16A34A" },
+      { "letter": "T", "label": "Track wins", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Are we in an AI bubble?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
