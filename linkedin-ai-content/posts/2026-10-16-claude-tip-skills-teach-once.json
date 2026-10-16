@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 19",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Oct 16, 2026",
+  "topic": "Skills: teach Claude a task once, and it does it your way every time",
+  "music_seed": 297,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Tired of giving Claude the same instructions every week? 🔁\nTeach it once with a Skill.\n\nA Skill is a saved set of instructions. Claude loads it on its own whenever your request matches what the Skill is for.\n\nAnthropic's guide says a Skill pays off when you do a task often and want it done the same way every time. A weekly report format. A checklist. A multi-step routine.\n\nHow to make your first one 👇\n1️⃣ Write your task in one sentence, plus what a good result looks like\n2️⃣ Ask Claude to use the \"skill-creator\" skill to draft it with you\n3️⃣ Turn it on in Customize > Skills\n4️⃣ Try a real request and tweak the wording if Claude doesn't pick it up\n\nExample sentence:\n\"Turn my meeting notes into a 5-bullet summary, then a list of action items with owners and due dates.\"\n\n📌 Skills are available on Free, Pro, Max, Team and Enterprise plans, with code execution turned on. They work in chat, Cowork and Claude Code.\n\nWhy it matters:\nYou stop re-explaining yourself. Claude starts working the way you already do. 💡\n\nWhat's one task you'd teach Claude once? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #Productivity",
+  "hooks": [
+    "Stop re-typing the same instructions to Claude. Teach it once with a Skill. 👇",
+    "The Claude feature that remembers HOW you like things done: Skills, explained for beginners.",
+    "Your weekly report, done your way, without explaining it again. Here's how Skills work."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Use skills in Claude", "url": "https://support.claude.com/en/articles/12512180-use-skills-in-claude" },
+    { "name": "Claude Help Center: How to create custom skills", "url": "https://support.claude.com/en/articles/12512198-how-to-create-custom-skills" },
+    { "name": "Claude Docs: Create custom skills", "url": "https://claude.com/docs/skills/how-to" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Teach Claude once", "sub": "Meet Skills", "dur": 2.4,
+      "say": "Tired of giving Claude the same instructions every week? Let's teach it once, with a Skill." },
+    { "type": "typewriter", "kicker": "What's a Skill?", "text": "Saved instructions Claude reuses.", "dur": 2.6,
+      "say": "A Skill is a saved set of instructions. Claude loads it by itself whenever your request matches." },
+    { "type": "tiles", "kicker": "Great for", "text": "Tasks you repeat", "dur": 2.6, "items": [
+      { "letter": "R", "label": "Reports", "color": "#0F766E" },
+      { "letter": "C", "label": "Checklists", "color": "#B45309" },
+      { "letter": "S", "label": "Steps", "color": "#BE123C" }
+    ], "say": "It's perfect for things you do again and again, like a weekly report, a checklist, or a multi-step routine." },
+    { "type": "cards", "kicker": "Make your first one", "dur": 3.4, "items": [
+      { "icon": "1", "title": "One sentence", "desc": "Describe the task" },
+      { "icon": "2", "title": "skill-creator", "desc": "Claude drafts it" },
+      { "icon": "3", "title": "Turn it on", "desc": "Customize > Skills" }
+    ], "say": "Write your task in one sentence. Ask Claude to use skill-creator to draft it. Then switch it on under Customize, Skills." },
+    { "type": "prompt", "kicker": "Example sentence", "label": "My meeting skill", "text": "Turn my notes into\n5 bullets, then action\nitems with owners.", "dur": 3.2,
+      "say": "For example: turn my meeting notes into five bullets, then action items with owners and due dates." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Free and paid plans.", "sub": "Code execution on", "dur": 2.4,
+      "say": "Skills work on free and paid plans, as long as code execution is turned on. And they work in Cowork too." },
+    { "type": "question", "text": "What would you teach Claude?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's one task you'd teach Claude once? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
