@@ -1,0 +1,36 @@
+{
+  "date": "Friday, Oct 16, 2026",
+  "topic": "This week in AI: a bug at OpenAI, Gemini 4 Argon, Character.AI's bankruptcy, the IMF's warning, CoreWeave's slide",
+  "music_seed": 289,
+  "post": "This was the week AI got a reality check. 🧾\nHere are the 5 stories worth your time, in 60 seconds.\n\n1️⃣ A hidden bug at OpenAI\nThe FBI arrested an OpenAI engineer accused of planting a recording device in an executive conference room. OpenAI says it has no sign that model weights, code or customer data were taken.\n\n2️⃣ Gemini 4 Argon goes wide\nGoogle opened its new model to developers and businesses through its API, plus paid Gemini app subscribers. Free tiers are left out for now.\n\n3️⃣ Character.AI files for bankruptcy\nThe chatbot startup filed for Chapter 11, with Disney as the opening $20M bidder for a license to some of its IP.\n\n4️⃣ The IMF's AI warning\nIts new stability report names an AI-driven market correction as one of three near-term risks.\n\n5️⃣ CoreWeave's rough week\nThe AI cloud company's shares fell about 15% in a day as its bond yields neared 15%, on worries about AI borrowing.\n\nWhy it matters:\nThe tech keeps getting better, but the money side is getting tested. Security, debt and business models matter as much as benchmarks now. 🔍\n\nPractical takeaway:\nIf you're picking AI tools for your team, look at the company behind the tool, not just the demo. 🧠\n\nWhich story surprised you most? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #OpenAI #Google #AIBubble",
+  "hooks": [
+    "A hidden bug at OpenAI, a bankrupt AI startup and an IMF warning. This week in AI, in 60 seconds. 👇",
+    "AI got a reality check this week. 5 stories you shouldn't miss.",
+    "Security scares, bankruptcy and bond yields: the week AI met the real world."
+  ],
+  "sources": [
+    { "name": "CBS News: FBI arrests OpenAI employee for allegedly planting recording device", "url": "https://www.cbsnews.com/news/openai-employee-arrest-recording-device/" },
+    { "name": "Fortune: FBI arrests OpenAI employee accused of planting secret recording device", "url": "https://fortune.com/2026/10/13/fbi-arrests-openai-employee-charged-planting-secret-recording-device-conference-room/" },
+    { "name": "Google: Gemini 4 Argon is now available", "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" },
+    { "name": "Digital Trends: Gemini 4 Argon is available for developers, businesses and paid users", "url": "https://www.digitaltrends.com/computing/gemini-4-argon-is-finally-available-for-developers-businesses-and-paid-users/" },
+    { "name": "TechCrunch: Character.AI files for bankruptcy", "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/" },
+    { "name": "The Register: IMF warns AI bubble could burst", "url": "https://www.theregister.com/ai-and-ml/2026/10/13/ai-bubble-could-burst-and-take-global-economy-with-it-imf-warns/5302781" },
+    { "name": "CNBC: CoreWeave shares tumble as bond yields near 15%", "url": "https://www.cnbc.com/2026/10/14/coreweave-stock-bond-yields-ai-debt.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "AI's reality-check week", "sub": "Oct 12 to Oct 16", "dur": 2.2 },
+    { "type": "cards", "kicker": "Top stories", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Bug at OpenAI", "desc": "Engineer arrested by FBI" },
+      { "icon": "2", "title": "Gemini 4 Argon", "desc": "Opens to paid users" },
+      { "icon": "3", "title": "Character.AI", "desc": "Files for bankruptcy" }
+    ] },
+    { "type": "cards", "kicker": "Also this week", "dur": 2.8, "items": [
+      { "icon": "4", "title": "IMF warning", "desc": "AI correction a top risk" },
+      { "icon": "5", "title": "CoreWeave slides", "desc": "Bond yields near 15%" }
+    ] },
+    { "type": "typewriter", "kicker": "The big picture", "text": "Better tech. Tougher money.", "dur": 2.4 },
+    { "type": "question", "text": "Which story surprised you most?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
