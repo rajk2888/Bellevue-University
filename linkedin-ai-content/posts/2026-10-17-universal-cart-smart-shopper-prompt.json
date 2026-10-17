@@ -1,0 +1,33 @@
+{
+  "date": "Saturday, Oct 17, 2026",
+  "topic": "Prompt of the week: the smart-shopper prompt (as Google launches Universal Cart)",
+  "music_seed": 290,
+  "post": "Google just put an AI shopping cart inside Search and Gemini. 🛒\nBefore you let any AI help you buy, use this prompt.\n\nThis week Google launched Universal Cart in the US. It holds items from different stores in one cart, across Search (including AI Mode) and the Gemini app.\n\nWhat it does 👇\n🔔 Alerts you when a saved item drops in price or comes back in stock\n🏷️ Looks for promo codes and card offers\n🏬 Works with retailers like Target, Walmart, Sephora and Shopify sellers, who stay the seller of record\n\nAI is getting good at the \"buy\" part. You still own the \"should I?\" part.\n\nPrompt of the week 👇\n\"I'm thinking of buying [item] for about [budget]. Before I decide, ask me 3 questions about how I'll use it. Then compare 3 options in a table: price, key trade-off, and who it's best for. Tell me what you're unsure about, and what I should check myself before paying.\"\n\nWhy it matters:\nShopping agents make spending faster. This prompt makes you slower in the one place it counts: the decision. 🧠\n\nPractical takeaway:\nSave this prompt and run it before any purchase over $100. ✅\n\nWould you let an AI agent check out for you? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #PromptOfTheWeek #Google #Gemini #AIShopping",
+  "hooks": [
+    "Google just put an AI shopping cart inside Search and Gemini. Use this prompt before you let AI help you buy anything. 👇",
+    "AI can now find the deal. It still can't tell you if you need the thing. Here's the prompt that does.",
+    "One cart, many stores, price-drop alerts. Google's Universal Cart is live in the US. My prompt of the week:"
+  ],
+  "sources": [
+    { "name": "The Next Web: Google launches Universal Cart in the US, with checkout built into Search and the Gemini app", "url": "https://thenextweb.com/news/google-universal-cart-us-only-eu" },
+    { "name": "PPC Land: Google's Universal Cart reaches US Search and Gemini but not YouTube", "url": "https://ppc.land/googles-universal-cart-reaches-us-search-and-gemini-but-not-youtube/" },
+    { "name": "Search Engine Journal: Google Universal Cart", "url": "https://www.searchenginejournal.com/google-universal-cart-store-handoff/593145/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Prompt of the week", "text": "Shop smarter with AI", "sub": "Google's Universal Cart is live", "dur": 2.4 },
+    { "type": "cards", "kicker": "What's new", "dur": 3.0, "items": [
+      { "icon": "1", "title": "One cart", "desc": "Items from many stores" },
+      { "icon": "2", "title": "Price alerts", "desc": "Drops and restocks" },
+      { "icon": "3", "title": "Deal finder", "desc": "Promo codes, card offers" }
+    ] },
+    { "type": "typewriter", "kicker": "But remember", "text": "AI buys. You decide.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "The prompt", "text": "Before any big purchase", "dur": 2.6, "items": [
+      { "letter": "A", "label": "Ask me 3", "color": "#2563EB" },
+      { "letter": "C", "label": "Compare 3", "color": "#16A34A" },
+      { "letter": "F", "label": "Flag doubts", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Would you let AI check out?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
