@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 20",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Oct 17, 2026",
+  "topic": "Beginner mistake: clicking \"Yes, don't ask again\" without reading (and the /rewind safety net)",
+  "music_seed": 298,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "The riskiest button for Claude Code beginners? 🚦\n\"Yes, don't ask again.\"\n\nClaude Code asks your permission before it does things like editing files or running commands. (A \"command\" is a typed instruction your computer runs.)\n\nThat pop-up is your seatbelt. Here's how to use it well 👇\n\n1️⃣ Read it before you click\nIt tells you exactly what Claude wants to do. If you don't understand it, ask: \"Explain that in plain English first.\"\n\n2️⃣ Save \"don't ask again\" for harmless things\nFor a command, that choice is saved for the whole project, including future sessions. Type /permissions to see and change what you've allowed.\n\n3️⃣ Know your undo button ⏪\nPress Esc twice (or type /rewind) to roll Claude's file edits back to an earlier point.\n\n4️⃣ Know its limit\nRewind doesn't undo changes made by commands, like deleting a file. So work on a copy of anything important. 🗂️\n\nWhy it matters:\nThe permission prompt isn't a speed bump. It's the moment you stay in charge. A 5-second read beats an hour of cleanup. 💡\n\nDo you read the pop-ups, or click straight through? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "The riskiest button for Claude Code beginners: \"Yes, don't ask again.\" Here's how to stay safe. 👇",
+    "Claude Code has an undo button. Most beginners don't know it exists (or its one big limit).",
+    "That permission pop-up in Claude Code isn't a speed bump. It's your seatbelt."
+  ],
+  "sources": [
+    { "name": "Claude Code Docs: Configure permissions", "url": "https://code.claude.com/docs/en/permissions" },
+    { "name": "Claude Code Docs: Checkpointing (/rewind and its limitations)", "url": "https://code.claude.com/docs/en/checkpointing" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Don't click without reading", "sub": "Claude Code safety habits", "dur": 2.4,
+      "say": "Here's the riskiest button for Claude Code beginners. Yes, don't ask again." },
+    { "type": "typewriter", "kicker": "The pop-up", "text": "Claude asks before it acts.", "dur": 2.4,
+      "say": "Claude Code asks your permission before it edits files or runs commands. That pop-up is your seatbelt." },
+    { "type": "tiles", "kicker": "Before you click", "text": "Three quick habits", "dur": 2.8, "items": [
+      { "letter": "R", "label": "Read it", "color": "#0F766E" },
+      { "letter": "A", "label": "Ask why", "color": "#B45309" },
+      { "letter": "L", "label": "Limit always", "color": "#BE123C" }
+    ], "say": "Read it before you click. If it's confusing, ask Claude to explain it in plain English first." },
+    { "type": "typewriter", "kicker": "Don't ask again?", "text": "It's saved for the project.", "sub": "Check it with /permissions", "dur": 2.6,
+      "say": "For a command, don't ask again is saved for the whole project. Type slash permissions to check what you've allowed." },
+    { "type": "cards", "kicker": "Your undo button", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Press Esc twice", "desc": "Or type /rewind" },
+      { "icon": "2", "title": "Pick a point", "desc": "Choose an earlier prompt" },
+      { "icon": "3", "title": "Restore code", "desc": "Claude's edits roll back" }
+    ], "say": "Made a mistake? Press Escape twice, or type slash rewind, and roll Claude's edits back." },
+    { "type": "typewriter", "kicker": "One big limit", "text": "Rewind can't undo deletes.", "sub": "Work on a copy", "dur": 2.4,
+      "say": "But rewind can't undo things a command did, like deleting a file. So work on a copy of anything important." },
+    { "type": "question", "text": "Do you read the pop-ups?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So, be honest. Do you read the pop-ups, or click straight through? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
