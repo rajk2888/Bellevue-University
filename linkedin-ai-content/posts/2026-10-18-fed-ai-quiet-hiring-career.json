@@ -1,0 +1,33 @@
+{
+  "date": "Sunday, Oct 18, 2026",
+  "topic": "Career angle: the Fed says AI is quietly slowing hiring. Here's how to stay the person they keep.",
+  "music_seed": 291,
+  "post": "AI isn't mostly firing people. It's quietly not hiring them. 🚪\nThat's the career story hiding in the Fed's latest report.\n\nIn its October Beige Book, the Federal Reserve said firms in 5 of its 12 districts were shrinking staff through attrition, delaying hiring, or expecting fewer jobs after AI made them more productive.\n\nA few things stood out 👇\n📉 It's mostly happening through hiring, not layoffs\n🎓 One Dallas accounting contact said large firms were holding off, expecting to need fewer entry-level workers\n⚖️ Most districts still reported little or no net change in overall jobs\n\nIt's anecdotal, not proof of mass job loss. But it shows where the pressure starts: the next hire, and the first rung of the ladder.\n\nWhy it matters:\nIf AI changes who gets hired, the safest spot is being the person who makes the team more productive with AI, not the task AI replaces.\n\nPractical takeaway:\nThis week, pick one routine task you do. Do it with AI, write down the time it saved, and share it with your manager. That's your proof of value. 📝\n\nAre you seeing slower hiring in your field? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Careers #Hiring #AISkills",
+  "hooks": [
+    "AI isn't mostly firing people. It's quietly not hiring them. Here's what the Fed just found. 👇",
+    "5 of 12 Fed districts say AI is slowing hiring. Here's how to be the person they keep.",
+    "The first rung of the career ladder is where AI hits first. What to do about it this week."
+  ],
+  "sources": [
+    { "name": "24/7 Wall St.: The Fed just found AI is starting to cost jobs in 5 of its 12 districts", "url": "https://247wallst.com/investing/2026/10/15/the-fed-just-found-ai-is-starting-to-cost-jobs-in-5-of-its-12-districts/" },
+    { "name": "Cryptopolitan: Fed Beige Book ties AI productivity to slower hiring in 5 districts", "url": "https://www.cryptopolitan.com/fed-beige-book-ai-productivity-slower-hiring/" },
+    { "name": "Federal Reserve: Beige Book", "url": "https://www.federalreserve.gov/monetarypolicy/publications/beige-book-default.htm" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Career angle", "text": "AI is quietly not hiring", "sub": "What the Fed just found", "dur": 2.4 },
+    { "type": "cards", "kicker": "The Fed's October report", "dur": 3.2, "items": [
+      { "icon": "1", "title": "5 of 12 districts", "desc": "Report AI hiring pressure" },
+      { "icon": "2", "title": "Mostly via hiring", "desc": "Attrition and delays" },
+      { "icon": "3", "title": "Entry-level first", "desc": "Fewer junior hires expected" }
+    ] },
+    { "type": "typewriter", "kicker": "The lesson", "text": "Be the one AI helps.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "This week", "text": "Build your proof of value", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pick a task", "color": "#2563EB" },
+      { "letter": "T", "label": "Time it", "color": "#16A34A" },
+      { "letter": "S", "label": "Share it", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Is hiring slowing in your field?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
