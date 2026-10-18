@@ -1,0 +1,52 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 21",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Oct 18, 2026",
+  "topic": "Week 3 recap: 6 more Claude lessons for beginners in 60 seconds",
+  "music_seed": 299,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Three weeks of learning Claude. Still no tech background needed. 🎓\nHere's everything from week 3, in 60 seconds.\n\n1️⃣ What's a \"model\"?\nIt's the AI brain behind the chat. Haiku is fastest, Sonnet balances speed and smarts, Opus and Fable handle the heaviest work.\n\n2️⃣ Tidy your Downloads with Cowork\nShare ONLY that folder, say \"don't delete anything\", and review the plan first.\n\n3️⃣ Claude Code isn't just for code\nPoint it at a folder of notes and ask for every action item assigned to you.\n\n4️⃣ The \"interview me first\" prompt\nAsk Claude to ask YOU up to 5 questions, one at a time, before it starts.\n\n5️⃣ Skills\nTeach Claude a repeat task once, and it does it your way every time.\n\n6️⃣ Read before you click\nClaude Code asks before it acts. Read the pop-up, and use /rewind to undo Claude's edits.\n\nWhy it matters:\nWeek 3 was about handing Claude real work, on your own files, while you keep the steering wheel. 🧭\n\nYour challenge this week: build one Skill for a task you repeat every week.\n\nWhich lesson will you try first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "Week 3 of learning Claude, in 60 seconds. Models, Skills, /rewind and more. 👇",
+    "Missed a day of Claude for Beginners? Here's the whole third week on one page.",
+    "6 more Claude lessons, zero coding required. Save this one for Monday."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Models overview", "url": "https://platform.claude.com/docs/en/about-claude/models/overview" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Code docs: Common workflows", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Help Center: Use skills in Claude", "url": "https://support.claude.com/en/articles/12512180-use-skills-in-claude" },
+    { "name": "Claude Code Docs: Checkpointing (/rewind)", "url": "https://code.claude.com/docs/en/checkpointing" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 3 in 60 seconds", "sub": "Six more lessons, zero coding", "dur": 2.4,
+      "say": "Three weeks of learning Claude, and still no tech background needed. Here's everything from week three, in about a minute." },
+    { "type": "cards", "kicker": "Days 15 to 17", "dur": 3.2, "items": [
+      { "icon": "15", "title": "What's a model?", "desc": "The AI brain" },
+      { "icon": "16", "title": "Tidy Downloads", "desc": "A Cowork handoff" },
+      { "icon": "17", "title": "Notes folder", "desc": "Claude Code, no code" }
+    ], "say": "First, a model is the AI brain behind the chat. Then Cowork tidied your Downloads folder. And you pointed Claude Code at a folder of notes, no coding at all." },
+    { "type": "cards", "kicker": "Days 18 to 20", "dur": 3.2, "items": [
+      { "icon": "18", "title": "Interview me first", "desc": "Claude asks you" },
+      { "icon": "19", "title": "Skills", "desc": "Teach it once" },
+      { "icon": "20", "title": "Read before you click", "desc": "And /rewind to undo" }
+    ], "say": "Next, you let Claude interview you before it starts. You taught it a task once with a Skill. And you learned to read the pop-ups, with rewind as your undo button." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Real work. You steer.", "dur": 2.4,
+      "say": "Week three was about handing Claude real work, on your own files, while you keep the steering wheel." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Build your first Skill", "dur": 2.4, "items": [
+      { "letter": "1", "label": "Pick a task", "color": "#0F766E" },
+      { "letter": "2", "label": "Teach it", "color": "#B45309" },
+      { "letter": "3", "label": "Reuse it", "color": "#BE123C" }
+    ], "say": "So here's your challenge. Pick a task you repeat every week, and turn it into your first Skill." },
+    { "type": "question", "text": "Which lesson will you try first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson will you try first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
