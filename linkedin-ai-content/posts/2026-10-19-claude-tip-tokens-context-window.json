@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 22",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Oct 19, 2026",
+  "topic": "AI basics: what \"tokens\" and the \"context window\" are, in plain English",
+  "music_seed": 300,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Ever heard people talk about \"tokens\" and thought, huh? 🪙\nHere are two AI words, explained in plain English.\n\n1️⃣ Tokens\nAI doesn't read words the way we do. It breaks text into small pieces called tokens. A token can be a whole word, part of a word, or even a single character.\n\nSo \"unbelievable\" might be a few tokens, not one.\n\n2️⃣ The context window\nAnthropic describes it as the model's \"working memory\": the amount of text Claude can look back on while it writes your answer.\n\nIt's different from what Claude learned in training. It's what's in front of it right now: your messages, its replies, and any files you share. 📄\n\nThink of it like a desk 🗂️\nTraining is everything Claude studied. The context window is the desk it's working at. The more you pile on, the more crowded it gets.\n\nTry this when a chat gets long:\n\"Summarize the key decisions and facts from this chat in 5 bullets, so I can start a fresh chat with them.\"\n\nWhy it matters:\nOnce you know Claude works from a \"desk\", you'll share the right files, keep chats focused, and get sharper answers. 💡\n\nWhich AI word should I explain next? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "\"Tokens\" and \"context window\" explained in plain English. No tech background needed. 👇",
+    "AI doesn't read words like you do. Here's what it reads instead.",
+    "Claude has a desk, not a filing cabinet. The simplest way to understand the context window."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Glossary (Tokens, Context window)", "url": "https://platform.claude.com/docs/en/about-claude/glossary" },
+    { "name": "Claude Docs: Context windows", "url": "https://platform.claude.com/docs/en/build-with-claude/context-windows" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "Tokens, explained simply", "sub": "Plus the context window", "dur": 2.4,
+      "say": "Ever heard people talk about tokens and thought, huh? Let's fix that in under a minute." },
+    { "type": "typewriter", "kicker": "What's a token?", "text": "A small chunk of text.", "dur": 2.4,
+      "say": "AI doesn't read words like we do. It breaks text into small pieces called tokens." },
+    { "type": "tiles", "kicker": "A token can be", "text": "Big or small pieces", "dur": 2.6, "items": [
+      { "letter": "W", "label": "A word", "color": "#0F766E" },
+      { "letter": "P", "label": "Part of one", "color": "#B45309" },
+      { "letter": "C", "label": "A character", "color": "#BE123C" }
+    ], "say": "A token can be a whole word, part of a word, or even a single character." },
+    { "type": "typewriter", "kicker": "The context window", "text": "Claude's working memory.", "dur": 2.4,
+      "say": "The context window is Claude's working memory. It's how much text Claude can look back on while it answers you." },
+    { "type": "cards", "kicker": "Think of a desk", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Training", "desc": "What Claude studied" },
+      { "icon": "2", "title": "Context window", "desc": "The desk it works at" },
+      { "icon": "3", "title": "Your chat", "desc": "Messages and files on it" }
+    ], "say": "Think of a desk. Training is everything Claude studied. The context window is the desk, with your messages and files on it." },
+    { "type": "prompt", "kicker": "Long chat? Try this", "label": "Clear the desk", "text": "Summarize the key facts\nin 5 bullets so I can\nstart a fresh chat.", "dur": 3.2,
+      "say": "When a chat gets long, ask Claude to summarize the key facts in five bullets, then start fresh with them." },
+    { "type": "question", "text": "Which AI word is next?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which AI word should I explain next? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
