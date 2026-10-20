@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 23",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Oct 20, 2026",
+  "topic": "Hand off a real task: turn a folder of receipts into an expense report with Claude Cowork",
+  "music_seed": 301,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Still typing receipts into a spreadsheet by hand? 🧾\nLet Claude Cowork build the expense report for you.\n\n\"Drop receipts in a folder and ask Claude to create a formatted expense report\" is one of the example tasks in Claude's own Cowork guide.\n\n(Cowork is the mode where Claude works with your files for you, instead of just chatting.)\n\nStep by step 👇\n1️⃣ Put this month's receipts in one folder\n2️⃣ Open Claude and select Cowork in the message box\n3️⃣ Share ONLY that folder\n4️⃣ Paste the prompt below\n5️⃣ Review Claude's plan, then let it run\n\nCopy this prompt:\n\"Read every receipt in this folder. Create an Excel expense report with date, vendor, category, and amount, plus a total. Flag any receipt you can't read clearly. Don't change or delete the original files.\"\n\nThen check it ✅\nSpot-check a few rows against the receipts before you submit. You're still the one signing off.\n\n📌 Cowork needs a paid plan (Pro, Max, Team or Enterprise).\n\nWhy it matters:\nThe boring admin task is the perfect first handoff. Low risk, easy to check, and real time back in your week. 💡\n\nWhat admin task would you hand off first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "Still typing receipts into a spreadsheet by hand? Let Claude Cowork build the expense report. 👇",
+    "A folder of receipts in. A formatted expense report out. Here's the exact prompt.",
+    "The perfect first task to hand off to AI: your expense report."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Receipts to report", "sub": "A Claude Cowork handoff", "dur": 2.4,
+      "say": "Still typing receipts into a spreadsheet by hand? Let's hand that job to Claude Cowork." },
+    { "type": "typewriter", "kicker": "Straight from the guide", "text": "Receipts in. Report out.", "dur": 2.4,
+      "say": "Turning a folder of receipts into an expense report is one of the example tasks in Claude's own Cowork guide." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.4, "items": [
+      { "icon": "1", "title": "One folder", "desc": "Just this month's receipts" },
+      { "icon": "2", "title": "Select Cowork", "desc": "In the message box" },
+      { "icon": "3", "title": "Share that folder", "desc": "Nothing else" }
+    ], "say": "Put the receipts in one folder. Select Cowork in the message box. And share only that folder, nothing else." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Expense report", "text": "Build an Excel report:\ndate, vendor, amount.\nDon't change originals.", "dur": 3.4,
+      "say": "Then ask for an Excel report with date, vendor, category and amount. And say: don't change the original files." },
+    { "type": "tiles", "kicker": "Before you submit", "text": "You still sign off", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Read plan", "color": "#0F766E" },
+      { "letter": "F", "label": "See flags", "color": "#B45309" },
+      { "letter": "S", "label": "Spot-check", "color": "#BE123C" }
+    ], "say": "Review Claude's plan first. Look at any receipts it flagged. Then spot-check a few rows before you submit." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Cowork needs a paid plan.", "dur": 2.2,
+      "say": "Quick note: Cowork needs a paid plan, like Pro, Max, Team or Enterprise." },
+    { "type": "question", "text": "What admin task goes first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what admin task would you hand off first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
