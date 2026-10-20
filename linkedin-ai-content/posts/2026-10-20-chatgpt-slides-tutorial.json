@@ -1,0 +1,33 @@
+{
+  "date": "Tuesday, Oct 20, 2026",
+  "topic": "AI tool tutorial: ChatGPT Slides, turning chats and files into decks you can export",
+  "music_seed": 293,
+  "post": "ChatGPT can now build your slide deck, and your team can edit it with you. 📊\nHere's how ChatGPT Slides works, in 60 seconds.\n\nOpenAI started rolling out Slides last week. It lives in Space, ChatGPT's shared workspace.\n\nWho gets it 👇\n✅ Pro, Business and Enterprise users with Space access\n🖥️ On the web and in the desktop app\n⏳ Rolling out gradually, so it may not show up for everyone yet\n\nHow to use it 👇\n1️⃣ Start from what you already have: a chat, uploaded files, an outline, or an example deck\n2️⃣ Let ChatGPT draft the slides\n3️⃣ Invite teammates to co-edit in real time and leave comments\n4️⃣ Export from the web to PowerPoint, PDF or Google Slides\n\nMy tip: start from an outline you wrote yourself. You keep control of the story, and AI handles the layout.\n\nWhy it matters:\nDecks are where a lot of office hours disappear. Every big AI assistant now wants to own that \"blank slide\" moment. 🔍\n\nPractical takeaway:\nBefore you share an AI deck, check every number and name against your source. It's your name on the presentation. ✍️\n\nWould you trust AI with your next big presentation? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ChatGPT #Productivity #Presentations #AITools",
+  "hooks": [
+    "ChatGPT can now build your slide deck, and your team can edit it with you. Here's how. 👇",
+    "The blank slide just got a lot less scary. A 60-second tutorial on ChatGPT Slides.",
+    "Chat, files or outline in. PowerPoint, PDF or Google Slides out. Meet ChatGPT Slides."
+  ],
+  "sources": [
+    { "name": "Android Authority: ChatGPT Slides is finally here to turn your chats and files into presentations", "url": "https://www.androidauthority.com/chatgpt-slides-files-presentations-3725324/" },
+    { "name": "WebProNews: OpenAI adds native slide creation and collaboration to ChatGPT", "url": "https://www.webpronews.com/openai-adds-native-slide-creation-and-collaboration-to-chatgpt" },
+    { "name": "Digital Applied: ChatGPT Slides, which plans get it", "url": "https://www.digitalapplied.com/blog/chatgpt-slides-plans-export-what-teams-get" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI tool tutorial", "text": "ChatGPT now makes slides", "sub": "Draft, co-edit, export", "dur": 2.4 },
+    { "type": "cards", "kicker": "How it works", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Start anywhere", "desc": "Chat, files or outline" },
+      { "icon": "2", "title": "Co-edit", "desc": "Team edits and comments" },
+      { "icon": "3", "title": "Export", "desc": "PowerPoint, PDF, Google Slides" }
+    ] },
+    { "type": "tiles", "kicker": "Who gets it", "text": "Rolling out gradually", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pro", "color": "#2563EB" },
+      { "letter": "B", "label": "Business", "color": "#16A34A" },
+      { "letter": "E", "label": "Enterprise", "color": "#EA580C" }
+    ] },
+    { "type": "typewriter", "kicker": "My tip", "text": "Bring your own outline.", "dur": 2.2 },
+    { "type": "question", "text": "Would AI make your next deck?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
