@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 24",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Wednesday, Oct 21, 2026",
+  "topic": "Claude Code for non-coders: build a one-page website for your team, in plain English",
+  "music_seed": 302,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "You can build a web page today without writing a single line of code. 🌐\nHere's how, with Claude Code.\n\nFirst, a secret: a simple web page is just a file. Your browser opens it like any other document. 📄\n\nClaude Code can create that file for you. You just describe what you want, in plain English.\n\nTry it 👇\n1️⃣ Make a new, empty folder called \"team-page\"\n2️⃣ Open Claude Code and point it at that folder\n3️⃣ Paste the prompt below\n4️⃣ Approve when it asks to create the file\n5️⃣ Double-click the file to open it in your browser\n\nCopy this prompt:\n\"Create a single web page file called index.html for my team. Add a welcome message, a list of our 5 weekly priorities, and a section for team birthdays. Make it clean and colorful. Use one file only, so I can open it in my browser.\"\n\nDon't love it? Just say:\n\"Make the colors calmer and the text bigger.\" 🎨\n\n📌 Claude Code is included with Claude's Pro and Max plans.\n\nWhy it matters:\nOnce you see your words turn into a real page, \"I'm not technical\" stops being a reason not to try. 💡\n\nWhat would you put on your first web page? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "You can build a web page today without writing a single line of code. Here's how. 👇",
+    "A simple web page is just a file. Claude Code can make it from one paragraph of English.",
+    "Not technical? Build your team a one-page website in 5 minutes with Claude Code."
+  ],
+  "sources": [
+    { "name": "Claude Code Docs: Overview", "url": "https://code.claude.com/docs/en/overview" },
+    { "name": "Claude Help Center: Use Claude Code with your Pro or Max plan", "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Build a web page", "sub": "No code. Just English.", "dur": 2.4,
+      "say": "You can build a web page today, without writing a single line of code. Let me show you." },
+    { "type": "typewriter", "kicker": "Here's a secret", "text": "A web page is a file.", "dur": 2.4,
+      "say": "Here's a secret. A simple web page is just a file. Your browser opens it like any document." },
+    { "type": "cards", "kicker": "Try it", "dur": 3.4, "items": [
+      { "icon": "1", "title": "New folder", "desc": "Call it team-page" },
+      { "icon": "2", "title": "Open Claude Code", "desc": "Point it at the folder" },
+      { "icon": "3", "title": "Describe it", "desc": "In plain English" }
+    ], "say": "Make a new empty folder. Open Claude Code and point it at that folder. Then describe the page you want." },
+    { "type": "prompt", "kicker": "Copy this", "label": "My team page", "text": "Create one web page\nwith our priorities\nand team birthdays.", "dur": 3.2,
+      "say": "For example: create one web page for my team, with our weekly priorities and team birthdays." },
+    { "type": "tiles", "kicker": "Then", "text": "See it come to life", "dur": 2.6, "items": [
+      { "letter": "A", "label": "Approve", "color": "#0F766E" },
+      { "letter": "O", "label": "Open it", "color": "#B45309" },
+      { "letter": "T", "label": "Tweak it", "color": "#BE123C" }
+    ], "say": "Approve the new file, double-click it to open it in your browser, and ask for changes in plain English." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Included with Pro and Max.", "dur": 2.2,
+      "say": "Quick note: Claude Code is included with Claude's Pro and Max plans." },
+    { "type": "question", "text": "What's on your first page?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what would you put on your first web page? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
