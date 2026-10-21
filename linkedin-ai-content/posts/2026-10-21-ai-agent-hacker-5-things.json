@@ -1,0 +1,32 @@
+{
+  "date": "Wednesday, Oct 21, 2026",
+  "topic": "5 things you need to know: one hacker used AI agents to break into 100+ company websites",
+  "music_seed": 294,
+  "post": "One hacker. A short prompt. AI agents that broke into 100+ company websites. 🔓\nHere are 5 things you need to know.\n\n1️⃣ What happened\nReuters reports that a Chinese-speaking hacker used AI agents to break into websites of more than 100 companies, including Deere, SharkNinja and Cummins.\n\n2️⃣ The instructions were tiny\nThe hacker's instructions were under 100 Chinese characters. Then the agents worked for hours with little direction.\n\n3️⃣ It hit a big list\nThe agents tried more than 1,200 sites, mostly online stores in the US, Canada, Australia and Japan.\n\n4️⃣ It was cheap\nThe researcher who found it estimated about $5,000 in AI costs, though he said that number is highly uncertain.\n\n5️⃣ It was found by accident\nA researcher spotted it through the attacker's own exposed control panels for an open-source agent tool. Reuters couldn't tell how much data, if any, was taken.\n\nWhy it matters:\nAI agents don't just help defenders. They let one person do the work of a whole team, on either side. 🛡️\n\nPractical takeaway:\nAsk your team this week: which of our websites are run by third parties, and when were they last patched? 🔍\n\nIs your company ready for attacks run by AI agents? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Cybersecurity #AIAgents #InfoSec #RiskManagement",
+  "hooks": [
+    "One hacker. A short prompt. AI agents that broke into 100+ company websites. 5 things to know. 👇",
+    "Under 100 characters of instructions. Then AI agents worked for hours. Here's what happened.",
+    "The AI agent era just hit cybersecurity. 5 things every team should know."
+  ],
+  "sources": [
+    { "name": "Reuters (via Yahoo): How one hacker used AI agents and a few thousand dollars to break into scores of sites", "url": "https://www.yahoo.com/news/us/articles/exclusive-one-hacker-used-ai-100625247.html" },
+    { "name": "Quartz: Hacker used AI agents to breach 100+ sites, including John Deere", "url": "https://qz.com/ai-agents-hacker-john-deere-sharkninja-cummins-breach-101926" },
+    { "name": "WinBuzzer: Hacker leverages AI agents to breach more than 100 company websites", "url": "https://winbuzzer.com/2026/10/20/hacker-used-ai-agents-to-breach-100-plus-companies-websites-xcxwbn/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "5 things to know", "text": "AI agents hacked 100+ sites", "sub": "One hacker, one short prompt", "dur": 2.4 },
+    { "type": "cards", "kicker": "The facts", "dur": 3.0, "items": [
+      { "icon": "1", "title": "100+ companies", "desc": "Websites broken into" },
+      { "icon": "2", "title": "Tiny prompt", "desc": "Under 100 characters" },
+      { "icon": "3", "title": "1,200+ sites", "desc": "Targeted by agents" }
+    ] },
+    { "type": "cards", "kicker": "And", "dur": 2.8, "items": [
+      { "icon": "4", "title": "About $5,000", "desc": "Estimated, highly uncertain" },
+      { "icon": "5", "title": "Found by chance", "desc": "Exposed control panels" }
+    ] },
+    { "type": "typewriter", "kicker": "The lesson", "text": "One person, a team's work.", "dur": 2.2 },
+    { "type": "question", "text": "Is your company ready?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
