@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Oct 22, 2026",
+  "topic": "Hot take: Anthropic's draft AI safety bill and its $1 billion / 50-person threshold",
+  "music_seed": 295,
+  "post": "Should the government be able to stop a dangerous AI model? 🛑\nAnthropic says yes, but only past a very high bar. My hot take: the bar isn't the real problem.\n\nWhat's in the draft bill, as reported 👇\n⚖️ The Commerce Department could ask a federal judge to suspend a model\n💥 Only if it poses a foreseeable, imminent risk of killing or seriously injuring more than 50 people, or over $1 billion in damage\n🧬 Limited to three risks: biological weapons, a model escaping its developer's control, or cyberattacks\n\nCritics, including Mother Jones, call that threshold alarming: anything below it falls outside this process.\n\nHere's my take:\nA clear trigger, a court and a deadline is better than vague rules nobody can enforce.\n\nBut an emergency brake isn't a full safety system. You also need the smaller steps below it: testing, reporting, fixes. Congress still has to decide what those look like.\n\nWhy it matters:\nThe rules for AI are being drafted right now, and AI companies are helping write them. 🏛️\n\nPractical takeaway:\nIf your company uses AI, don't wait for Washington. Write down your own \"stop\" rule: what would make you pause a tool? 📝\n\nWhere would you set the bar? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #AIPolicy #AISafety #Regulation #Anthropic",
+  "hooks": [
+    "Should the government be able to stop a dangerous AI model? Anthropic says yes, past a very high bar. My hot take 👇",
+    "$1 billion in damage or 50+ people at risk. That's the bar in Anthropic's draft AI safety bill. Too high?",
+    "An emergency brake isn't a safety system. My take on Anthropic's AI safety bill."
+  ],
+  "sources": [
+    { "name": "TechSpot: Anthropic wants AI models blocked only if they threaten over $1 billion in damage or more than 50 deaths", "url": "https://www.techspot.com/news/114252-anthropic-wants-ai-models-blocked-only-if-they.html" },
+    { "name": "Mother Jones: Anthropic's AI safety bill has an alarming threshold for government action", "url": "https://www.motherjones.com/politics/2026/10/anthropics-ai-safety-bill-has-an-alarming-threshold-for-government-action/" },
+    { "name": "Cryptopolitan: Anthropic proposes AI safety bill to Congress with $1B damage threshold", "url": "https://www.cryptopolitan.com/anthropic-pitches-congress-on-ai-safety-bill/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "Who can stop dangerous AI?", "sub": "Anthropic's draft safety bill", "dur": 2.4 },
+    { "type": "cards", "kicker": "The draft, as reported", "dur": 3.2, "items": [
+      { "icon": "1", "title": "A judge decides", "desc": "Commerce asks a court" },
+      { "icon": "2", "title": "A high bar", "desc": "$1B damage or 50+ people" },
+      { "icon": "3", "title": "Three risks", "desc": "Bio, escape, cyber" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "A brake isn't a system.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Below the brake", "text": "The steps still missing", "dur": 2.6, "items": [
+      { "letter": "T", "label": "Testing", "color": "#2563EB" },
+      { "letter": "R", "label": "Reporting", "color": "#16A34A" },
+      { "letter": "F", "label": "Fixes", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Where would you set the bar?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
