@@ -1,0 +1,35 @@
+{
+  "date": "Friday, Oct 23, 2026",
+  "topic": "This week in AI: agent-powered hacking, Meta's terms U-turn, Anthropic's safety bill, ChatGPT Slides, AI stocks slide",
+  "music_seed": 296,
+  "post": "AI agents went on the attack, and the rulebook got rewritten. 📚\nHere are this week's 5 AI stories worth your time, in 60 seconds.\n\n1️⃣ AI agents hacked 100+ sites\nReuters reports one hacker used AI agents to break into websites of more than 100 companies, with instructions under 100 characters.\n\n2️⃣ Meta backs off \"train\"\nAfter publisher backlash, Meta removed a sentence about using crawled content to train its products from its new business terms. The crawling permission stays.\n\n3️⃣ Anthropic's draft safety bill\nIt would let the Commerce Department ask a judge to suspend a model, but only past a high bar: over $1 billion in damage or 50+ people at risk.\n\n4️⃣ ChatGPT now makes slides\nSlides is rolling out to Pro, Business and Enterprise users with Space access, with export to PowerPoint, PDF and Google Slides.\n\n5️⃣ AI stocks slide again\nAI stocks dragged markets lower as oil climbed and investors worried about the cost of borrowing to build data centers.\n\nWhy it matters:\nAI is now powerful enough to attack, regulate and reshape office work, all in one week. The fine print matters as much as the features. 🔍\n\nPractical takeaway:\nPick one story and ask: what does this change for my team on Monday? 🧠\n\nWhich story surprised you most? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #Cybersecurity #AIPolicy #ChatGPT",
+  "hooks": [
+    "AI agents went on the attack, and the rulebook got rewritten. This week in AI, in 60 seconds. 👇",
+    "A hacker with AI agents, a deleted word at Meta, and a $1B safety bar. 5 stories you shouldn't miss.",
+    "Hacking, fine print and falling stocks: the week AI got serious."
+  ],
+  "sources": [
+    { "name": "Reuters (via Yahoo): How one hacker used AI agents to break into scores of sites", "url": "https://www.yahoo.com/news/us/articles/exclusive-one-hacker-used-ai-100625247.html" },
+    { "name": "Android Headlines: Meta revises AI scraping terms after outrage", "url": "https://www.androidheadlines.com/2026/10/meta-revises-ai-scraping-terms-update.html" },
+    { "name": "TechSpot: Anthropic wants AI models blocked only if they threaten over $1 billion in damage or more than 50 deaths", "url": "https://www.techspot.com/news/114252-anthropic-wants-ai-models-blocked-only-if-they.html" },
+    { "name": "Android Authority: ChatGPT Slides is finally here", "url": "https://www.androidauthority.com/chatgpt-slides-files-presentations-3725324/" },
+    { "name": "BNN Bloomberg: Sharp drops for AI stocks as oil prices jump", "url": "https://bnnbloomberg.ca/markets/2026/10/22/ai-stocks-drag-markets-down-worldwide-as-oil-prices-climb-to-their-highest-since-may" },
+    { "name": "KOB: Wall Street drops as AI stocks slide sharply again", "url": "https://www.kob.com/?p=1082454" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "AI got serious this week", "sub": "Oct 19 to Oct 23", "dur": 2.2 },
+    { "type": "cards", "kicker": "Top stories", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Agents hack 100+", "desc": "One hacker, tiny prompt" },
+      { "icon": "2", "title": "Meta backs off", "desc": "\"Train\" clause removed" },
+      { "icon": "3", "title": "Safety bill", "desc": "A $1B bar to stop AI" }
+    ] },
+    { "type": "cards", "kicker": "Also this week", "dur": 2.8, "items": [
+      { "icon": "4", "title": "ChatGPT Slides", "desc": "Decks you can export" },
+      { "icon": "5", "title": "AI stocks slide", "desc": "Borrowing worries grow" }
+    ] },
+    { "type": "typewriter", "kicker": "The big picture", "text": "Read the fine print.", "dur": 2.4 },
+    { "type": "question", "text": "Which story surprised you most?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
