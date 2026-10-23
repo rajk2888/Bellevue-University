@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 26",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Oct 23, 2026",
+  "topic": "Plugins: give Claude Cowork a whole new skill set in one click",
+  "music_seed": 304,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Last week you taught Claude one task with a Skill. 🧩\nThis week: install a whole bundle of them at once, with a Plugin.\n\nA plugin is a package that extends what Claude can do in Cowork. Installing one can add several things in a single step:\n\n🧠 Skills: reusable instructions for a workflow\n🔌 Connectors: access to an outside app or service\n🤖 Agents: specialist helpers Claude can hand work to\n\nHow to install one 👇\n1️⃣ Open Customize in the sidebar\n2️⃣ Select Plugins, then Discover\n3️⃣ Pick a plugin and click Install\n4️⃣ Open it to see exactly what it added\n\nTwo things beginners miss 👀\n✅ Installing doesn't sign you in to anything. If a plugin includes connectors, you connect each one yourself, on its Connectors tab.\n✅ You can turn it off any time with \"Disable plugin\".\n\nBonus: a plugin you install is saved to your account, so its skills and connectors also work in chat and in Claude Code.\n\n📌 Cowork needs a paid Claude plan (Pro, Max, Team or Enterprise).\n\nWhy it matters:\nInstead of building every workflow from scratch, you can start from a ready-made toolkit and adjust it. 💡\n\nWhat kind of plugin would help your job most? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "Last week you taught Claude one task. This week, install a whole bundle of them with a Plugin. 👇",
+    "Skills, connectors and helper agents in one click. Here's what a Claude plugin is.",
+    "Don't build every AI workflow from scratch. Start with a plugin."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Install plugins (Cowork)", "url": "https://claude.com/docs/cowork/guide/plugins" },
+    { "name": "Claude Docs: Plugins overview", "url": "https://claude.com/docs/plugins/overview" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Meet Claude plugins", "sub": "A toolkit in one click", "dur": 2.4,
+      "say": "Last week, you taught Claude one task with a Skill. Today, let's install a whole bundle at once, with a plugin." },
+    { "type": "typewriter", "kicker": "What's a plugin?", "text": "A package of new abilities.", "dur": 2.4,
+      "say": "A plugin is a package that extends what Claude can do in Cowork, all in one step." },
+    { "type": "tiles", "kicker": "Inside a plugin", "text": "Several tools, one install", "dur": 2.8, "items": [
+      { "letter": "S", "label": "Skills", "color": "#0F766E" },
+      { "letter": "C", "label": "Connectors", "color": "#B45309" },
+      { "letter": "A", "label": "Agents", "color": "#BE123C" }
+    ], "say": "It can include skills, connectors to your other apps, and specialist helper agents." },
+    { "type": "cards", "kicker": "How to install", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Customize", "desc": "In the sidebar" },
+      { "icon": "2", "title": "Plugins", "desc": "Then Discover" },
+      { "icon": "3", "title": "Install", "desc": "Then open it to review" }
+    ], "say": "Open Customize in the sidebar, choose Plugins, then Discover. Pick one, click Install, and open it to see what it added." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "You connect apps yourself.", "sub": "Disable it any time", "dur": 2.6,
+      "say": "Installing doesn't sign you in to anything. You connect each app yourself, and you can disable the plugin any time." },
+    { "type": "typewriter", "kicker": "Bonus", "text": "Works in chat and Code too.", "dur": 2.4,
+      "say": "And a plugin you install is saved to your account, so it also works in chat and in Claude Code. Cowork needs a paid plan." },
+    { "type": "question", "text": "Which plugin would help you?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what kind of plugin would help your job the most? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
