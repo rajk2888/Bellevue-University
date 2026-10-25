@@ -1,0 +1,33 @@
+{
+  "date": "Sunday, Oct 25, 2026",
+  "topic": "Career angle: Goldman says AI could displace 1 in 11 US workers. Use the waiting period wisely.",
+  "music_seed": 298,
+  "post": "Goldman Sachs says AI could displace about 1 in 11 US workers. 📊\nBut the timing is the part that should shape your career plan.\n\nWhat the analysts are saying 👇\n🔢 Goldman projects AI could displace about 9% of US workers over a decade-long adoption cycle\n⏳ It expects companies to hold off on big cuts until a recession\n📉 Pantheon Macroeconomics estimates AI is already eliminating more than 10,000 US roles a month, mostly in accounting, advertising, office admin and legal work\n\nThese are estimates, not certainties. But they point the same way: the change is gradual now, and could speed up when the economy turns.\n\nWhy it matters:\nIf the big cuts wait for a downturn, the next year or two is your runway. That's the window to make yourself the person who uses AI well, not the task AI replaces.\n\nPractical takeaway:\nList the 3 tasks you do most each week. For each one, ask: can AI do this? If yes, learn to run it with AI and move toward the judgment work around it. 🧭\n\nIs your field already feeling it? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Careers #Upskilling #Jobs",
+  "hooks": [
+    "Goldman Sachs says AI could displace about 1 in 11 US workers. Here's why the timing matters for you. 👇",
+    "The big AI layoffs may be waiting for a recession. Use the waiting period wisely.",
+    "1 in 11 jobs. 10,000+ roles a month. What these AI estimates mean for your career."
+  ],
+  "sources": [
+    { "name": "Fortune: AI could displace one in 11 workers, Goldman says, but the layoffs are likely waiting for a recession", "url": "https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/" },
+    { "name": "Fortune: AI is killing 10,000-plus jobs per month and 9% of jobs are at risk, analysts say", "url": "https://fortune.com/2026/10/23/ai-is-killing-10000-plus-jobs-per-month-and-9-of-jobs-are-at-risk/" },
+    { "name": "TokenPost: AI could displace up to 9% of U.S. workers over a decade", "url": "https://www.tokenpost.com/news/technology/38656" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Career angle", "text": "1 in 11 jobs at risk", "sub": "What Goldman Sachs projects", "dur": 2.4 },
+    { "type": "cards", "kicker": "The estimates", "dur": 3.2, "items": [
+      { "icon": "1", "title": "About 9%", "desc": "US workers, over a decade" },
+      { "icon": "2", "title": "Waiting game", "desc": "Big cuts may await a recession" },
+      { "icon": "3", "title": "10,000+ a month", "desc": "Roles cut now, per Pantheon" }
+    ] },
+    { "type": "typewriter", "kicker": "The lesson", "text": "This is your runway.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "This week", "text": "Audit your own job", "dur": 2.6, "items": [
+      { "letter": "L", "label": "List tasks", "color": "#2563EB" },
+      { "letter": "T", "label": "Test with AI", "color": "#16A34A" },
+      { "letter": "M", "label": "Move up", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Is your field feeling it?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
