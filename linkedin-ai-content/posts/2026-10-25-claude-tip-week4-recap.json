@@ -1,0 +1,50 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 27",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Oct 25, 2026",
+  "topic": "Week 4 recap: 5 Claude lessons for beginners in 60 seconds",
+  "music_seed": 305,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Four weeks of learning Claude. Still no tech background needed. 🎓\nHere's everything from week 4, in 60 seconds.\n\n1️⃣ Tokens and the context window\nAI reads text in small chunks called tokens. The context window is Claude's \"working memory\", like a desk it works at.\n\n2️⃣ Receipts to expense report\nPut receipts in one folder, share only that folder with Cowork, and ask for an Excel report. Then spot-check it.\n\n3️⃣ Build a web page, no code\nA simple web page is just a file. Describe it in plain English and Claude Code creates it.\n\n4️⃣ The \"tough reviewer\" prompt\nGive Claude a role: a skeptical manager. Ask for the 3 biggest weaknesses, and say \"don't rewrite it for me.\"\n\n5️⃣ Plugins\nInstall skills, connectors and helper agents in one step from Customize > Plugins. You connect each app yourself.\n\nWhy it matters:\nWeek 4 was about going from \"chatting with AI\" to building real things with it: reports, pages, and your own toolkit. 🧰\n\nYour challenge this week: run the tough reviewer prompt on something you'll present.\n\nWhich lesson will you try first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "Week 4 of learning Claude, in 60 seconds. Tokens, web pages, plugins and more. 👇",
+    "Missed a day of Claude for Beginners? Here's the whole fourth week on one page.",
+    "5 more Claude lessons, zero coding required. Save this one for Monday."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Glossary (Tokens, Context window)", "url": "https://platform.claude.com/docs/en/about-claude/glossary" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Code Docs: Overview", "url": "https://code.claude.com/docs/en/overview" },
+    { "name": "Claude Docs: Prompting best practices (Give Claude a role)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Docs: Install plugins (Cowork)", "url": "https://claude.com/docs/cowork/guide/plugins" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 4 in 60 seconds", "sub": "Five lessons, zero coding", "dur": 2.4,
+      "say": "Four weeks of learning Claude, and still no tech background needed. Here's everything from week four, in about a minute." },
+    { "type": "cards", "kicker": "Days 22 to 24", "dur": 3.2, "items": [
+      { "icon": "22", "title": "Tokens", "desc": "Claude's working desk" },
+      { "icon": "23", "title": "Receipts to report", "desc": "A Cowork handoff" },
+      { "icon": "24", "title": "A web page", "desc": "Built in plain English" }
+    ], "say": "First, tokens and the context window, Claude's working desk. Then Cowork turned receipts into an expense report. And you built a web page with Claude Code, no code needed." },
+    { "type": "cards", "kicker": "Days 25 and 26", "dur": 3.0, "items": [
+      { "icon": "25", "title": "Tough reviewer", "desc": "Give Claude a role" },
+      { "icon": "26", "title": "Plugins", "desc": "A toolkit in one click" }
+    ], "say": "Next, you made Claude your toughest reviewer by giving it a role. And you installed a whole toolkit at once, with a plugin." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "From chatting to building.", "dur": 2.4,
+      "say": "Week four was about going from chatting with AI, to building real things with it." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Get reviewed first", "dur": 2.4, "items": [
+      { "letter": "1", "label": "Pick a draft", "color": "#0F766E" },
+      { "letter": "2", "label": "Get reviewed", "color": "#B45309" },
+      { "letter": "3", "label": "Fix the gaps", "color": "#BE123C" }
+    ], "say": "So here's your challenge. Run the tough reviewer prompt on something you'll present this week, and fix the gaps it finds." },
+    { "type": "question", "text": "Which lesson will you try first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson will you try first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
