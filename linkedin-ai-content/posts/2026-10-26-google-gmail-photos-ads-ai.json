@@ -1,0 +1,33 @@
+{
+  "date": "Monday, Oct 26, 2026",
+  "topic": "News breakdown: Google's privacy policy now lets Gmail and Photos data you connect to its AI shape your ads",
+  "music_seed": 299,
+  "post": "Connected Gmail or Google Photos to Google's AI? Your ads may be listening. 📬\nHere's what changed in Google's privacy policy, and what it means.\n\nWhat happened 👇\n📄 Google updated its privacy policy, effective October 16\n🔓 It kept its promise not to personalize ads from your Gmail, Drive or Photos content, but added an exception: unless you choose to make that data available to other Google services that support personalized ads\n🤖 That mainly covers Personal Intelligence, the opt-in feature that lets Gemini and AI Mode in Search use context from apps like Gmail and Photos\n\nGoogle's side:\nIt says you won't see ads based directly on your inbox or photo library, it won't use sensitive information like health or religion for ads, and it won't pass personal details to advertisers without permission.\n\nCritics' side:\nThe gap between \"directly\" and \"indirectly\" is doing a lot of work.\n\nWhy it matters:\nAI assistants work better with your data. That same data is worth a lot to advertisers. Expect more of these trade-offs. ⚖️\n\nPractical takeaway:\nIf you've connected apps to an AI assistant, review which ones this week. Keep the ones you use, disconnect the rest. 🔍\n\nWould you trade some privacy for a smarter assistant? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Privacy #Google #Gemini #DataPrivacy",
+  "hooks": [
+    "Connected Gmail or Google Photos to Google's AI? Your ads may be listening. Here's what changed. 👇",
+    "Google added one exception to its \"no ads from your Gmail\" promise. It's all about AI.",
+    "Smarter AI assistant, smarter ads. The privacy trade-off just got real."
+  ],
+  "sources": [
+    { "name": "9to5Google: Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled", "url": "https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/" },
+    { "name": "TechSpot: Google's privacy policy now has a loophole for using your Gmail and Photos data in ads", "url": "https://www.techspot.com/news/114322-google-privacy-policy-now-has-loophole-using-gmail.html" },
+    { "name": "The Hacker News: Google says Gmail and Photos data shared with AI search could be used for targeted ads", "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI news breakdown", "text": "Your AI data, your ads", "sub": "Google's new privacy exception", "dur": 2.4 },
+    { "type": "cards", "kicker": "What changed", "dur": 3.2, "items": [
+      { "icon": "1", "title": "New exception", "desc": "Added to its ads promise" },
+      { "icon": "2", "title": "Connected apps", "desc": "Gmail, Drive, Photos" },
+      { "icon": "3", "title": "Opt-in AI", "desc": "Personal Intelligence" }
+    ] },
+    { "type": "typewriter", "kicker": "Google says", "text": "Not \"directly\" from your inbox.", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Your move", "text": "Review connected apps", "dur": 2.4, "items": [
+      { "letter": "C", "label": "Check", "color": "#2563EB" },
+      { "letter": "K", "label": "Keep", "color": "#16A34A" },
+      { "letter": "D", "label": "Disconnect", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Privacy for a smarter AI?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
