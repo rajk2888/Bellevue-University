@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 28",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Oct 26, 2026",
+  "topic": "AI basics: why Claude can give a different answer to the same question",
+  "music_seed": 306,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Asked Claude the same question twice and got two different answers? 🎲\nThat's not a bug. Here's why, in plain English.\n\nAI writes its answer one small piece at a time, choosing what comes next as it goes.\n\nThere's a setting behind the scenes called \"temperature\" that controls how much randomness goes into those choices. Anthropic's glossary explains it simply:\n\n🔥 Higher temperature: more creative, more varied answers\n❄️ Lower temperature: more predictable, \"most likely\" answers\n\nAnd even at the lowest setting, Anthropic says the results still won't be fully identical every time.\n\nSo how do you get consistent results? 👇\n\nBe specific about what you want. Clear instructions leave less room for variety.\n\nTry this:\n\"Summarize this report in exactly 5 bullets. Each bullet under 15 words. Start with the biggest risk.\"\n\nThe tighter the instructions, the more alike the answers.\n\nWhy it matters:\nDifferent answers are great for brainstorming. For work that needs to match every time, like a weekly report, give Claude a clear format. 💡\n\nHave you noticed Claude answering differently? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Asked Claude the same question twice and got two different answers? That's not a bug. 👇",
+    "Why AI never answers exactly the same way twice, explained in plain English.",
+    "Want consistent answers from AI? Here's the one habit that helps most."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Glossary (Temperature)", "url": "https://platform.claude.com/docs/en/about-claude/glossary" },
+    { "name": "Claude Docs: Prompting best practices (Be clear and direct)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "Why answers change", "sub": "Same question, new reply", "dur": 2.4,
+      "say": "Asked Claude the same question twice and got two different answers? That's not a bug. Here's why." },
+    { "type": "typewriter", "kicker": "How AI writes", "text": "One small piece at a time.", "dur": 2.4,
+      "say": "AI writes its answer one small piece at a time, choosing what comes next as it goes." },
+    { "type": "cards", "kicker": "Meet temperature", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Higher", "desc": "More creative and varied" },
+      { "icon": "2", "title": "Lower", "desc": "More predictable" },
+      { "icon": "3", "title": "Never identical", "desc": "Even at the lowest" }
+    ], "say": "A setting called temperature controls the randomness. Higher means more creative. Lower means more predictable. And it's never perfectly identical." },
+    { "type": "typewriter", "kicker": "Want consistency?", "text": "Be specific about the format.", "dur": 2.4,
+      "say": "So how do you get consistent results? Be specific about exactly what you want." },
+    { "type": "prompt", "kicker": "Try this", "label": "Tight instructions", "text": "Summarize in exactly\n5 bullets, under 15\nwords each.", "dur": 3.2,
+      "say": "For example: summarize this in exactly five bullets, each under fifteen words. The tighter the instructions, the more alike the answers." },
+    { "type": "tiles", "kicker": "Use it wisely", "text": "Pick the right mode", "dur": 2.6, "items": [
+      { "letter": "B", "label": "Brainstorm", "color": "#0F766E" },
+      { "letter": "F", "label": "Fix format", "color": "#B45309" },
+      { "letter": "R", "label": "Repeat", "color": "#BE123C" }
+    ], "say": "Variety is great for brainstorming. For work that has to match every time, give Claude a clear format." },
+    { "type": "question", "text": "Noticed different answers?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Have you noticed Claude answering differently? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
