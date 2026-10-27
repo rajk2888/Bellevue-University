@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 29",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Oct 27, 2026",
+  "topic": "Hand off a real task: let Claude Cowork rename a messy folder of files with one consistent pattern",
+  "music_seed": 307,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "\"final_v2_REAL_final.docx\" 😅\nIf your folders look like this, let Claude Cowork fix the names for you.\n\n\"Rename files with consistent patterns like YYYY-MM-DD formatting\" is one of the example tasks in Claude's own Cowork guide.\n\n(YYYY-MM-DD just means a date like 2026-10-27. Files named this way sort in date order automatically.)\n\nStep by step 👇\n1️⃣ Copy the messy folder first, so you have a backup\n2️⃣ Open Claude and select Cowork in the message box\n3️⃣ Share ONLY that folder\n4️⃣ Paste the prompt below\n5️⃣ Review Claude's plan, then let it run\n\nCopy this prompt:\n\"Rename every file in this folder using the pattern YYYY-MM-DD_short-description. Use the date inside each file if there is one, otherwise the date it was last changed. Show me a before-and-after list first, and don't delete anything.\"\n\nThe before-and-after list is the key ✅\nYou see every change before it happens.\n\n📌 Cowork needs a paid plan (Pro, Max, Team or Enterprise).\n\nWhy it matters:\nTidy file names mean less time hunting for \"that one file\". It's a small job that's perfect to hand off. 💡\n\nWhich folder would you clean up first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "\"final_v2_REAL_final.docx\" — sound familiar? Let Claude Cowork fix your file names. 👇",
+    "One prompt, one consistent naming pattern, a whole folder cleaned up.",
+    "The 5-minute Cowork task that ends \"where's that file?\" for good."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Fix messy file names", "sub": "A Claude Cowork handoff", "dur": 2.4,
+      "say": "Final, version two, really final? If your folders look like that, let Claude Cowork fix the names." },
+    { "type": "typewriter", "kicker": "Straight from the guide", "text": "One pattern for every file.", "dur": 2.4,
+      "say": "Renaming files with one consistent pattern is an example task in Claude's own Cowork guide." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Make a backup", "desc": "Copy the folder first" },
+      { "icon": "2", "title": "Select Cowork", "desc": "In the message box" },
+      { "icon": "3", "title": "Share one folder", "desc": "Nothing else" }
+    ], "say": "First, copy the folder as a backup. Then select Cowork, and share only that one folder." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Rename files", "text": "Rename as date_topic.\nShow before and after.\nDon't delete anything.", "dur": 3.4,
+      "say": "Ask Claude to rename every file as the date, then a short description. Show me a before and after list, and don't delete anything." },
+    { "type": "tiles", "kicker": "Before it runs", "text": "You stay in control", "dur": 2.6, "items": [
+      { "letter": "L", "label": "Read list", "color": "#0F766E" },
+      { "letter": "P", "label": "Check plan", "color": "#B45309" },
+      { "letter": "R", "label": "Then run", "color": "#BE123C" }
+    ], "say": "Read the before and after list, check the plan, and only then let it run." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Cowork needs a paid plan.", "dur": 2.2,
+      "say": "Quick note: Cowork needs a paid plan, like Pro, Max, Team or Enterprise." },
+    { "type": "question", "text": "Which folder goes first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So which messy folder would you clean up first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
