@@ -1,0 +1,32 @@
+{
+  "date": "Wednesday, Oct 28, 2026",
+  "topic": "5 things you need to know: Anthropic files to go public",
+  "music_seed": 301,
+  "post": "The company behind Claude just filed to go public. 📈\nHere are 5 things you need to know about Anthropic's IPO filing.\n\n1️⃣ It's official\nAnthropic filed its S-1 with the SEC on October 26. It plans to list on Nasdaq under the ticker \"ANT\". The share price and number of shares aren't set yet.\n\n2️⃣ Big revenue\nPer reporting on the filing, revenue in the first half of 2026 was about $16.3 billion.\n\n3️⃣ Bigger losses\nThe filing shows a net loss of about $80.7 billion for the same period, mostly from accounting charges.\n\n4️⃣ Huge compute bills\nAnthropic has agreed to spend up to $120.5 billion on compute through 2029, including about $3.1 billion a month to SpaceX for NVIDIA-powered compute once it's all delivered.\n\n5️⃣ Honest risks\nIt flags tension with the Trump administration and the Department of Defense as a possible cause of material revenue loss, and warns models could develop capabilities it doesn't anticipate.\n\nWhy it matters:\nAn IPO filing is the most detailed public look yet at what it costs to build frontier AI. The money is enormous on both sides. 🔍\n\nPractical takeaway:\nIf your team relies on an AI vendor, read their public filings and risk sections. They tell you more than any demo. 📄\n\nWould you buy shares in an AI lab? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Anthropic #IPO #Claude #Tech",
+  "hooks": [
+    "The company behind Claude just filed to go public. 5 things you need to know. 👇",
+    "$16.3B in revenue. An $80.7B loss. Up to $120.5B on compute. Inside Anthropic's IPO filing.",
+    "Anthropic's S-1 is the most detailed look yet at what frontier AI really costs."
+  ],
+  "sources": [
+    { "name": "Anthropic: Anthropic files S-1 with the SEC for proposed initial public offering", "url": "https://www.anthropic.com/news/s1-sec" },
+    { "name": "CNBC: Anthropic IPO live updates", "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html" },
+    { "name": "Yahoo Finance: Anthropic publicly files IPO prospectus, noting strong revenue growth and massive spending", "url": "https://finance.yahoo.com/technology/article/anthropic-publicly-files-ipo-prospectus-noting-strong-revenue-growth-and-massive-spending-131807138.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "5 things to know", "text": "Anthropic files to go public", "sub": "Nasdaq ticker: ANT", "dur": 2.4 },
+    { "type": "cards", "kicker": "The filing", "dur": 3.0, "items": [
+      { "icon": "1", "title": "S-1 filed", "desc": "October 26, Nasdaq" },
+      { "icon": "2", "title": "~$16.3B revenue", "desc": "First half of 2026" },
+      { "icon": "3", "title": "~$80.7B loss", "desc": "Mostly accounting charges" }
+    ] },
+    { "type": "cards", "kicker": "And", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Up to $120.5B", "desc": "Compute through 2029" },
+      { "icon": "5", "title": "Honest risks", "desc": "Politics and surprises" }
+    ] },
+    { "type": "typewriter", "kicker": "The big picture", "text": "Frontier AI costs a fortune.", "dur": 2.2 },
+    { "type": "question", "text": "Would you buy AI lab shares?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
