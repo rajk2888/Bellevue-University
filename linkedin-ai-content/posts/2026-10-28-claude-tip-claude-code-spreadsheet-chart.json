@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 30",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Wednesday, Oct 28, 2026",
+  "topic": "Claude Code for non-coders: turn a spreadsheet export into a summary and a chart",
+  "music_seed": 308,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Got a spreadsheet export you never have time to make sense of? 📊\nLet Claude Code turn it into a summary and a chart, in plain English.\n\nHere's the secret: to make a chart, Claude Code writes a tiny program and runs it for you. You never have to read the code. You just approve it. ✅\n\nTry it 👇\n1️⃣ Make a new folder and put a COPY of your file in it (a CSV or Excel export)\n2️⃣ Open Claude Code and point it at that folder\n3️⃣ Paste the prompt below\n4️⃣ Read each permission pop-up before you approve\n5️⃣ Open the chart image it saves\n\nCopy this prompt:\n\"Look at the spreadsheet in this folder. Tell me in plain English what's in it, the 3 biggest trends, and anything that looks odd. Then make one bar chart of the most important number and save it as chart.png. Don't change the original file.\"\n\nDouble-check the numbers ✅\nSpot-check a few totals against your spreadsheet before you share anything.\n\n📌 Claude Code is included with Claude's Pro and Max plans.\n\nWhy it matters:\nYou don't need to learn formulas or charts to get answers from your data. You need a clear question. 💡\n\nWhat data would you love a quick chart of? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "Got a spreadsheet you never have time to make sense of? Let Claude Code chart it for you. 👇",
+    "No formulas. No chart menus. Just one plain-English prompt and Claude Code.",
+    "Your data has answers. Here's how a non-coder gets them in 5 minutes."
+  ],
+  "sources": [
+    { "name": "Claude Code Docs: Common workflows", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Code Docs: Configure permissions", "url": "https://code.claude.com/docs/en/permissions" },
+    { "name": "Claude Help Center: Use Claude Code with your Pro or Max plan", "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Spreadsheet to chart", "sub": "With Claude Code, no coding", "dur": 2.4,
+      "say": "Got a spreadsheet you never have time to make sense of? Let Claude Code turn it into a summary and a chart." },
+    { "type": "typewriter", "kicker": "The secret", "text": "It writes the code for you.", "dur": 2.4,
+      "say": "Here's the secret. Claude Code writes a tiny program and runs it for you. You just approve it." },
+    { "type": "cards", "kicker": "Try it", "dur": 3.4, "items": [
+      { "icon": "1", "title": "New folder", "desc": "With a copy of the file" },
+      { "icon": "2", "title": "Open Claude Code", "desc": "Point it at the folder" },
+      { "icon": "3", "title": "Ask in English", "desc": "Then approve each step" }
+    ], "say": "Put a copy of your spreadsheet in a new folder. Open Claude Code there, ask in plain English, and approve each step." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Chart my data", "text": "Find the 3 big trends.\nSave a bar chart.\nDon't change the file.", "dur": 3.4,
+      "say": "Ask it to explain the three biggest trends, save one bar chart as an image, and not change the original file." },
+    { "type": "tiles", "kicker": "Before you share", "text": "Trust, but check", "dur": 2.6, "items": [
+      { "letter": "R", "label": "Read pop-ups", "color": "#0F766E" },
+      { "letter": "O", "label": "Open chart", "color": "#B45309" },
+      { "letter": "S", "label": "Spot-check", "color": "#BE123C" }
+    ], "say": "Read each pop-up before you approve, open the chart, and spot-check a few numbers before you share it." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Included with Pro and Max.", "dur": 2.2,
+      "say": "Quick note: Claude Code is included with Claude's Pro and Max plans." },
+    { "type": "question", "text": "What would you chart first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what data would you love a quick chart of? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
