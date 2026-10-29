@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 31",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Oct 29, 2026",
+  "topic": "The \"catch me up\" prompt: turn a long email thread into a summary and a draft reply",
+  "music_seed": 309,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Came back to a 40-message email thread? 📧\nDon't read it all. Let Claude catch you up.\n\nAnthropic's prompting guide says Claude responds well to clear, explicit instructions, and being specific about the output you want helps.\n\nSo don't just say \"summarize this\". Tell Claude exactly what you need from it.\n\nCopy-paste prompt 👇\n\n\"Here's an email thread. Catch me up in 3 parts:\n1. What was decided, in 3 bullets\n2. What's still open, and who owns it\n3. What people are waiting on from ME\nThen draft a short, friendly reply that answers what's needed from me. Mark anything you're unsure about.\"\n\nBefore you send ✅\nRead the draft, check the facts against the thread, and make it sound like you.\n\nTip: remove anything sensitive from the thread before you paste it. 🔒\n\nWhy it matters:\nThe slow part of a long thread isn't writing the reply. It's figuring out what's being asked of you. This prompt does that part first. 💡\n\nWhat's the longest thread in your inbox right now? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Came back to a 40-message email thread? Don't read it all. Let Claude catch you up. 👇",
+    "The \"catch me up\" prompt: decisions, open items, and what people need from you.",
+    "Stop scrolling long email threads. Copy this prompt instead."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices (Be clear and direct)", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Catch me up, Claude", "sub": "A copy-paste prompt", "dur": 2.4,
+      "say": "Came back to a forty-message email thread? Don't read it all. Let Claude catch you up." },
+    { "type": "typewriter", "kicker": "From Anthropic's guide", "text": "Be specific about the output.", "dur": 2.4,
+      "say": "Anthropic's guide says Claude responds well to clear instructions, and being specific about what you want helps." },
+    { "type": "cards", "kicker": "Ask for 3 parts", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Decided", "desc": "What's settled" },
+      { "icon": "2", "title": "Still open", "desc": "And who owns it" },
+      { "icon": "3", "title": "Needed from me", "desc": "What people wait on" }
+    ], "say": "So ask for three parts. What was decided. What's still open, and who owns it. And what people need from you." },
+    { "type": "prompt", "kicker": "Then add", "label": "Draft my reply", "text": "Draft a short reply.\nMark what you're\nunsure about.", "dur": 3.0,
+      "say": "Then ask it to draft a short, friendly reply, and mark anything it's unsure about." },
+    { "type": "tiles", "kicker": "Before you send", "text": "You're still the sender", "dur": 2.6, "items": [
+      { "letter": "R", "label": "Read it", "color": "#0F766E" },
+      { "letter": "C", "label": "Check facts", "color": "#B45309" },
+      { "letter": "Y", "label": "Make it yours", "color": "#BE123C" }
+    ], "say": "Before you send, read the draft, check the facts against the thread, and make it sound like you." },
+    { "type": "typewriter", "kicker": "One more tip", "text": "Remove sensitive details first.", "dur": 2.2,
+      "say": "And one more tip. Take out anything sensitive before you paste the thread in." },
+    { "type": "question", "text": "What's your longest thread?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's the longest thread in your inbox right now? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
