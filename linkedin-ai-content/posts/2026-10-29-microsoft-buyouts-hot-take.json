@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Oct 29, 2026",
+  "topic": "Hot take: Microsoft offers buyouts to ~60,000 employees as AI spending climbs",
+  "music_seed": 302,
+  "post": "Microsoft just offered about 60,000 employees money to leave. 💼\nMy hot take: \"voluntary\" is the new way AI reshapes a company.\n\nWhat's been reported 👇\n👥 The voluntary exit offer covers about a quarter of Microsoft's workforce\n🌍 It's for eligible teams in the US, UK, Canada and India\n💵 Microsoft says the package is comparable to its standard severance\n🏗️ Coverage ties it to a big ramp-up in AI data center spending\n📌 GeekWire notes it isn't a replacement for layoffs\n\nHere's my take:\nBig companies are learning they can reshape a workforce without the headline of a mass layoff. Pay people to choose, then redirect the money to AI.\n\nThe catch? The people most likely to say yes are often the ones with the best options elsewhere.\n\nWhy it matters:\nThe AI shift won't always look like layoffs. Sometimes it looks like a polite offer, a reorg, or a role that quietly isn't backfilled. 🔍\n\nPractical takeaway:\nDon't wait for an offer to decide your plan. Write down this week what makes you hard to replace, and what AI skill would make you harder. 📝\n\nWould you take a buyout if you were offered one? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Microsoft #Careers #Layoffs",
+  "hooks": [
+    "Microsoft just offered about 60,000 employees money to leave. My hot take on what that really means. 👇",
+    "\"Voluntary\" is the new way AI reshapes a company. Here's why.",
+    "Not a layoff. A buyout for a quarter of the workforce. The AI era's new playbook?"
+  ],
+  "sources": [
+    { "name": "Tom's Hardware: 60,000 Microsoft employees offered voluntary buyouts as AI buildout costs bite", "url": "https://www.tomshardware.com/tech-industry/big-tech/60-000-microsoft-employees-offered-voluntary-buyouts-as-ai-buildout-costs-bite-program-covers-roughly-27-percent-of-workforce-across-us-canada-india-and-the-uk" },
+    { "name": "GeekWire: Microsoft makes new 'voluntary exit' offer to about a quarter of its workforce", "url": "https://www.geekwire.com/2026/microsoft-makes-new-voluntary-exit-offer-to-more-than-a-quarter-of-its-workforce-including-some-execs/" },
+    { "name": "Fast Company: Microsoft wants thousands of employees to leave, and it's willing to pay them", "url": "https://www.fastcompany.com/91630049/microsoft-wants-thousands-of-employees-to-leave-and-its-willing-to-pay-them-to-do-it" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "Paid to leave Microsoft", "sub": "About 60,000 offered buyouts", "dur": 2.4 },
+    { "type": "cards", "kicker": "What's reported", "dur": 3.2, "items": [
+      { "icon": "1", "title": "About a quarter", "desc": "Of its workforce" },
+      { "icon": "2", "title": "Four countries", "desc": "US, UK, Canada, India" },
+      { "icon": "3", "title": "AI spending", "desc": "Data centers ramping up" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "\"Voluntary\" is the new layoff.", "dur": 2.4 },
+    { "type": "tiles", "kicker": "Your move", "text": "Plan before any offer", "dur": 2.4, "items": [
+      { "letter": "V", "label": "Know value", "color": "#2563EB" },
+      { "letter": "S", "label": "Add AI skill", "color": "#16A34A" },
+      { "letter": "P", "label": "Have a plan", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Would you take the buyout?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
