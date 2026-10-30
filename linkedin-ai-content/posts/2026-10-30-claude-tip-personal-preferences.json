@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 32",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Oct 30, 2026",
+  "topic": "Set it once: personal instructions so every Claude chat starts the way you like",
+  "music_seed": 310,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Still typing \"keep it short\" at the start of every chat? ✋\nSet it once, and Claude remembers for every conversation.\n\nClaude has account-wide instructions. Claude's help center says anything you add there \"will be applied to all of your conversations with Claude.\"\n\nHow to set them 👇\n1️⃣ Click your initials in the lower-left corner\n2️⃣ Go to Settings, then \"Your Claude\"\n3️⃣ Under Instructions, describe how you like to work\n\nCopy-paste starter 👇\n\"I work in operations. Keep answers short, with bullet points. Use plain English, no jargon. When I ask for an email, keep it under 120 words and friendly. If you're unsure about a fact, say so.\"\n\nWhat to include ✅\n🧑‍💼 Your role and the work you do\n📏 How long and how formal answers should be\n🗣️ Words you use a lot, and words to avoid\n\nNeed different rules for one piece of work? Use project instructions instead. They only apply to chats inside that project.\n\nWhy it matters:\nThe best automation is the one you never have to think about. One paragraph saves you repeating yourself in every chat. 💡\n\nWhat would you put in your instructions? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Still typing \"keep it short\" at the start of every chat? Set it once and Claude remembers. 👇",
+    "One paragraph that makes every Claude chat start the way you like.",
+    "The 2-minute Claude setting most beginners never touch."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Understanding Claude's personalization features", "url": "https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Set it once", "sub": "Instructions for every chat", "dur": 2.4,
+      "say": "Still typing, keep it short, at the start of every chat? Let's set it once, so Claude remembers." },
+    { "type": "typewriter", "kicker": "What it does", "text": "Applies to all your chats.", "dur": 2.4,
+      "say": "Claude has account-wide instructions. Whatever you add there applies to all of your conversations." },
+    { "type": "cards", "kicker": "How to set it", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Your initials", "desc": "Lower-left corner" },
+      { "icon": "2", "title": "Settings", "desc": "Then \"Your Claude\"" },
+      { "icon": "3", "title": "Instructions", "desc": "Describe your style" }
+    ], "say": "Click your initials in the lower-left corner. Go to Settings, then Your Claude. And under Instructions, describe how you like to work." },
+    { "type": "prompt", "kicker": "Try this starter", "label": "My instructions", "text": "Keep answers short.\nUse plain English.\nSay when you're unsure.", "dur": 3.2,
+      "say": "For example: keep answers short, use plain English, and tell me when you're unsure about a fact." },
+    { "type": "tiles", "kicker": "What to include", "text": "Three simple things", "dur": 2.6, "items": [
+      { "letter": "R", "label": "Your role", "color": "#0F766E" },
+      { "letter": "S", "label": "Your style", "color": "#B45309" },
+      { "letter": "W", "label": "Your words", "color": "#BE123C" }
+    ], "say": "Include your role, the style you like, and the words you use, or want Claude to avoid." },
+    { "type": "typewriter", "kicker": "One project only?", "text": "Use project instructions.", "dur": 2.2,
+      "say": "Need different rules for one piece of work? Use project instructions. They only apply inside that project." },
+    { "type": "question", "text": "What would your rules say?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what would you put in your instructions? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
