@@ -1,0 +1,35 @@
+{
+  "date": "Friday, Oct 30, 2026",
+  "topic": "This week in AI: Anthropic files to go public, Microsoft buyouts, Google's ads exception, AI agent logins, 1 in 11 jobs",
+  "music_seed": 303,
+  "post": "An AI lab filed to go public, and a tech giant offered a quarter of its staff a way out. 📊\nHere are this week's 5 AI stories worth your time, in 60 seconds.\n\n1️⃣ Anthropic files for an IPO\nThe Claude maker filed its S-1 and plans to list on Nasdaq as \"ANT\". Reported first-half revenue: about $16.3 billion.\n\n2️⃣ Microsoft offers buyouts\nAbout 60,000 employees, roughly a quarter of its workforce, were offered a voluntary exit as AI spending climbs.\n\n3️⃣ Google's new ads exception\nIts privacy policy now lets Gmail, Drive and Photos data you connect to its AI features help shape your ads.\n\n4️⃣ AI agents log in, passwords stay hidden\n1Password for Agents lets supported AI agents sign in for you, after you approve, without ever seeing the password.\n\n5️⃣ 1 in 11 jobs\nGoldman Sachs projects AI could displace about 9% of US workers over a decade, with big cuts likely waiting for a recession.\n\nWhy it matters:\nThis week was about money and trust: who pays for AI, who it replaces, and who gets your data. 🔍\n\nPractical takeaway:\nPick one story and ask: what does this change for me on Monday? Then do one small thing about it. 🧠\n\nWhich story surprised you most? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #Anthropic #FutureOfWork #Privacy",
+  "hooks": [
+    "An AI lab filed to go public, and a tech giant offered a quarter of its staff a way out. This week in AI. 👇",
+    "IPOs, buyouts and your Gmail data. 5 AI stories you shouldn't miss this week.",
+    "Money and trust: the week AI got very real."
+  ],
+  "sources": [
+    { "name": "Anthropic: Anthropic files S-1 with the SEC", "url": "https://www.anthropic.com/news/s1-sec" },
+    { "name": "CNBC: Anthropic IPO live updates", "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html" },
+    { "name": "GeekWire: Microsoft makes new 'voluntary exit' offer to about a quarter of its workforce", "url": "https://www.geekwire.com/2026/microsoft-makes-new-voluntary-exit-offer-to-more-than-a-quarter-of-its-workforce-including-some-execs/" },
+    { "name": "9to5Google: Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled", "url": "https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/" },
+    { "name": "The Next Web: 1Password lets AI agents sign in without seeing passwords", "url": "https://thenextweb.com/news/1password-for-agents-ai-agent-logins" },
+    { "name": "Fortune: AI could displace one in 11 workers, Goldman says", "url": "https://fortune.com/2026/10/22/goldman-sachs-forecast-how-many-jobs-lost-to-ai-9-percent/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "Money, jobs and trust", "sub": "Oct 26 to Oct 30", "dur": 2.2 },
+    { "type": "cards", "kicker": "Top stories", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Anthropic IPO", "desc": "Files to list as ANT" },
+      { "icon": "2", "title": "Microsoft buyouts", "desc": "About 60,000 offered" },
+      { "icon": "3", "title": "Google ads rule", "desc": "AI-connected data counts" }
+    ] },
+    { "type": "cards", "kicker": "Also this week", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Agent logins", "desc": "No password shared" },
+      { "icon": "5", "title": "1 in 11 jobs", "desc": "Goldman's decade view" }
+    ] },
+    { "type": "typewriter", "kicker": "The big picture", "text": "Who pays, who stays?", "dur": 2.4 },
+    { "type": "question", "text": "Which story surprised you most?", "sub": "Tell me in the comments", "dur": 2.0 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
