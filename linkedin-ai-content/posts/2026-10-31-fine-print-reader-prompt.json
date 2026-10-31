@@ -1,0 +1,32 @@
+{
+  "date": "Saturday, Oct 31, 2026",
+  "topic": "Prompt of the week: the fine-print reader (after a week of AI news hidden in the fine print)",
+  "music_seed": 304,
+  "post": "This week's biggest AI news was hiding in the fine print. 🔎\nHere's a prompt that reads it for you.\n\nTwo examples from the last few days 👇\n📄 Google's updated privacy policy added an exception: Gmail, Drive and Photos data you connect to its AI features can help shape your ads\n📊 Anthropic's IPO filing spelled out big compute commitments and risks in its risk-factor section\n\nMost of us never read documents like these. AI can help, as long as you ask the right way.\n\nPrompt of the week 👇\n\"Here's a document [privacy policy / terms / contract / filing]. Explain it to me in plain English:\n1. The 5 things that matter most for someone like me\n2. Anything that changed or is unusual\n3. What I'm agreeing to, and what I can opt out of\nQuote the exact sentence for each point, so I can check it.\"\n\nThe magic line is the last one ✅\nAsking for exact quotes lets you verify every point yourself.\n\nWhy it matters:\nThe AI shift is being written into terms and filings, not just product launches. Reading the fine print is now a career skill. 🧠\n\nPractical takeaway:\nRun this prompt on one terms update in your inbox this weekend. 📝\n\nWhat's the last fine print you actually read? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #PromptOfTheWeek #Privacy #Productivity #AITips",
+  "hooks": [
+    "This week's biggest AI news was hiding in the fine print. Here's a prompt that reads it for you. 👇",
+    "Nobody reads privacy policies. Here's the prompt that does it for you, with receipts.",
+    "One line that makes AI summaries trustworthy: \"Quote the exact sentence.\""
+  ],
+  "sources": [
+    { "name": "9to5Google: Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled", "url": "https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/" },
+    { "name": "TechSpot: Google's privacy policy now has a loophole for using your Gmail and Photos data in ads", "url": "https://www.techspot.com/news/114322-google-privacy-policy-now-has-loophole-using-gmail.html" },
+    { "name": "CNBC: Anthropic IPO live updates", "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Prompt of the week", "text": "Read the fine print", "sub": "Let AI do it, with receipts", "dur": 2.4 },
+    { "type": "cards", "kicker": "This week's fine print", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Privacy policy", "desc": "A new ads exception" },
+      { "icon": "2", "title": "IPO filing", "desc": "Costs and risks spelled out" }
+    ] },
+    { "type": "tiles", "kicker": "The prompt asks for", "text": "Plain English, three parts", "dur": 2.6, "items": [
+      { "letter": "T", "label": "Top 5", "color": "#2563EB" },
+      { "letter": "C", "label": "Changes", "color": "#16A34A" },
+      { "letter": "O", "label": "Opt-outs", "color": "#EA580C" }
+    ] },
+    { "type": "typewriter", "kicker": "The magic line", "text": "\"Quote the exact sentence.\"", "dur": 2.4 },
+    { "type": "question", "text": "Last fine print you read?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
