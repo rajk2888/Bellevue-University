@@ -1,0 +1,33 @@
+{
+  "date": "Sunday, Nov 1, 2026",
+  "topic": "Career angle: Goldman says losing a job to AI can leave a lasting scar. How to soften it before it happens.",
+  "music_seed": 305,
+  "post": "Losing a job to AI isn't just a gap on your résumé. 📉\nGoldman Sachs research says it can leave a scar that lasts years.\n\nWhat Goldman's economists found 👇\n⏳ Workers displaced from tech-disrupted jobs took about a month longer to find a new one\n📉 Many ended up in roles needing fewer skills. Goldman calls it \"occupational downgrading\"\n💵 Over the following decade, their earnings grew noticeably slower than people who were never displaced\n\nBut here's the part that matters for your plan:\n🎓 Younger, college-educated and urban workers saw losses roughly half as large\n🔁 Goldman suggests retraining could soften the blow\n\nIn other words: the people who keep learning recover faster.\n\nWhy it matters:\nThe real risk isn't only losing a job. It's landing in a smaller one. Skills are what stop the downgrade. 🧭\n\nPractical takeaway:\nDon't wait for a layoff to retrain. Spend 30 minutes this week learning one AI skill that's used in the next role up from yours. 📚\n\nWhat skill are you building right now? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Careers #Upskilling #Jobs",
+  "hooks": [
+    "Losing a job to AI isn't just a résumé gap. Goldman says it can leave a scar that lasts years. 👇",
+    "The real AI career risk isn't losing a job. It's landing in a smaller one.",
+    "Goldman found who recovers fastest after AI job loss. Here's what they have in common."
+  ],
+  "sources": [
+    { "name": "Yahoo Finance: Goldman says AI layoffs are starting to leave a 'long-lasting' scar", "url": "https://finance.yahoo.com/technology/ai/articles/goldman-says-ai-layoffs-starting-130936875.html" },
+    { "name": "AOL: Goldman says AI disruption will have a 'scarring effect' and lead to a yearslong pay cut", "url": "https://www.aol.com/articles/goldman-says-ai-disruption-scarring-151555155.html" },
+    { "name": "Yahoo Finance: Report: Losing your job to AI leaves lasting scars", "url": "https://finance.yahoo.com/economy/policy/articles/report-losing-job-ai-doesn-151656974.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Career angle", "text": "AI job loss leaves scars", "sub": "What Goldman Sachs found", "dur": 2.4 },
+    { "type": "cards", "kicker": "The research", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Longer search", "desc": "About a month more" },
+      { "icon": "2", "title": "Smaller roles", "desc": "Occupational downgrading" },
+      { "icon": "3", "title": "Slower pay", "desc": "For years afterward" }
+    ] },
+    { "type": "typewriter", "kicker": "The good news", "text": "Learners recover faster.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "This week", "text": "Build your next skill", "dur": 2.6, "items": [
+      { "letter": "N", "label": "Next role", "color": "#2563EB" },
+      { "letter": "S", "label": "One skill", "color": "#16A34A" },
+      { "letter": "30", "label": "30 minutes", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "What skill are you building?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
