@@ -1,0 +1,52 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 34",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Nov 1, 2026",
+  "topic": "Week 5 recap: 6 Claude lessons for beginners in 60 seconds",
+  "music_seed": 312,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Five weeks of learning Claude. Still no tech background needed. 🎓\nHere's everything from week 5, in 60 seconds.\n\n1️⃣ Why answers change\nA setting called temperature adds variety. Want consistency? Be specific about the format.\n\n2️⃣ Fix messy file names\nShare one folder with Cowork, ask for a date_topic pattern, and check the before-and-after list first.\n\n3️⃣ Spreadsheet to chart\nClaude Code writes a tiny program to chart your data. You just read the pop-ups and approve.\n\n4️⃣ The \"catch me up\" prompt\nTurn a long email thread into decisions, open items, what's needed from you, and a draft reply.\n\n5️⃣ Set it once\nAccount-wide instructions in Settings apply to every chat, so you stop repeating yourself.\n\n6️⃣ Beware hidden instructions\nWebsites, emails and files can hide orders for your AI. Limit access, use trusted sites, and stop if it feels off.\n\nWhy it matters:\nWeek 5 was about getting reliable results, from consistent answers to safe habits. 🧭\n\nYour challenge this week: write your account-wide instructions. It takes 2 minutes.\n\nWhich lesson will you try first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "Week 5 of learning Claude, in 60 seconds. Charts, email threads, safety and more. 👇",
+    "Missed a day of Claude for Beginners? Here's the whole fifth week on one page.",
+    "6 more Claude lessons, zero coding required. Save this one for Monday."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Glossary (Temperature)", "url": "https://platform.claude.com/docs/en/about-claude/glossary" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Code Docs: Configure permissions", "url": "https://code.claude.com/docs/en/permissions" },
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Help Center: Understanding Claude's personalization features", "url": "https://support.claude.com/en/articles/10185728-understanding-claude-s-personalization-features" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 5 in 60 seconds", "sub": "Six more lessons, zero coding", "dur": 2.4,
+      "say": "Five weeks of learning Claude, and still no tech background needed. Here's everything from week five, in about a minute." },
+    { "type": "cards", "kicker": "Days 28 to 30", "dur": 3.2, "items": [
+      { "icon": "28", "title": "Why answers change", "desc": "Be specific" },
+      { "icon": "29", "title": "Rename files", "desc": "A Cowork handoff" },
+      { "icon": "30", "title": "Data to chart", "desc": "With Claude Code" }
+    ], "say": "First, why answers change, and how being specific fixes it. Then Cowork renamed your messy files. And Claude Code turned a spreadsheet into a chart." },
+    { "type": "cards", "kicker": "Days 31 to 33", "dur": 3.2, "items": [
+      { "icon": "31", "title": "Catch me up", "desc": "Long email threads" },
+      { "icon": "32", "title": "Set it once", "desc": "Instructions for every chat" },
+      { "icon": "33", "title": "Hidden orders", "desc": "Prompt injection safety" }
+    ], "say": "Next, you caught up on long email threads in seconds. You set instructions once for every chat. And you learned to spot hidden instructions." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Reliable results, safe habits.", "dur": 2.4,
+      "say": "Week five was all about getting reliable results, and building safe habits." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Write your instructions", "dur": 2.4, "items": [
+      { "letter": "1", "label": "Open Settings", "color": "#0F766E" },
+      { "letter": "2", "label": "Write rules", "color": "#B45309" },
+      { "letter": "3", "label": "Test a chat", "color": "#BE123C" }
+    ], "say": "So here's your challenge. Open Settings, write your account-wide instructions, and test them in a new chat." },
+    { "type": "question", "text": "Which lesson will you try first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson will you try first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
