@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 35",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Nov 2, 2026",
+  "topic": "AI basics: what \"RAG\" means, and why sharing your documents gets you better answers",
+  "music_seed": 313,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Heard someone say \"RAG\" in a meeting and nodded along? 😅\nHere's what it means, in plain English.\n\nRAG stands for retrieval augmented generation. Big words, simple idea:\n\n1️⃣ Retrieve: find the right information first, like your documents\n2️⃣ Augment: hand that information to the AI along with your question\n3️⃣ Generate: the AI writes its answer using what it was just given\n\nAnthropic's glossary says this helps \"ground the model's response in evidence\" and is useful for up-to-date information, specialist knowledge, or citing sources.\n\nWhy you should care 👇\nClaude didn't study your company's policies, your project notes or last week's numbers. When you share them, it can answer from them instead of guessing. 📄\n\nTry this today:\n\"Using only the document I've attached, answer: [your question]. Quote the part of the document you used. If the answer isn't in it, say so.\"\n\nThat last line matters ✅\nIt tells Claude not to fill gaps with guesses.\n\nWhy it matters:\nThe answer is only as good as the information behind it. Give Claude the right source, and you get answers you can check. 💡\n\nWhat document would you ask Claude about first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Heard someone say \"RAG\" in a meeting and nodded along? Here's what it means, in plain English. 👇",
+    "Why AI gives better answers when you share your own documents.",
+    "Retrieve, augment, generate. The 3-step idea behind smarter AI answers."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Glossary (RAG, Context window)", "url": "https://platform.claude.com/docs/en/about-claude/glossary" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "RAG, explained simply", "sub": "No jargon, promise", "dur": 2.4,
+      "say": "Heard someone say RAG in a meeting and just nodded along? Let's fix that in under a minute." },
+    { "type": "cards", "kicker": "Three simple steps", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Retrieve", "desc": "Find the right info" },
+      { "icon": "2", "title": "Augment", "desc": "Hand it to the AI" },
+      { "icon": "3", "title": "Generate", "desc": "Answer from that info" }
+    ], "say": "RAG means retrieval augmented generation. Find the right information, hand it to the AI with your question, and let it answer from that." },
+    { "type": "typewriter", "kicker": "Anthropic's glossary", "text": "It grounds answers in evidence.", "dur": 2.4,
+      "say": "Anthropic's glossary says this helps ground the answer in evidence, especially for up-to-date or specialist information." },
+    { "type": "typewriter", "kicker": "Why you should care", "text": "Claude didn't study your files.", "dur": 2.4,
+      "say": "Claude never studied your company's policies or your project notes. When you share them, it can answer from them, not guess." },
+    { "type": "prompt", "kicker": "Try this today", "label": "Answer from my doc", "text": "Use only this document.\nQuote what you used.\nSay if it's not there.", "dur": 3.2,
+      "say": "Try this: using only the document I've attached, answer my question. Quote the part you used, and tell me if the answer isn't there." },
+    { "type": "tiles", "kicker": "Good sources", "text": "Share the right files", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Policies", "color": "#0F766E" },
+      { "letter": "N", "label": "Notes", "color": "#B45309" },
+      { "letter": "R", "label": "Reports", "color": "#BE123C" }
+    ], "say": "Policies, project notes, and reports are great places to start." },
+    { "type": "question", "text": "Which document goes first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what document would you ask Claude about first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
