@@ -1,0 +1,33 @@
+{
+  "date": "Monday, Nov 2, 2026",
+  "topic": "News breakdown: Microsoft and the AFT's school AI safety and privacy standard, set to apply from Nov 1",
+  "music_seed": 306,
+  "post": "Big Tech just made a binding promise not to train AI on student data. 🏫\nHere's what's in the Microsoft and teachers' union deal, and why it matters beyond schools.\n\nWhat happened 👇\n🤝 Microsoft, the American Federation of Teachers (AFT) and the United Federation of Teachers announced a \"National AI Safety & Privacy Standard\" for schools in September\n📅 AP reported the standard would apply to schools Microsoft has contracts with starting Nov. 1\n\nWhat Microsoft committed to 👇\n🚫 No using student or educator data to train AI\n💸 That data can't be sold or used for advertising\n👀 No student tracking, and humans oversee AI decisions\n📋 The AFT says it's legally binding, with third-party audits\n\nThe catch: districts still have to write the terms into their own contracts. And critics say it only works if every big AI company signs on. OpenAI and Anthropic said they were discussing similar pacts.\n\nWhy it matters:\nThis is what enforceable AI rules can look like: specific promises, audits, and contracts, not just principles. 🔍\n\nPractical takeaway:\nIf your organization buys AI tools, ask your vendor one question: will our data be used to train your models? Get the answer in writing. 📝\n\nShould every AI company sign a pledge like this? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Education #DataPrivacy #Microsoft #EdTech",
+  "hooks": [
+    "Big Tech just made a binding promise not to train AI on student data. Here's what's in the deal. 👇",
+    "No training on student data. No ads. Third-party audits. Inside the Microsoft–teachers' union AI standard.",
+    "What enforceable AI rules actually look like, from an unlikely place: schools."
+  ],
+  "sources": [
+    { "name": "Microsoft: AFT, UFT and Microsoft announce national AI safety and privacy standard for schools", "url": "https://news.microsoft.com/source/2026/09/09/aft-uft-and-microsoft-announce-national-ai-safety-privacy-standard-for-schools-to-protect-students-families-and-educators/" },
+    { "name": "ABC News (AP): Microsoft commits to sweeping AI privacy rules for students", "url": "https://abcnews.com/Technology/wireStory/microsoft-commits-sweeping-ai-privacy-rules-students-tech-136452246" },
+    { "name": "The Hill: Microsoft, AFT AI safety and privacy standard", "url": "https://thehill.com/policy/technology/6078730-microsoft-aft-ai-safety-privacy/amp" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI news breakdown", "text": "No AI training on students", "sub": "A binding school AI standard", "dur": 2.4 },
+    { "type": "cards", "kicker": "What's promised", "dur": 3.2, "items": [
+      { "icon": "1", "title": "No training", "desc": "On student data" },
+      { "icon": "2", "title": "No ads", "desc": "Data can't be sold" },
+      { "icon": "3", "title": "Audits", "desc": "Checked by third parties" }
+    ] },
+    { "type": "typewriter", "kicker": "The catch", "text": "Districts must sign on too.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Ask your vendor", "text": "Get it in writing", "dur": 2.6, "items": [
+      { "letter": "T", "label": "Training?", "color": "#2563EB" },
+      { "letter": "S", "label": "Selling?", "color": "#16A34A" },
+      { "letter": "A", "label": "Audits?", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Should every AI firm sign?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
