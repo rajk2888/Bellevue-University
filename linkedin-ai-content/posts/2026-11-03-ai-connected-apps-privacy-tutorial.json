@@ -1,0 +1,32 @@
+{
+  "date": "Tuesday, Nov 3, 2026",
+  "topic": "AI tool tutorial: a 5-minute privacy check-up for the apps you've connected to AI assistants",
+  "music_seed": 307,
+  "post": "When did you last check which apps your AI assistant can see? 🔐\nHere's a 5-minute privacy check-up, inspired by Google's recent policy change.\n\nQuick recap:\nGoogle's updated privacy policy now lets Gmail, Drive and Photos data you connect to its AI features (Personal Intelligence) help shape ads. Connecting is opt-in, and Google says you can disconnect apps or change your Search data-sharing settings in your Google account.\n\nThe bigger lesson: every AI assistant you connect to your email, files or calendar deserves a regular check-up.\n\nYour 5-minute check-up 👇\n1️⃣ List every AI tool you've connected to your email, files or calendar\n2️⃣ Open each tool's settings and find its connected apps or connectors\n3️⃣ Disconnect anything you haven't used in the last month\n4️⃣ Check whether your data can be used for ads or training, and turn it off if you can\n5️⃣ Put a reminder in your calendar to repeat this every quarter 🗓️\n\nWhy it matters:\nAI assistants get smarter with your data. That's the trade-off. You should decide what's worth sharing, not the default settings. ⚖️\n\nPractical takeaway:\nDo step 1 right now. Most people are surprised how long the list is. 📝\n\nHow many AI tools have access to your email? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Privacy #DataPrivacy #Productivity #AITips",
+  "hooks": [
+    "When did you last check which apps your AI assistant can see? A 5-minute privacy check-up. 👇",
+    "Your AI tools are connected to more than you think. Here's how to clean it up.",
+    "Google's privacy change is a wake-up call. Do this 5-step AI check-up today."
+  ],
+  "sources": [
+    { "name": "9to5Google: Google will target ads based on Gmail, Photos data if Personal Intelligence is enabled", "url": "https://9to5google.com/2026/10/23/google-will-target-ads-based-on-gmail-photos-data-if-personal-intelligence-is-enabled/" },
+    { "name": "The Hacker News: Google says Gmail and Photos data shared with AI search could be used for targeted ads", "url": "https://thehackernews.com/2026/10/google-says-gmail-and-photos-data.html" },
+    { "name": "TechSpot: Google's privacy policy now has a loophole for using your Gmail and Photos data in ads", "url": "https://www.techspot.com/news/114322-google-privacy-policy-now-has-loophole-using-gmail.html" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI tool tutorial", "text": "Your AI privacy check-up", "sub": "Five minutes, five steps", "dur": 2.4 },
+    { "type": "cards", "kicker": "Steps 1 to 3", "dur": 3.2, "items": [
+      { "icon": "1", "title": "List your tools", "desc": "Email, files, calendar" },
+      { "icon": "2", "title": "Open settings", "desc": "Find connected apps" },
+      { "icon": "3", "title": "Disconnect", "desc": "Anything unused" }
+    ] },
+    { "type": "cards", "kicker": "Steps 4 and 5", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Check data use", "desc": "Ads and training" },
+      { "icon": "5", "title": "Repeat quarterly", "desc": "Set a reminder" }
+    ] },
+    { "type": "typewriter", "kicker": "The rule", "text": "You decide, not defaults.", "dur": 2.2 },
+    { "type": "question", "text": "How many tools see your email?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
