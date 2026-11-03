@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 36",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Nov 3, 2026",
+  "topic": "Hand off a real task: turn voice memos and scattered notes into a polished document with Claude Cowork",
+  "music_seed": 314,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Got great ideas trapped in voice memos and sticky notes? 🎙️\nLet Claude Cowork turn them into a polished document.\n\n\"Turn voice memos and scattered notes into polished documents\" is one of the example tasks in Claude's own Cowork guide.\n\nStep by step 👇\n1️⃣ Put your voice memos and notes in one folder\n2️⃣ Open Claude and select Cowork in the message box\n3️⃣ Share ONLY that folder\n4️⃣ Paste the prompt below\n5️⃣ Review Claude's plan, then let it run\n\nCopy this prompt:\n\"Go through every voice memo and note in this folder. Turn them into a clear 1-page document called 'Project ideas' with a short summary, the main ideas grouped by theme, and a list of next steps. Keep my original files unchanged, and mark anything you weren't sure you heard correctly.\"\n\nThen read it once ✅\nCheck names, numbers and anything Claude marked as unsure. Voice memos can be messy.\n\n📌 Cowork needs a paid plan (Pro, Max, Team or Enterprise).\n\nWhy it matters:\nYour best thinking often happens on a walk or in the car. This turns those moments into something you can actually share. 💡\n\nWhat idea is sitting in your voice memos right now? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "Got great ideas trapped in voice memos and sticky notes? Let Claude Cowork turn them into a real document. 👇",
+    "From rambling voice memos to a 1-page plan, with one prompt.",
+    "Your best ideas happen on a walk. Here's how to turn them into a document."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Voice memos to a doc", "sub": "A Claude Cowork handoff", "dur": 2.4,
+      "say": "Got great ideas trapped in voice memos and sticky notes? Let's turn them into a real document with Cowork." },
+    { "type": "typewriter", "kicker": "Straight from the guide", "text": "Scattered notes in. Doc out.", "dur": 2.4,
+      "say": "Turning voice memos and scattered notes into polished documents is an example task in Claude's own Cowork guide." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.4, "items": [
+      { "icon": "1", "title": "One folder", "desc": "Memos and notes" },
+      { "icon": "2", "title": "Select Cowork", "desc": "In the message box" },
+      { "icon": "3", "title": "Share that folder", "desc": "Nothing else" }
+    ], "say": "Put your memos and notes in one folder. Select Cowork, and share only that folder." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Ideas to doc", "text": "Make a 1-page doc:\nsummary, themes, next\nsteps. Flag unsure bits.", "dur": 3.4,
+      "say": "Ask for a one-page document with a summary, the ideas grouped by theme, and next steps. And ask it to flag anything it wasn't sure it heard." },
+    { "type": "tiles", "kicker": "Before you share", "text": "Read it once", "dur": 2.6, "items": [
+      { "letter": "N", "label": "Names", "color": "#0F766E" },
+      { "letter": "#", "label": "Numbers", "color": "#B45309" },
+      { "letter": "F", "label": "Flags", "color": "#BE123C" }
+    ], "say": "Then read it once. Check names, numbers, and anything Claude flagged. Voice memos can be messy." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Cowork needs a paid plan.", "dur": 2.2,
+      "say": "Quick note: Cowork needs a paid plan, like Pro, Max, Team or Enterprise." },
+    { "type": "question", "text": "What's in your voice memos?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what idea is sitting in your voice memos right now? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
