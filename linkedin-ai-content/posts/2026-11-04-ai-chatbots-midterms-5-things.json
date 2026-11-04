@@ -1,0 +1,32 @@
+{
+  "date": "Wednesday, Nov 4, 2026",
+  "topic": "5 things you need to know: AI chatbots got voting information wrong ahead of the midterms",
+  "music_seed": 308,
+  "post": "Millions of people asked AI how to vote. A lot of the answers were wrong. 🗳️\nHere are 5 things you need to know.\n\n1️⃣ A big test\nThe Washington Post reviewed more than 3,000 voter guides produced by six popular AI chatbots and found significant errors.\n\n2️⃣ Made-up races\nThe Post found chatbots invented races that don't exist, mixed up candidates, and cited websites with incorrect information.\n\n3️⃣ Wrong deadlines\nNPR showed an example where a chatbot (Claude) gave incorrect deadlines for registering to vote online and by mail.\n\n4️⃣ Companies say they're fixing it\nMeta, Anthropic, OpenAI and Google told NPR they're working to prevent election misinformation. The Post says many made changes after it contacted them.\n\n5️⃣ The safest source hasn't changed\nExperts quoted in the coverage say: check your official state and county election websites.\n\nWhy it matters:\nThis isn't just about elections. Anything local, recent or high-stakes is where AI is most likely to sound confident and be wrong. ⚠️\n\nPractical takeaway:\nFor deadlines, addresses and rules, use AI to find the official source, then read the official source. 🔍\n\nDid you use AI for anything election-related? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Elections #Misinformation #AILiteracy #Tech",
+  "hooks": [
+    "Millions of people asked AI how to vote. A lot of the answers were wrong. 5 things to know. 👇",
+    "Made-up races, mixed-up candidates, wrong deadlines. What happened when AI wrote voter guides.",
+    "The lesson from AI and the midterms applies to everything local, recent and high-stakes."
+  ],
+  "sources": [
+    { "name": "The Washington Post: Doing last-minute research for the midterms? Be careful with AI chatbots", "url": "https://www.washingtonpost.com/technology/2026/11/03/doing-last-minute-research-midterms-be-careful-with-ai-chatbots/" },
+    { "name": "NPR: AI chatbots are becoming political advisers. Their answers can mislead voters", "url": "https://www.npr.org/2026/11/02/nx-s1-6025407/chatbots-midterms-voting-advice" },
+    { "name": "Futurism: ChatGPT is giving voters misinformation right as the midterms hit", "url": "https://futurism.com/artificial-intelligence/chatgpt-ai-chatbot-misinformatin-election-voters" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "5 things to know", "text": "AI got voting info wrong", "sub": "Lessons from the midterms", "dur": 2.4 },
+    { "type": "cards", "kicker": "What testers found", "dur": 3.0, "items": [
+      { "icon": "1", "title": "3,000+ guides", "desc": "From six chatbots" },
+      { "icon": "2", "title": "Made-up races", "desc": "Mixed-up candidates" },
+      { "icon": "3", "title": "Wrong deadlines", "desc": "To register to vote" }
+    ] },
+    { "type": "cards", "kicker": "And", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Fixes promised", "desc": "After reporters asked" },
+      { "icon": "5", "title": "Go official", "desc": "State and county sites" }
+    ] },
+    { "type": "typewriter", "kicker": "The lesson", "text": "Local and recent? Verify.", "dur": 2.2 },
+    { "type": "question", "text": "Did you ask AI about voting?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
