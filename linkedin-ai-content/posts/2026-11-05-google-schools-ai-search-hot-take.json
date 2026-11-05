@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Nov 5, 2026",
+  "topic": "Hot take: opt-in AI for students is right. Tying it to Search isn't.",
+  "music_seed": 309,
+  "post": "Opt-in AI for students is the right call.\nTying it to Search is not. 🔥\n\nHere's what happened:\nGoogle announced that K-12 student accounts will have Gemini and Google Search switched off until a school admin turns them on.\n\nOn paper, that's great. Schools choose. 🏫\n\nThe catch:\nForbes and NBC News report that schools which say no to AI may also lose access to a plain, AI-free Search. Google says it will share more details with schools in the coming months.\n\nMy hot take 👇\nAn opt-in only means something if saying \"no\" doesn't cost you the basics.\n\nIf turning down AI also turns off search, that's not a choice. It's a bundle. 📦\n\nSchools should be able to say:\n✅ Yes to search\n❌ No to AI, for now\n\nWhy it matters:\nThe defaults we set for kids today become the habits of the next workforce. They deserve a real choice, not a package deal.\n\nPractical takeaway:\nIf you work with a school, ask your IT admin now: \"Can we enable Search without AI features?\" Get the answer in writing before the rollout. 📝\n\nAgree or disagree? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Education #EdTech #Google #AIPolicy",
+  "hooks": [
+    "Opt-in AI for students is the right call. Tying it to Search is not. 🔥",
+    "If saying no to AI also costs you search, is that really a choice?",
+    "Google just changed AI defaults for K-12 students. Here's the part nobody should ignore."
+  ],
+  "sources": [
+    { "name": "Forbes: Google will cut off search engine access to schools banning generative AI", "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/03/google-will-cut-off-search-engine-access-to-schools-banning-generative-ai/" },
+    { "name": "NBC News: Google to shut off search for schools that opt out of AI", "url": "https://www.nbcnews.com/tech/tech-news/google-shut-search-schools-opt-ai-rcna607280" },
+    { "name": "Tech Times: Google requires AI features in schools or risk losing Search access", "url": "https://www.techtimes.com/articles/330004/20261104/google-requires-ai-features-schools-risk-losing-search-access-guided-learning-rollout.htm" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "Opt-in AI? Yes. Bundled? No.", "sub": "AI, search and K-12 schools", "dur": 2.6 },
+    { "type": "cards", "kicker": "What happened", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Off by default", "desc": "AI and Search, for students" },
+      { "icon": "2", "title": "Admins opt in", "desc": "School by school" },
+      { "icon": "3", "title": "The catch", "desc": "No AI may mean no Search" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "A bundle isn't a choice.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Let schools choose", "text": "Separate switches", "dur": 2.4, "items": [
+      { "letter": "S", "label": "Search: yes", "color": "#16A34A" },
+      { "letter": "A", "label": "AI: later", "color": "#EA580C" },
+      { "letter": "W", "label": "In writing", "color": "#2563EB" }
+    ] },
+    { "type": "question", "text": "Agree or disagree?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
