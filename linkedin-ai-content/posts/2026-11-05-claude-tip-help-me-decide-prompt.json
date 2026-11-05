@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 38",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Nov 5, 2026",
+  "topic": "The \"help me decide\" prompt: compare your options side by side and see what would change the answer",
+  "music_seed": 316,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Stuck between two options and going in circles? 🤔\nThis copy-paste prompt helps Claude help you decide.\n\nThe trick: don't just ask \"Which is better?\"\nTell Claude your options AND what matters to you.\n\nAnthropic's own prompting guide says Claude does best with clear, direct instructions, and that explaining why something matters helps it give more targeted answers. 🎯\n\nCopy this prompt 👇\n\"Help me decide between [option A] and [option B].\nWhat matters most to me: [your top 3 priorities].\nMake a simple table comparing both options on each priority.\nThen give me your recommendation in 2 sentences, and tell me what would change your mind.\"\n\nExample:\nTwo job offers. Priorities: pay, commute, growth. ✅\n\nThat last line is the secret 🔑\n\"What would change your mind\" shows you which facts to double-check before you choose.\n\nAnd remember: Claude helps you think. The decision is still yours.\n\nWhy it matters:\nA clear comparison beats a sleepless night of pros and cons in your head. 💡\n\nWhat decision would you run through this prompt? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Stuck between two options and going in circles? This copy-paste prompt helps Claude help you decide. 🤔",
+    "Stop asking AI \"which is better?\" Ask this instead.",
+    "One line turns Claude into a great decision partner: \"What would change your mind?\""
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Help Center: My prompt isn't giving me a helpful answer", "url": "https://support.claude.com/en/articles/7996857-my-prompt-isn-t-giving-me-a-helpful-answer" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "The help me decide prompt", "sub": "A copy-paste prompt", "dur": 2.4,
+      "say": "Stuck between two options and going around in circles? This prompt helps Claude help you decide." },
+    { "type": "typewriter", "kicker": "The trick", "text": "Say what matters to you.", "dur": 2.4,
+      "say": "Here's the trick. Don't just ask which is better. Tell Claude your options, and what matters most to you." },
+    { "type": "typewriter", "kicker": "Anthropic's guide", "text": "Clear, direct, and say why.", "dur": 2.4,
+      "say": "Anthropic's own guide says Claude does best with clear, direct instructions, and knowing why something matters." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Help me decide", "text": "Compare A and B in a table.\nRecommend one.\nWhat would change your mind?", "dur": 3.4,
+      "say": "Give it your top three priorities. Ask for a simple comparison table, a short recommendation, and what would change its mind." },
+    { "type": "cards", "kicker": "Example", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Two job offers", "desc": "Option A and B" },
+      { "icon": "2", "title": "Your priorities", "desc": "Pay, commute, growth" },
+      { "icon": "3", "title": "Check the facts", "desc": "That could flip it" }
+    ], "say": "Say you have two job offers. List pay, commute and growth, then double-check the facts that could flip the answer." },
+    { "type": "tiles", "kicker": "Remember", "text": "You still decide", "dur": 2.4, "items": [
+      { "letter": "T", "label": "Table", "color": "#0F766E" },
+      { "letter": "R", "label": "Reasons", "color": "#B45309" },
+      { "letter": "Y", "label": "Your call", "color": "#BE123C" }
+    ], "say": "And remember, Claude helps you think it through. The decision is still yours." },
+    { "type": "question", "text": "What would you decide with it?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what decision would you run through this prompt? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
