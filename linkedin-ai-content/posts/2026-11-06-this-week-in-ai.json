@@ -1,0 +1,37 @@
+{
+  "date": "Friday, Nov 6, 2026",
+  "topic": "This week in AI: the top 5 stories you need to know",
+  "music_seed": 310,
+  "post": "This week, AI was all about one word: control. 🎛️\nHere are the top 5 stories you need to know.\n\n1️⃣ Schools get the switch\nGoogle announced that K-12 student accounts will have Gemini and Search off until a school admin turns them on. Reports say the details are still coming.\n\n2️⃣ AI flunked the voter guide test\nThe Washington Post and NPR found chatbots giving wrong election info, from made-up races to wrong registration deadlines.\n\n3️⃣ Siri opens up\nApple opened Siri AI to app developers in the iOS 27.3 beta, so apps can bring their content and actions into Siri.\n\n4️⃣ A kill switch for AI agents\nCrowdStrike launched an \"AI Kill Switch\" to cut off agents that go rogue, and announced plans to buy Fiddler AI and Dreadnode. 🛑\n\n5️⃣ AI customer service consolidates\nFive9 agreed to buy Level AI for about $325 million in cash.\n\nWhy it matters:\nAI is moving into schools, phones and the workplace. The big question is no longer \"can it do this?\" but \"who decides when it's on, and how do we stop it?\" ⚖️\n\nPractical takeaway:\nFor every AI tool you use at work, know where its off switch is. 🔍\n\nWhich story matters most to you? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #AIAgents #Tech #AINews",
+  "hooks": [
+    "This week, AI was all about one word: control. Here are the top 5 stories you need to know. 👇",
+    "Kill switches, opt-ins and wrong voter guides. The 5 AI stories that mattered this week.",
+    "Missed the AI news this week? Here's everything in 60 seconds."
+  ],
+  "sources": [
+    { "name": "Forbes: Google will cut off search engine access to schools banning generative AI", "url": "https://www.forbes.com/sites/maryroeloffs/2026/11/03/google-will-cut-off-search-engine-access-to-schools-banning-generative-ai/" },
+    { "name": "NBC News: Google to shut off search for schools that opt out of AI", "url": "https://www.nbcnews.com/tech/tech-news/google-shut-search-schools-opt-ai-rcna607280" },
+    { "name": "The Washington Post: Doing last-minute research for the midterms? Be careful with AI chatbots", "url": "https://www.washingtonpost.com/technology/2026/11/03/doing-last-minute-research-midterms-be-careful-with-ai-chatbots/" },
+    { "name": "NPR: AI chatbots are becoming political advisers. Their answers can mislead voters", "url": "https://www.npr.org/2026/11/02/nx-s1-6025407/chatbots-midterms-voting-advice" },
+    { "name": "9to5Mac: iOS 27.3 expands Siri AI with many new capabilities across Apple apps", "url": "https://9to5mac.com/2026/11/03/ios-27-3-expands-siri-ai-with-many-new-capabilities-across-apple-apps/" },
+    { "name": "CrowdStrike: CrowdStrike introduces the AI Kill Switch for AI safety", "url": "https://ir.crowdstrike.com/news-releases/news-release-details/crowdstrike-introduces-ai-kill-switch-ai-safety" },
+    { "name": "Decrypt: CrowdStrike launches AI agent 'kill switch,' plans to acquire Fiddler AI", "url": "https://decrypt.co/382467/crowdstrike-ai-agent-kill-switch-acquire-fiddler-ai" },
+    { "name": "Five9 press release (SEC Form 8-K): agreement to acquire Level AI", "url": "https://www.sec.gov/Archives/edgar/data/0001288847/000128884726000141/projectlanderpressreleas.htm" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "One word: control", "sub": "The top 5 stories", "dur": 2.4 },
+    { "type": "cards", "kicker": "Top 5, part 1", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Schools opt in", "desc": "AI off by default" },
+      { "icon": "2", "title": "Voter guides fail", "desc": "Wrong election info" },
+      { "icon": "3", "title": "Siri opens up", "desc": "To app developers" }
+    ] },
+    { "type": "cards", "kicker": "Top 5, part 2", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Agent kill switch", "desc": "Stop rogue AI agents" },
+      { "icon": "5", "title": "$325M deal", "desc": "AI customer service" }
+    ] },
+    { "type": "typewriter", "kicker": "The takeaway", "text": "Know where the off switch is.", "dur": 2.2 },
+    { "type": "question", "text": "Which story matters most?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
