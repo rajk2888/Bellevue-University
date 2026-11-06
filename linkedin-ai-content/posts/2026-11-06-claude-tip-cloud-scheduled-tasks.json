@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 39",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Nov 6, 2026",
+  "topic": "Claude Code cloud scheduled tasks: a helper that works even when your computer is off",
+  "music_seed": 317,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "What if Claude did a task for you every morning, even with your laptop closed? 🌙\nThat's what Claude Code's cloud scheduled tasks do.\n\nA scheduled task is a saved prompt that runs on a timetable you pick. \"Cloud\" means it runs on Anthropic's computers, not yours. ☁️\n\nFun fact: the drafts for this very series are prepared by one. ✅\n\nHow to start 👇\n1️⃣ Go to claude.ai/code/routines (or type /schedule in Claude Code)\n2️⃣ Write what you want done, in plain English\n3️⃣ Pick when it runs, like every weekday at 7 AM\n\nThe golden rule from the Claude Code docs:\nThe task runs on its own, so it can't ask you questions. Say exactly what \"done\" looks like and what to do with the result. 🎯\n\nExample prompt:\n\"Every weekday, find the 3 most important news stories about [my industry] from the last 24 hours. Give me a 5-bullet summary with a source link for each.\"\n\n📌 Available on Pro, Max, Team and Enterprise plans. It's a research preview, and each run uses your plan's usage.\n\nWhy it matters:\nThe best automation is the one you set up once and forget. 💡\n\nWhat would you want waiting for you every morning? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "What if Claude did a task for you every morning, even with your laptop closed? 🌙",
+    "Set it once. Claude does it every day. Here's how cloud scheduled tasks work.",
+    "The drafts for this series are prepared by a scheduled task. Here's how to make your own."
+  ],
+  "sources": [
+    { "name": "Claude Code Docs: Automate work with scheduled tasks", "url": "https://code.claude.com/docs/en/routines" },
+    { "name": "Claude Code Docs: Common workflows (Run Claude on a schedule)", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Code Docs: Feature availability", "url": "https://code.claude.com/docs/en/feature-availability" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Tasks that run while you sleep", "sub": "Cloud scheduled tasks", "dur": 2.4,
+      "say": "What if Claude did a task for you every morning, even with your laptop closed? Let me show you how." },
+    { "type": "typewriter", "kicker": "In plain English", "text": "A saved prompt on a timetable.", "dur": 2.4,
+      "say": "A scheduled task is a saved prompt that runs on a timetable you pick. Cloud means it runs on Anthropic's computers, not yours." },
+    { "type": "cards", "kicker": "How to start", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Open routines", "desc": "Or type /schedule" },
+      { "icon": "2", "title": "Write the task", "desc": "In plain English" },
+      { "icon": "3", "title": "Pick a time", "desc": "Like weekdays at 7" }
+    ], "say": "Open the routines page, or type slash schedule in Claude Code. Write the task in plain English, and pick when it runs." },
+    { "type": "typewriter", "kicker": "The golden rule", "text": "It can't ask you questions.", "dur": 2.4,
+      "say": "Here's the golden rule. It runs on its own, so say exactly what done looks like, and what to do with the result." },
+    { "type": "prompt", "kicker": "Try this", "label": "Morning briefing", "text": "Every weekday: top 3 stories\nabout my industry.\n5 bullets, with sources.", "dur": 3.4,
+      "say": "Try this. Every weekday, find the top three stories about your industry, and give you five bullets with sources." },
+    { "type": "tiles", "kicker": "Good to know", "text": "Before you start", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Paid plans", "color": "#0F766E" },
+      { "letter": "R", "label": "Preview", "color": "#B45309" },
+      { "letter": "U", "label": "Uses usage", "color": "#BE123C" }
+    ], "say": "It's on Pro, Max, Team and Enterprise plans. It's a research preview, and each run uses your plan's usage." },
+    { "type": "question", "text": "What should wait for you each morning?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what would you want waiting for you every morning? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
