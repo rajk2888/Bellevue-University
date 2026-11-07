@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 40",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Nov 7, 2026",
+  "topic": "Safety habit: what NOT to paste into a chat, and what incognito chat really does",
+  "music_seed": 318,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Beginner mistake: pasting EVERYTHING into an AI chat. 🔐\nHere's a simple habit for sensitive info, plus what incognito chat really does.\n\nThe habit: share only what the task needs.\n\nBefore you paste, remove 👇\n❌ Passwords and login codes\n❌ Full account or ID numbers\n❌ Other people's private details\n\nClaude can still help with \"[client name]\" or \"account ending 1234\". ✅\n\nNow, incognito chat.\nIn Claude, tap the ghost icon when you start a new chat. 👻\n\nWhat it DOES, per Claude's help center:\n✅ Keeps the chat out of your chat history\n✅ Keeps it out of Claude's memory\n\nWhat it does NOT do:\n⚠️ It's not \"nothing is stored\". Incognito chats are still kept for 30 days by default.\n\nSo incognito is great when you don't want a chat shaping future ones. It's not a reason to paste a password.\n\nGood to know: incognito isn't available inside projects.\n\nWhy it matters:\nThe safest information is the information you never shared. 💡\n\nWhat's one thing you'd never paste into an AI chat? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Beginner mistake: pasting EVERYTHING into an AI chat. Here's a simple habit for sensitive info. 🔐",
+    "Incognito chat doesn't mean \"nothing is stored.\" Here's what it really does.",
+    "3 things to remove before you paste anything into AI."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Use incognito chats", "url": "https://support.claude.com/en/articles/12260368-use-incognito-chats" },
+    { "name": "Claude Help Center: Use Claude's chat search and memory to build on previous context", "url": "https://support.claude.com/en/articles/11817273-use-claude-s-chat-search-and-memory-to-build-on-previous-context" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Don't paste everything", "sub": "A safety habit", "dur": 2.4,
+      "say": "Here's a beginner mistake I see a lot: pasting everything into an AI chat. Let's fix that with one simple habit." },
+    { "type": "typewriter", "kicker": "The habit", "text": "Share only what the task needs.", "dur": 2.4,
+      "say": "The habit is simple. Share only what the task actually needs." },
+    { "type": "tiles", "kicker": "Remove before you paste", "text": "Keep these out", "dur": 3.0, "items": [
+      { "letter": "P", "label": "Passwords", "color": "#0F766E" },
+      { "letter": "#", "label": "Full IDs", "color": "#B45309" },
+      { "letter": "O", "label": "Others' details", "color": "#BE123C" }
+    ], "say": "Before you paste, take out passwords, full account or ID numbers, and other people's private details." },
+    { "type": "typewriter", "kicker": "Still works", "text": "Say \"account ending 1234\".", "dur": 2.4,
+      "say": "Claude can still help. Just write something like client name, or account ending in one two three four." },
+    { "type": "cards", "kicker": "Incognito chat does", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Ghost icon", "desc": "On a new chat" },
+      { "icon": "2", "title": "No history", "desc": "Kept out of your list" },
+      { "icon": "3", "title": "No memory", "desc": "Won't shape future chats" }
+    ], "say": "Now incognito chat. Tap the ghost icon on a new chat, and it stays out of your history and Claude's memory." },
+    { "type": "typewriter", "kicker": "But remember", "text": "Still kept for 30 days.", "dur": 2.4,
+      "say": "But it's not nothing is stored. Claude's help center says incognito chats are still kept for thirty days by default." },
+    { "type": "question", "text": "What would you never paste?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's one thing you'd never paste into an AI chat? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
