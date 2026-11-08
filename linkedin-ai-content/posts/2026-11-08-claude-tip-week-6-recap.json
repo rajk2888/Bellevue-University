@@ -1,0 +1,52 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 41",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Nov 8, 2026",
+  "topic": "Week 6 recap: 6 Claude lessons for beginners in 60 seconds",
+  "music_seed": 320,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Six weeks of learning Claude. Still no tech background needed. 🎓\nHere's everything from week 6, in 60 seconds.\n\n1️⃣ RAG, explained simply\nFind the right info, hand it to the AI, let it answer from that. Share your docs, get answers you can check.\n\n2️⃣ Voice memos to a doc\nShare one folder with Cowork and get a 1-page doc with themes and next steps.\n\n3️⃣ \"Explain this folder\"\nInherited a project? Ask Claude Code for a plain-English tour and a glossary, without changing a thing.\n\n4️⃣ The \"help me decide\" prompt\nYour options + your priorities = a comparison table, a recommendation, and what would change its mind.\n\n5️⃣ Tasks that run while you sleep\nCloud scheduled tasks run a saved prompt on a timetable, even with your laptop closed.\n\n6️⃣ Don't paste everything\nKeep passwords and full IDs out. Incognito keeps chats out of history and memory, but they're still kept for 30 days.\n\nWhy it matters:\nWeek 6 was about giving Claude the right information, and keeping the wrong information out. 🧭\n\nYour challenge this week: run one real decision through the \"help me decide\" prompt.\n\nWhich lesson will you try first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "Week 6 of learning Claude, in 60 seconds. RAG, decisions, automation and safety. 👇",
+    "Missed a day of Claude for Beginners? Here's the whole sixth week on one page.",
+    "6 more Claude lessons, zero coding required. Save this one for Monday."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Glossary (RAG)", "url": "https://platform.claude.com/docs/en/about-claude/glossary" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Code Docs: Common workflows", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Code Docs: Automate work with scheduled tasks", "url": "https://code.claude.com/docs/en/routines" },
+    { "name": "Claude Help Center: Use incognito chats", "url": "https://support.claude.com/en/articles/12260368-use-incognito-chats" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 6 in 60 seconds", "sub": "Six more lessons, zero coding", "dur": 2.4,
+      "say": "Six weeks of learning Claude, and still no tech background needed. Here's everything from week six, in about a minute." },
+    { "type": "cards", "kicker": "Days 35 to 37", "dur": 3.2, "items": [
+      { "icon": "35", "title": "RAG, simply", "desc": "Share the right docs" },
+      { "icon": "36", "title": "Memos to a doc", "desc": "A Cowork handoff" },
+      { "icon": "37", "title": "Explain this folder", "desc": "With Claude Code" }
+    ], "say": "First, RAG in plain English. Then Cowork turned your voice memos into a doc. And Claude Code explained a project folder, without changing a thing." },
+    { "type": "cards", "kicker": "Days 38 to 40", "dur": 3.2, "items": [
+      { "icon": "38", "title": "Help me decide", "desc": "A comparison table" },
+      { "icon": "39", "title": "Scheduled tasks", "desc": "Run while you sleep" },
+      { "icon": "40", "title": "Don't paste all", "desc": "Incognito, explained" }
+    ], "say": "Next, a prompt that helps you decide. Tasks that run while you sleep. And what not to paste, plus what incognito really does." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Right info in. Wrong info out.", "dur": 2.4,
+      "say": "Week six was about giving Claude the right information, and keeping the wrong information out." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Decide one thing", "dur": 2.4, "items": [
+      { "letter": "1", "label": "Pick a choice", "color": "#0F766E" },
+      { "letter": "2", "label": "List priorities", "color": "#B45309" },
+      { "letter": "3", "label": "Ask Claude", "color": "#BE123C" }
+    ], "say": "So here's your challenge. Pick one real decision, list what matters to you, and run it through the help me decide prompt." },
+    { "type": "question", "text": "Which lesson will you try first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson will you try first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
