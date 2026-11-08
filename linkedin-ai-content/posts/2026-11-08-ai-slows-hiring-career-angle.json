@@ -1,0 +1,32 @@
+{
+  "date": "Sunday, Nov 8, 2026",
+  "topic": "Career angle: AI isn't firing people yet. It's quietly not hiring them.",
+  "music_seed": 312,
+  "post": "AI isn't firing people yet.\nIt's quietly not hiring them. 🚪\n\nThis week, the Bank of England published new findings on AI and jobs in the UK.\n\nWhat it found, per The Register and Resultsense:\n1️⃣ Firms surveyed reported almost no overall effect from AI on employment so far.\n2️⃣ But the Bank's regional contacts say AI is making firms less likely to hire, or to replace staff who leave.\n3️⃣ And not much more likely to fire anyone, so far.\n\nThat's a quiet shift. No big layoff headline. Just fewer open doors. 🔍\n\nMy career take 👇\nIf hiring slows, the people who move up are the ones already inside, using AI to do more.\n\nWhy it matters:\nWhen roles aren't backfilled, the work doesn't disappear. It lands on the team. The person who can absorb it with AI becomes hard to replace. 💪\n\nPractical takeaway:\nThis week, pick one task a former colleague used to do. Write down how you'd handle it with AI, and show your manager. 📝\n\nIs your team replacing people who leave? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Careers #Jobs #Hiring",
+  "hooks": [
+    "AI isn't firing people yet. It's quietly not hiring them. 🚪",
+    "The AI job story nobody's talking about: the roles that never get backfilled.",
+    "No layoff headline. Just fewer open doors. Here's what that means for your career."
+  ],
+  "sources": [
+    { "name": "The Register: Bank of England pours cold water on AI productivity boom", "url": "https://www.theregister.com/ai-and-ml/2026/11/06/bank-of-england-pours-cold-water-on-ai-productivity-boom/5308059" },
+    { "name": "Resultsense: Bank of England: AI is cutting hiring at UK firms, not causing layoffs", "url": "https://www.resultsense.com/news/2026-11-06-boe-ai-slowing-hiring-not-firing/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Career angle", "text": "AI isn't firing. It's not hiring.", "sub": "New Bank of England findings", "dur": 2.6 },
+    { "type": "cards", "kicker": "What it found", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Jobs: little change", "desc": "So far, overall" },
+      { "icon": "2", "title": "Fewer hires", "desc": "Leavers not replaced" },
+      { "icon": "3", "title": "Firing: flat", "desc": "Not much more, yet" }
+    ] },
+    { "type": "typewriter", "kicker": "The quiet shift", "text": "Fewer open doors.", "dur": 2.0 },
+    { "type": "tiles", "kicker": "Your move", "text": "Absorb the work with AI", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pick a task", "color": "#2563EB" },
+      { "letter": "A", "label": "Add AI", "color": "#16A34A" },
+      { "letter": "S", "label": "Show it", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Is your team backfilling roles?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
