@@ -1,0 +1,33 @@
+{
+  "date": "Monday, Nov 9, 2026",
+  "topic": "News breakdown: 3 charged in a $129M scheme that used AI to impersonate CEOs and lawyers",
+  "music_seed": 313,
+  "post": "The CEO on the video call wasn't the CEO.\nProsecutors say AI faked them, and companies lost about $129 million. 🎭\n\nHere's the breakdown 👇\n\nWhat happened:\nFederal prosecutors in New York charged three men in a scheme that allegedly used AI to impersonate company CEOs and lawyers at major law firms.\n\nHow it allegedly worked:\n📞 A phone or video call where AI mimicked the CEO's voice, and sometimes their face\n⚖️ Fake \"attorneys\" adding pressure and legitimacy\n💸 Targets told to send money, fast\n\nWho was hit:\nReports name a Missouri hospital system that lost nearly $5 million, a Rhode Island bank, and a California hospital system. Prosecutors say the scheme ran from about July 2024 to February 2026.\n\nThese are charges, not convictions.\n\nWhy it matters:\nA familiar voice and face used to be proof. Now they can be generated. The weak point isn't your tech. It's your payment process. ⚠️\n\nPractical takeaway:\nAgree on one rule with your team: no urgent payment is approved on a call alone. Always confirm through a second channel you already trust, like a known phone number. ✅\n\nDoes your team have a \"call-back\" rule? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Deepfakes #CyberSecurity #Fraud #AINews",
+  "hooks": [
+    "The CEO on the video call wasn't the CEO. Prosecutors say AI faked them, and companies lost about $129 million. 🎭",
+    "A familiar voice used to be proof. A $129M AI fraud case says it isn't anymore.",
+    "One rule could have stopped a $129M AI impersonation scheme. Does your team have it?"
+  ],
+  "sources": [
+    { "name": "SecurityWeek (AP): 3 charged in scheme to use AI to impersonate CEOs and attorneys to steal $129 million", "url": "https://securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million" },
+    { "name": "ITPro: Three charged after impersonating CEOs and attorneys in $129 million deepfake fraud scheme", "url": "https://www.itpro.com/security/cyber-crime/three-charged-after-impersonating-ceos-and-attorneys-in-usd129-million-deepfake-fraud-scheme" },
+    { "name": "South China Morning Post: US accuses trio of using AI to impersonate CEOs and lawyers to steal US$129 million", "url": "https://www.scmp.com/news/world/united-states-canada/article/3373511/us-accuses-trio-using-ai-impersonate-ceos-and-lawyers-steal-us129-million" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "News breakdown", "text": "The CEO was AI", "sub": "A $129M impersonation case", "dur": 2.4 },
+    { "type": "cards", "kicker": "How it allegedly worked", "dur": 3.0, "items": [
+      { "icon": "1", "title": "A fake CEO", "desc": "AI voice, sometimes face" },
+      { "icon": "2", "title": "Fake lawyers", "desc": "Adding pressure" },
+      { "icon": "3", "title": "Send money", "desc": "Fast, on the call" }
+    ] },
+    { "type": "typewriter", "kicker": "The lesson", "text": "A familiar voice isn't proof.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Your call-back rule", "text": "Verify every urgent payment", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pause", "color": "#2563EB" },
+      { "letter": "C", "label": "Call back", "color": "#16A34A" },
+      { "letter": "C", "label": "Confirm", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Does your team have this rule?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
