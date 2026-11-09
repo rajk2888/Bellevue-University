@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 42",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Nov 9, 2026",
+  "topic": "AI basics: what a \"knowledge cutoff\" is, and why AI may not know last week's news",
+  "music_seed": 321,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Ever asked AI about something recent, and it had no idea? 📅\nThat's called a knowledge cutoff. Here's what it means, in plain English.\n\nAn AI model learns from a huge amount of text, collected up to a certain date.\nAfter that date, it hasn't \"read\" anything new. That date is its knowledge cutoff.\n\nThink of it like a very well-read friend who's been on a long trip. 🧳\nBrilliant, but they missed the latest news.\n\nAnthropic's model docs actually list two dates for each Claude model:\n1️⃣ A \"reliable knowledge cutoff\": where its knowledge is most complete\n2️⃣ A \"training data cutoff\": the wider range of data it learned from\n\nSo how do you get fresh answers? 🔍\nLet Claude search the web. In Claude's help center, the steps are: click the \"+\" button, then choose \"Web search\". (In the newer Claude experience, there's no toggle. Claude searches when it helps.)\n\nTry this:\n\"Search the web for the latest news on [topic] from this week, and give me 3 bullet points with a source link for each.\"\n\nWhy it matters:\nFor anything recent, ask Claude to search, and check the sources it gives you. 💡\n\nWhat recent topic would you ask about first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Ever asked AI about something recent, and it had no idea? That's called a knowledge cutoff. 📅",
+    "Your AI is a brilliant friend who's been on a long trip. Here's how to catch it up.",
+    "Why AI doesn't know last week's news, and the one setting that fixes it."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Models overview (knowledge and training data cutoffs)", "url": "https://platform.claude.com/docs/en/about-claude/models/overview" },
+    { "name": "Claude Help Center: Enable and use web search", "url": "https://support.claude.com/en/articles/10684626-enable-and-use-web-search" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "What's a knowledge cutoff?", "sub": "In plain English", "dur": 2.4,
+      "say": "Ever asked AI about something recent, and it had no idea? That's called a knowledge cutoff. Let me explain." },
+    { "type": "typewriter", "kicker": "The idea", "text": "It learned up to a date.", "dur": 2.4,
+      "say": "An AI model learns from a huge amount of text, collected up to a certain date. After that, it hasn't read anything new." },
+    { "type": "typewriter", "kicker": "Think of it like", "text": "A friend back from a trip.", "dur": 2.4,
+      "say": "Think of a very well-read friend who's been away on a long trip. Brilliant, but they missed the latest news." },
+    { "type": "cards", "kicker": "Anthropic lists two dates", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Reliable knowledge", "desc": "Most complete up to here" },
+      { "icon": "2", "title": "Training data", "desc": "The wider range it saw" }
+    ], "say": "Anthropic's model docs list two dates for each Claude model. One for its most reliable knowledge, and one for its wider training data." },
+    { "type": "prompt", "kicker": "Get fresh answers", "label": "Search the web", "text": "Latest news on [topic].\n3 bullets.\nA source for each.", "dur": 3.4,
+      "say": "For fresh answers, let Claude search the web. Ask for the latest news on your topic, in three bullets, with a source for each." },
+    { "type": "tiles", "kicker": "For anything recent", "text": "Search, then check", "dur": 2.4, "items": [
+      { "letter": "S", "label": "Search", "color": "#0F766E" },
+      { "letter": "R", "label": "Read sources", "color": "#B45309" },
+      { "letter": "C", "label": "Check dates", "color": "#BE123C" }
+    ], "say": "So for anything recent, ask Claude to search, then read the sources and check the dates." },
+    { "type": "question", "text": "What would you ask about first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "What recent topic would you ask about first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
