@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 43",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Nov 10, 2026",
+  "topic": "Hand off a real task: turn a pile of articles and notes into one clear report with Claude Cowork",
+  "music_seed": 322,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Got 12 browser tabs, 5 PDFs and a page of notes on the same topic? 📚\nLet Claude Cowork turn them into one clear report.\n\nClaude's own Cowork guide lists this as an example task: combining information from web searches, articles, papers and notes into coherent reports or summaries.\n\nStep by step 👇\n1️⃣ Save your articles, PDFs and notes into one folder\n2️⃣ Open Claude and select Cowork in the message box\n3️⃣ Share ONLY that folder\n4️⃣ Paste the prompt below\n5️⃣ Review Claude's plan, then let it run\n\nCopy this prompt:\n\"Read everything in this folder and write a 2-page report called 'Research summary'. Include the 5 key findings, where the sources agree and disagree, and open questions. Cite which file each point came from. Don't change my original files.\"\n\nThen check it ✅\nOpen 2 or 3 of the cited files and make sure the points really say what the report says.\n\n📌 Cowork needs a paid plan (Pro, Max, Team or Enterprise).\n\nWhy it matters:\nThe hard part of research isn't finding information. It's pulling it together. Now you can hand that part off. 💡\n\nWhat topic would you research this way? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "Got 12 browser tabs, 5 PDFs and a page of notes on the same topic? Let Claude Cowork turn them into one report. 📚",
+    "From a messy research folder to a 2-page summary, with one prompt.",
+    "The hard part of research is pulling it together. Here's how to hand that off."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "A pile of research to one report", "sub": "A Claude Cowork handoff", "dur": 2.4,
+      "say": "Got a dozen tabs, a few PDFs and a page of notes on the same topic? Let's turn them into one clear report with Cowork." },
+    { "type": "typewriter", "kicker": "Straight from the guide", "text": "Many sources in. One report out.", "dur": 2.4,
+      "say": "Combining articles, papers and notes into one report is an example task in Claude's own Cowork guide." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.4, "items": [
+      { "icon": "1", "title": "One folder", "desc": "Articles, PDFs, notes" },
+      { "icon": "2", "title": "Select Cowork", "desc": "In the message box" },
+      { "icon": "3", "title": "Share that folder", "desc": "Nothing else" }
+    ], "say": "Save everything into one folder. Select Cowork, and share only that folder." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Research summary", "text": "5 key findings.\nWhere sources disagree.\nCite the file for each.", "dur": 3.4,
+      "say": "Ask for the five key findings, where the sources agree and disagree, and which file each point came from." },
+    { "type": "tiles", "kicker": "Before you share it", "text": "Check the citations", "dur": 2.6, "items": [
+      { "letter": "O", "label": "Open files", "color": "#0F766E" },
+      { "letter": "M", "label": "Match points", "color": "#B45309" },
+      { "letter": "Q", "label": "Open questions", "color": "#BE123C" }
+    ], "say": "Then open two or three of the cited files, and make sure they really say what the report says." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Cowork needs a paid plan.", "dur": 2.2,
+      "say": "Quick note: Cowork needs a paid plan, like Pro, Max, Team or Enterprise." },
+    { "type": "question", "text": "What would you research?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what topic would you research this way? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
