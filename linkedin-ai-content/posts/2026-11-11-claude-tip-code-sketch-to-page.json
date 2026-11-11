@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 44",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Wednesday, Nov 11, 2026",
+  "topic": "Claude Code for non-coders: show it a picture, like a sketch or a screenshot, and build from it",
+  "music_seed": 323,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Can't describe what you want? Show it instead. 🖼️\nClaude Code can work from a picture: a sketch, a mockup or a screenshot.\n\nThe Claude Code docs say you can drag and drop an image into the Claude Code window, paste it, or give Claude the image's file path.\n\nThen ask in plain English 👇\n\"What does this image show?\"\n\"Here's a screenshot of the error. What's causing it?\"\nOr even: build something that matches it.\n\nTry this tiny project:\n1️⃣ Sketch a simple page on paper: a title, 3 boxes, a button\n2️⃣ Take a photo of it\n3️⃣ Open Claude Code in a new, empty folder\n4️⃣ Drag the photo in and paste the prompt below\n\nCopy this prompt:\n\"Build a one-page website that matches this sketch. Keep it simple and clean. Save it as index.html in this folder, and tell me how to open it in my browser.\"\n\nThen open the page ✅\nDoesn't look right? Just say what to change, like \"make the button bigger\".\n\n📌 Claude Code is included with Claude's Pro and Max plans.\n\nWhy it matters:\nA picture removes the hardest part for beginners: finding the right words. 💡\n\nWhat would you sketch first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "Can't describe what you want? Show it instead. Claude Code can build from a sketch. 🖼️",
+    "Draw it on paper. Take a photo. Claude Code turns it into a web page.",
+    "The easiest way to tell AI what you want isn't words. It's a picture."
+  ],
+  "sources": [
+    { "name": "Claude Code Docs: Common workflows (Work with images)", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Help Center: Use Claude Code with your Pro or Max plan", "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Show it a picture", "sub": "Claude Code, no coding", "dur": 2.4,
+      "say": "Can't find the words for what you want? Show it instead. Claude Code can work from a picture." },
+    { "type": "cards", "kicker": "Three ways to add one", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Drag and drop", "desc": "Into the window" },
+      { "icon": "2", "title": "Paste it", "desc": "Copy, then paste" },
+      { "icon": "3", "title": "Give the path", "desc": "Where the file lives" }
+    ], "say": "The docs say you can drag and drop an image in, paste it, or just tell Claude where the file is." },
+    { "type": "typewriter", "kicker": "Then just ask", "text": "What does this image show?", "dur": 2.4,
+      "say": "Then ask in plain English. What does this show? What's causing this error? Or, build something that matches it." },
+    { "type": "cards", "kicker": "A tiny project", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Sketch a page", "desc": "Title, boxes, button" },
+      { "icon": "2", "title": "Take a photo", "desc": "On your phone" },
+      { "icon": "3", "title": "Drag it in", "desc": "In a new folder" }
+    ], "say": "Here's a tiny project. Sketch a simple page on paper, take a photo, and drag it into Claude Code in a new folder." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Sketch to page", "text": "Build a page like this sketch.\nSave it as index.html.\nTell me how to open it.", "dur": 3.4,
+      "say": "Ask it to build a page that matches your sketch, save it as index dot html, and tell you how to open it." },
+    { "type": "typewriter", "kicker": "Not quite right?", "text": "Say \"make the button bigger\".", "dur": 2.4,
+      "say": "Doesn't look right? Just say what to change, like make the button bigger. Claude Code is included with Pro and Max." },
+    { "type": "question", "text": "What would you sketch first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what would you sketch first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
