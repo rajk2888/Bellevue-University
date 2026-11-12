@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 45",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Nov 12, 2026",
+  "topic": "The \"rewrite it for my reader\" prompt: make any message shorter and clearer for the person reading it",
+  "music_seed": 324,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Wrote a long message and worried nobody will read it? ✍️\nThis copy-paste prompt rewrites it for the person who has to read it.\n\nMost people ask AI to \"make this better\".\nBetter for who? 🤔\n\nAnthropic's prompting guide says Claude works best with clear, direct instructions and context about why. So tell it who's reading and what they need.\n\nCopy this prompt 👇\n\"Rewrite the message below for [who's reading, e.g. my busy manager].\nKeep it under [100] words.\nPut the main point or request in the first line.\nKeep every date, number and name exactly as written.\nThen list anything you removed, so I can check it.\n\n[paste your message]\"\n\nExample:\nA 300-word project update becomes 4 lines: the decision you need, the deadline, and one risk. ✅\n\nThe last line is the safety net 🔑\n\"List anything you removed\" means nothing important disappears without you knowing.\n\nWhy it matters:\nThe best message isn't the one that says the most. It's the one that gets read. 💡\n\nWho would you rewrite a message for first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Wrote a long message and worried nobody will read it? This prompt rewrites it for your reader. ✍️",
+    "Stop asking AI to \"make this better\". Tell it who's reading.",
+    "One line keeps AI from deleting the important parts of your message."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Help Center: My prompt isn't giving me a helpful answer", "url": "https://support.claude.com/en/articles/7996857-my-prompt-isn-t-giving-me-a-helpful-answer" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Rewrite it for my reader", "sub": "A copy-paste prompt", "dur": 2.4,
+      "say": "Wrote a long message and worried nobody will read it? This prompt rewrites it for the person who has to read it." },
+    { "type": "typewriter", "kicker": "The problem", "text": "\"Make it better\" for who?", "dur": 2.4,
+      "say": "Most of us ask AI to make it better. But better for who? Tell Claude who's reading, and what they need." },
+    { "type": "cards", "kicker": "Tell Claude", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Who's reading", "desc": "Like a busy manager" },
+      { "icon": "2", "title": "How long", "desc": "Under 100 words" },
+      { "icon": "3", "title": "Lead with it", "desc": "The main point first" }
+    ], "say": "Say who's reading, how long it should be, and put the main point in the first line." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Rewrite for my reader", "text": "Keep dates and names exact.\nMain point first.\nList what you removed.", "dur": 3.4,
+      "say": "Ask it to keep every date, number and name exactly as written, and to list anything it removed." },
+    { "type": "typewriter", "kicker": "Example", "text": "300 words become 4 lines.", "dur": 2.4,
+      "say": "A long project update becomes four lines. The decision you need, the deadline, and one risk." },
+    { "type": "tiles", "kicker": "The safety net", "text": "Nothing disappears quietly", "dur": 2.4, "items": [
+      { "letter": "R", "label": "Read it", "color": "#0F766E" },
+      { "letter": "C", "label": "Check removed", "color": "#B45309" },
+      { "letter": "S", "label": "Send", "color": "#BE123C" }
+    ], "say": "That list of removed bits is your safety net. Check it, then send." },
+    { "type": "question", "text": "Who would you rewrite for?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So who would you rewrite a message for first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
