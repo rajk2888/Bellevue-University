@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Nov 12, 2026",
+  "topic": "Hot take: your AI chats aren't a diary. Courts are treating them like evidence.",
+  "music_seed": 316,
+  "post": "Your AI chat isn't a diary.\nIn court, it can be evidence. ⚖️\n\nHere's what's happening:\nIn a Florida defamation case, a federal magistrate judge allowed the other side to seek some of a defendant's conversations with AI platforms, limited to nonprivileged messages about the people and hotel in the case.\n\nAnd it's not the first time. Legal coverage reports that a federal judge in New York ordered a criminal defendant to produce documents created with an AI chatbot, which led many law firms to warn clients that AI chats may not be privileged.\n\nMy hot take 👇\nWe treat AI like a private notebook.\nThe law is starting to treat it more like email. 📧\n\nThat doesn't mean every chat is fair game. These orders were narrow, and judges are deciding case by case.\n\nBut the safe assumption has changed.\n\nWhy it matters:\nPeople ask AI things they'd never put in writing: legal worries, workplace conflicts, health questions. If it's typed, it may be discoverable. 🔍\n\nPractical takeaway:\nBefore you type, ask: \"Would I be OK with this showing up in a lawsuit?\" For anything legal, talk to a lawyer, not a chatbot. ✅\n\nShould AI chats get the same protection as talking to a lawyer? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Privacy #Law #AILiteracy #Tech",
+  "hooks": [
+    "Your AI chat isn't a diary. In court, it can be evidence. ⚖️",
+    "We treat AI like a private notebook. Courts are starting to treat it like email.",
+    "Before you type your next AI question, ask yourself one thing."
+  ],
+  "sources": [
+    { "name": "Let's Data Science: Federal magistrate narrows discovery of Boteach's AI communications", "url": "https://letsdatascience.com/news/federal-magistrate-allows-discovery-of-boteachs-ai-chatbot-c-00e9281e" },
+    { "name": "Let's Data Science: Court ruling exposes AI chats as discoverable evidence", "url": "https://letsdatascience.com/news/court-ruling-exposes-ai-chats-as-discoverable-evidence-0a8ba683" },
+    { "name": "Mealey's Artificial Intelligence (LexisNexis)", "url": "https://www.mealeys.com/mealeys/mealeys-artificial-intelligence" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "Your AI chat isn't a diary", "sub": "Courts are treating it as evidence", "dur": 2.6 },
+    { "type": "cards", "kicker": "What's happening", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Florida case", "desc": "Some AI chats sought" },
+      { "icon": "2", "title": "New York case", "desc": "AI documents produced" },
+      { "icon": "3", "title": "Law firms warn", "desc": "May not be privileged" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "Treat AI chats like email.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Before you type", "text": "Ask one question", "dur": 2.4, "items": [
+      { "letter": "L", "label": "Legal worry?", "color": "#2563EB" },
+      { "letter": "W", "label": "Work conflict?", "color": "#16A34A" },
+      { "letter": "C", "label": "Call a lawyer", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Should AI chats be protected?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
