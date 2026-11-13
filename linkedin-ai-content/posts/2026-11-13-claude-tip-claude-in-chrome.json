@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 46",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Nov 13, 2026",
+  "topic": "Claude in Chrome: hand off a repetitive browser task, safely",
+  "music_seed": 324,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Spend your lunch break clicking through the same 5 websites? 🖱️\nClaude in Chrome can do that browsing for you.\n\nClaude in Chrome is an extension that lets Claude work inside your Chrome browser: reading pages, clicking and filling in forms, with your permission.\n\nGet started 👇\n1️⃣ Install it from the Chrome Web Store\n2️⃣ Sign in with your Claude account\n3️⃣ Review and grant the permissions it asks for\n\nThen try a low-risk task first:\n\"Open these 3 product pages, and make me a table comparing price, delivery time and return policy. Don't buy anything or fill in any forms.\"\n\nSafe habits ✅\n🔒 Start with read-only tasks, like comparing or summarizing\n👀 Watch what it does the first few times\n🛑 Stop it if anything looks off, and never let it handle passwords for you\n\n📌 Claude in Chrome is on paid plans (Pro, Max, Ultra, Team and Enterprise). It works in Chrome only, not other browsers or phones.\n\nWhy it matters:\nThe most boring part of many jobs is copying things between websites. That's exactly what you can hand off. 💡\n\nWhat website chore would you hand off first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Spend your lunch break clicking through the same 5 websites? Claude in Chrome can do that browsing for you. 🖱️",
+    "Let Claude compare prices across tabs while you grab a coffee.",
+    "The most boring part of your job might be copying between websites. Here's how to hand it off."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude in Chrome", "url": "https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome" },
+    { "name": "Claude Help Center: Use Claude in Chrome safely", "url": "https://support.claude.com/en/articles/12902428-use-claude-in-chrome-safely" },
+    { "name": "Claude Help Center: Claude in Chrome permissions guide", "url": "https://support.claude.com/en/articles/12902446-claude-in-chrome-permissions-guide" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Let Claude do the browsing", "sub": "Claude in Chrome", "dur": 2.4,
+      "say": "Spend your lunch break clicking through the same few websites? Claude in Chrome can do that browsing for you." },
+    { "type": "typewriter", "kicker": "In plain English", "text": "Claude, inside your browser.", "dur": 2.4,
+      "say": "It's an extension that lets Claude read pages, click and fill in forms in Chrome, with your permission." },
+    { "type": "cards", "kicker": "Get started", "dur": 3.2, "items": [
+      { "icon": "1", "title": "Install it", "desc": "Chrome Web Store" },
+      { "icon": "2", "title": "Sign in", "desc": "Your Claude account" },
+      { "icon": "3", "title": "Check permissions", "desc": "Before you allow" }
+    ], "say": "Install it from the Chrome Web Store, sign in with your Claude account, and read the permissions before you allow them." },
+    { "type": "prompt", "kicker": "Try this first", "label": "Compare products", "text": "Compare these 3 pages.\nPrice, delivery, returns.\nDon't buy or fill forms.", "dur": 3.4,
+      "say": "Start with something low risk. Ask it to compare three product pages, and tell it not to buy anything or fill in forms." },
+    { "type": "tiles", "kicker": "Safe habits", "text": "Stay in control", "dur": 2.6, "items": [
+      { "letter": "R", "label": "Read-only first", "color": "#0F766E" },
+      { "letter": "W", "label": "Watch it", "color": "#B45309" },
+      { "letter": "S", "label": "Stop if odd", "color": "#BE123C" }
+    ], "say": "Start with read-only tasks, watch what it does at first, and stop it if anything looks off." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Paid plans. Chrome only.", "dur": 2.2,
+      "say": "Quick note: it's on paid plans, and it works in Chrome only, not other browsers or phones." },
+    { "type": "question", "text": "What chore would you hand off?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what website chore would you hand off first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
