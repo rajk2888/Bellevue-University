@@ -1,0 +1,36 @@
+{
+  "date": "Friday, Nov 13, 2026",
+  "topic": "This week in AI: the top 5 stories you need to know",
+  "music_seed": 317,
+  "post": "This week, AI left the lab and hit real life: money, law and land. 🌍\nHere are the top 5 stories you need to know.\n\n1️⃣ Anthropic hits the road\nAnthropic launched the roadshow for its IPO, with a proposed price of $70 to $78 per share. Pricing is reportedly expected around Nov 18.\n\n2️⃣ Voters push back on data centers\nIn local ballot measures across about 10 states, opponents of data centers won almost every vote, per Route Fifty and Stateline. 🗳️\n\n3️⃣ AI meets your bank account\nAnthropic began rolling out a read-only Personal Finance beta in Claude for US Pro, Max and Ultra users.\n\n4️⃣ The DOJ gets an AI task force\nThe Justice Department launched a Super Intelligence Task Force to fight AI misuse by foreign actors and fraudsters. ⚖️\n\n5️⃣ A $129M deepfake fraud case\nProsecutors charged three men in an alleged scheme that used AI to impersonate CEOs and lawyers.\n\nWhy it matters:\nAI is no longer just a tech story. It's showing up in stock markets, ballot boxes, bank accounts and courtrooms. 💡\n\nPractical takeaway:\nPick the one story that touches your work, and spend 5 minutes reading the original source this weekend. 🔍\n\nWhich story matters most to you? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #AINews #Tech #FutureOfWork",
+  "hooks": [
+    "This week, AI left the lab and hit real life: money, law and land. Here are the top 5 stories. 👇",
+    "An IPO, a ballot-box backlash and a $129M deepfake case. The 5 AI stories that mattered this week.",
+    "Missed the AI news this week? Here's everything in 60 seconds."
+  ],
+  "sources": [
+    { "name": "Anthropic: Roadshow launch", "url": "https://anthropic.com/news/roadshow-launch" },
+    { "name": "RTTNews: Anthropic sets IPO price range at $70-$78 per share, launches roadshow", "url": "https://www.rttnews.com/3712632/anthropic-sets-ipo-price-range-at-70-78-per-share-launches-roadshow.aspx" },
+    { "name": "Route Fifty: Voters reject data centers in local ballot initiatives", "url": "https://www.route-fifty.com/artificial-intelligence/2026/11/voters-reject-data-centers-local-ballot-initiatives/417033/" },
+    { "name": "Stateline: Voters across the country reject data centers", "url": "https://stateline.org/?p=19037" },
+    { "name": "Claude: Introducing Personal Finance in Claude", "url": "https://claude.com/blog/introducing-personal-finance-in-claude" },
+    { "name": "US Department of Justice: Department of Justice launches Super Intelligence Task Force", "url": "https://justice.gov/opa/pr/department-justice-launches-super-intelligence-task-force" },
+    { "name": "SecurityWeek (AP): 3 charged in scheme to use AI to impersonate CEOs and attorneys to steal $129 million", "url": "https://securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "AI hits real life", "sub": "The top 5 stories", "dur": 2.4 },
+    { "type": "cards", "kicker": "Top 5, part 1", "dur": 3.0, "items": [
+      { "icon": "1", "title": "IPO roadshow", "desc": "$70 to $78 a share" },
+      { "icon": "2", "title": "Ballot backlash", "desc": "Data centers voted down" },
+      { "icon": "3", "title": "AI meets banking", "desc": "Read-only finance beta" }
+    ] },
+    { "type": "cards", "kicker": "Top 5, part 2", "dur": 2.8, "items": [
+      { "icon": "4", "title": "DOJ task force", "desc": "Fighting AI misuse" },
+      { "icon": "5", "title": "$129M deepfakes", "desc": "Fake CEOs, charged" }
+    ] },
+    { "type": "typewriter", "kicker": "The takeaway", "text": "Read one original source.", "dur": 2.2 },
+    { "type": "question", "text": "Which story matters most?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
