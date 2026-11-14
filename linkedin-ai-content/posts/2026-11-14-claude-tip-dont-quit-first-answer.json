@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 47",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Saturday, Nov 14, 2026",
+  "topic": "Beginner mistake: giving up after the first answer (and how to coach Claude to a better one)",
+  "music_seed": 325,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Beginner mistake: getting a so-so answer from AI and deciding \"it doesn't work\". 😕\nThe first answer is a first draft. Here's how to coach it.\n\nClaude's own help center suggests 4 fixes when an answer isn't helpful 👇\n\n1️⃣ Say it plainly\nAsk directly for what you want, not around it.\n\n2️⃣ Add background\nWho is it for? What's it for? What have you tried?\n\n3️⃣ Break it into steps\nOne big request → a few smaller ones.\n\n4️⃣ Give feedback\nTell Claude what to change, and ask for a rewrite.\n\nTry this follow-up:\n\"Close, but too formal and too long. Rewrite it in a friendly tone, under 100 words, for a customer who's upset about a late order. Keep the apology and the new delivery date.\"\n\nSee the difference? ✅\nNot \"try again\". Specific notes: what's wrong, who it's for, what to keep.\n\nWhy it matters:\nPeople who get great results from AI aren't writing magic prompts. They're giving good feedback, like a good manager. 💡\n\nWhat's one answer you gave up on too early? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Beginner mistake: getting a so-so answer from AI and deciding \"it doesn't work\". 😕",
+    "The first AI answer is a first draft. Here's how to coach it to a great one.",
+    "People who get great results from AI aren't writing magic prompts. They're giving good feedback."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: My prompt isn't giving me a helpful answer", "url": "https://support.claude.com/en/articles/7996857-my-prompt-isn-t-giving-me-a-helpful-answer" },
+    { "name": "Claude Help Center: Get started with Claude", "url": "https://support.claude.com/en/articles/8114491-get-started-with-claude" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Don't quit at answer one", "sub": "A beginner mistake", "dur": 2.4,
+      "say": "Here's a mistake I see all the time. You get a so-so answer, and decide AI just doesn't work." },
+    { "type": "typewriter", "kicker": "The mindset", "text": "The first answer is a draft.", "dur": 2.4,
+      "say": "But the first answer is only a first draft. Your job is to coach it." },
+    { "type": "cards", "kicker": "From Claude's help center", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Say it plainly", "desc": "Ask directly" },
+      { "icon": "2", "title": "Add background", "desc": "Who, what, why" },
+      { "icon": "3", "title": "Break it up", "desc": "Smaller steps" }
+    ], "say": "Claude's help center suggests saying it plainly, adding background, and breaking big requests into smaller steps." },
+    { "type": "typewriter", "kicker": "And the big one", "text": "Give specific feedback.", "dur": 2.2,
+      "say": "And the big one. Tell Claude exactly what to change, and ask for a rewrite." },
+    { "type": "prompt", "kicker": "Try this follow-up", "label": "Coach the answer", "text": "Too formal. Under 100 words.\nFor an upset customer.\nKeep the new date.", "dur": 3.4,
+      "say": "For example: too formal, keep it under a hundred words, it's for an upset customer, and keep the new delivery date." },
+    { "type": "tiles", "kicker": "Good feedback says", "text": "Like a good manager", "dur": 2.4, "items": [
+      { "letter": "W", "label": "What's wrong", "color": "#0F766E" },
+      { "letter": "F", "label": "Who it's for", "color": "#B45309" },
+      { "letter": "K", "label": "What to keep", "color": "#BE123C" }
+    ], "say": "Good feedback says what's wrong, who it's for, and what to keep. Just like a good manager." },
+    { "type": "question", "text": "What did you give up on?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's one answer you gave up on too early? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
