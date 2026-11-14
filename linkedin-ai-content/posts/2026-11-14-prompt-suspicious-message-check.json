@@ -1,0 +1,32 @@
+{
+  "date": "Saturday, Nov 14, 2026",
+  "topic": "Prompt of the week: the \"is this message legit?\" red-flag checker (after a $129M AI impersonation case)",
+  "music_seed": 318,
+  "post": "Got an urgent message from your \"boss\" asking for money or passwords? 🚩\nThis prompt helps you spot the red flags before you act.\n\nWhy this week:\nFederal prosecutors charged three men in an alleged $129 million scheme that used AI to impersonate CEOs and lawyers, per AP and ITPro. Fake voices and faces are getting convincing.\n\nPrompt of the week 👇\nRemove names, account numbers and personal details first, then paste:\n\n\"Here is a message I received: [paste it]. List every red flag you see, like urgency, secrecy, unusual payment requests, or changes to bank details. Then tell me exactly how to verify it through a separate channel I already trust. Don't tell me it's safe. Tell me what to check.\"\n\nWhat you get:\n✅ A list of warning signs\n✅ A verification plan\n✅ A moment to pause before you act\n\nThe key line: \"Don't tell me it's safe.\" AI can't confirm who really sent a message. Only a call-back to a number you already know can. ☎️\n\nWhy it matters:\nScams work by rushing you. This prompt buys you 30 seconds of clear thinking. 💡\n\nPractical takeaway:\nNever approve a payment from a call, email or video alone. Always confirm through a second channel.\n\nWhat's the most convincing scam you've seen? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #CyberSecurity #Deepfakes #Prompts #AITips",
+  "hooks": [
+    "Got an urgent message from your \"boss\" asking for money or passwords? This prompt spots the red flags. 🚩",
+    "AI can fake your CEO's voice. Here's a prompt that helps you catch it.",
+    "The most important line in this prompt: \"Don't tell me it's safe.\""
+  ],
+  "sources": [
+    { "name": "SecurityWeek (AP): 3 charged in scheme to use AI to impersonate CEOs and attorneys to steal $129 million", "url": "https://securityweek.com/3-charged-in-scheme-to-use-ai-to-impersonate-ceos-and-attorneys-to-steal-129-million" },
+    { "name": "ITPro: Three charged after impersonating CEOs and attorneys in $129 million deepfake fraud scheme", "url": "https://www.itpro.com/security/cyber-crime/three-charged-after-impersonating-ceos-and-attorneys-in-usd129-million-deepfake-fraud-scheme" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Prompt of the week", "text": "Is this message legit?", "sub": "A red-flag checker", "dur": 2.4 },
+    { "type": "typewriter", "kicker": "Why this week", "text": "AI faked CEOs. $129M alleged.", "dur": 2.2 },
+    { "type": "cards", "kicker": "Ask the AI for", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Red flags", "desc": "Urgency, secrecy, money" },
+      { "icon": "2", "title": "A check plan", "desc": "Via a trusted channel" },
+      { "icon": "3", "title": "No \"it's safe\"", "desc": "It can't confirm that" }
+    ] },
+    { "type": "tiles", "kicker": "Before you pay", "text": "Always call back", "dur": 2.6, "items": [
+      { "letter": "P", "label": "Pause", "color": "#2563EB" },
+      { "letter": "C", "label": "Call back", "color": "#16A34A" },
+      { "letter": "C", "label": "Confirm", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Worst scam you've seen?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
