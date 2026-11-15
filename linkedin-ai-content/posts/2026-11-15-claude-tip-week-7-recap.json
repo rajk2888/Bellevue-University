@@ -1,0 +1,52 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 48",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Sunday, Nov 15, 2026",
+  "topic": "Week 7 recap: 6 Claude lessons for beginners in 60 seconds",
+  "music_seed": 326,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Seven weeks of learning Claude. Still no tech background needed. 🎓\nHere's everything from week 7, in 60 seconds.\n\n1️⃣ Knowledge cutoff\nAI learned up to a date. For anything recent, let Claude search the web, then check the sources.\n\n2️⃣ Research to report\nShare one folder of articles and notes with Cowork, and get a cited 2-page summary.\n\n3️⃣ Show it a picture\nDrag a sketch into Claude Code and ask for a simple web page that matches it.\n\n4️⃣ \"Rewrite it for my reader\"\nSay who's reading, keep facts exact, and ask what was removed.\n\n5️⃣ Claude in Chrome\nHand off a repetitive browser task. Start read-only, and watch it work.\n\n6️⃣ Don't quit at answer one\nThe first answer is a draft. Give specific feedback: what's wrong, who it's for, what to keep.\n\nWhy it matters:\nWeek 7 was about working WITH Claude: giving it the right input, and coaching the output. 🧭\n\nYour challenge this week: take one answer you didn't love, and coach it with specific feedback.\n\nWhich lesson will you try first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork #ClaudeCode",
+  "hooks": [
+    "Week 7 of learning Claude, in 60 seconds. Research, sketches, browsing and better feedback. 👇",
+    "Missed a day of Claude for Beginners? Here's the whole seventh week on one page.",
+    "6 more Claude lessons, zero coding required. Save this one for Monday."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Models overview", "url": "https://platform.claude.com/docs/en/about-claude/models/overview" },
+    { "name": "Claude Help Center: Enable and use web search", "url": "https://support.claude.com/en/articles/10684626-enable-and-use-web-search" },
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Code Docs: Common workflows", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Help Center: Get started with Claude in Chrome", "url": "https://support.claude.com/en/articles/12012173-get-started-with-claude-in-chrome" },
+    { "name": "Claude Help Center: My prompt isn't giving me a helpful answer", "url": "https://support.claude.com/en/articles/7996857-my-prompt-isn-t-giving-me-a-helpful-answer" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Week 7 in 60 seconds", "sub": "Six more lessons, zero coding", "dur": 2.4,
+      "say": "Seven weeks of learning Claude, and still no tech background needed. Here's everything from week seven, in about a minute." },
+    { "type": "cards", "kicker": "Days 42 to 44", "dur": 3.2, "items": [
+      { "icon": "42", "title": "Knowledge cutoff", "desc": "Search for recent news" },
+      { "icon": "43", "title": "Research report", "desc": "A Cowork handoff" },
+      { "icon": "44", "title": "Show a picture", "desc": "Sketch to web page" }
+    ], "say": "First, why AI misses recent news, and how web search helps. Then Cowork turned research into a report. And Claude Code built a page from a sketch." },
+    { "type": "cards", "kicker": "Days 45 to 47", "dur": 3.2, "items": [
+      { "icon": "45", "title": "Rewrite for reader", "desc": "Shorter and clearer" },
+      { "icon": "46", "title": "Claude in Chrome", "desc": "Hand off browsing" },
+      { "icon": "47", "title": "Don't quit early", "desc": "Coach the answer" }
+    ], "say": "Next, a prompt that rewrites for your reader. Claude in Chrome for browser chores. And why you shouldn't quit at the first answer." },
+    { "type": "typewriter", "kicker": "The big idea", "text": "Good input. Good feedback.", "dur": 2.4,
+      "say": "Week seven was about working with Claude. Giving it good input, and giving it good feedback." },
+    { "type": "tiles", "kicker": "Your challenge", "text": "Coach one answer", "dur": 2.4, "items": [
+      { "letter": "W", "label": "What's wrong", "color": "#0F766E" },
+      { "letter": "F", "label": "Who it's for", "color": "#B45309" },
+      { "letter": "K", "label": "What to keep", "color": "#BE123C" }
+    ], "say": "So here's your challenge. Take one answer you didn't love, and coach it. Say what's wrong, who it's for, and what to keep." },
+    { "type": "question", "text": "Which lesson will you try first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "Which lesson will you try first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
