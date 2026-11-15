@@ -1,0 +1,33 @@
+{
+  "date": "Sunday, Nov 15, 2026",
+  "topic": "Career angle: \"AI rebounding\": some workers replaced by AI are being asked back, on their terms",
+  "music_seed": 319,
+  "post": "Replaced by AI… then asked to come back? 🔄\nIt's happening more than you'd think, and those workers are setting terms.\n\nA survey for the assessment firm SHL, reported by Fortune and People Matters, found:\n1️⃣ 19.1% of US respondents said they'd been replaced by AI and later asked to return\n2️⃣ Of those asked back, 51% demanded substantial pay increases\n3️⃣ 42% wanted written job-security guarantees\n4️⃣ 40% wanted transparency about how AI is used in their jobs\n\nIt's one vendor's survey, so treat the numbers as a signal, not a census. 📊\n\nMy career take 👇\nAI can copy the task. It struggles to copy the context: the relationships, the history, the \"why we do it this way\".\nThat's what companies discover they're missing.\n\nWhy it matters:\nYour leverage isn't the work AI can do. It's the knowledge that only shows up when you're gone. 💪\n\nPractical takeaway:\nThis week, write down 3 things only you know about your work: a client quirk, a workaround, a reason behind a process. That's your value, made visible. 📝\n\nWould you go back to a job that replaced you with AI? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #FutureOfWork #Careers #Jobs #Leadership",
+  "hooks": [
+    "Replaced by AI… then asked to come back? It's happening, and those workers are setting terms. 🔄",
+    "Nearly 1 in 5 US workers replaced by AI say they were asked back. Here's what they demanded.",
+    "AI can copy the task. It can't copy the context. That's your career leverage."
+  ],
+  "sources": [
+    { "name": "Fortune: 'AI rebounding': Nearly 20% of US workers replaced by AI are being asked back", "url": "https://fortune.com/2026/11/09/ai-rebounding-20-us-workers-replaced-higher-pay-job-security/" },
+    { "name": "People Matters: Nearly 1 in 5 workers laid off due to AI are asked to return, survey finds", "url": "https://www.peoplematters.in/amp/news/business/nearly-1-in-5-workers-laid-off-due-to-ai-are-asked-to-return-survey-finds-53098" },
+    { "name": "HR Executive: As AI layoff regret surges, will boomerang employees make a comeback?", "url": "https://hrexecutive.com/as-ai-layoff-regret-surges-will-boomerang-employees-make-a-comeback/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Career angle", "text": "Replaced by AI, then rehired", "sub": "\"AI rebounding\" is real", "dur": 2.6 },
+    { "type": "cards", "kicker": "Those asked back wanted", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Higher pay", "desc": "51% of them" },
+      { "icon": "2", "title": "Job security", "desc": "42%, in writing" },
+      { "icon": "3", "title": "AI transparency", "desc": "40% of them" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "AI copies tasks, not context.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Write down 3 things", "text": "Only you know", "dur": 2.4, "items": [
+      { "letter": "C", "label": "Client quirks", "color": "#2563EB" },
+      { "letter": "W", "label": "Workarounds", "color": "#16A34A" },
+      { "letter": "R", "label": "The reasons", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Would you go back?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
