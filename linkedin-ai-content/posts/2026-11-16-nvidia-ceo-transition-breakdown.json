@@ -1,0 +1,34 @@
+{
+  "date": "Monday, Nov 16, 2026",
+  "topic": "News breakdown: Jensen Huang steps down as Nvidia CEO, days before earnings",
+  "music_seed": 320,
+  "post": "The face of the AI boom just stepped down. 🔌\nHere's the breakdown on Nvidia's CEO change, and why it matters beyond one company.\n\nWhat happened:\nNvidia announced in an SEC filing that Jensen Huang resigned as CEO, effective immediately, after 33 years leading the company.\n\nWho's in charge now:\n👤 CFO Colette Kress is interim CEO\n🏛️ Harvey C. Jones was named the board's first chair\n🔍 A search for a permanent CEO is underway\n\nWhy he left:\nNvidia's announcement gave no reason. NBC News and Al Jazeera report it followed reports about his personal relationships, including one that triggered FBI and congressional investigations. Huang later apologized publicly.\n\nWhat's next:\nNvidia is scheduled to report quarterly results on Nov 17. 📊\n\nWhy it matters:\nNvidia's chips power much of the AI industry. When the company most tied to AI changes leaders this suddenly, everyone building on AI is watching. ⚡\n\nPractical takeaway:\nIf your work depends on one AI vendor, list your backup options. Leadership, prices and roadmaps can change overnight. 📝\n\nWhat's your take: business as usual at Nvidia, or a turning point? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Nvidia #Leadership #Tech #AINews",
+  "hooks": [
+    "The face of the AI boom just stepped down. Here's the breakdown on Nvidia's CEO change. 🔌",
+    "Nvidia has a new interim CEO, days before earnings. What happened and what's next.",
+    "The company powering the AI boom just changed leaders overnight. Here's why it matters to you."
+  ],
+  "sources": [
+    { "name": "NVIDIA (SEC Form 8-K): NVIDIA announces CEO transition", "url": "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm" },
+    { "name": "NBC News: Nvidia CEO Jensen Huang resigns after reports of extramarital relationships", "url": "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-resigns-reports-extramarital-relationships-rcna608402" },
+    { "name": "Al Jazeera: Why did Nvidia CEO Jensen Huang resign, and who is Colette Kress?", "url": "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress" },
+    { "name": "CBS News: Timeline of how Jensen Huang's abrupt resignation unfolded", "url": "https://www.cbsnews.com/news/jensen-huang-nvidia-resignation-scandal-timeline/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "News breakdown", "text": "Nvidia's CEO steps down", "sub": "Days before earnings", "dur": 2.4 },
+    { "type": "cards", "kicker": "Who's in charge now", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Interim CEO", "desc": "CFO Colette Kress" },
+      { "icon": "2", "title": "New board chair", "desc": "Harvey C. Jones" },
+      { "icon": "3", "title": "CEO search", "desc": "Now underway" }
+    ] },
+    { "type": "typewriter", "kicker": "What's next", "text": "Earnings on November 17.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Your takeaway", "text": "Know your backup options", "dur": 2.6, "items": [
+      { "letter": "V", "label": "Vendors", "color": "#2563EB" },
+      { "letter": "P", "label": "Prices", "color": "#16A34A" },
+      { "letter": "R", "label": "Roadmaps", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Business as usual, or turning point?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
