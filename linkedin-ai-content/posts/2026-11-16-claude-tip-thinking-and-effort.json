@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 49",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Monday, Nov 16, 2026",
+  "topic": "AI basics: what \"thinking\" and \"effort\" mean, and when to give Claude more time",
+  "music_seed": 327,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Ever noticed Claude \"thinking\" before it answers? 🤔\nHere's what that means, and when to give it more time.\n\n\"Thinking\" means the AI works through a problem step by step before writing its final answer. A bit like you jotting notes before replying to a tricky email. 📝\n\n\"Effort\" sets how deeply it does that. More effort means more care on hard problems, and usually a longer wait.\n\nWhere to find them 👇\nClaude's help center says these live in the model menu next to the send button:\n1️⃣ The model\n2️⃣ The effort level\n3️⃣ Thinking (called \"Extended\" on some models; on some newer models it's always on)\n\nA simple rule of thumb:\n⚡ Quick questions, rewrites, simple lists → lower effort is fine\n🧠 Plans, tricky decisions, numbers, long documents → give it more effort\n\nTry it today:\nAsk the same tricky question twice: once with low effort, once with higher effort. Compare the answers. 🔍\n\nWhy it matters:\nNot every question needs deep thought. Matching effort to the task gets you faster answers on easy stuff, and better answers on hard stuff. 💡\n\nWhat's a question you'd give more thinking time? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Ever noticed Claude \"thinking\" before it answers? Here's what that means, and when to give it more time. 🤔",
+    "Not every question needs deep thought. Here's how to match Claude's effort to the task.",
+    "Faster answers on easy stuff, better answers on hard stuff. One setting does both."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Change the model, effort, and thinking settings", "url": "https://support.claude.com/en/articles/8664678-change-the-model-effort-and-thinking-settings" },
+    { "name": "Claude Docs: Effort", "url": "https://platform.claude.com/docs/en/build-with-claude/effort" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI basics", "text": "Thinking and effort, explained", "sub": "In plain English", "dur": 2.4,
+      "say": "Ever noticed Claude thinking before it answers? Let me explain what that means, and when to give it more time." },
+    { "type": "typewriter", "kicker": "Thinking means", "text": "Working it out step by step.", "dur": 2.4,
+      "say": "Thinking means the AI works through a problem step by step before it writes the final answer. Like jotting notes first." },
+    { "type": "typewriter", "kicker": "Effort means", "text": "How deeply it thinks.", "dur": 2.2,
+      "say": "Effort sets how deeply it does that. More effort means more care, and usually a longer wait." },
+    { "type": "cards", "kicker": "In the model menu", "dur": 3.2, "items": [
+      { "icon": "1", "title": "The model", "desc": "Which Claude" },
+      { "icon": "2", "title": "Effort level", "desc": "How deep" },
+      { "icon": "3", "title": "Thinking", "desc": "On, off, or always on" }
+    ], "say": "Claude's help center says you'll find these in the model menu next to the send button. On some newer models, thinking is always on." },
+    { "type": "tiles", "kicker": "Rule of thumb", "text": "Match effort to the task", "dur": 2.6, "items": [
+      { "letter": "Q", "label": "Quick asks", "color": "#0F766E" },
+      { "letter": "P", "label": "Plans", "color": "#B45309" },
+      { "letter": "N", "label": "Numbers", "color": "#BE123C" }
+    ], "say": "Quick asks are fine with lower effort. Plans, tricky decisions and numbers deserve more." },
+    { "type": "prompt", "kicker": "Try it today", "label": "Compare", "text": "Ask one tricky question.\nOnce with low effort.\nOnce with more.", "dur": 3.0,
+      "say": "Try this. Ask the same tricky question twice, once with low effort and once with more, and compare." },
+    { "type": "question", "text": "What would you give more time?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's a question you'd give more thinking time? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
