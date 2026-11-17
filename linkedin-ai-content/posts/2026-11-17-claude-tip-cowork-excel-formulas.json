@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 50",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Tuesday, Nov 17, 2026",
+  "topic": "Hand off a real task: let Claude Cowork build an Excel file with working formulas for you",
+  "music_seed": 328,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Day 50! 🎉 And today's tip is for everyone who's ever Googled \"how does VLOOKUP work\". 📊\nLet Claude Cowork build the spreadsheet, formulas included.\n\nClaude's own Cowork guide lists this as an example task: generating Excel files with working formulas like VLOOKUP. (VLOOKUP = a formula that finds a value in one table and pulls matching info from another.)\n\nStep by step 👇\n1️⃣ Put your exports or lists in one folder, like orders.csv and prices.csv\n2️⃣ Open Claude and select Cowork\n3️⃣ Share ONLY that folder\n4️⃣ Paste the prompt below\n5️⃣ Review Claude's plan, then let it run\n\nCopy this prompt:\n\"Using the files in this folder, create a new Excel file called 'Order summary'. Look up each order's price from the prices file, calculate the total per order, and add a summary tab with totals by month. Use real formulas, not typed-in numbers, and don't change my original files.\"\n\nThen check it ✅\nClick a few cells to see the formulas, and compare 2-3 totals by hand.\n\n📌 Cowork needs a paid plan (Pro, Max, Team or Enterprise).\n\nWhy it matters:\nReal formulas mean the file keeps working when the numbers change. You get a tool, not just an answer. 💡\n\nWhat spreadsheet would you hand off first? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCowork",
+  "hooks": [
+    "Ever Googled \"how does VLOOKUP work\"? Let Claude Cowork build the spreadsheet, formulas included. 📊",
+    "Don't just get an answer. Get a spreadsheet that keeps working.",
+    "Day 50 of teaching Claude: hand off your next spreadsheet."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Get started with Claude Cowork", "url": "https://support.claude.com/en/articles/13345190-get-started-with-claude-cowork" },
+    { "name": "Claude Help Center: Use Claude Cowork safely", "url": "https://support.claude.com/en/articles/13364135-use-claude-cowork-safely" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners · Day 50", "text": "Spreadsheets, formulas included", "sub": "A Claude Cowork handoff", "dur": 2.4,
+      "say": "Day fifty! And this one's for everyone who's ever searched how does VLOOKUP work." },
+    { "type": "typewriter", "kicker": "Straight from the guide", "text": "Excel files with working formulas.", "dur": 2.4,
+      "say": "Building Excel files with working formulas is an example task in Claude's own Cowork guide." },
+    { "type": "typewriter", "kicker": "VLOOKUP, simply", "text": "Find it here. Pull it there.", "dur": 2.2,
+      "say": "VLOOKUP just finds a value in one table, and pulls the matching info from another." },
+    { "type": "cards", "kicker": "Step by step", "dur": 3.2, "items": [
+      { "icon": "1", "title": "One folder", "desc": "Your exports and lists" },
+      { "icon": "2", "title": "Select Cowork", "desc": "Share only that folder" },
+      { "icon": "3", "title": "Review the plan", "desc": "Then let it run" }
+    ], "say": "Put your files in one folder, select Cowork, share only that folder, and review the plan before it runs." },
+    { "type": "prompt", "kicker": "Copy this", "label": "Order summary", "text": "Look up prices. Total orders.\nUse real formulas.\nDon't change my files.", "dur": 3.2,
+      "say": "Ask it to look up prices, total each order, use real formulas instead of typed numbers, and leave your originals alone." },
+    { "type": "tiles", "kicker": "Then check it", "text": "Trust, but verify", "dur": 2.4, "items": [
+      { "letter": "F", "label": "Formulas", "color": "#0F766E" },
+      { "letter": "T", "label": "Totals", "color": "#B45309" },
+      { "letter": "P", "label": "Paid plan", "color": "#BE123C" }
+    ], "say": "Click a few cells to see the formulas, and check two or three totals. And remember, Cowork needs a paid plan." },
+    { "type": "question", "text": "What would you hand off first?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what spreadsheet would you hand off first? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
