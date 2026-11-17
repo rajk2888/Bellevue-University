@@ -1,0 +1,33 @@
+{
+  "date": "Tuesday, Nov 17, 2026",
+  "topic": "AI tool tutorial: AI agents can now pay for things. 5 rules before you let one shop for you",
+  "music_seed": 321,
+  "post": "AI agents can now buy things for you. 🛒\nBefore you let one shop on your behalf, set these 5 rules.\n\nWhat's new:\nOpenAI launched ChatGPT Wallet, which lets its \"dots\" agents complete purchases for you. It's rolling out first to US ChatGPT Pro subscribers (18+) with eligible US cards.\n\nHow it works, per OpenAI and coverage from Decrypt and Digital Trends:\n💳 You add a card once\n🙈 The agent never sees your actual card number\n✅ At launch, you review and approve every purchase\n\nYour 5 rules for any AI shopping agent 👇\n1️⃣ Start with one small, low-risk purchase\n2️⃣ Tell it your limits: max price, brands, delivery date\n3️⃣ Read the approval screen like a receipt, every time\n4️⃣ Check your card statement for the first few weeks\n5️⃣ Keep big or unusual purchases manual 🔒\n\nGood to know:\nStores and card issuers can still block or reject agent purchases, so expect some to fail.\n\nWhy it matters:\nAI is moving from suggesting things to doing things. That's handy, and it means your approval is now the most important click. ⚖️\n\nPractical takeaway:\nWrite your shopping limits down once, and paste them into every agent request.\n\nWould you let an AI agent buy things for you? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #AIAgents #FinTech #Shopping #AITools",
+  "hooks": [
+    "AI agents can now buy things for you. Set these 5 rules first. 🛒",
+    "Your AI agent just got a wallet. Here's how to stay in control.",
+    "The most important click in AI shopping isn't \"buy\". It's \"approve\"."
+  ],
+  "sources": [
+    { "name": "OpenAI: Introducing ChatGPT Wallet", "url": "https://openai.com/hi-IN/index/introducing-chatgpt-wallet/" },
+    { "name": "Decrypt: OpenAI launches ChatGPT Wallet to let AI agents shop, without crypto", "url": "https://decrypt.co/383278/openai-chatgpt-wallet-ai-agents-shop-without-crypto" },
+    { "name": "Digital Trends: ChatGPT Wallet is here and it wants your AI agent to go shopping on your behalf", "url": "https://www.digitaltrends.com/cool-tech/chatgpt-wallet-is-here-and-it-wants-your-ai-agent-to-go-shopping-on-your-behalf/" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "AI tool tutorial", "text": "Your AI agent got a wallet", "sub": "5 rules before it shops", "dur": 2.6 },
+    { "type": "cards", "kicker": "How it works", "dur": 3.0, "items": [
+      { "icon": "1", "title": "Add a card once", "desc": "Number stays hidden" },
+      { "icon": "2", "title": "Agent shops", "desc": "Finds what you asked" },
+      { "icon": "3", "title": "You approve", "desc": "Every purchase" }
+    ] },
+    { "type": "tiles", "kicker": "Your rules", "text": "Stay in control", "dur": 2.6, "items": [
+      { "letter": "S", "label": "Start small", "color": "#2563EB" },
+      { "letter": "L", "label": "Set limits", "color": "#16A34A" },
+      { "letter": "C", "label": "Check bills", "color": "#EA580C" }
+    ] },
+    { "type": "typewriter", "kicker": "The key click", "text": "Approve like it's a receipt.", "dur": 2.2 },
+    { "type": "question", "text": "Would you let AI shop for you?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
