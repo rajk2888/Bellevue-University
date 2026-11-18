@@ -1,0 +1,32 @@
+{
+  "date": "Wednesday, Nov 18, 2026",
+  "topic": "5 things you need to know: Nvidia's first earnings after its CEO's exit",
+  "music_seed": 322,
+  "post": "A week after its CEO stepped down, Nvidia just reported its quarter. 📈\nHere are 5 things you need to know.\n\n1️⃣ Revenue roughly doubled\nNvidia reported about $115.8 billion in quarterly revenue, roughly double a year earlier and ahead of the ~$109 billion analysts expected, per The Next Web.\n\n2️⃣ Data centers are the whole story\nThe data center business brought in $107.6 billion, up 110% year over year. That's the AI infrastructure boom in one number. 🏗️\n\n3️⃣ Margins stayed high\nGross margin came in at 74.8%.\n\n4️⃣ The leadership question got an answer\nInterim CEO Colette Kress said the board will not reinstate Jensen Huang.\n\n5️⃣ The next chips are shipping\nNvidia said it has started shipping its Vera Rubin NVL72 platform, and raised its outlook. 🚀\n\nWhy it matters:\nThe AI boom didn't pause for a leadership crisis. Demand for AI computing is still growing fast, and that shapes the price and availability of every AI tool you use. ⚡\n\nPractical takeaway:\nSeparate the headlines from the numbers. A big story about people doesn't always change the business underneath. 🔍\n\nDoes this change how you see the AI boom? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #Nvidia #Earnings #Tech #AINews",
+  "hooks": [
+    "A week after its CEO stepped down, Nvidia just reported its quarter. 5 things you need to know. 📈",
+    "Revenue roughly doubled. The CEO isn't coming back. Here's Nvidia's quarter in 5 points.",
+    "The AI boom didn't pause for a leadership crisis. Here's the proof."
+  ],
+  "sources": [
+    { "name": "The Next Web: Nvidia's Kress rules out Huang return as revenue doubles to $115.8bn", "url": "https://thenextweb.com/news/nvidias-kress-rules-out-huang-return-as-revenue-doubles-to-115-8bn" },
+    { "name": "Yahoo Finance: Nvidia Q3 revenue rises 103% amid ex-CEO controversy", "url": "https://finance.yahoo.com/news/nvidia-q3-revenue-rises-103-114702256.html" },
+    { "name": "Constellation Research: Nvidia posts strong Q3, ups Q4 outlook amid Huang resignation", "url": "https://www.constellationr.com/insights/news/nvidia-posts-strong-q3-ups-q4-fiscal-2028-outlook-amid-huang-resignation" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "5 things to know", "text": "Nvidia's quarter, post-CEO", "sub": "The numbers behind the headlines", "dur": 2.6 },
+    { "type": "cards", "kicker": "The numbers", "dur": 3.0, "items": [
+      { "icon": "1", "title": "$115.8B revenue", "desc": "About double last year" },
+      { "icon": "2", "title": "$107.6B data center", "desc": "Up 110%" },
+      { "icon": "3", "title": "74.8% margin", "desc": "Still very high" }
+    ] },
+    { "type": "cards", "kicker": "And", "dur": 2.8, "items": [
+      { "icon": "4", "title": "No return", "desc": "Huang won't be back" },
+      { "icon": "5", "title": "New chips ship", "desc": "Outlook raised" }
+    ] },
+    { "type": "typewriter", "kicker": "The takeaway", "text": "Headlines aren't the numbers.", "dur": 2.0 },
+    { "type": "question", "text": "Does this change your view?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
