@@ -1,0 +1,46 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 51",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Wednesday, Nov 18, 2026",
+  "topic": "Claude Code for non-coders: pick up exactly where you left off, without re-explaining everything",
+  "music_seed": 329,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Closed Claude Code halfway through a project, and dreading explaining it all again? 😩\nYou don't have to. You can pick up right where you left off.\n\nThe Claude Code docs say it saves every conversation on your computer. So yesterday's chat is still there. 💾\n\nTwo ways back in 👇\n1️⃣ Continue the latest one: start Claude Code with claude --continue in the same folder\n2️⃣ Choose from a list: type /resume inside Claude Code and pick the conversation you want\n\n(A \"command\" is just something you type, then press Enter. That's it.)\n\nThen give it a quick nudge:\n\"Let's keep going. Remind me in 3 bullets where we left off, and what the next step was.\" ✅\n\nTry it today:\nStart a tiny project, like a one-page to-do list. Close Claude Code. Open it again and continue. 🔁\n\n📌 Claude Code is included with Claude's Pro and Max plans.\n\nWhy it matters:\nReal projects take more than one sitting. Picking up where you left off saves you re-explaining, and keeps Claude on track. 💡\n\nWhat project would you come back to tomorrow? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "Closed Claude Code halfway through a project? You can pick up right where you left off. 😩",
+    "Stop re-explaining your project every morning. Claude Code remembers the conversation.",
+    "Two commands every Claude Code beginner should know: --continue and /resume."
+  ],
+  "sources": [
+    { "name": "Claude Code Docs: Common workflows (Resume previous conversations)", "url": "https://code.claude.com/docs/en/common-workflows" },
+    { "name": "Claude Help Center: Use Claude Code with your Pro or Max plan", "url": "https://support.claude.com/en/articles/11145838-use-claude-code-with-your-pro-or-max-plan" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Pick up where you left off", "sub": "Claude Code, no coding", "dur": 2.4,
+      "say": "Closed Claude Code halfway through a project, and dreading explaining it all again? You don't have to." },
+    { "type": "typewriter", "kicker": "Good news", "text": "Your conversations are saved.", "dur": 2.4,
+      "say": "The Claude Code docs say it saves every conversation on your computer. So yesterday's chat is still there." },
+    { "type": "cards", "kicker": "Two ways back in", "dur": 3.4, "items": [
+      { "icon": "1", "title": "--continue", "desc": "The latest conversation" },
+      { "icon": "2", "title": "/resume", "desc": "Pick from a list" }
+    ], "say": "Start it with dash dash continue to jump back into the latest one. Or type slash resume, and pick from a list." },
+    { "type": "typewriter", "kicker": "No jargon", "text": "A command is just typing.", "dur": 2.2,
+      "say": "And don't worry, a command is just something you type, then press Enter." },
+    { "type": "prompt", "kicker": "Then say", "label": "Catch me up", "text": "Let's keep going.\nWhere did we leave off?\nWhat's the next step?", "dur": 3.2,
+      "say": "Then ask it to remind you where you left off, and what the next step was." },
+    { "type": "tiles", "kicker": "Try it today", "text": "Start, close, continue", "dur": 2.4, "items": [
+      { "letter": "S", "label": "Start", "color": "#0F766E" },
+      { "letter": "C", "label": "Close", "color": "#B45309" },
+      { "letter": "R", "label": "Resume", "color": "#BE123C" }
+    ], "say": "Try it. Start a tiny project, close Claude Code, then open it and continue. It's included with Pro and Max." },
+    { "type": "question", "text": "What would you come back to?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what project would you come back to tomorrow? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
