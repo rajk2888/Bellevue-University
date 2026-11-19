@@ -1,0 +1,33 @@
+{
+  "date": "Thursday, Nov 19, 2026",
+  "topic": "Hot take: AI labs grading their own homework isn't enough anymore",
+  "music_seed": 323,
+  "post": "An AI company rated its own new models \"Critical\" for cybersecurity risk.\nThen it released them. 🔥\n\nHere's what happened:\nOpenAI launched GPT-6.2 Astra and GPT-6.2 Sol on Nov 17. According to coverage of OpenAI's system card (its safety report), both models were assessed as \"Critical\" for cybersecurity under the company's own Preparedness Framework.\n\nThe system card also notes that the UK's AI Security Institute had not independently retested the latest safeguards when it was written. 🧪\n\nMy hot take 👇\nI'm not saying the release was wrong. Labs publish these reports, and that's good.\n\nBut when the same company builds the model, grades the risk, and decides it's safe to ship, that's grading your own homework. 📝\n\nFor the most powerful AI, independent testing before release should be the norm, not a nice-to-have.\n\nWhy it matters:\nThe AI tools you use at work are getting more capable every month. Who checks them, and when, matters as much as what they can do. ⚖️\n\nPractical takeaway:\nBefore your team adopts a new AI model, read the vendor's safety report summary. Look for who tested it, not just what it scored. 🔍\n\nShould independent testing be required before AI models launch? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #AISafety #CyberSecurity #AIPolicy #Tech",
+  "hooks": [
+    "An AI company rated its own new models \"Critical\" for cybersecurity risk. Then it released them. 🔥",
+    "When the same company builds the AI, grades the risk, and ships it, that's grading your own homework.",
+    "The question about new AI models isn't just \"how smart?\" It's \"who checked?\""
+  ],
+  "sources": [
+    { "name": "Digital Trends: OpenAI launches GPT-6.2 Astra and Sol", "url": "https://www.digitaltrends.com/computing/openai-gpt-6-2-astra-sol-launch/" },
+    { "name": "Decrypt: OpenAI GPT-6.2 Astra challenges Anthropic on price but not every benchmark", "url": "https://decrypt.co/383488/openai-gpt-6-2-astra-challenges-anthropic-price-but-not-every-benchmark" },
+    { "name": "Let's Data Science: OpenAI launches GPT-6.2 Astra frontier model and GPT-6.2 Sol", "url": "https://letsdatascience.com/news/openai-launches-gpt-62-astra-frontier-model-and-gpt-62-sol-ccad09ba" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "Hot take", "text": "AI is grading its own homework", "sub": "Who checks the most powerful models?", "dur": 2.6 },
+    { "type": "cards", "kicker": "What happened", "dur": 3.0, "items": [
+      { "icon": "1", "title": "New models", "desc": "Launched Nov 17" },
+      { "icon": "2", "title": "Self-rated", "desc": "Critical cyber risk" },
+      { "icon": "3", "title": "Not yet retested", "desc": "By an outside lab" }
+    ] },
+    { "type": "typewriter", "kicker": "My take", "text": "Test independently, then ship.", "dur": 2.2 },
+    { "type": "tiles", "kicker": "Before you adopt", "text": "Read the safety report", "dur": 2.4, "items": [
+      { "letter": "W", "label": "Who tested", "color": "#2563EB" },
+      { "letter": "R", "label": "Risk rating", "color": "#16A34A" },
+      { "letter": "S", "label": "Safeguards", "color": "#EA580C" }
+    ] },
+    { "type": "question", "text": "Require outside testing?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
