@@ -1,0 +1,47 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 52",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Thursday, Nov 19, 2026",
+  "topic": "The \"prep me for this meeting\" prompt: walk in with goals, tough questions and answers ready",
+  "music_seed": 330,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Big meeting in an hour and you haven't prepped? 😬\nThis copy-paste prompt gets you ready in minutes.\n\nAnthropic's prompting guide says Claude does best with clear instructions and context. So give it the meeting, the people, and what you want.\n\nCopy this prompt 👇\n\"I have a meeting about [topic] with [who, and their role].\nMy goal: [what I want to walk out with].\nHere's the background: [paste the agenda, email or notes].\n\nGive me:\n1. My top 3 talking points, in one line each\n2. The 5 toughest questions they might ask, with a short answer for each\n3. One question I should ask them\n4. Anything in the background I should double-check before the meeting\"\n\nExample:\nA budget meeting with your manager. You walk in knowing your ask, your numbers, and how to answer \"why now?\" ✅\n\nThe secret is point 2 🔑\nPracticing the tough questions is what makes you sound calm and ready.\n\nAnd remember: check any facts or numbers Claude gives you before you repeat them. 🔍\n\nWhy it matters:\nPreparation is the difference between hoping a meeting goes well and making it go well. 💡\n\nWhat meeting would you prep for with this? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #Productivity",
+  "hooks": [
+    "Big meeting in an hour and you haven't prepped? This copy-paste prompt gets you ready in minutes. 😬",
+    "Walk into your next meeting with your talking points and the tough questions already answered.",
+    "The best meeting prep is practicing the hardest questions. Here's a prompt for that."
+  ],
+  "sources": [
+    { "name": "Claude Docs: Prompting best practices", "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices" },
+    { "name": "Claude Help Center: My prompt isn't giving me a helpful answer", "url": "https://support.claude.com/en/articles/7996857-my-prompt-isn-t-giving-me-a-helpful-answer" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Prep me for this meeting", "sub": "A copy-paste prompt", "dur": 2.4,
+      "say": "Big meeting in an hour, and you haven't prepped? This prompt gets you ready in minutes." },
+    { "type": "cards", "kicker": "Tell Claude", "dur": 3.2, "items": [
+      { "icon": "1", "title": "The topic", "desc": "And who's in the room" },
+      { "icon": "2", "title": "Your goal", "desc": "What you want to walk out with" },
+      { "icon": "3", "title": "Background", "desc": "Agenda, email or notes" }
+    ], "say": "Tell Claude the topic and who's in the room, what you want to walk out with, and paste in the background." },
+    { "type": "prompt", "kicker": "Ask for", "label": "Meeting prep", "text": "3 talking points.\n5 tough questions, answered.\n1 question for them.", "dur": 3.4,
+      "say": "Ask for three talking points, the five toughest questions with short answers, and one question you should ask them." },
+    { "type": "typewriter", "kicker": "The secret", "text": "Practice the tough questions.", "dur": 2.4,
+      "say": "The secret is those tough questions. Practicing them is what makes you sound calm and ready." },
+    { "type": "typewriter", "kicker": "Example", "text": "A budget meeting, fully prepped.", "dur": 2.4,
+      "say": "Say it's a budget meeting with your manager. You walk in knowing your ask, your numbers, and how to answer why now." },
+    { "type": "tiles", "kicker": "Before you go in", "text": "Check, then walk in", "dur": 2.4, "items": [
+      { "letter": "F", "label": "Facts", "color": "#0F766E" },
+      { "letter": "N", "label": "Numbers", "color": "#B45309" },
+      { "letter": "A", "label": "Your ask", "color": "#BE123C" }
+    ], "say": "And always check any facts or numbers before you repeat them in the room." },
+    { "type": "question", "text": "What meeting would you prep for?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what meeting would you prep for with this? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
