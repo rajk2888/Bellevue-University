@@ -1,0 +1,36 @@
+{
+  "date": "Friday, Nov 20, 2026",
+  "topic": "This week in AI: the top 5 stories you need to know",
+  "music_seed": 324,
+  "post": "This week in AI: a record IPO, a record quarter, and a reminder that AI is personal. 🎢\nHere are the top 5 stories you need to know.\n\n1️⃣ Anthropic goes public\nAnthropic priced its IPO at $83 a share, above its planned range, and closed its first day on Nasdaq at about $97, per Forbes and NPR. 📈\n\n2️⃣ Nvidia's numbers roll on\nIn its first report since its CEO's exit, Nvidia posted about $115.8 billion in quarterly revenue, roughly double a year earlier. The interim CEO said Jensen Huang won't return.\n\n3️⃣ New OpenAI models\nOpenAI released GPT-6.2 Astra and Sol. Coverage of its safety report says both were rated \"Critical\" for cybersecurity risk.\n\n4️⃣ AI agents get a wallet\nOpenAI's ChatGPT Wallet lets its agents make purchases for you, with your approval on each one. 💳\n\n5️⃣ AI as a friend\nA Gallup survey of young people aged 15-22 across 16 countries found a median of 33% have used AI as a companion or friend. 🫂\n\nWhy it matters:\nAI is now big money, critical infrastructure, and part of people's personal lives, all at the same time.\n\nPractical takeaway:\nPick the one story that touches your life most, and talk about it with someone this weekend. 💬\n\nWhich story matters most to you? 👇\n\nFollow for daily AI news you can actually use.\n\n#AI #ThisWeekInAI #AINews #Tech #FutureOfWork",
+  "hooks": [
+    "This week in AI: a record IPO, a record quarter, and a reminder that AI is personal. Top 5 stories. 🎢",
+    "An IPO pop, a $115.8B quarter, and AI as a friend. The 5 AI stories that mattered this week.",
+    "Missed the AI news this week? Here's everything in 60 seconds."
+  ],
+  "sources": [
+    { "name": "Forbes: Anthropic IPO live: stock closes day at $97, up more than 17%", "url": "https://www.forbes.com/sites/fionariley/2026/11/19/anthropic-ipo-live-stock-closes-day-at-97-up-more-than-17/" },
+    { "name": "NPR: Investors scramble for a piece of AI giant Anthropic in blockbuster IPO", "url": "https://www.npr.org/2026/11/19/nx-s1-6042558/anthropic-ipo-breaks-records-100-billion" },
+    { "name": "The Next Web: Nvidia's Kress rules out Huang return as revenue doubles to $115.8bn", "url": "https://thenextweb.com/news/nvidias-kress-rules-out-huang-return-as-revenue-doubles-to-115-8bn" },
+    { "name": "Digital Trends: OpenAI launches GPT-6.2 Astra and Sol", "url": "https://www.digitaltrends.com/computing/openai-gpt-6-2-astra-sol-launch/" },
+    { "name": "Decrypt: OpenAI launches ChatGPT Wallet to let AI agents shop", "url": "https://decrypt.co/383278/openai-chatgpt-wallet-ai-agents-shop-without-crypto" },
+    { "name": "404 Media: Gallup study on friendship and AI companions", "url": "https://404media.co/gallup-study-friendship-ai-companions/" },
+    { "name": "Digital Trends: A third of young people have turned to AI for friendship", "url": "https://digitaltrends.com/computing/a-third-of-young-people-have-turned-to-ai-for-friendship-and-the-loneliness-numbers-are-worrying" }
+  ],
+  "cover_time": 1.2,
+  "scenes": [
+    { "type": "stomp", "kicker": "This week in AI", "text": "Money, models and friends", "sub": "The top 5 stories", "dur": 2.4 },
+    { "type": "cards", "kicker": "Top 5, part 1", "dur": 3.0, "items": [
+      { "icon": "1", "title": "IPO day", "desc": "Priced $83, closed ~$97" },
+      { "icon": "2", "title": "$115.8B quarter", "desc": "Nvidia, post-CEO" },
+      { "icon": "3", "title": "New models", "desc": "Rated Critical cyber risk" }
+    ] },
+    { "type": "cards", "kicker": "Top 5, part 2", "dur": 2.8, "items": [
+      { "icon": "4", "title": "Agents can pay", "desc": "You approve each buy" },
+      { "icon": "5", "title": "AI as a friend", "desc": "1 in 3 young people" }
+    ] },
+    { "type": "typewriter", "kicker": "The takeaway", "text": "AI is money, infra and personal.", "dur": 2.2 },
+    { "type": "question", "text": "Which story matters most?", "sub": "Tell me in the comments", "dur": 2.2 },
+    { "type": "outro", "kicker": "Daily AI news", "name": "Rajkumar Kuppuswami", "cta": "Follow for daily AI", "dur": 2.0 }
+  ]
+}
