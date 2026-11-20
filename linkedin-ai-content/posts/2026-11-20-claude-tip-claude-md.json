@@ -1,0 +1,48 @@
+{
+  "series": "claude-tips",
+  "page_title": "Daily Claude Tip",
+  "eyebrow": "Claude for beginners · Day 53",
+  "publish_time": "9:00 AM CT",
+  "file_slug": "claude-tip",
+  "date": "Friday, Nov 20, 2026",
+  "topic": "Set it once with CLAUDE.md: a note Claude Code reads every time you start",
+  "music_seed": 331,
+  "voice": { "speaker": 60, "pace": 1.0 },
+  "theme": { "bg": "#0E1A1A", "glow": "#16332F", "cyan": "#3EE6B0", "purple": "#FFB547", "pink": "#FF6B5B" },
+  "post": "Tired of telling Claude Code the same things every time? 🔁\nWrite them down once, in a file called CLAUDE.md.\n\nWhat it is:\nCLAUDE.md is a simple text note you keep in your project folder. Claude's help center says Claude Code reads it at the start of every session in that folder. 📝\n\nSo you set your preferences once, and every session starts on the right foot.\n\nHow to start 👇\n1️⃣ Open Claude Code in your project folder\n2️⃣ Type /init and Claude drafts a CLAUDE.md for you\n3️⃣ Read it, and fix anything that's wrong\n4️⃣ Add your own rules in plain English\n\nExample lines:\n\"Explain changes in plain English. I'm not a developer.\"\n\"Never delete files. Ask first.\"\n\"Save new files in the 'output' folder.\" ✅\n\nGood habits, per Claude's own docs:\n✂️ Keep it short\n🔄 Update it when Claude keeps making the same mistake\n⚠️ It's guidance, not a lock. Claude follows it, but it's not a hard rule.\n\n📌 Claude Code is included with Claude's Pro and Max plans.\n\nWhy it matters:\nThe best automation isn't fancy. It's not having to repeat yourself. 💡\n\nWhat's one rule you'd put in your CLAUDE.md? 👇\n\nFollow me: I'm teaching one Claude skill a day, no tech background needed.\n\n#Claude #AI #AIForBeginners #ClaudeCode",
+  "hooks": [
+    "Tired of telling Claude Code the same things every time? Write them down once, in CLAUDE.md. 🔁",
+    "One small text file that makes every Claude Code session start the way you like.",
+    "The best automation isn't fancy. It's not having to repeat yourself."
+  ],
+  "sources": [
+    { "name": "Claude Help Center: Give Claude context: CLAUDE.md and better prompts", "url": "https://support.claude.com/en/articles/14553240-give-claude-context-claude-md-and-better-prompts" },
+    { "name": "Claude Code Docs: How Claude remembers your project", "url": "https://code.claude.com/docs/en/memory" },
+    { "name": "Claude Code Docs: Best practices", "url": "https://code.claude.com/docs/en/best-practices" }
+  ],
+  "cover_time": 1.4,
+  "scenes": [
+    { "type": "stomp", "kicker": "Claude for beginners", "text": "Set it once with CLAUDE.md", "sub": "Claude Code, no coding", "dur": 2.4,
+      "say": "Tired of telling Claude Code the same things every single time? Let's write them down once." },
+    { "type": "typewriter", "kicker": "What it is", "text": "A note Claude reads first.", "dur": 2.4,
+      "say": "CLAUDE dot md is a simple text note in your project folder. Claude Code reads it at the start of every session there." },
+    { "type": "cards", "kicker": "How to start", "dur": 3.4, "items": [
+      { "icon": "1", "title": "Type /init", "desc": "Claude drafts it" },
+      { "icon": "2", "title": "Read it", "desc": "Fix what's wrong" },
+      { "icon": "3", "title": "Add your rules", "desc": "In plain English" }
+    ], "say": "Type slash init, and Claude drafts one for you. Read it, fix anything wrong, and add your own rules in plain English." },
+    { "type": "prompt", "kicker": "Example rules", "label": "CLAUDE.md", "text": "Explain in plain English.\nNever delete files.\nSave to the output folder.", "dur": 3.2,
+      "say": "For example: explain changes in plain English. Never delete files. And save new files in the output folder." },
+    { "type": "tiles", "kicker": "Good habits", "text": "Keep it useful", "dur": 2.6, "items": [
+      { "letter": "S", "label": "Keep it short", "color": "#0F766E" },
+      { "letter": "U", "label": "Update often", "color": "#B45309" },
+      { "letter": "G", "label": "Guidance only", "color": "#BE123C" }
+    ], "say": "Keep it short, update it when Claude keeps making the same mistake, and remember it's guidance, not a hard lock." },
+    { "type": "typewriter", "kicker": "Good to know", "text": "Included with Pro and Max.", "dur": 2.0,
+      "say": "Quick note: Claude Code is included with Claude's Pro and Max plans." },
+    { "type": "question", "text": "What rule would you add?", "sub": "Tell me in the comments", "dur": 2.0,
+      "say": "So what's one rule you'd put in your CLAUDE dot md? Tell me in the comments." },
+    { "type": "outro", "kicker": "One Claude skill a day", "name": "Rajkumar Kuppuswami", "cta": "Follow to learn Claude", "dur": 2.2,
+      "say": "Follow me, and I'll teach you one new Claude skill every day." }
+  ]
+}
